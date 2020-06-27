@@ -1,0 +1,130 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 14: Posicionando  elementos - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 14: Posicionando  elementos - HTML.net" />
+	<meta name="description" content="Lição 14: Posicionando  elementos - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 14: Posicionando  elementos - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/css/lesson14.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+	
+</head>
+
+<body>	
+	<div id="main">
+		<div id="content">
+		<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>CSS</a> &#187; Lição 14: Posicionando  elementos</div>
+		<div id='tutorials'>	<h1>Lição 14: Posicionando  elementos</h1>
+	<p>Com posicionamento  <abbr>CSS</abbr> podemos colocar um elemento em uma posição exata na página. Combinado com floats  (ver <a href="lesson13.html">lição 13</a>), o posicionamento abre muitas possibilidades para criação de layouts precisos e avançados.</p>
+	<p>Nesta lição veremos os seguintes itens:</p>
+	<ul>
+	  <li><a href="#s1">O princípio de posicionamento <abbr>CSS</abbr></a></li>
+	  <li><a href="#s2">Posicionamento absoluto</a></li>
+	  <li><a href="#s3">Posicionamento relativo</a></li>
+	</ul>
+	<h2 id="s1">O princípio de posicionamento  <abbr>CSS</abbr></h2>
+	<p>Considere a janela do navegador como um sistema de coordenadas:</p>
+	<p><img src="figure017.gif" alt="Janela do navegador com coordenadas" width="540" height="347" /></p>
+	<p>O princípio de posicionamento <abbr>CSS</abbr> estabelece que você pode posicionar um elemento em qualquer lugar na tela usando um sistema de coordenadas.</p>
+	<p>Vamos supor que queremos posicionar um cabeçalho. Usando o box model (ver <a href="lesson9.html">lição 9</a>) o cabeçalho pode ser estilizado para ser apresentado como mostrado abaixo:</p>
+	<p><img src="figure018.gif" alt="Cabeçalho em um box" width="191" height="50" /></p>
+	<p>Se quisermos o cabeçalho posicionado a  100px do topo do documento e a  200px à esquerda, podemos usar o seguinte <abbr>CSS</abbr>:</p>
+	<div class="codebox">
+	  <pre><code>
+	h1 {
+		position:absolute;
+		<strong>top: 100px;
+		left: 200px;</strong>
+	}
+	</code>
+	</pre>
+	  O resultado é mostrado a seguir:</div>
+	<p><img src="figure019.gif" alt="Cabeçalho posicionado na janela do navegador" width="540" height="347" /></p>
+	<p>Como você pode ver, posicionar com <abbr>CSS</abbr> é uma técnica precisa para colocar elementos.  É muito mais fácil do que usar tabelas, imagens transparentes e tudo mais.</p>
+	<h2 id="s2">Posicionamento absoluto </h2>
+	<p>Um elemento posicionado absolutamente não cria nenhum espaço no documento. Isto significa que não deixa nenhum espaço vazio após ser posicionado.</p>
+	<p>Para posicionar um elemento de forma absoluta a propriedade <code>position</code> deve ser definida para <strong>absolute</strong>. Você pode então usar as propriedades <strong>left</strong>, <strong>right</strong>, <strong>top</strong>, e <strong>bottom</strong> para definir as coordenadas e posicionar o elemento.</p>
+	<p>Para exemplificar o posicionamento absoluto escolhemos colocar quatro boxes nos quatro cantos da página:</p>
+	<div class="codebox">
+	  <pre><code>
+	#box1 {
+		<strong>position:absolute;</strong>
+		top: 50px;
+		left: 50px;
+	}
+
+	#box2 {
+		<strong>position:absolute;</strong>
+		top: 50px;
+		right: 50px;
+	}
+
+	#box3 {
+
+		<strong>position:absolute;</strong>
+		bottom: 50px;
+		right: 50px;
+	}
+
+	#box4 {
+		<strong>position:absolute;</strong>
+		bottom: 50px;
+		left: 50px;
+	}
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson14_ex1.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<h2 id="s3">Posicionamento relativo </h2>
+	<p>Para posicionar um elemento de forma relativa a propriedade <code>position</code> deve ser definida para <strong>relative</strong>. A diferença entre os dois tipos de posicionamento é a maneira como o posicionamento é calculado.</p>
+	<p>O posicionamento para posição relativa é <strong>calculado com base na posição original do elemento no documento</strong>. Isto significa uma movimentação do elemento para a esquerda, para a direita, para cima ou para baixo. Assim fazendo o elemento ocupa um espaço após ser posicionado.</p>
+	<p>Como exemplo de posicionamento relativo vamos tentar posicionar três imagens relativamente as suas posições originais na página. Notar como as imagens deixam um espaço vazio nas suas posições originais no documento:</p>
+	<div class="codebox">
+	  <pre><code>
+	#dog1 {
+		position:relative;
+		left: 350px;
+		bottom: 150px;
+	}
+	#dog2 {
+		position:relative;
+		left: 150px;
+		bottom: 500px;
+	}
+
+	#dog3 {
+		position:relative;
+		left: 50px;
+		bottom: 700px;
+	}
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson14_ex2.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<h2>Sumário</h2>
+	<p>Nas duas lições anteriores você aprendeu como flutuar e posicionar elementos. Estes dois métodos posibilitam a você construir o layouy sem uso das ultrapassadas tabelas e imagens transparentes no <abbr>HTML</abbr>. Use <abbr>CSS</abbr>. É mais preciso, mais vantajoso e muito mais fácil de manutenir.</p>	
+	
+	<hr />
+	<p class='previous'><a href='lesson13.html'>&lt;&lt; Lição 13: Flutuando elementos (floats)</a></p><p class='next'><a href='lesson15.html'>Lição 15: Usando z-index (Layers) >></a></p>
+	</div> 
+	</div>
+	</div>
+</body>
+</html>

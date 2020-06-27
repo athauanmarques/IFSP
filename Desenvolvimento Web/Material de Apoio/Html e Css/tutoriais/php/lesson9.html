@@ -1,0 +1,166 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 9: Funções - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 9: Funções - HTML.net" />
+	<meta name="description" content="Lição 9: Funções - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 9: Funções - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/php/lesson9.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='http://html.net/site/style/default.screen.css' type='text/css' media='screen' /><link rel='stylesheet' href='http://html.net/site/style/default.print.css' type='text/css' media='print' />
+</head>
+
+<body>	
+	<div id="main">
+	<div id="content">
+	<div id='tutorials'>	<h1>Lição 9: Funções</h1> 
+
+	<p>Nas lições anteriores você aprendeu a usar funções, tais como, <a href="http://php.net/manual/en/function.date.php">date()</a> e <a href="http://php.net/manual/en/function.array.php"> array()</a>. Nesta lição você aprenderá a criar suas próprias funções usando a funcionalidade do PHP chamada <a href=%22http_\\php.net\manual\en\functions.user-defined.html> function</a>.</p> 
+
+	<h2>O que é função?</h2> 
+
+	<p>Uma função se destina a processar <em>inputs (entradas)</em> e retornar um <em>output (saída)</em>. Isto pode ser muito útil se, por exemplo, você tiver que processar uma grande quantidade de dados ou se tiver que realizar cálculos ou rotinas que devam ser executadas muitas vezes.</p> 
+
+	<p>A sintaxe geral para uma função é mostrada a seguir:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	Nome da função(lista de parâmetros) {
+	   Comandos PHP
+	}
+	
+	</pre> 
+	</div> 
+
+	<p>O exemplo a seguir esclarece a sintaxe para uma função bem simples destinada a adicionar 1 unidade a um número:</p> 
+	<div class="codebox"> 
+	<pre>
+	<span class="code-php">function AddOne($x) {</span>
+	<span class="code-php">   $x = $x + 1;</span>
+	<span class="code-php">   echo $x;</span>
+	<span class="code-php">}</span>
+
+	
+	</pre> 
+	</div> 
+
+	<p>O nome escolhido para nossa função foi <strong>AddOne</strong> e deve ser chamada com um parâmetro que é o numero a somar - por exemplo: 34....</p> 
+	<div class="codebox"> 
+	<pre>
+	<span class="code-php">echo AddOne(34);</span>
+	
+	</pre> 
+	</div> 
+
+	<p>... o retorno da função será (pasmem!) 35.</p> 
+
+	<p>No exemplo mostrado processou-se um número, contudo as funções podem processar textos, datas e qualquer outro tipo de dado. Você pode, até mesmo, criar funções para serem chamadas por parâmetros. Nesta lição estudaremos diferentes tipos de funções.</p> 
+
+	<h2>Exemplo 1: Função com vários parâmetros</h2> 
+
+	<p>Como dito anteriomente é possível criar funções com vários parâmetros. No exemplo a seguir criaremos uma função que é chamada com 3 números como parâmetros e retorna a soma deles:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Funções&lt;/title&gt;
+
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-php">function AddAll($number1,$number2,$number3) {</span>
+	<span class="code-php">   $plus = $number1 + $number2 + $number3;</span>
+	<span class="code-php">   return $plus;</span>
+	<span class="code-php">}</span>
+	 
+	<span class="code-php">echo "123 + 654 + 9 é igual a " . AddAll(123,654,9);</span>
+
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink">  <a href="lesson9_ex1.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div> 
+
+	<p>Ok. Isto foi bastante simples! Mas, o objetivo foi apenas mostrar que uma função pode ser chamada com vários parâmetros.</p> 
+
+	<h2>Exemplo 2: Data e hora em inglês</h2> 
+
+	<p>Vamos criar uma função um pouquinho mais complexa. Uma função a ser chamada com date() e time() e retornar a data e hora no formato: <strong>Wednesday, 15 February, 2012, 10:00:00 AM</strong></p> 
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Funções&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-php">function EnglishDateTime($date) {</span>
+	 
+	<span class="code-comments">  // Array com o nome em portuguêss dos dias e semanas</span>
+	<span class="code-php">  $arrDay = array("segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado","domingo");</span>
+	 
+	<span class="code-comments">  // Array with the English names of the months</span>
+	<span class="code-php">  $arrMonth = array("","janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro");</span>
+	 
+	<span class="code-comments">  // Montar a data</span>
+	<span class="code-php">  $EnglishDateTime = $arrDay[(date("w",$date))] . ", " . date("d",$date);</span>
+	<span class="code-php">  $EnglishDateTime = $EnglishDateTime  . " " . $arrMonth[date("m",$date)] . " " . date(Y,$date);</span>
+	<span class="code-php">  $EnglishDateTime = $EnglishDateTime  . ", " . date("H",$date) . ":" . date("i",$date);</span>
+	 
+	<span class="code-php">  return $EnglishDateTime;</span>
+
+	<span class="code-php">}</span>
+	 
+	<span class="code-comments">// Função de teste</span>
+	<span class="code-php">echo EnglishDateTime(time());</span>
+
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink">  <a href="lesson9_ex2.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div> 
+
+	<p>Notar que a definição de '$arrMonth' e '$EnglishDateTime' constam de diversas linhas do script. Fizemos assim para que usuários com baixa resolução de tela tenham uma melhor visão do exemplo. Isto não tem nenhum efeito no funcionamento do código.</p> 
+
+	<p>A função mostrada funciona em qualquer servidor independentemente do idioma. Isto significa que você pode usar esta função no seu site mesmo que ele esteja hospedado em um servidor na França e você quiser mostrar suas datas no formato inglês.</p> 
+
+	<p>Por ora ficaremos por aqui sem nos aprofundar mais, pois agora você já sabe alguma coisa sobre como as funções trabalham.</p> 
+	<hr /><p class='previous'><a href='lesson8.html'>&lt;&lt; Lição 8: Arrays</a></p><p class='next'><a href='lesson10.html'>Lição 10: Passando variáveis no URL >></a></p></div>  		<!-- google_ad_section_end -->
+
+		</div>
+	</div>
+
+	<div id="sidebar">
+		<h1>Tutorials</h1>
+			<ul>
+			<li><a href='..\html\index.html'>HTML Tutorial</a></li><li><a href='..\css\index.html'>CSS Tutorial</a></li><li><strong><a href='index.html'>Tutorial PHP</a></strong><ul><li><a href='introduction.html'>Introdução</a></li><li><a href='lesson1.html'>O que é PHP</a></li><li><a href='lesson2.html'>Servidores</a></li><li><a href='lesson3.html'>Sua primeira página PHP</a></li><li><a href='lesson4.html'>Trabalhando com datas e horas</a></li><li><a href='lesson5.html'>Loops</a></li><li><a href='lesson6.html'>Condicionais</a></li><li><a href='lesson7.html'>Insira comentários nos seus scripts</a></li><li><a href='lesson8.html'>Arrays</a></li><li class='selected'><a href='lesson9.html'>Funções</a></li><li><a href='lesson10.html'>Passando variáveis no URL</a></li><li><a href='lesson11.html'>Passando variáveis de um formulário</a></li><li><a href='lesson12.html'>Sessões</a></li><li><a href='lesson13.html'>Cookies</a></li><li><a href='lesson14.html'>Sistema de arquivos</a></li><li><a href='lesson15.html'>Ler arquivos de texto</a></li><li><a href='lesson16.html'>Escrever em arquivos de texto</a></li><li><a href='lesson17.html'>Banco de Dados</a></li><li><a href='lesson18.html'>Criando Banco de Dados e suas Tabelas</a></li><li><a href='lesson19.html'>Inserindo dados em um Banco de Dados</a></li><li><a href='lesson20.html'>Extraindo dados de um Banco de Dados</a></li><li><a href='lesson21.html'>Apagando dados de um Banco de Dados</a></li><li><a href='lesson22.html'>Atualizando dados de um Banco de Dados</a></li></ul></li>			
+			</ul>
+	</div>
+</body>
+</html>

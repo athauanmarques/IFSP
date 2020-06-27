@@ -1,0 +1,11 @@
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\bin\LojaWeb.dll
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\bin\LojaWeb.pdb
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\obj\Debug\LojaWeb.dll
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\obj\Debug\LojaWeb.pdb
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\bin\Bll.dll
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\bin\Modelos.dll
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\bin\Dal.dll
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\bin\Bll.pdb
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\bin\Modelos.pdb
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\bin\Dal.pdb
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\obj\Debug\LojaWeb.csprojResolveAssemblyReference.cache

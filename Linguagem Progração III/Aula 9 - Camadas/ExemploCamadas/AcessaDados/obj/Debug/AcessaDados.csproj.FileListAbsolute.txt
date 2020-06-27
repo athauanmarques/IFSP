@@ -1,0 +1,8 @@
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\AcessaDados\bin\Debug\AcessaDados.dll
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\AcessaDados\bin\Debug\AcessaDados.pdb
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\AcessaDados\bin\Debug\Modelos.dll
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\AcessaDados\bin\Debug\mysql.data.dll
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\AcessaDados\bin\Debug\Modelos.pdb
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\AcessaDados\obj\Debug\AcessaDados.csprojResolveAssemblyReference.cache
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\AcessaDados\obj\Debug\AcessaDados.dll
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\AcessaDados\obj\Debug\AcessaDados.pdb

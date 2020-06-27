@@ -1,0 +1,63 @@
+<html>
+<head>
+   <title>Animated Navigation Tree</title>
+   <style>
+      A {text-decoration: none;}
+   </style>
+   <script language="javascript" src="tree.js">
+   </script>
+</head>
+<body>
+<div id="_tree" 
+style="position: absolute; left:0; height:100%; background-color:aqua;">
+<b><a ID="icon" href="javascript: ShowHide();">&gt;&gt;&gt;</a></b><br>
+<div id="_indented" style="margin-left:31px">
+   <b><a ID="xproducts" href="javascript:Toggle('products');">
+     <img name="xproducts" width="20" height="20"
+      src="minus.gif" border="0" align="middle">
+   </a>Products</b><br>
+   <div ID="products" style="display:block; margin-left:2em;">
+    <a href="prodlist.html">Product List</a><br>
+    <a href="order.html">Order Form</a><br>
+    <a href="javascript:Toggle('specs');">
+    <img name="xspecs" width="20" height="20"
+     src="minus.gif" border="0" align="middle">
+    </a>Specifications<br>
+      <div ID="specs" style="display:block; margin-left:2em">
+        <a href="specs1.html">Old Products</a><br>
+        <a href="specs2.html">New Products</a><br>
+      </div>
+   <a href="pricelist.html">Price List</a><br>
+   </div>
+  <b><a href="javascript:Toggle('support');">
+    <img name="xsupport" width="20" height="20"
+    src="minus.gif" border="0" align="middle">
+   </a>Support</b><br>
+   <div ID="support" style="display:block; margin-left:2em;">
+    <a href="tech.html">Technical Support</a><br>
+    <a href="sforum.html">Support Forum</a><br>
+    <a href="sforum.html">Contact Support</a><br>
+   </div>
+   <b><a href="javascript:Toggle('contact');">
+     <img name="xcontact" width="20" height="20"
+      src="minus.gif" border="0" align="middle">
+	</a>Contact Us</b>
+    <div ID="contact" style="display:block; margin-left:2em;">
+     <a href="contact1.html">Sales Department</a><br>
+     <a href="contact2.html">Service Department</a><br>
+     <a href="contact3.html">Marketing Department</a><br>
+    </div>
+  <p> </p>
+  <a href="javascript:Expand();">[Expand All]</a><br>
+  <a href="javascript:Collapse();">[Collapse All]</a>
+</div>
+</div>
+<div ID="_text" 
+style="position:absolute; left:30px; height:100%; background-color:white;">
+<h1>Animated Navigation Tree Example</h1>
+<p>The navigation tree to the left allows you to expand and
+collapse items. You can hide or show the menu iteself using the 
+&lt;&lt;&lt; or &gt;&gt;&gt; icons.</p>
+</div>
+</body>
+</html>

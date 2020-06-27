@@ -1,0 +1,21 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\Aula_Revisão\bin\Debug\Aula_Revisão.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Aula_Revisão\bin\Debug\Aula_Revisão.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\Aula_Revisão\obj\x86\Debug\Aula_Revisão.frmProdutos.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Aula_Revisão\obj\x86\Debug\Aula_Revisão.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Aula_Revisão\obj\x86\Debug\Aula_Revisão.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\Aula_Revisão\obj\x86\Debug\Aula_Revisão.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Aula_Revisão\obj\x86\Debug\Aula_Revisão.pdb
+C:\Users\Aluno\Desktop\Aula_Revisão\Aula_Revisão\obj\x86\Debug\Aula_Revisão.exe
+C:\Users\Aluno\Desktop\Aula_Revisão\Aula_Revisão\obj\x86\Debug\Aula_Revisão.pdb
+C:\Users\Aluno\Desktop\Aula_Revisão\Aula_Revisão\bin\Debug\Aula_Revisão.exe
+C:\Users\Aluno\Desktop\Aula_Revisão\Aula_Revisão\bin\Debug\Aula_Revisão.pdb
+C:\Users\Aluno\Desktop\Aula_Revisão\Aula_Revisão\obj\x86\Debug\Aula_Revisão.frmProdutos.resources
+C:\Users\Aluno\Desktop\Aula_Revisão\Aula_Revisão\obj\x86\Debug\Aula_Revisão.inicial.resources
+C:\Users\Aluno\Desktop\Aula_Revisão\Aula_Revisão\obj\x86\Debug\Aula_Revisão.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Aula_Revisão\Aula_Revisão\obj\x86\Debug\Aula_Revisão.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Aula_Revisão\Aula_Revisão\obj\x86\Debug\Aula_Revisão.exer2.resources
+C:\Users\Aluno\Desktop\Aula_Revisão\Aula_Revisão\obj\x86\Debug\Aula_Revisão.exer3.resources
+F:\ADS\LP2\Aula 5 - revisão(Preparação para prova)\Aula_Revisão\Aula_Revisão\obj\x86\Debug\Aula_Revisão.exe
+F:\ADS\LP2\Aula 5 - revisão(Preparação para prova)\Aula_Revisão\Aula_Revisão\obj\x86\Debug\Aula_Revisão.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 6 - revisão1(Preparação para prova)\Aula_Revisão\Aula_Revisão\obj\x86\Debug\Aula_Revisão.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 6 - revisão1(Preparação para prova)\Aula_Revisão\Aula_Revisão\obj\x86\Debug\Aula_Revisão.pdb

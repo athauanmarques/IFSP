@@ -1,0 +1,30 @@
+C:\Users\Rafael\AppData\Local\Temporary Projects\Lanchonete\bin\Debug\Lanchonete.exe
+C:\Users\Rafael\AppData\Local\Temporary Projects\Lanchonete\bin\Debug\Lanchonete.pdb
+C:\Users\Rafael\AppData\Local\Temporary Projects\Lanchonete\obj\x86\Debug\Lanchonete.Form1.resources
+C:\Users\Rafael\AppData\Local\Temporary Projects\Lanchonete\obj\x86\Debug\Lanchonete.Properties.Resources.resources
+C:\Users\Rafael\AppData\Local\Temporary Projects\Lanchonete\obj\x86\Debug\Lanchonete.csproj.GenerateResource.Cache
+C:\Users\Rafael\AppData\Local\Temporary Projects\Lanchonete\obj\x86\Debug\Lanchonete.exe
+C:\Users\Rafael\AppData\Local\Temporary Projects\Lanchonete\obj\x86\Debug\Lanchonete.pdb
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.exe
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.pdb
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\bin\Debug\Lanchonete.exe
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\bin\Debug\Lanchonete.pdb
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.Form1.resources
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.Properties.Resources.resources
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.csproj.GenerateResource.Cache
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.exe
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.pdb
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\bin\Debug\Lanchonete.exe
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\bin\Debug\Lanchonete.pdb
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.Form1.resources
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.Properties.Resources.resources
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.csproj.GenerateResource.Cache
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Lanchonete\Lanchonete\bin\Debug\Lanchonete.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Lanchonete\Lanchonete\bin\Debug\Lanchonete.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Lanchonete\Lanchonete\obj\x86\Debug\Lanchonete.csproj.GenerateResource.Cache

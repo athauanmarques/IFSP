@@ -1,0 +1,16 @@
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula 6\bin\Debug\Revisão - Aula 6.exe
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula 6\bin\Debug\Revisão - Aula 6.pdb
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula 6\obj\x86\Debug\Revisão___Aula_6.Form1.resources
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula 6\obj\x86\Debug\Revisão___Aula_6.Properties.Resources.resources
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula 6\obj\x86\Debug\Revisão - Aula 6.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula 6\obj\x86\Debug\Revisão - Aula 6.exe
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula 6\obj\x86\Debug\Revisão - Aula 6.pdb
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula 6\obj\x86\Debug\Revisão___Aula_6.Form2.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\0-Revisão\Revisão - Aula - 6\Revisão - Aula 6\obj\x86\Debug\Revisão - Aula 6.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\0-Revisão\Revisão - Aula - 6\Revisão - Aula 6\obj\x86\Debug\Revisão - Aula 6.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\0-Revisão\Revisão - Aula - 6\Revisão - Aula 6\obj\x86\Debug\Revisão - Aula 6.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\0-Revisão\Revisão - Aula - 6\Revisão - Aula 6\obj\x86\Debug\Revisão___Aula_6.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\0-Revisão\Revisão - Aula - 6\Revisão - Aula 6\obj\x86\Debug\Revisão___Aula_6.Form2.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\0-Revisão\Revisão - Aula - 6\Revisão - Aula 6\obj\x86\Debug\Revisão___Aula_6.Form3.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\0-Revisão\Revisão - Aula - 6\Revisão - Aula 6\obj\x86\Debug\Revisão___Aula_6.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\0-Revisão\Revisão - Aula - 6\Revisão - Aula 6\obj\x86\Debug\Revisão - Aula 6.csproj.GenerateResource.Cache

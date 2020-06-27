@@ -1,0 +1,8 @@
+D:\LP3\LojaWin\DAL\bin\Release\DAL.dll
+D:\LP3\LojaWin\DAL\bin\Release\DAL.pdb
+D:\LP3\LojaWin\DAL\bin\Release\Modelos.dll
+D:\LP3\LojaWin\DAL\bin\Release\mysql.data.dll
+D:\LP3\LojaWin\DAL\bin\Release\Modelos.pdb
+D:\LP3\LojaWin\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\LP3\LojaWin\DAL\obj\Release\DAL.dll
+D:\LP3\LojaWin\DAL\obj\Release\DAL.pdb

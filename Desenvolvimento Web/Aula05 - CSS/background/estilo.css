@@ -1,0 +1,72 @@
+
+/* http://tableless.github.io/exemplos/background-clip/ */
+
+code {
+  background: #2db34a;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 24px 15px;
+  text-align: center;
+}
+
+
+/**               **/
+/**  LAYOUT ITENS **/
+/**               **/
+/*    ESTRUTURA DA FORMATAÇÃO*/
+nav, /**/
+header, /**/
+section, /**/
+aside, /**/
+footer {
+  margin: 0 1.5% 24px 1.5%;
+}
+nav {
+  float: left;
+  width: 30%;
+}
+section {
+  float: left;
+  width: 31%;
+}
+aside {
+  float: right;
+  width: 30%;
+}
+footer {
+  clear: both;
+  margin-bottom: 0;
+}
+
+
+/**                **/
+/* BACKGROUND ITENS */
+/**                **/
+
+header code {
+  border: 10px dotted green;
+  padding: 30px;
+ 
+  -webkit-background-clip: content-box; /*Versão anterior navegador: IE6*/
+  -moz-background-clip: content-box;    /*Versão anterior navegador: Mozila*/
+
+
+}
+nav code {
+  background-color: blue;
+  background-image: url("logocompleto.png");
+  background-repeat: no-repeat; /* não repete a imagem do fundo */
+  background-size: auto; /* valor default */
+  background-origin: border-box; /* ponto de inicialização */
+}
+section code {
+  background-color: #F43465;
+}
+aside code {
+  background-color: gray;
+}
+footer code {
+  background-color: black;
+}

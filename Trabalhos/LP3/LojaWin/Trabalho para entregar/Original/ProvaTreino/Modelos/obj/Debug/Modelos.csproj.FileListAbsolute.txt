@@ -1,0 +1,4 @@
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\ProvaTreino\Modelos\bin\Debug\Modelos.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\ProvaTreino\Modelos\bin\Debug\Modelos.pdb
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\ProvaTreino\Modelos\obj\Debug\Modelos.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\ProvaTreino\Modelos\obj\Debug\Modelos.pdb

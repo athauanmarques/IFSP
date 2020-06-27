@@ -1,0 +1,189 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 3: Sua primeira página PHP - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 3: Sua primeira página PHP - HTML.net" />
+	<meta name="description" content="Lição 3: Sua primeira página PHP - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 3: Sua primeira página PHP - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/php/lesson3.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='http://html.net/site/style/default.screen.css' type='text/css' media='screen' /><link rel='stylesheet' href='http://html.net/site/style/default.print.css' type='text/css' media='print' />
+</head>
+
+<body>	
+	<div id="main">
+	<div id="content">
+	<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; 
+	<a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>PHP</a> &#187; Lição 3: Sua primeira página PHP</div>
+	<div id='tutorials'>	<h1>Lição 3: Sua primeira página PHP</h1> 
+
+	<p>Nas lições 1 e 2 aprendemos o que é PHP e instalamos um servidor ou vamos usar um servidor remoto para seguir nossas lições. Assim, estamos em condições de criar nossa primeira página PHP. Seguiremos um caminho simples e fácil, contudo ao chegar ao final da lição você entenderá muito mais de PHP e saberá o que pode fazer com ele.</p> 
+
+	<p>Basicamente um arquivo PHP é um arquivo de texto com a extensão <strong>.php</strong> consistindo de:</p> <ul> <li>Texto</li> <li>Tags HTML </li> <li>Scripts PHP </li> </ul> 
+
+	<p>Você já sabe o que são textos e tags HTML. Então vamos examinar os scripts PHP.</p> 
+
+	<h2>Scripts PHP</h2> 
+
+	<p>O Grupo de documentação do PHP detalha e desenvolve <a href="http://php.net/manual/en/index.php" title="PHP documentation">a documentação para o PHP</a>. Neste nosso tutorial nós, frequentemente, faremos referência e apontaremos para links naquela documentação. O objetivo é que você consulte e se familiarize com a documentação e fique em condições de encontrar respostas para suas dúvidas na documentação. PHP envolve tantas funcionalidades que é impossível aprender tudo em um tutorial. Em compensação PHP não é difícil. Ao contrário, PHP é uma linguagem parecida com o inglês.</p> 
+
+	<p>Vamos começar com sua primeira página.</p> 
+
+	<h2>Examplo: Hello World!</h2> 
+
+	<p>Comece gerando um documento HTML e grave-o na raiz do site com o nome <em>page.php</em>. Se você usa XAMPP, (ver <a href="lesson2.html">lição 2</a>), o caminho no seu computador é: "c:\xampp\htdocs\page.php" (ali seu computador é um servidor).</p> 
+
+	<p>O código HTML deve ser como mostrado a seguir:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Minha primeira página PHP&lt;/title&gt;
+
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+
+	
+	</pre> 
+	</div> 
+
+	<p>Na lição 1 ensinamos que PHP destina-se a <strong>escrever comandos para o servidor.</strong>. Vamos escrever um comando para o servidor.</p> 
+
+	<p>Primeiramente devemos dizer ao servidor onde PHP  <strong>começa</strong> e onde <strong>termina.</strong> Para isso usamos as tags <strong>&lt;?php</strong> e <strong>?&gt;</strong> respectivamente, para marcar o início e o fim do código a ser executado pelo servidor (na maioria dos servidores é suficiente escrever <strong>&lt;?</strong> para tag de início, contudo <strong>&lt;?php</strong> á a maneira mais correta e recomendada de se escrever a tag de início do PHP).</p> 
+
+	<p>Acrescente o seguinte código na sua marcação HTML:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Minha primeira página PHP&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>   
+
+	<span class="code-php">echo "&lt;h1&gt;Hello World!&lt;/h1&gt;";</span>
+
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+
+	<p>Se você abrir o documento em um navegador deverá ver algo parecido com o seguinte:</p> <div><img src="lesson3_img01.png" alt="Imagem mostrando o resultado do código em um navegador">
+	</div> 
+
+	<p>Observe o que acontece quando você examina o código fonte do documento (selecione "view source"):</p> <div><img src="lesson3_img02.png" alt="Imagem mostrando o código fonte do documento">
+	</div> 
+
+	<p>O código PHP sumiu! Como foi dito na lição 1, apenas o servidor "vê" o código PHP - <strong>o cliente (no caso o navegador) "vê" somente o resultado!</strong></p> 
+
+	<p>Vamos examinar o que acontece. Pedimos ao servidor para escrever &lt;h1&gt; Hello World!&lt;/h1&gt;. Em linguagem técnica podemos dizer que usamos a função <a href="http://php.net/manual/en/function.echo.php" title="echo" hreflang="en">echo</a> para instruir o servidor a escrever uma string para o cliente. O ponto e vírgula termina o comando. Não se apavore! Tentaremos manter o uso de linguagem técnica a um mínimo possível.</p> 
+
+	<p>Este primeiro exemplo, sem dúvida, não é nada empolgante. Espere um pouco! Daqui para frente as coisas se tornarão cada vez mais empolgantes. Vejamos outro exemplo.</p> 
+
+	<h2>Exemplo: Agora!</h2> 
+
+	<p>Vamos fazer o servidor escrever mais. Podemos, por exemplo, pedir ao servidor para escrever a data e hora atual:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Minha primeira página PHP&lt;/title&gt;
+
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>   
+
+	<span class="code-php">echo date("r");</span>
+
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+
+	<p>O resultado em um navegador é algo como mostrado a seguir:</p> <div><img src="lesson3_img03.png" alt="Imagem mostrando o resultado do código em um navegador">
+	</div> 
+
+	<p>E o código HTML correspondente é:</p> <div><img src="lesson3_img04.png" alt="Imagem mostrando o código fonte do documento">
+	</div> 
+
+	<p>Está ficando empolgante. Certo?</p> 
+
+	<p>Fizemos o servidor mostrar a data e hora na página renderizada. Notar que se você recarregar a página uma nova data e hora será mostrada. O servidor escreve a data e hora toda vez que a página é enviada ao cliente.</p> 
+
+	<p>É importante notar que o código HTML renderizado contém apenas a data - não é mostrado o script PHP. Assim, não importa o navegador que o usuário está usando o resultado é sempre o mesmo. Atualmente, todas as funcionalidades que são executadas no <em>lado do servidor</em> sempre  <strong>funcionam em todos os navegadores!</strong></p> 
+
+	<p>Chamamos a atenção novamente para o ponto e vírgula no final de uma linha de código PHP. Este ponto e vírgula é obrigatório ao final de um comando. Se você esquecer o script não funcionará.</p>
+
+	<p>No exemplo nós usamos <a href="http://php.net/manual/en/function.date.php" title="Data" hreflang="en">date</a>, que é uma função destinada a retornar a data e hora atuais no servidor.</p> 
+
+	<p>Vamos ampliar o exemplo escrevendo uma <em>string</em> e uma <em>function</em> - separadas por um "<strong>.</strong>" (ponto) - observe a seguir:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Minha primeira página PHP&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span> 
+	
+	<span class="code-php">echo "&lt;p&gt;O grupo data/hora atual é: " . date("r") . "&lt;/p&gt;";</span>
+
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+
+	<p>O resultado em um navegador é algo como mostrado a seguir:</p> <div><img src="lesson3_img05.png" alt="Imagem mostrando o resultado do código em um navegador">
+	</div> 
+
+	<p>E o código HTML correspondente é:</p> <div><img src="lesson3_img06.png" alt="Imagem mostrando o código fonte do documento">
+	</div> 
+
+	<p>Na próxima lição estudaremos com detalhes a função <a href="http://php.net/manual/en/function.date.php" title="date" hreflang="en"> date</a> e os diferentes formatos do grupo data/hora.</p> 
+
+	<hr />
+	<hr /><p class='previous'><a href='lesson2.html'>&lt;&lt; Lição 2: Servidores</a></p><p class='next'><a href='lesson4.html'>Lição 4: Trabalhando com datas e horas >></a></p></div>  
+
+	</div>
+
+	</div>
+
+	<div id="sidebar">
+					<h1>Tutorials</h1>
+			<ul>
+			<li><a href='..\html\index.html'>HTML Tutorial</a></li><li><a href='..\css\index.html'>CSS Tutorial</a></li><li><strong><a href='index.html'>Tutorial PHP</a></strong><ul><li><a href='introduction.html'>Introdução</a></li><li><a href='lesson1.html'>O que é PHP</a></li><li><a href='lesson2.html'>Servidores</a></li><li class='selected'><a href='lesson3.html'>Sua primeira página PHP</a></li><li><a href='lesson4.html'>Trabalhando com datas e horas</a></li><li><a href='lesson5.html'>Loops</a></li><li><a href='lesson6.html'>Condicionais</a></li><li><a href='lesson7.html'>Insira comentários nos seus scripts</a></li><li><a href='lesson8.html'>Arrays</a></li><li><a href='lesson9.html'>Funções</a></li><li><a href='lesson10.html'>Passando variáveis no URL</a></li><li><a href='lesson11.html'>Passando variáveis de um formulário</a></li><li><a href='lesson12.html'>Sessões</a></li><li><a href='lesson13.html'>Cookies</a></li><li><a href='lesson14.html'>Sistema de arquivos</a></li><li><a href='lesson15.html'>Ler arquivos de texto</a></li><li><a href='lesson16.html'>Escrever em arquivos de texto</a></li><li><a href='lesson17.html'>Banco de Dados</a></li><li><a href='lesson18.html'>Criando Banco de Dados e suas Tabelas</a></li><li><a href='lesson19.html'>Inserindo dados em um Banco de Dados</a></li><li><a href='lesson20.html'>Extraindo dados de um Banco de Dados</a></li><li><a href='lesson21.html'>Apagando dados de um Banco de Dados</a></li><li><a href='lesson22.html'>Atualizando dados de um Banco de Dados</a></li></ul></li>			</ul>
+
+	</div>
+
+</body>
+</html>

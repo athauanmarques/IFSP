@@ -1,0 +1,22 @@
+﻿<html>
+<head>
+<title>Animação com HTML Dinâmico</title>
+<script language="javascript">
+var position=0;
+function Move() {
+   position += 1;
+   if (position > 650) position = 0;
+    document.getElementById("mouse").style.left = position;
+    window.setTimeout("Move();",10);
+}
+</script>
+ </head>
+ <body onLoad="Move();">
+ <H1>Animação com HTML Dinâmico</H1>
+ <HR>
+<div ID="mouse" STYLE="position:absolute; left:0; top:100;
+  width:100; height:100; visibility:show">
+  <img src="mouse.gif" width=100 height=100 alt="" border="0">
+</div>
+</body>
+</html>

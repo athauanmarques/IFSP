@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+	<title>Lição 5: Textos - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 5: Textos - HTML.net" />
+	<meta name="description" content="Lição 5: Textos - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 5: Textos - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/css/lesson5.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+</head>
+
+<body>	
+	<div id="main">
+		<div id="content">
+		<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>CSS</a> &#187; Lição 5: Textos</div>
+		<div id='tutorials'><h1>Lição 5: Textos</h1>
+	<p>Formatar e estilizar textos é um item chave para qualquer web designer. Nesta lição você será apresentado às interessantes oportunidades que as <abbr>CSS</abbr> proporcionam para adicionar layout aos textos. Serão discutidadas as propriedades listadas abaixo:</p>
+	<ul>
+		<li><a href="#s1">text-indent</a></li>
+		<li><a href="#s2">text-align</a></li>
+
+		<li><a href="#s3">text-decoration</a></li>
+		<li><a href="#s4">letter-spacing</a></li>
+		<li><a href="#s5">text-transform</a></li>
+	</ul>
+
+	<h2 id="s1">Indentação de texto [text-indent]</h2>
+	<p>A propriedade <code>text-indent</code> permite que você aplique um recuo à primeira linha de um parágrafo. No exemplo a seguir um recuo de <strong>30px</strong> é aplicado à todos os textos marcados com <code>&lt;p></code>:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	p {
+		text-indent: 30px;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson5_ex1.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<h2 id="s2">Alinhamento de textos  [text-align]</h2>
+
+	<p>A propriedade <code>text-align</code> corresponde ao atributo align das antigas versões do <abbr>HTML</abbr>. Textos podem ser alinhados à esquerda (<strong>left</strong>), à direita (<strong>right</strong>) ou centrados (<strong>centred</strong>). E temos ainda o valor <strong>justify</strong> que  faz com o texto contido em uma linha se estenda tocando as margens esquerda e direita. Este tipo de alinhamento é usado em jornais e revistas.</p>
+	<p>No exemplo a seguir o texto contido na célula de cabeçalho<code> &lt;th></code> é alinhado à direita e os contidos nas células de dados <code>&lt;td></code> são centrados. E, os textos normais em parágrafos são justificados:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	th {
+		text-align: <strong>right;</strong>
+	}
+
+	td {
+		text-align: <strong>center;</strong>
+	}
+
+	p {
+		text-align: <strong>justify;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson5_ex2.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<h2 id="s3">Decoração de textos  [text-decoration]</h2>
+	<p>A propriedade <code>text-decoration</code> possibilita adicionar "efeitos" ou "decoração" em textos. Você pode por rexemplo, sublinhar textos, cortar o texto com uma linha, colocar uma linha sobre o texto, etc. No exemplo a seguir os cabeçalhos <code>&lt;h1></code> são sublinhados, os cabeçalhos <code>&lt;h2></code> levam um linha em cima e os cabeçalhos <code>&lt;h3></code> são cortados por uma linha.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {
+		text-decoration: <strong>underline</strong>;
+	}
+
+	h2 {
+		text-decoration: <strong>overline</strong>;
+	}
+
+	h3 {
+		text-decoration: <strong>line-through</strong>;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson5_ex3.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+
+	</ul>
+
+	<h2 id="s4">Espaço entre letras  [letter-spacing]</h2>
+	<p>O espaçamento entre os caracteres de um texto é controlado pela propriedade <code>letter-spacing</code>. O valor desta propriedade define o espaço entre os caracteres. Por exemplo, se você deseja um espaço de <strong>3px</strong> entre as letras do texto de um parágrafo <code>&lt;p></code> e de <strong>6px</strong> entre as letras do texto de um cabeçalho <code>&lt;h1></code> o código a seguir deverá ser usado.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {
+		letter-spacing: <strong>6px;</strong>
+	}
+
+	p {
+		letter-spacing: <strong>3px;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson5_ex4.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+
+	</ul>
+
+	<h2 id="s5">Transformação de textos  [text-transform]</h2>
+	<p>A propriedade <code>text-transform</code> controla a capitalização (tornar maiúscula) do texto. Você pode escolher <strong>capitalize</strong>, <strong>uppercase</strong> ou <strong>lowercase</strong> independentemente de como o texto foi escrito no código <abbr>HTML</abbr>.</p>
+
+	<p>Como exemplo tomamos a palavra "cabeçalho" que pode ser apresentada ao usuário como "CABEÇALHO" ou "Cabeçalho". São quatro os valores possíveis para <code>text-transform</code>:</p>
+
+	<dl>
+		<dt>capitalize</dt>
+		<dd>Capitaliza a primeira letra de cada palavra. Por exemplo: "john doe" transforma-se para "John Doe".</dd>
+
+		<dt>uppercase</dt>
+		<dd>Converte todas as letras para maiúscula. Por exemplo: "john doe" transforma-se para"JOHN DOE".</dd>
+		<dt>lowercase</dt>
+		<dd>Converte todas as letras para minúscula. Por exemplo: "JOHN DOE" transforma-se para"john doe".</dd>
+
+		<dt>none</dt>
+		<dd>Sem trasformações - o texto é apresentado como foi escrito no código <abbr>HTML</abbr>.</dd>
+	</dl>
+
+	<p>Para exemplificar vamos usar uma lista de nomes. Os nomes estão marcados com o elemento <code>&lt;li></code> (item de lista). Vamos supor que desejamos os nomes capitalizados e os cabeçalhos em letras maiúsculas.</p>
+	<p>Ao consultar o exemplo sugerido para este código dê uma olhada no <abbr>HTML</abbr> da página  e observe que os textos no código foram escritos com todas as letras em minúsculas.</p>
+
+	<div class="codebox">
+
+	<pre>
+	<code>
+	h1 {
+		text-transform: <strong>uppercase;</strong>
+	}
+
+	li {
+		text-transform: <strong>capitalize;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson5_ex5.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+
+	</ul>
+
+	<h2>Sumário</h2>
+	<p>Nas três últimas lições aprendemos várias propriedades <abbr>CSS</abbr>, mas há muito mais ainda a aprender com <abbr>CSS</abbr>. Na <a href="lesson6.html">próxima lição</a> veremos os links.</p>
+	
+	
+<hr />
+<p class='previous'><a href='lesson4.html'>&lt;&lt; Lição 4: Fontes</a></p><p class='next'><a href='lesson6.html'>Lição 6: Links >></a></p></div>  		<!-- google_ad_section_end -->
+
+</div>
+</div>
+</body>
+</html>

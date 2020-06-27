@@ -1,0 +1,22 @@
+
+		#content
+		{
+			background-color: *#2E86C1; /*cor de fundo*/
+			height: 600px; /*espaçamento altura*/
+			width: 600px; /*espaçamento comprimento*/
+			padding: 5px; /*2 valores: top rigth / left bottom*/
+			display: : flex;
+			flex-direction: row;
+			/*flex-wrap: wrap;*/
+		}
+
+		.item
+		{
+			background-color: #000; /*cor de fundo*/
+			height: 100; /*espaçamento altura*/
+			width: 50; /*espaçamento comprimento*/
+			font-weight: bold;
+			/*padding: 5px; /*2 valores: top rigth / left bottom*/
+			font-weight: bold;
+			box-shadow: 0px 5px 8px rgba(0, 0, 25, 0.5);
+		}

@@ -1,0 +1,7 @@
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Aula 7-Revisão\bin\Debug\Aula 7-Revisão.exe
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Aula 7-Revisão\bin\Debug\Aula 7-Revisão.pdb
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Aula 7-Revisão\obj\x86\Debug\Aula_7_Revisão.Form1.resources
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Aula 7-Revisão\obj\x86\Debug\Aula_7_Revisão.Properties.Resources.resources
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Aula 7-Revisão\obj\x86\Debug\Aula 7-Revisão.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Aula 7-Revisão\obj\x86\Debug\Aula 7-Revisão.exe
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Aula 7-Revisão\obj\x86\Debug\Aula 7-Revisão.pdb

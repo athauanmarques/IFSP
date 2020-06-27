@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+	<title>Lesson 7: Leave Boring Repetitive Stuff to JavaScript with Loops</title>
+  </head>
+  <body>
+    <h1>Lesson 7: do ... while Loop</h1>
+	<div id="wrapper"></div>
+	
+	<script type="text/javascript">
+	  var container = document.getElementById('wrapper');
+	  var numImages = 0;
+	  
+	  do
+	  {
+		var newImage = '<img src="imagens/loop.gif" alt="#" />' + numImages;
+		container.innerHTML += newImage;
+		numImages ++;
+	  } while (numImages <= 9);
+	
+	</script>
+	
+  </body>
+ </html>

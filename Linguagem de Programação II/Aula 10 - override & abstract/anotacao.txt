@@ -1,0 +1,2 @@
+polimorfismo (pesquisar)
+abstrata é um modelo para outras classes

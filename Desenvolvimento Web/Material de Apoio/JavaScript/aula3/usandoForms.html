@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>	
+	<script type="text/javascript">
+	
+	function validaForm(){
+		if(Cadastro.nome.value == ""){
+		
+		alert("Você precisa informar seu nome!");
+		return(false);
+		
+		}
+		else if(Cadastro.profissao.value ==""){
+			alert("Informe a sua profissão,xara");
+			return(false);
+		}
+			else if(Cadastro.sex[0].check == false && Cadastro.sex[1].check == false ){
+			alert("INão informou o seu sexo");
+			return(false);
+		}
+		return true;
+	}
+	</script>
+</head>	
+	
+	
+
+	<body>
+	<h1>Cadastro de Usuário</h1>
+		<form name="Cadastro" onsubmit="return validaForm();">
+	     nome: <input type="text" name="nome"/>
+		 <br/>
+		 
+		 <input type="radio" name="sex" value="masculino"/>Masculino<br/>
+		<input type="radio" name="sex" value="feminino"/>feminino<br/>
+		
+		<input type="checkbox" name="veiculo" value="Bibicleta"/>Masculino<br/>
+		<input type="checkbox" name="veiculo" value="Carro"/>Carro<br/>
+	
+		 Comentários
+		<TEXTAREA rows="3" cols="50" name="observacoes"></TEXTAREA>
+				 </br>
+				 
+					 <SELECT name="profissao">
+					 <OPTION VALUE=""></OPTION>
+	<OPTION VALUE="estudante">Estudante</OPTION>
+	<OPTION VALUE="professor">Professor</OPTION>
+	<OPTION VALUE="engenheiro">Engenheiro</OPTION>
+	<OPTION VALUE="economista">Economista</OPTION>
+	<OPTION VALUE="medico">Médico</OPTION>		
+	</SELECT>
+</br>
+			<input type="submit" value="Envia"/>
+         <input type="reset" value="Limpa"/>
+		 
+        </form>
+		
+		
+	</body>
+</html>

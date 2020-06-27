@@ -1,0 +1,7 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\formulário\obj\x86\Debug\formulário.frmFormulario.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\formulário\obj\x86\Debug\formulário.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\formulário\obj\x86\Debug\formulário.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\formulário\bin\Debug\formulário.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\formulário\bin\Debug\formulário.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\formulário\obj\x86\Debug\formulário.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\formulário\obj\x86\Debug\formulário.pdb

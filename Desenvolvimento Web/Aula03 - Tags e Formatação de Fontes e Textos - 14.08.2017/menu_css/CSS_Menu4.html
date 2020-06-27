@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br" xml:lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./CSS_Menu5_files/shares.json"></script><script type="text/javascript" src="./CSS_Menu5_files/widgets.js"></script><script type="text/javascript" src="./CSS_Menu5_files/300lo.json"></script>
+	<title>Tutorial CSS - Menu drop down</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Site do Maujor | Tutoriais sobre CSS, XHTML, HTML, acessibilidade e Padrões Web em geral. Traduções de documentos técnicos do W3C e de artigos de consagrados autores que advogam Web Standards.">
+	<meta name="keywords" content="css, folhas estilo cascata, tutoriais, web standards, padrões web, acessibiliadde, tableless">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Mauricio Samy Silva">
+	<link rel="stylesheet" type="text/css" media="screen" href="main20140515.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="branding.css">
+	<link href="prism.css" rel="stylesheet">
+</head>
+
+<body id="ddownmenu" style="padding-top: 31px !important;">
+<div id="wrapper">
+<div id="header">
+<div id="content">
+<h1>Drop-Down menu vertical</h1>
+	<p>Qualquer um que tenha projetado um menu <span xml:lang="en">drop-down</span> estará familiarizado com a grande quantidade de scripts necessários para fazer funcionar estes tipos de menus.  Mas, usando-se uma marcação <abbr title="Hyper Text Markup Language">HTML</abbr> estruturada e regras <abbr title="Cascading Style Sheet">CSS</abbr>   simples é possível criar menus <span xml:lang="en">drop-down</span> de raro apelo visual, fáceis de editar e atualizar e que funcionem perfeitamente em váriados tipos de browsers, inclusive no Internet Explorer.  Melhor ainda, para designers zelosos de seus códigos, nenhum JavaScript é necessário! (Na verdade, um 'pouquinho' de  JavaScript é necessário, mas nada tão complicado, como você deve estar imaginando.)</p>
+	<p class="cf">Aqui temos <a href="http://www.maujor.com/tutorial/ddownmenu/horizontal.html">uma visão antecipada</a> do menu em ação.</p> 
+<div class="clear"></div>
+	<h2>Criando o menu </h2> 
+	<p>O primeiro e mais importante passo na criação do menu é a definição de sua estrutura. A melhor maneira de se criar a estrutura é através de uma lista não ordenada, com cada um dos sub-menus constituidos por outra lista não ordenada dentro da primeira. Parece complicado? É bem direto, observe:</p> 
+
+<pre class="brush: html">&lt;ul&gt; 
+    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt; 
+    &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt; 
+      &lt;ul&gt; 
+        &lt;li&gt;&lt;a href="#"&gt;History&lt;/a&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;a href="#"&gt;Team&lt;/a&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;a href="#"&gt;Offices&lt;/a&gt;&lt;/li&gt; 
+      &lt;/ul&gt; 
+    &lt;/li&gt; 
+    &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt; 
+      &lt;ul&gt; 
+        &lt;li&gt;&lt;a href="#"&gt;Web Design&lt;/a&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;a href="#"&gt;Internet 
+            Marketing&lt;/a&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;a href="#"&gt;Hosting&lt;/a&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;a href="#"&gt;Domain Names&lt;/a&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;a href="#"&gt;Broadband&lt;/a&gt;&lt;/li&gt; 
+      &lt;/ul&gt; 
+    &lt;/li&gt;
+
+    &lt;li&gt;&lt;a href="#"&gt;Contact Us&lt;/a&gt; 
+      &lt;ul&gt; 
+        &lt;li&gt;&lt;a href="#"&gt;United Kingdom&lt;/a&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;a href="#"&gt;France&lt;/a&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;a href="#"&gt;USA&lt;/a&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;a href="#"&gt;Australia&lt;/a&gt;&lt;/li&gt; 
+      &lt;/ul&gt; 
+    &lt;/li&gt; 
+  &lt;/ul&gt;
+</pre> 
+
+				<p>É isso aí: um <abbr>HTML</abbr> simples, ao mesmo tempo acessível e fácil de editar.</p> 
+
+		<h2>Visualmente atraente?</h2> 
+
+				<p>Se você visitou a página contendo a visão antecipada do menu (link lá em cima), visualizou uma entediante lista de itens.  E, eu prometo iremos torná-la mais atrativa! Vamos adicionar-lhe estilos.</p>
+ 
+				<p>Primeiramente removeremos as marcas (<span xml:lang="en">bullets</span>) e a indentação próprias das listas não ordenadas e definiremos uma largura para os itens do menu.</p> 
+
+<pre class="brush: css">ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 150px;
+	}
+</pre> 
+
+				<p>A seguir precisamos posicionar os itens da lista. Felizmente os itens são renderizados um embaixo do outro, por padr&amp;atilde;o, que é justamente o que nós queremos. Contudo vamos definir o posicionamento com o valor <code>relative</code>, porque iremos posicionar os  sub-menus de modo absoluto em relação a eles, itens.</p> 
+
+<pre class="brush: css">ul li {
+	position: relative;
+	}
+</pre> 
+
+				<p>Próximo passo, são os sub-menus. Queremos cada  sub-menu ao lado direito do seu elemento pai (item) quando passarmos o mouse sobre ele, item.</p> 
+
+<pre class="brush: css">li ul {
+	position: absolute;
+	left: 149px;
+	top: 0;
+	display: none;
+	}
+</pre> 
+
+				<p>Usando as propriedades <abbr>CSS</abbr> “left” e “top” posicionamos de modo absoluto cada sub-menu ao lado de seu item pai. Você deve ter notado que eu defini para a propriedade “left” o valor de 149px (1px menor que a largura dos itens do menu), isto faz com que  os  sub-menus transpassem o menu e em consequência não apareça uma borda dupla. (Você verá este efeito adiante.)</p>
+
+				<p>Também definimos  display como “none,” pois não queremos os sub-menus visíveis por padrão.</p> 
+<p>Bem, agora já temos nosso <a href="http://www.maujor.com/tutorial/ddownmenu/framework.html" xml:lang="en">framework</a> no lugar, mas isto ainda está com um visual bem precário. Vamos estilizar nossos links.</p> 
+
+<pre class="brush: css">ul li a {
+	display: block;
+	text-decoration: none;
+	color: #777;
+	background: #fff;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	}
+</pre> 
+
+				<p>Eu estilizei os links de acordo com minhas preferências pessoais, mas é claro, você pode estilizar segundo as suas necessidades. É importante definir display como “block,” para garantirmos que cada link ocupará toda a a largura definida para o item da lista.</p> 
+
+				<p>Bem, as coisas agora parecem <a href="http://www.maujor.com/tutorial/ddownmenu/littlebetter.html">um pouco melhor</a>, muito embora usuários com Internet Explorer não concordem. Lamentavelmente o <abbr title="Internet Explorer">IE</abbr> Win interpreta as quebras de linha entre os itens de lista, como espaços vazios e assim para o <abbr>IE</abbr> os itens do menu não se assentam um sobre o outro. Contudo existe uma maneira de corrigir este  bug do <abbr>IE</abbr>:</p> 
+
+<pre class="brush: css">	/* Fix IE. Hide from IE Mac \*/
+	* html ul li { float: left; }
+	* html ul li a { height: 1%; }
+	/* End */
+</pre>
+
+				<p>Podemos aplicar o <a href="http://www.positioniseverything.net/" xml:lang="en">Holly Hack</a> acima, que esconde estas regras <abbr>CSS</abbr> de todos os browsers menos do <abbr>IE</abbr> Win. Perfeito. Você deve ter notado a declaração <code>height: 1%</code> que foi definida. Lamentavelmente  (outra vez!) a propriedade  float usada no hack faz aparecer outro bug no <abbr>IE</abbr>, que requer a declaração de um valor para  height a fim de fazer os links elementos nível de bloco.</p>
+
+				<p>Você deve ter notado também que se faz necessário 'fechar' o menu, e isto pode ser feito adicionando-se uma borda no fim da lista. E, as regras <abbr>CSS</abbr> para <code>ul</code> são:</p>
+<pre class="brush: css">ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 150px;
+	border-bottom: 1px solid #ccc;
+	}
+</pre>
+
+				<p>Com alguma dose de sorte, todos agora estaremos aptos a visualizar o <a href="http://www.maujor.com/tutorial/ddownmenu/unfunctional.html"> menu não funcionando</a>.</p>
+
+		<h2>Fazendo funcionar </h2>
+
+				<p>Agora o pulo! Precisamos fazer 'aparecer' os sub-menus quando passamos o mouse sobre o item.</p>
+
+<pre class="brush: css">li:hover ul { display: block; }</pre>
+
+				<p>Oba...aqui <a href="http://www.maujor.com/tutorial/ddownmenu/barebones.html">nosso menu</a> em ação.</p>
+
+				<p>“Woo hoo! Funciona!” ouço 1% de vocês exclamar. “Sinistro!”</p>
+
+				<p>OK, OK, droga, o <abbr>IE</abbr>/Win tinha que arruinar tudo e não se comportar em conformidade. O <abbr>IE</abbr>/Win somente suporta a pseudo classe<code>:hover</code> aplicada a um link — assim <code>li:hover</code> que faz os sub-menus aparecer, nada significa para o  <abbr>IE</abbr>.</p>
+
+				<p>Um 'pouquinho' de JavaScript será necessário para trazer o <abbr>IE</abbr> à ação. (line wraps marked <span class="linewrap">»</span> — <em>Ed</em>.):</p>
+
+<pre class="brush: javascript">startList = function() {
+if (document.all&amp;&amp;document.getElementById) {
+navRoot = document.getElementById("nav");
+for (i=0; i&lt;navRoot.childNodes.length; i++) {
+node = navRoot.childNodes[i];
+if (node.nodeName=="LI") {
+node.onmouseover=function() {
+this.className+=" over";
+  }
+  node.onmouseout=function() {
+  this.className=this.className.replace
+	(" over", "");
+   }
+   }
+  }
+ }
+}
+window.onload=startList;
+</pre>
+
+				<p>Muito grato e apreciado à <a href="http://www.alistapart.com/authors/patrickgriffiths/">Patrick Griffiths</a> e <a href="http://www.alistapart.com/articles/dropdowns#danwebb">Dan Webb</a>, que mostraram esta dica em um artigo no , <a href="http://www.alistapart.com/articles/dropdowns/">Suckerfish Dropdowns</a>. Obrigado, rapazes!</p>
+
+				<p>Então, a regra para hover agora é:</p>
+
+<pre class="brush: css">li:hover ul, li.over ul { 
+	display: block; 
+	}
+</pre>
+	
+				<p>Adicionalmente precisamos referenciar o JavaScript com nosso <code>ul</code>, principal, assim:</p>
+
+<pre class="brush: css">	&lt;ul id="nav"&gt;
+</pre>
+
+				<p>Esperamos então, agora com as coisas nos seus lugares, que todos sejamos capazes de visualizar uma versão simples do <a href="http://www.maujor.com/tutorial/ddownmenu/horizontal.html">menu</a> em ação.</p>
+
+<h3><abbr>IE</abbr>5.01 Jumping Menu Bug</h3>
+
+				<p>Quem estiver usando  <abbr>IE</abbr>5.01 em Windows notará que o menu tende a 'saltar' quando passamos o mouse sobre determinados itens. Este problema é facilmente resolvido modificando nosso hack como mostrado a seguir:</p>
+
+<pre class="brush: css">	/* Fix IE. Hide from IE Mac \*/
+	* html ul li { float: left; height: 1%; }
+	* html ul li a { height: 1%; }
+	/* End */
+</pre>
+
+	
+</div>
+</div><!-- Fim da div content -->
+</div> <!--fim da pagebody -->
+<div id="lateral" onclick="void(0)">
+<div id="nav">
+<div id="menu">
+	<h3 class="link-titulo">Menus</h3>
+	<ul class="box">					
+		<li><a href="CSS_Menu1.html" title="Técnicas básicas para construção de menus com uso de CSS puro">Técnicas básicas</a></li>
+		<li><a href="CSS_Menu2.html" title="Links e menus ">Links e menus </a></li>
+		<li><a href="CSS_Menu4.html" title="Menu drop down">Menu drop down</a></li>
+		<li><a href="CSS_Menu6.html" title="Menus JUMP">JUMP Menu</a></li>
+		<li><a href="CSS_Menu7.html" title="Barras de navegação">Barra de navegação</a></li>
+	</ul>
+</div> <!--div menu-->
+</div> <!--div nav -->
+</div> <!--div lateral-->
+</div> <!--div wrapper-->
+</BODY>
+</html>

@@ -1,0 +1,170 @@
+/* Autor: Guilherme C. Oliveira 
+   Pront: 145206-1 
+   Data : 20/03/2016 */
+
+*{
+	margin:0;
+	border:0;
+	padding:0;
+	outline:none;
+	z-index:1;	
+}
+
+body{
+	width:100%;
+	height:100%;
+	overflow-x:hidden;
+}
+
+/*Título*/
+#slider #titulo{
+	width:400px;
+	height:100px;
+	position:fixed;
+	
+	top:30px;
+	left:30px;
+	color:#fff;
+	text-shadow: 0 0 0.2em #000, 0 0 0.2em #000;
+	z-index:5;
+	font:bold 35px 'Century Gothic';
+}
+
+
+/*Slider*/
+#slider{
+	width:600%;
+	height:500px;
+	position:absolute;
+	left:0;
+	top:0;
+	display:inline-flex;
+	text-align: left;
+	background-color:#000;
+	animation:30s move infinite;
+}
+
+.slides{
+	width:8.33%;
+	height:100%;
+	position:relative;
+}
+
+.imagens{
+	width:100%;
+	height:90%;
+	position:absolute;
+	top:0;
+}
+
+.legendas{
+	width:100%;
+	height:10%;
+	position:absolute;
+	bottom:0;
+	
+	color:#fff;
+	text-align:center;
+	font:bold 16px 'Century Gothic';
+}
+
+@keyframes move {
+	0%{left:0%;}
+	16.66%{left:0%;}
+	33.32%{left:-100%;}
+	66.64%{left:-100%;}
+	88.32%{left:-200%;}
+	100%{left:-200%;}
+}
+
+/*Informações e Simulação*/
+#informacoes,#simulacao{
+	width:570px;
+	height:-webkit-calc(100% - 520px);
+	height:-moz-calc(100% - 520px);
+	height:-o-calc(100% - 520px);
+	height:-calc(100% - 520px);
+	position:absolute;
+		
+	top:520px;
+	font:normal 17px 'Century Gothic';
+}
+
+#informacoes{
+	left:-webkit-calc((100% - 1140px)/ 2);
+	left:-moz-calc((100% - 1140px)/ 2);
+	left:-o-calc((100% - 1140px)/ 2);
+	left:-calc((100% - 1140px)/ 2);
+}
+
+#simulacao{
+	right:-webkit-calc((100% - 1140px)/ 2);
+	right:-moz-calc((100% - 1140px)/ 2);
+	right:-o-calc((100% - 1140px)/ 2);
+	right:-calc((100% - 1140px)/ 2);
+}
+
+#informacoes h1,#simulacao h1{
+	font:bold 20px 'Century Gothic';
+	text-align:center;
+	letter-spacing:1.2px;
+	color:#4CBAD8;
+}
+
+hr{
+	width:60%;
+	height:1px;
+	position:relative;
+	margin-left:20%;
+	margin-top:5px;
+	
+	background-color:#000;
+	transition:height 2s ease-in-out;
+}
+
+#informacoes p,#simulacao p{
+	padding-left:30px;
+	padding-top:20px;
+}
+
+#simulacao p{
+	text-align:center;
+}
+
+#informacoes span,#simulacao span{
+	font-weight:bold;
+	color:#4CBAD8;
+}
+/* Simualção */
+#simulacao a{
+	font-weight:bold;
+	color:#4CBAD8;
+	text-decoration:none;
+}
+
+#simulacao a:hover,#simulacao a:focus{
+	text-decoration:underline;
+	-webkit-text-decoration-color:#4CBAD8;
+	-moz-text-decoration-color:#4CBAD8;
+	-o-text-decoration-color:#4CBAD8;
+	-text-decoration-color:#4CBAD8;
+}
+
+#simulacao #botao_simular{
+	width:450px;
+	height:50px;
+	position:relative;
+	
+	padding:10px;
+	margin-left:70px;
+	margin-top:30px;
+	color:#000;
+	font:bold 16px 'Century Gothic';
+	background-color:#4CBAD8
+}
+
+#simulacao #botao_simular:hover,#simulacao #botao_simular:focus{
+	background-color:#A7A7A7;
+	color:#fff;
+	transition:background-color,color, 0.3s ease-in-out;
+}

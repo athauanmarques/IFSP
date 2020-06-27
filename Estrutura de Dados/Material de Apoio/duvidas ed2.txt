@@ -1,0 +1,27 @@
+lista de dúvidas
+-função recursiva 
+-fatorial
+
+fontes:
+
+-teoria
+http://linguagemc.com.br/recursividade-em-c/ ********* fazer o exemplo
+http://www.linhadecodigo.com.br/artigo/3316/recursividade-em-java.aspxn  ********* fazer o exemplo
+https://pt.slideshare.net/adrianots/estrutura-de-dados-em-java-recursividade **********
+http://javafree.uol.com.br/topic-859247-recursao.html *****************
+-código
+https://www.youtube.com/watch?v=yKrZ85aK9_Y ********
+https://www.youtube.com/watch?v=y8ca8EwRPGk ********
+https://www.youtube.com/watch?v=LHp1uvghUi0
+https://www.youtube.com/watch?v=fyZt3klKs2Y
+https://www.youtube.com/watch?v=2lNCLHzTVIE
+
+//fatorial(5) = 5 * fatorial(4)
+//fatorial(4) = 5 * fatorial(3)
+//fatorial(3) = 5 * fatorial(2)
+//fatorial(2) = 5 * fatorial(1)
+//fatorial(1) = 5 * fatorial(0)
+//fatorial(0) = 1
+
+
+1. Escreva um metodo recursivo e estático que calcule e retorne o N-ésimo termo da sequência Fibonacci.Alguns números desta sequencia sãoo:0,1,2,3,5,8,13,21,34,55,89.

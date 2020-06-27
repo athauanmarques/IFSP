@@ -1,0 +1,13 @@
+C:\Users\Aluno\Desktop\ExercFixacao\ExercFixacao\bin\Debug\ExercFixacao.exe
+C:\Users\Aluno\Desktop\ExercFixacao\ExercFixacao\bin\Debug\ExercFixacao.pdb
+C:\Users\Aluno\Desktop\ExercFixacao\ExercFixacao\obj\x86\Debug\ExercFixacao.Exerc1.resources
+C:\Users\Aluno\Desktop\ExercFixacao\ExercFixacao\obj\x86\Debug\ExercFixacao.Form1.resources
+C:\Users\Aluno\Desktop\ExercFixacao\ExercFixacao\obj\x86\Debug\ExercFixacao.Properties.Resources.resources
+C:\Users\Aluno\Desktop\ExercFixacao\ExercFixacao\obj\x86\Debug\ExercFixacao.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\ExercFixacao\ExercFixacao\obj\x86\Debug\ExercFixacao.exe
+C:\Users\Aluno\Desktop\ExercFixacao\ExercFixacao\obj\x86\Debug\ExercFixacao.pdb
+C:\Users\Aluno\Desktop\ExercFixacao\ExercFixacao\obj\x86\Debug\ExercFixacao.Exerc2.resources
+C:\Users\Aluno\Desktop\ExercFixacao\ExercFixacao\obj\x86\Debug\ExercFixacao.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\ExercFixacao\ExercFixacao\obj\x86\Debug\ExercFixacao.Exerc3.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 6 - revisão(Preparação para prova)\correção\ExercFixacao\obj\x86\Debug\ExercFixacao.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 6 - revisão(Preparação para prova)\correção\ExercFixacao\obj\x86\Debug\ExercFixacao.pdb

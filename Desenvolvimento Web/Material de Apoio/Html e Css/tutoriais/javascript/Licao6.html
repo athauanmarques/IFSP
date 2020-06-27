@@ -1,0 +1,395 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="translated-ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lição 6:Comandos de Seleção</title>
+	<link rel="stylesheet" href="default.screen.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="default.print.css" type="text/css" media="print">
+</head>
+<body data-twttr-rendered="true">	
+	  <div id="tutorials">﻿	
+	  <h1>  Lição 6: Comandos de Seleção  </h1>
+	  <p>  Agora que o nosso código JavaScript pode   <strong>  calcular, comparar e determinar as condições verdadeiras e falsas  </strong>   , as coisas começam a ficar mais interessantes.  </p>
+	  <p>  Nesta lição você vai injetar o poder de escolha em seus scripts com   <strong>  declarações condicionais  </strong>   .   Estas declarações permitir que o seu script para avaliar as condições dadas na base dos quais para executar uma ou mais ações.   Mais especificamente, você vai aprender como usar:  </p>
+	  <ul>
+	  <li><strong>  if  </strong> </li>
+	  <li><strong>  if  ...   else  </strong></li>
+	  <li><strong>  if  ...   else if ...   else  </strong></li>
+	  <li><strong>  switch ... case </strong></li>
+	  </ul>
+	  <p>  No processo, você também vai aprender como usar   <strong> atalhos de operadores de atribuição</strong>.</p>
+	  <h2>  if  </h2>
+	  <p>  A   palavra-chave <strong>  if  </strong> é usada em JavaScript para executar um teste básico para a <strong>  verificar a verdade ou falsidade de uma determinada condição e executar um pedaço de código apropriado</strong>.   Aqui está a sua estrutura:  </p>
+	  <div class="codebox">
+	  <pre>	
+	  <span class="code-comments">  // Se a condição em parênteses seja verdadeira  </span>  
+	  
+	  <span class="code-javascript">  if (   <em>  condição  </em>   )  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  // Fazer algumas coisas aqui  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <h3>  Vamos traduzir o código  </h3>
+	
+	  <p>  O   <strong>  if  </strong>   acima diz:  </p>
+	
+	  <blockquote>  
+	
+	    "Hey navegador, se a condição de nos parênteses é verdadeira, execute os comandos entre chaves. Se a condição não for verdadeira, então ignorar tudo e seguir em frente!"  
+	
+	    </blockquote>
+	
+	  <p><strong>  Importante: não esquecer o parêntesis () ou as chaves {}  </strong>   .  </p>
+	
+	  <h2>  if ... else  </h2>
+	
+	  <p>  Use esta instrução para   <strong>  executar um comando se a condição for verdadeira  </strong>   e   <strong>  outro comando se a condição for falsa  </strong>   .   Aqui está a sua estrutura:  </p>
+	
+	  <div class="codebox">
+	  
+	  <pre>	
+	  <span class="code-comments">  // Se a condição for verdadeira  </span>  
+	  
+	  <span class="code-javascript">  if (   <em>  condição  </em>   )  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  // Fazer essas coisas  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	  
+	  <span class="code-comments">  // Caso contrário  </span>  
+	  
+	  <span class="code-javascript">  else  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  // Fazer essas outras coisas  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <h2>  if ...   else if ... else  </h2>
+	
+	  <p>  Use essa declaração se você quiser que o seu código <strong>  avalie várias condições para executar os comandos apropriados</strong>. Aqui está a sua estrutura:  </p>
+	
+	  <div class="codebox">
+	  
+	  <pre>	
+	  <span class="code-comments">  // Se a condição for verdadeira  </span>  
+	  
+	  <span class="code-javascript">  if (   <em>  condição  </em>   )  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  // Fazer essas coisas  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	  
+	  <span class="code-comments">  // Se esta outra condição é verdadeira, em vez  </span>  
+	  
+	  <span class="code-javascript">  else if (   <em>  condição  </em>   )  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  // Fazer essas outras coisas  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	  
+	  <span class="code-comments">  // Se nenhuma das condições acima é verdadeira  </span>  
+	  
+	  <span class="code-javascript">  else  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  // Fazer isso  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <h2>  switch...case  </h2>
+	
+	  <p>  Em alternativa a uma  declaração <em>  if ...   else if ...   else  </em>  você pode usar uma   <em><strong>  instrução switch  </strong></em>.   Aqui está a sua estrutura básica:  </p>
+	
+	  <div class="codebox">
+	
+	  <pre>	
+	  <span class="code-comments">  // Condição para avaliar  </span>  
+	  
+	  <span class="code-javascript">  switch (condição)  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  //Neste caso, fazer  </span>  
+	  
+	  <span class="code-javascript">  case 1:  </span>  
+	  
+	  <span class="code-javascript"><em>  executar um bloco de código  </em></span>  
+	  
+	  <span class="code-comments">  // Parar por aqui: não há necessidade de continuar  </span>  
+	  
+	  <span class="code-javascript">  break;  </span>  
+	  
+	  <span class="code-comments">  // Neste outro caso fazer </span>  
+	  
+	  <span class="code-javascript">  case 2:  </span>  
+	  
+	  <span class="code-javascript"><em>  executar bloco de código 2  </em></span>  
+	  
+	  <span class="code-comments">  // Parar por aqui: não há necessidade de continuar  </span>  
+	  
+	  <span class="code-javascript">  break;  </span>  
+	  
+	  <span class="code-comments">  // Caso nenhuma das condições anteriores  </span>  
+	  
+	  <span class="code-javascript">  default:  </span>  
+	  
+	  <span class="code-javascript"><em>  código para executar quando todas as condições anteriores resultaram false  </em></span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <p>  Prepare um novo documento HTML para conceder descontos em função do preço do produto  </p>
+	
+	  <h2>  Experimente: verifique o preço do produto com   <em>  if </em></h2>
+	
+	  <div class="codebox">
+	
+	  <pre>	    
+	  &lt;! DOCTYPE html&gt;      
+	  &lt;html&gt;      
+	  &lt;head&gt;      
+	  &lt;title&gt; Lição 6: Comandos de seleção &lt;/title&gt;      
+	  &lt;/ Head&gt;      
+	  &lt;body&gt;      
+	  &lt;h1&gt; Lição 6: if &lt;/ h1&gt;    
+	      
+	  &lt;script type="text/javascript"&gt;    
+	  
+	  <span class="code-comments">  Valor do desconto // loja 5% em um var  </span>  
+	  
+	  <span class="code-javascript">  var discountRate = 0,05;  </span>  
+	  
+	  <span class="code-comments">  / Loja / preço de 1 maçã em um var com um valor de 2  </span>  
+	  
+	  <span class="code-javascript">  var applePrice = 2;  </span>  
+	  
+	  <span class="code-comments">  / Loja / valor de quantidade em um var  </span>  
+	  
+	  <span class="code-javascript">  var quantidade = 5;  </span>  
+	  
+	  <span class="code-comments">  // Declarar uma var para o valor total de desconto  </span>  
+	  
+	  <span class="code-comments">  // Porque não sabemos o valor que inicializá-lo com 0  </span>  
+	  
+	  <span class="code-javascript">  var discountedTotal = 0;  </span>  
+	  
+	  <span class="code-comments">  // Armazenar o valor do total em um var  </span>  
+	  
+	  <span class="code-javascript">  var total = quantidade * applePrice;  </span>  
+	  
+	  <span class="code-comments">  // Use   <em>  if  </em>   para verificar o total tem direito a um desconto  </span>  
+	  
+	  <span class="code-comments">  // Se o total for maior ou igual a 10 ele tem direito  </span>  
+	  
+	  <span class="code-javascript">  if (total&gt; = 10)  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-javascript">  alert ("Você tem direito a um desconto!");  </span>  
+	  
+	  <span class="code-comments">  // Aplica desconto de 5% sobre o total  </span>  
+	  
+	  <span class="code-javascript">  discountedTotal  = total - (discountRate * total);  </span>  
+	  
+	  <span class="code-comments">  // Criar uma var para armazenar texto a ser exibido para o usuário  </span>  
+	  
+	  <span class="code-javascript">  var infotext = "Você vai pagar pelas maçãs US $" + discountedTotal;  </span>  
+	  
+	  <span class="code-javascript">  infotext += "em vez de US $" + total;  </span>  
+	  	  
+	  <span class="code-comments">  // Exibe mensagem ao usuário  </span>  
+		  
+	  <span class="code-javascript">  document.write (infotext);  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	      
+	  &lt;/ Script&gt;    
+		    
+	  &lt;/ Body&gt;      
+	  &lt;/ Html&gt;    
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <p>  Salve o seu trabalho, execute a página no navegador, e desfrute o seu desconto!  </p>
+	
+	  <h3>  Operadores de atalho  </h3>
+	
+	  <p>  Quando você adicionar vários valores a uma variável, um operador de atalho é muito útil.  </p>
+	
+	  <p>  A expressão   <strong>  x += 2  </strong>   é o mesmo que   <strong>  x = x + 2  </strong>   .  </p>
+	
+	  <p>  Como se pode ver, o valor de x é tomado como o ponto de partida, 2 é adicionado a ele, e o valor resultante é transferido para x.   Usar um operador de atalho poupa de ter que redigitar x.  </p>
+	
+	  <p>  Quando aplicado ao trecho de código acima, a expressão   <strong>  infotext += "em vez de US $"  </strong>   é o mesmo que   <strong>  infotext = infotext + "em vez de US $"  </strong>   .   Se nós simplesmente usar um operador de atribuição (=), neste caso, o texto já armazenado na infotext serão eliminados pelo novo valor.   Mas este não é o que queremos neste script.  </p>
+	
+	  <p>  Atalhos úteis também estão disponíveis para todos os outros operadores matemáticos:  </p>
+	
+	  <ul>
+	
+	  <li>  -=  </li>
+	
+	  <li>  *=  </li>
+	
+	  <li>  /=  </li>
+	
+	  <li>  %=  </li>
+	
+	  </ul>
+	
+	  <h2>  Experimente: verifique o preço do produto com   <em>  if ... else  </em></h2>
+	
+	  <p>  Logo após a chave de fechamento   <strong>  }  </strong>   do exemplo anterior, adicionar o seguinte trecho.  </p>
+	
+	  <div class="codebox">
+	
+	  <pre>	
+	  <span class="code-javascript">  else  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-javascript">  alert ("Desculpe, você não tem direito a um desconto");  </span>  
+	  
+	  <span class="code-javascript">  var infotext = "Suas deliciosas maçãs custam US $" + total;  </span>  
+	  
+	  <span class="code-javascript">  document.write (infotext);  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	  
+	  </pre>
+		
+	  </div>
+	  <p>  Altere o valor da <em>variável quantidade para ser inferior a 5  </em>, salve seu trabalho e execute a página no navegador.   Agora, JavaScript deve dar-lhe a notícia não tão boa que você não tem direito a um desconto.  </p>
+	  <h2>  Experimente: verifique o preço do produto com   <em>  if...   else if .. else  </em></h2>
+	  <p>  Ainda usando o exemplo anterior, após o bloco de comandos do <em>if {...}</em> e antes do <em>else {..}</em>   , inserir a sequência de comandos abaixo. </p>
+	  <div class="codebox">
+	
+	  <pre>	
+	  <span class="code-comments">  // Se o total é igual a 8  </span>  
+	  
+	  <span class="code-javascript">  else if (total == 8)  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-javascript">  alert ("Basta adicionar mais um par de maçãs e obter o seu desconto!");  </span>  
+	  
+	  <span class="code-javascript">  var infotext = "Seja um esporte, comprar um pouco mais e pagar um pouco menos";  </span>  
+	  
+	  <span class="code-javascript">  document.write (infotext);  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <p>  Altere a   <em>  variável quantidade a ser 4  </em>   , salvar o seu trabalho e executar a página no navegador. </p>
+	
+	  <p>  Seu código pode detectar se a compra   <strong>  se qualifica para um desconto  </strong>   , se ele   <strong>  quase se qualifica para um desconto  </strong>   , e, finalmente, se o   <strong>  desconto não é aplicável por um tiro longo </strong>. Em cada caso, o código pode tomar medidas adequadas.  </p>
+	
+	  <p>  Divirta-se praticando com   <strong>  if ...   else if ...   else  </strong>, e   <strong>  operadores de atalho  </strong>   .  </p>
+	
+	  <h2>  Experimente: dias da semana com   <em>  switch </em></h2>
+	
+	  <p>  Agora pegue um documento HTML e digite o seguinte bloco de código:  </p>
+	
+	  <div class="codebox">
+	
+	  <pre>	    
+	  &lt;! DOCTYPE html&gt;      
+	  &lt;html&gt;      
+	  &lt;head&gt;      
+	  &lt;title&gt; Lição 6: Comandos de seleção&lt;/title&gt;      
+	  &lt;/ Head&gt;      
+	  &lt;body&gt;      
+	  &lt;h1&gt; Lição 6: switch &lt;/ h1&gt;    
+	      
+	  &lt;script type="text/javascript"&gt;    
+	  
+	  <span class="code-comments">  // Escolher um dia da semana e armazená-lo em um var  </span>  
+	  
+	  <span class="code-javascript">  var hoje = "Sexta";  </span>  
+	  
+	  <span class="code-comments">  // Verificar o valor de hoje e agir em conformidade  </span>  
+	  
+	  <span class="code-javascript">  switch (hoje)  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  // Valor em caso corresponde ao sábado ou ao domingo fazer isso:  </span>  
+	  
+	  <span class="code-javascript">  case "Saturday":  </span>  
+		  
+		<span class="code-javascript">  case "Sunday":  </span>  
+	  
+	  <span class="code-javascript">  alert ("É o fim de semana!!!");  </span>  
+	  
+	  <span class="code-javascript">  document.write ("Hoje é" + hoje);  </span>  
+	  
+	  <span class="code-comments">  // Não há necessidade de continuar:  </span>  
+	  
+	  <span class="code-javascript">  break;  </span>  
+	  
+	  <span class="code-comments">  // Em caso de valor corresponde a sexta-feira </span>  
+	  
+	  <span class="code-javascript">  case "Friday":  </span>  
+	  
+	  <span class="code-javascript">  alert ("Quase fim de semana!");  </span>  
+	  
+	  <span class="code-javascript">  document.write ("Hoje é" + hoje);  </span>  
+	  
+	  <span class="code-comments">  // Não há necessidade de continuar  </span>  
+	  
+	  <span class="code-javascript">  break;  </span>  
+	  
+	  <span class="code-comments">  // Em todos os outros casos fazer isso em vez  </span>  
+	  
+	  <span class="code-javascript">  default:  </span>  
+	  
+	  <span class="code-javascript">  alert ("Apenas um dia de semana comum: manter o bom trabalho");  </span>  
+	  
+	  <span class="code-javascript">  document.write ("Hoje é" + hoje);  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	    
+	  &lt;/ Script&gt;    
+		    
+	  &lt;/ Body&gt;      
+	  &lt;/ Html&gt;    
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <p>  Salve seu trabalho e execute a página no navegador. Teste o script para outros dias da semana.  </p>
+	<hr>
+	</div>
+</body>
+</html>

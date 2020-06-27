@@ -1,0 +1,19 @@
+package Exercicio1;
+
+import javax.swing.JOptionPane;
+
+public class exe1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String nome1 = JOptionPane.showInputDialog(null, "Digite o primeiro nome: ");
+		String nome2 = JOptionPane.showInputDialog(null, "Digite o segundo nome: ");
+		String nome3 = JOptionPane.showInputDialog(null, "Digite o terceiro nome: ");
+		
+		JOptionPane.showMessageDialog(null, "seu nome é: " + nome1+" "+nome2);
+		JOptionPane.showMessageDialog(null, "Útimo nome é: " + nome3);
+		
+	}
+
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 7: Identificando e agrupando elementos (class and id) - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 7: Identificando e agrupando elementos (class and id) - HTML.net" />
+	<meta name="description" content="Lição 7: Identificando e agrupando elementos (class and id) - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 7: Identificando e agrupando elementos (class and id) - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/css/lesson7.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+</head>
+
+<body>	
+	<div id="main">
+	<div id="content">
+	<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>CSS</a> &#187; Lição 7: Identificando e agrupando elementos (class and id)</div>
+	<div id='tutorials'>	<h1>Lição 7: Identificando e agrupando elementos (classes e id)</h1>
+	<p>Em alguns casos você deseja aplicar estilos a um elemento ou grupo de elementos em particular. Nesta lição veremos como usar <code>class</code> e <code>id</code> para estilizar elementos.</p>
+
+	<p>Como definir uma cor para um determinado cabeçalho, diferente da cor usada para os demais cabeçalhos do website? Como agrupar links em diferentes categorias e estilizar cada categoria diferentemente? Estas são algumas das questões que iremos responder nesta lição.</p>
+	<h2>Agrupando elementos com uso de classe</h2>
+	<p>Vamos supor que temos duas listas de links para diferentes tipos de uvas usadas na produção de vinho branco e de vinho tinto. O código <abbr>HTML</abbr> conforme mostrado abaixo:</p>
+	<div class="codebox">
+	  <pre><code>
+	&lt;p>Uvas para vinho branco:&lt;/p>
+	&lt;ul>
+	&lt;li>&lt;a href="ri.htm">Riesling&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="ch.htm">Chardonnay&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="pb.htm">Pinot Blanc&lt;/a>&lt;/li>
+	&lt;/ul>
+
+	&lt;p>Uvas para vinho tinto:&lt;/p>
+	&lt;ul>
+	&lt;li>&lt;a href="cs.htm">Cabernet Sauvignon&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="me.htm">Merlot&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="pn.htm">Pinot Noir&lt;/a>&lt;/li>
+	&lt;/ul>
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson7_ex1.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<p>Queremos que os links para vinho branco sejam na cor amarela, para vinho tinto na cor vermelha e os demais links na página  permaneçam na cor azul.</p>
+	<p>Para conseguir isto, dividimos os links em duas categorias. Isto é feito atribuindo uma classe para cada link, usando o atributo <code>class</code>.</p>
+	<p>Vamos especificar esta classe no exemplo a seguir:</p>
+	<div class="codebox">
+	  <pre><code>
+	&lt;p>Uvas para vinho branco:&lt;/p>
+	&lt;ul>
+	&lt;li>&lt;a href="ri.htm" <strong>class="whitewine"</strong>>Riesling&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="ch.htm" <strong>class="whitewine"</strong>>Chardonnay&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="pb.htm" <strong>class="whitewine"</strong>>Pinot Blanc&lt;/a>&lt;/li>
+	&lt;/ul>
+
+	&lt;p>Uvas para vinho tinto:&lt;/p>
+	&lt;ul>
+	&lt;li>&lt;a href="cs.htm" <strong>class="redwine"</strong>>Cabernet Sauvignon&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="me.htm" <strong>class="redwine"</strong>>Merlot&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="pn.htm" <strong>class="redwine"</strong>>Pinot Noir&lt;/a>&lt;/li>
+	&lt;/ul>
+	</code>
+	</pre>
+	</div>
+	<p>Agora podemos definir propriedades específicas para links pertencentes as classes whitewine e redwine, respectivamente. </p>
+	<div class="codebox">
+	  <pre><code>
+	a {
+		color: blue;
+	}
+
+	a.<strong>whitewine</strong> {
+		color: #FFBB00;
+	}
+
+	a.<strong>redwine</strong> {
+		color: #800000;
+	}
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson7_ex2.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<p>Como mostrado no exemplo acima,  pode-se definir propriedades para estilização dos elementos pertencentes a uma determinada classe usando um <strong>.nomedaclasse</strong> na folha de estilos do documento.</p>
+	<h2>Identificando um elemento com uso de id</h2>
+	<p>Além de agrupar  elementos podemos querer atribuir identificação a um único elemento. Isto é feito usando o atributo <code>id</code>.</p>
+	<p>O que há de especial no atributo <code>id</code> é que não poderá existir dois ou mais elementos com a mesma <code>id</code>, ou seja em um documento apenas um e somente um elemento poderá ter uma determinada <code>id</code>. Cada <code>id</code> é única. Para casos em que haja necessidade de mais de um elemento com a mesma identificação usamos o atributo <code>class</code>. A seguir um exemplo de possível uso de <code>id</code>:</p>
+	<div class="codebox">
+	  <pre><code>
+	&lt;h1>Capítulo 1&lt;/h1>
+	...
+	&lt;h2>Capítulo 1.1&lt;/h2>
+	...
+	&lt;h2>Capítulo 1.2&lt;/h2>
+	...
+	&lt;h1>Capítulo 2&lt;/h1>
+	...
+	&lt;h2>Capítulo 2.1&lt;/h2>
+	...
+	&lt;h3>Capítulo 2.1.2&lt;/h3>
+	...
+	</code>
+	</pre>
+	</div>
+	<p>O exemplo acima  simula os cabeçalhos de um documento estruturado em capítulos e parágrafos. É comum atribuir uma <code>id</code> para cada capítulo como mostrado a seguir:</p>
+	<div class="codebox">
+	  <pre><code>
+	&lt;h1 <strong>id="c1"</strong>>Capítulo 1&lt;/h1>
+	...
+	&lt;h2 <strong>id="c1-1"</strong>>Capítulo 1.1&lt;/h2>
+	...
+	&lt;h2 <strong>id="c1-2"</strong>>Capítulo 1.2&lt;/h2>
+	...
+	&lt;h1 <strong>id="c2"</strong>>Capítulo 2&lt;/h1>
+	...
+	&lt;h2 <strong>id="c2-1"</strong>>CCapítulo 2.1&lt;/h2>
+	...
+	&lt;h3 <strong>id="c2-1-2"</strong>>Capítulo 2.1.2&lt;/h3>
+	...
+	</code>
+	</pre>
+	</div>
+	<p>Vamos supor que o cabeçalho do capítulo   1.2 deva ser na cor vermelha. Isto pode ser feito conforme mostrado na folha de estilo a seguir:</p>
+	<div class="codebox">
+	  <pre><code>
+	<strong>#c1-2</strong> {
+		color: red;
+	}
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson7_ex3.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<p>Como mostrado no exemplo acima, podemos definir propriedades para um elemento específico usando um seletor #id na folha de estilos para o documento.</p>
+	<h2>Sumário</h2>
+	<p>Nesta lição você aprendeu que com o uso dos seletores <code>class</code> e <code>id</code>, é possível definir propriedades <abbr>CSS</abbr> para elementos específicos.  </p>
+	<p> Na <a href="lesson8.html">próxima lição</a> trataremos de dois elementos do <abbr>HTML</abbr> largamente usados com as <abbr>CSS</abbr>: <code>&lt;span></code> e <code>&lt;div></code>.</p>	
+	<hr />
+	<p class='previous'><a href='lesson6.html'>&lt;&lt; Lição 6: Links</a></p><p class='next'><a href='lesson8.html'>Lição 8: Agrupando elementos (span and div) >></a></p></div>  		<!-- google_ad_section_end -->
+
+	</div>
+	</div>
+</body>
+</html>

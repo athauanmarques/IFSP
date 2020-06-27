@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 8: Agrupando elementos (span and div) - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 8: Agrupando elementos (span and div) - HTML.net" />
+	<meta name="description" content="Lição 8: Agrupando elementos (span and div) - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 8: Agrupando elementos (span and div) - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/css/lesson8.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+	
+</head>
+
+<body>	
+	<div id="main">
+	<div id="content">
+	<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>CSS</a> &#187; Lição 8: Agrupando elementos (span and div)</div>
+	<div id='tutorials'>	<h1>Lição 8: Agrupando elementos (span e div)</h1>
+	<p>Os elementos &lt;span> e &lt;div> são usados para agrupar e estruturar um documento e são freqüentemente usados em conjunto com os atributos  class e id.</p>
+	<p>Nesta lição veremos com detalhes o uso dos elementos <abbr>HTML</abbr> &lt;span> e &lt;div> no que se refere a sua vital importância para as  <abbr>CSS</abbr>.</p>
+	<ul>
+	  <li>Agrupando com <code>&lt;span></code></li>
+	  <li>Agrupando com<code>&lt;div></code></li>
+	</ul>
+	<h2>Agrupando com &lt;span></h2>
+	<p>O elemento <code>&lt;span></code> é um elemento neutro e que não adiciona qualquer tipo de semântica ao documento. Contudo, <code>&lt;span></code> pode ser usado pelas <abbr>CSS</abbr> para adicionar efeitos visuais a partes específicas do texto no seu documento.</p>
+	<p>Um exemplo deste uso é mostrado na citação abaixo de autoria de Benjamin Franklin:</p>
+	<div class="codebox">
+	  <pre><code>
+	&lt;p>Dormir cedo e acordar cedo faz o homem<br />saudável, rico e sábio.&lt;/p>
+	</code>
+	</pre>
+	</div>
+	<p>Vamos supor que queremos enfatizar na cor vermelha os benefícios apontados por 
+	 Mr. Franklin pelo fato de não se passar o dia dormindo. Para isto marcamos os benefícios com <code>&lt;span></code>. A cada <code>span</code> atribuímos uma <code>class</code>, e estilizamos na folha de estilos:</p>
+	<div class="codebox">
+	  <pre><code>
+	&lt;p>Dormir cedo e acordar cedo faz o homem<br /><strong>&lt;span class="benefit">saudável&lt;/span></strong>,<br /><strong>&lt;span class="benefit">rico&lt;/span></strong><br />e<strong> &lt;span class="benefit">sábio&lt;/span></strong>.&lt;/p>
+	</code>
+	</pre>
+	</div>
+	<p>A folha de estilos:</p>
+	<div class="codebox">
+	  <pre><code>
+	<strong>span.benefit</strong> {
+		color:red;
+	}
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson8_ex1.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<p>É claro que você pode usar  id para estilizar o elemento <code>&lt;span></code>. Mas, como você deve estar lembrado, deverá usar uma única id para cada um os três elementos <code>&lt;span>,</code>  conforme foi explicado na lição anterior.</p>
+	<h2>Agrupando com &lt;div></h2>
+	<p>Enquanto <code>&lt;span></code> é usado dentro de um elemento nível de bloco como vimos no exemplo anterior,<code> &lt;div></code> é usado para agrupar um ou mais elementos nível de bloco.</p>
+	<p>Diferenças à parte, o agrupamento  com <code>&lt;div></code> funciona mais ou menos da mesma maneira. Vamos ver um exemplo tomando  duas listas de presidentes dos Estados Unidos agrupados segundo suas filiações políticas:</p>
+	<div class="codebox">
+	  <pre><code>
+	<strong>&lt;div id="democrats"></strong>
+	&lt;ul>
+	&lt;li>Franklin D. Roosevelt&lt;/li>
+	&lt;li>Harry S. Truman&lt;/li>
+	&lt;li>John F. Kennedy&lt;/li>
+	&lt;li>Lyndon B. Johnson&lt;/li>
+	&lt;li>Jimmy Carter&lt;/li>
+	&lt;li>Bill Clinton&lt;/li>
+	&lt;/ul>
+	&lt;/div>
+
+	<strong>&lt;div id="republicans"></strong>
+	&lt;ul>
+	&lt;li>Dwight D. Eisenhower&lt;/li>
+	&lt;li>Richard Nixon&lt;/li>
+	&lt;li>Gerald Ford&lt;/li>
+	&lt;li>Ronald Reagan&lt;/li>
+	&lt;li>George Bush&lt;/li>
+	&lt;li>George W. Bush&lt;/li>
+	&lt;/ul>
+	&lt;/div>
+	</code>
+	</pre>
+	</div>
+	<p>E na folha de estilos, podemos agrupar a estilização da mesma maneira como fizemos no exemplo acima:</p>
+	<div class="codebox">
+	  <pre><code>
+	<strong>#democrats</strong> {
+		background:blue;
+	}
+
+	<strong>#republicans</strong> {
+		background:red;
+	}
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson8_ex2.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<p>Nos exemplos mostrados acima usamos somente  <code>&lt;div></code> e <code>&lt;span></code> para simples estilizações, tais como cores de textos e de fundos. Contudos estes dois elementos possibilitam estilizações bem mais avançadas como veremos adiante nas lições deste tutorial.</p>
+	<h2>Sumário</h2>
+	<p> Na <a href="lesson7.html"> lição7</a> e 8 você aprendeu seletores <code>id</code> e <code>class </code>e elementos <code>&lt;span></code> e <code>&lt;div></code>.</p>
+	<p>Você agora já deve estar apto a agrupar e identificar razoalvelmente todas as partes de um documento, o que é um grande passo na direção de tornar-se um mestre nas CSS. Na <a href="lesson9.html">lição 9</a> veremos o box model.</p>	
+	
+<hr />
+<hr />
+<p class='previous'><a href='lesson7.html'>&lt;&lt; Lição 7: Identificando e agrupando elementos (class and id)</a></p><p class='next'><a href='lesson9.html'>Lição 9: O box model >></a></p></div>  		<!-- google_ad_section_end -->
+
+	</div>
+	</div>
+</script>
+</body>
+</html>

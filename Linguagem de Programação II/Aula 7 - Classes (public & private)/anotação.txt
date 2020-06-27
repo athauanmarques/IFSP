@@ -1,0 +1,33 @@
+
+
+class
+
+condição-tipo-nome
+
+public class Cachorro
+{
+
+
+}
+
+classe recebe atributo(variavel)
+
+exemplo;
+public class Cachorro
+{
+
+private int IdadeCao;
+}
+
+______________
+
+Métoro
+
+exemplo
+
+public void Laitr() // void não retorna valor, no void outros tipos como double, int, char, datetime etc..
+{
+
+
+
+}

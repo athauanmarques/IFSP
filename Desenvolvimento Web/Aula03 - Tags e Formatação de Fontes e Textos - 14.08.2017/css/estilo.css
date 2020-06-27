@@ -1,0 +1,38 @@
+#content {
+	background-color: #2E86C1; 
+	height: 600px;			   
+	width: 600px;			   
+	padding: 5px;			   
+	display: flex;	
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+/* propriedades para formatação da classe item */
+.item {
+	height: 100px; 			   /* propriedade de altura dos filhos article */
+	width: 50px;			   /* propriedade de largura dos filhos article */
+	color: #000;			   /* propriedade de cor de texto */
+	font-weight: bold;		   /* propriedade de estilo negrito para o texto  */		
+	box-shadow: 0px 5px 8px rgba(0, 0, 25, 0.5); /* propriedade de sombra para os filhos article  */	
+	background-color: #fff;	   /* propriedade de cor de fundo */	
+	margin: 10px;			   /* propriedade de margem aplicada a todos os lados do elemento */	
+    flex-basis: 80px;
+}	
+
+.item:nth-child(1) {
+	order: 4;
+	flex-grow: 2;
+}
+.item:nth-child(2) {
+	order: 3;
+}
+.item:nth-child(3) {
+	order: 1;
+}
+.item:nth-child(4) {
+	order: 2;
+}
+
+

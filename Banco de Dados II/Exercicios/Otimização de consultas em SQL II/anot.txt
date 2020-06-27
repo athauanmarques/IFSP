@@ -1,0 +1,13 @@
+índeces
+
+são arquivos auxiliares
+
+vantagens:
+-tabela de tem 2 colunas
+-existem índeces ordenados e não ordenados
+-tabela hasd
+-criar indeces aumenta a quantidade de armazenamento
+
+utiliza indeces nas clausula where, order by e join (só faz join quando á relacionamento)
+
+-não é bom se utilizar indeces para todas as tabelas

@@ -1,0 +1,402 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="translated-ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lição 5: Operadores</title>
+	<link rel="stylesheet" href="default.screen.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="default.print.css" type="text/css" media="print">
+</head>
+<body>	
+	<a href="index.html">JavaScript</a>»Lição 5: Operadores
+	<div id="tutorials">﻿
+		<h1>  Lição 5: Operadores  </h1>
+		<p>  Na lição anterior você já empregou um   <strong>  operador de atribuição (=)  </strong>   e um   <strong>  operador aritmético  </strong>   , especificamente, o   <strong>  operador de multiplicação (*)  </strong>   , para escrever um roteiro básico JavaScript carrinho de compras.  </p>
+		<p>  Podemos facilmente ver que para fazer algo útil com JavaScript, precisamos de uma maneira de   <strong>  manipular  </strong>   dados e variáveis.   Fazemos isso com   <strong>  operadores  </strong>   .  </p>
+		<p>  Nesta lição você vai aprender como usar:  </p>
+		<ul>
+			<li><strong>  operadores aritméticos  </strong>   ;  </li>
+			<li><strong>  o sinal + para concatenar texto (operador de concatenação)  </strong>   ;  </li>
+			<li><strong>  operadores de comparação  </strong>   ;  </li>
+			<li><strong>  operadores lógicos  </strong>   .  </li>
+		</ul>
+	  <h2>  Os operadores aritméticos  </h2>
+	  <p>  Como você deve ter adivinhado,   <strong>  operadores aritméticos  </strong>   são usados ​​para   <strong>  realizar operações aritméticas entre os valores ou variáveis  </strong>   ​​.   Aqui está uma tabela para sua referência.  </p>
+	  <p>  Se   <strong>  x = 20, y = 5, e z = resultado  </strong>   , temos:  </p>
+	  <table class="javascript-table">
+	  
+		<tbody><tr>
+		
+		  <th>  Operador  </th>
+		
+		  <th>  Exemplo JavaScript   </th>
+		
+		  <th>  Resultado  </th>
+		
+		</tr>
+		
+		<tr>
+		
+		  <td>  Adição: +  </td>
+		
+		  <td>  z = x + y  </td>
+		
+		  <td>  z = 25  </td>
+		
+		</tr>
+		
+		<tr class="alt">
+		
+		  <td>  Subtração: -  </td>
+		
+		  <td>  z = x - y  </td>
+		
+		  <td>  z = 15  </td>
+		
+		</tr>
+		
+		<tr>
+		
+		  <td>  Multiplicação: *  </td>
+		  
+		  <td>  z = x * y  </td>
+		  
+		  <td>  z = 100  </td>
+		
+		</tr>
+		
+		<tr class="alt">
+		
+		  <td>  Divisão: /  </td>
+		
+		  <td>  z = x / y  </td>
+		
+		  <td>  z = 4  </td>
+		
+		</tr>
+		
+		<tr>
+		
+		  <td>  Módulo:%  </td>
+		  
+		  <td>  z = x / y  </td>
+		  
+		  <td>  z = 0  </td>
+		
+		</tr>
+		
+		<tr class="alt">
+		
+		  <td>  Incremento: + +  </td>
+		
+		  <td>  z = + + x  </td>
+		
+		  <td>  z = 21  </td>
+		
+		</tr>
+		
+		<tr>
+		
+		  <td>  Decremento -  </td>
+		  
+		  <td>  z = - x  </td>
+		  
+		  <td>  z = 19  </td>
+		
+		</tr>
+		
+	  </tbody></table>
+	  
+	  <p>  Eu acho que você está bastante familiarizado com a maioria dos operadores aritméticos.   Os menos comuns são o <strong>módulo (%)  </strong>, o <strong>incremento (++)</strong> , e o <strong>decremento (--)</strong>.</p>
+	  
+	  <p><strong>  Módulo:  </strong>   o   <strong>  resto </strong>  da divisão.  </p>
+	  
+	  <p><strong>  Incremento:  </strong> consiste em adicionar 1 a uma variável.  </p>
+	  
+	  <p><strong>  Diminuir:  </strong> consiste em subtrair 1 de uma variável.  </p>
+	  
+	  <p>  Preparar um novo documento HTML como o mostrado abaixo:  </p>
+	  
+	  <h3>  Experimente: adicionar 2 valores e imprimir o resultado  </h3>
+	  
+	  <div class="codebox">
+	  
+	  <pre>	      
+	  &lt;! DOCTYPE html&gt;      
+	  &lt;html&gt;      
+	  &lt;head&gt;      
+	  &lt;title&gt; Lição 5: Operadores e comparações &lt;/ title&gt;      
+	  &lt;/ Head&gt;      
+	  &lt;body&gt;      
+	  &lt;h1&gt; Lição 5: Operadores e comparações &lt;/ h1&gt;    
+	      
+	  &lt;script type="text/javascript"&gt;    
+	    
+	  <span class="code-comments">  // Cria e inicializa suas variáveis  </span>  
+	    
+	  <span class="code-javascript">  var resultado = 0;  </span>  
+	    
+	  <span class="code-javascript">  var firstNum = 20;  </span>  
+	    
+	  <span class="code-javascript">  var secondNum = 5;  </span>  
+	    
+	  <span class="code-comments">  / Adição /: resultado = 25  </span>  
+	    
+	  <span class="code-javascript">  resultado = firstNum   <strong>  +  </strong>   secondNum;  </span>  
+	    
+	  <span class="code-comments">  // Escreve o resultado na página  </span>  
+	    
+	  <span class="code-javascript">  document.write (result);  </span>  
+	      
+	  &lt;/ Script&gt;    
+		    
+	  &lt;/ Body&gt;      
+	  &lt;/ Html&gt;    
+	    
+	  </pre>
+	   
+	  </div>
+	  
+	  <p>  Nada de novo aqui, exceto para o comando JavaScript   <strong>  document.write ()  </strong>   .   Este comando é traduzido pelo interpretador de JavaScript, dizendo:  </p>
+	  
+	  <blockquote>  
+	  
+	  "Hey browser, obter o valor entre colchetes e imprimi-lo no documento HTML!"
+	  
+	    </blockquote>
+	  
+	  <p>  No nosso caso, o valor é uma variável, portanto, não use aspas ('') ​​para delimitá-la.   Se você deseja imprimir um texto em vez disso, o comando deve ser:   <strong>  document.write ('algum texto.');  </strong>   .   É tudo muito parecido com o alert () de comando que você está usando até agora.  </p>
+	  
+	  <p>  Agora   <strong>  experimente mudar o código  </strong>   do exemplo acima para experimentar todos os outros operadores aritméticos e imprimir o resultado na página.  </p>
+	  
+	  <h2>  Operador de concatenação  </h2>
+	  
+	  <p>  Se você quiser adicionar pedaços de texto para formar uma longa linha de texto, use o sinal +.  </p>
+	  
+	  <h3>  Experimente: concatenar textos e imprimir uma mensagem na página  </h3>
+	  
+	  <div class="codebox">
+	  
+	  <pre>	      
+	  &lt;! DOCTYPE html&gt;      
+	  &lt;html&gt;      
+	  &lt;head&gt;      
+	  &lt;title&gt; Lição 5: Operadores e comparações &lt;/ title&gt;      
+	  &lt;/ Head&gt;      
+	  &lt;body&gt;      
+	  &lt;h1&gt; Lição 5: Operadores e comparações &lt;/ h1&gt;    
+	      
+	  &lt;script type="text/javascript"&gt;    
+	    
+	  <span class="code-comments">  // Cria e inicializa suas variáveis  </span>  
+	  <span class="code-javascript">  var firstText = "Olá";  </span>  
+	  <span class="code-javascript">  var secondText = "Mundo!";  </span>  
+	  <span class="code-comments">  // Valor resultante da atribuição é Olá Mundo!  </span>  
+	  <span class="code-javascript">  var mensagem = firstText + '' + secondText;  </span>  
+	  <span class="code-comments">  // Escreve o resultado na página  </span>  
+	  <span class="code-javascript">  document.write (mensagem);  </span>  
+	      
+	  &lt;/ Script&gt;    
+		    
+	  &lt;/ Body&gt;      
+	  &lt;/ Html&gt;    
+	    
+	  </pre>
+	   
+	  </div>
+	  <p>  Se você digitou o código corretamente, você deve ver o famoso <em>Olá Mundo!</em> na página web.</p>
+	  <h2>  Os operadores de comparação  </h2>
+	  <p>  Muitas vezes você precisa comparar diferentes valores e fazer o seu programa JavaScript tomar decisões em função destas comparações.  </p>  
+	  <p>  Por exemplo, você está codificando um script JavaScript para um aplicativo de carrinho de compras.  Se o total a ser pago for <strong>maior ou igual a</strong>   50 dólares aplicar um desconto de 5%, se for <strong>menor ou igual a  </strong>50 dólares não se aplica 5% de desconto .   Não seja impaciente, <strong>você  vai aprender como codificar este tipo de condições na próxima lição</strong>.</p>  
+	  <p>  É aqui que   <strong>os operadores de comparação</strong>, como   <strong>  igual, menor que </strong>   , etc entram em cena.   Aqui abaixo estão listados todos os operadores de comparação para sua referência.  </p>
+	  <p>  Se x = 10 temos:  </p>
+	  
+	  <table class="javascript-table">
+	  
+		<tbody><tr>
+	  
+		  <th>  Operador  </th>
+		
+		  <th>  O que é isso?  </th>
+		
+		  <th>  Exemplo  </th>
+	  
+		</tr>
+	  
+		<tr>
+		
+		  <td>  ==  </td>
+		
+		  <td>  igual a  </td>
+		  
+		  <td>  x == 5 é falsa  </td>
+		
+		</tr>
+	  
+		<tr class="alt">
+		
+		  <td>  ===  </td>
+		  
+		  <td>  exatamente igual ao valor e tipo  </td>
+		  
+		  <td>  x === 10 é verdade   <br>  x === "10" é falsa  </td>
+		
+		</tr>
+	  
+		<tr>
+		
+		  <td>  ! =  </td>
+		  
+		  <td>  não igual  </td>
+		  
+		  <td>  x! = 2 é verdadeiro  </td>
+		
+		</tr>
+	  
+		<tr class="alt">
+		
+		  <td>  &gt;  </td>
+		  
+		  <td>  maior do que  </td>
+		  
+		  <td>  x&gt; 20 é falsa  </td>
+		
+		</tr>
+	  
+		<tr>
+		
+		  <td>  &lt;  </td>
+		  
+		  <td>  menor que  </td>
+		  
+		  <td>  x &lt;20 é verdadeiro  </td>
+		
+		</tr>
+		
+		<tr class="alt">
+		
+		  <td>  &gt; =  </td>
+		  
+		  <td>  maior do que ou igual a  </td>
+		  
+		  <td>  x&gt; = 20 é falsa  </td>
+		
+		</tr>
+		
+		<tr class="alt">
+		
+		  <td>  &lt;=  </td>
+		  
+		  <td>  menos do que ou igual a  </td>
+		  
+		  <td>  x &lt;= 20 é verdadeiro  </td>
+		
+		</tr>
+	  
+	  </tbody></table>
+	  
+	  <h2>  Os operadores lógicos  </h2>
+	  
+	  <p>  Você usa   <strong>  os operadores lógicos  </strong>   para determinar a lógica entre determinados valores.  </p>
+	  
+	  <p>  Voltando ao exemplo de script de carrinho de compras, você pode querer que o seu script aplique um desconto de 5%   <strong>  se os seguintes 2 condições são verdadeiras  </strong>   : um determinado produto custa   <strong>  mais de  </strong>   $ 20   <strong>  e  </strong>   é comprado antes de 31 de dezembro.  </p>
+	  
+	  <p>  Aí vêm   <strong>  os operadores lógicos  </strong>   para o resgate.   Dado que x = 10 e y = 5:  </p>
+	  
+	  <table class="javascript-table">
+	  
+		<tbody><tr>
+		
+		  <th>  Operador  </th>
+		  
+		  <th>  O que é isso?  </th>
+		  
+		  <th>  Exemplo  </th>
+		
+		</tr>
+		
+		<tr>
+		
+		  <td>  &amp;&amp;  </td>
+		  
+		  <td>  e  </td>
+		  
+		  <td>  (X &lt;20 &amp;&amp; y&gt; 1) é verdade   <br>  ambas as condições devem ser satisfeitas  </td>
+		
+		</tr>
+		
+		<tr class="alt">
+		
+		  <td>  | |  </td>
+		  
+		  <td>  ou  </td>
+		  
+		  <td>  (X == 5 | | y == 5) é verdadeira   <br>  , pelo menos, uma condição deve ser satisfeita  </td>
+		
+		</tr>
+		
+		<tr>
+		
+		  <td>  !  </td>
+		  
+		  <td>  não  </td>
+		  
+		  <td>  ! (X == y) é verdadeira  </td>
+		
+		</tr>
+	  
+	  </tbody></table>
+	  
+	  <h2>  Perguntas, perguntas, perguntas  </h2>
+	  
+	  <p>  As tabelas acima são auto-explicativas, exceto para os seguintes 2 perguntas:  </p>
+	  
+	  <ol>
+	  
+	    <li>  Quando você fala sobre ===, o que se entende por igualdade de   <strong>  valor  </strong>   e   <strong>  tipo  </strong>   ?  </li>
+	  
+	    <li>  Qual é a diferença entre   <strong>  (=)  </strong>   ,   <strong>  (==)  </strong>   e   <strong>  (===)  </strong>   ?  </li>
+	  
+	  </ol>
+	  
+	  <h3>  Resposta à pergunta 1.  </h3>
+	  
+	  <p><strong>  Os valores  </strong>   são os dados específicos, diretamente em suas declarações de JavaScript ou contida em variáveis ​​JavaScript.   Por exemplo:  </p>
+	  
+	  <div class="codebox">
+	  
+	  <pre>	  
+	  <span class="code-javascript">  var preço = 5;  </span>  
+	    
+	  </pre>
+	  
+	  </div>
+	  
+	  <p>  No trecho de código acima, a variável   <em>  preço  </em>   tem o valor   <em>  5  </em>   .  </p>
+	  
+	  <p>  Qual é o   <strong>  tipo  </strong>   ?  </p>
+	  
+	  <p>  O tipo, ou mais precisamente o   <strong>  tipo de dados  </strong>   , é o caminho JavaScript classifica os dados.   Você me deparei com 2 tipos de dados, isto é,   <strong>  número e string (texto)  </strong>   .   Um tipo de dados terceiro é   <strong>  Boolean  </strong>   , ou seja,   <strong>  as afirmações verdadeiras e falsas  </strong>   .  </p>
+	  
+	  <p>  Portanto, quando você comparar 2 valores usando (===), os 2 valores são comparados com base   <strong>  tanto o seu valor e seu tipo de dados  </strong>   :  </p>
+	  
+	  <div class="codebox">
+	  
+	  <pre>	  
+	  <span class="code-javascript">  var firstNum = 4;  </span>  
+	  <span class="code-javascript">  var secondNum = 4;  </span>  
+	  <span class="code-comments">  // Isso é verdade: ambos os valores são 4  </span>  
+	  <span class="code-comments">  // E ambos os valores são de número do tipo de  </span>  
+	  <span class="code-javascript">  firstNum === secondNum;  </span>  
+	  <span class="code-comments">  // Vamos usar um tipo de dados.   Uma seqüência de caracteres usa '.  </span>  
+	  <span class="code-javascript">  var stringNum = '4 ';  </span>  
+	  <span class="code-comments">  // Agora === é falsa: 4 e '4 'são tipos diferentes  </span>  
+	  <span class="code-javascript">  firstNum === stringNum;  </span>  
+	  </pre>
+	  
+	  </div>
+	  <h3>  Resposta à pergunta 2.  </h3>
+	  <p>  O operador (=) é usado para   <strong>  atribuir ou dar  </strong>   um valor a uma variável. <strong>NÃO é um sinal de igualdade  </strong>   .  </p>
+	  <p>  Os  operadores <strong> == </strong> e <strong>===</strong> são operadores de igualdade. O <strong>==</strong> compara os valores apenas, o <strong>===</strong> compara os valores e tipos de dados.  </p>
+	  <h2>  Resumo  </h2>
+	  <p>  Agora seus scripts não estão limitados a apenas exibir mensagens.   Eles começam a   <strong>  ser inteligentes  </strong>   : eles podem   <strong>  fazer cálculos, avaliar comparações e condições para manipular os seus dados</strong>.</p>
+	  <p>  Na próxima lição você vai aprender as declarações <em>  if...else  </em>   e   <em> switch...case </em> </p>
+	</div></body></html>

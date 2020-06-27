@@ -1,0 +1,23 @@
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade\Atividade\Atividade\bin\Release\Atividade.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade\Atividade\Atividade\bin\Release\Atividade.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade\Atividade\Atividade\obj\x86\Release\Atividade.calculadora.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade\Atividade\Atividade\obj\x86\Release\Atividade.frmOrdenacao.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade\Atividade\Atividade\obj\x86\Release\Atividade.lote.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade\Atividade\Atividade\obj\x86\Release\Atividade.menu.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade\Atividade\Atividade\obj\x86\Release\Atividade.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade\Atividade\Atividade\obj\x86\Release\Atividade.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade\Atividade\Atividade\obj\x86\Release\Atividade.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade\Atividade\Atividade\obj\x86\Release\Atividade.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade\Atividade\Atividade\obj\x86\Release\Atividade.consumo.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade - Athauan Marques\Atividade\Atividade\bin\Release\Atividade.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade - Athauan Marques\Atividade\Atividade\bin\Release\Atividade.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade - Athauan Marques\Atividade\Atividade\obj\x86\Release\Atividade.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade - Athauan Marques\Atividade\Atividade\obj\x86\Release\Atividade.calculadora.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade - Athauan Marques\Atividade\Atividade\obj\x86\Release\Atividade.consumo.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade - Athauan Marques\Atividade\Atividade\obj\x86\Release\Atividade.frmOrdenacao.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade - Athauan Marques\Atividade\Atividade\obj\x86\Release\Atividade.lote.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade - Athauan Marques\Atividade\Atividade\obj\x86\Release\Atividade.menu.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade - Athauan Marques\Atividade\Atividade\obj\x86\Release\Atividade.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade - Athauan Marques\Atividade\Atividade\obj\x86\Release\Atividade.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade - Athauan Marques\Atividade\Atividade\obj\x86\Release\Atividade.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Atividade - Athauan Marques\Atividade\Atividade\obj\x86\Release\Atividade.pdb

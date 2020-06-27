@@ -1,0 +1,14 @@
+C:\Users\Aluno\Desktop\Cadastro\Cadastro\bin\Debug\Cadastro.exe
+C:\Users\Aluno\Desktop\Cadastro\Cadastro\bin\Debug\Cadastro.pdb
+C:\Users\Aluno\Desktop\Cadastro\Cadastro\obj\x86\Debug\Cadastro.Form1.resources
+C:\Users\Aluno\Desktop\Cadastro\Cadastro\obj\x86\Debug\Cadastro.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Cadastro\Cadastro\obj\x86\Debug\Cadastro.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Cadastro\Cadastro\obj\x86\Debug\Cadastro.exe
+C:\Users\Aluno\Desktop\Cadastro\Cadastro\obj\x86\Debug\Cadastro.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 9 - Subcarga, Contrutor & Métodos Estáticos\ProfCorrigido\Cadastro\Cadastro\obj\x86\Debug\Cadastro.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 9 - Subcarga, Contrutor & Métodos Estáticos\ProfCorrigido\Cadastro\Cadastro\obj\x86\Debug\Cadastro.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 9 - Subcarga, Contrutor & Métodos Estáticos\ProfCorrigido\Cadastro\Cadastro\bin\Debug\Cadastro.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 9 - Subcarga, Contrutor & Métodos Estáticos\ProfCorrigido\Cadastro\Cadastro\bin\Debug\Cadastro.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 9 - Subcarga, Contrutor & Métodos Estáticos\ProfCorrigido\Cadastro\Cadastro\obj\x86\Debug\Cadastro.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 9 - Subcarga, Contrutor & Métodos Estáticos\ProfCorrigido\Cadastro\Cadastro\obj\x86\Debug\Cadastro.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 9 - Subcarga, Contrutor & Métodos Estáticos\ProfCorrigido\Cadastro\Cadastro\obj\x86\Debug\Cadastro.csproj.GenerateResource.Cache

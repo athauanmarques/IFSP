@@ -1,0 +1,153 @@
+body
+{
+	font-family:  'Lato', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	box-sizing: border-box;
+	width:980px;
+	background: url(../img/paper.jpg) repeat;
+}
+nav,
+
+code {
+  background:transparent;
+  border-radius: 6px;
+  color: #9b59b6;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 24px 15px;
+  text-align: center;
+}
+
+nav code {
+   margin-left: 50%;
+   margin-left: 10%;
+  background-color: #8e44ad;
+  border: 2px dashed black;
+}
+
+h1, h3, h4, h5, h6 
+{
+	color: black;
+	font-weight: 300;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+.section-title
+{
+	width: 100%;
+	overflow: hidden;
+}
+i, li{color: #2c3e50;}
+section-title
+{
+	font-size: 32px;
+	line-height: 38px;
+	border-bottom:1px solid #000;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	padding-bottom: 16px;
+	margin-top: 20px;
+}
+
+.fa
+{
+
+	color: black;
+	margin-right: 0.3em; /*em*/
+	font-size: 2.3em;
+	vertical-align: middle;
+	width: 28px;
+
+}
+
+.recipe
+{
+	padding: 0.75em;
+	line-height: 25px
+	width:800px;
+	margin: 0 auto;
+	box-sizing: border-box;;
+}
+
+.recipe-sumary
+{
+	width: 50%; 
+	vertical-align:  middle;
+}
+
+.recipe-title{
+	font-size:  48px;
+	line-height: 1em;
+	margin-bottom: 1em;
+	color: #ecf0f1;
+}
+
+.recipe-author{
+	margin-top: 1.7em;
+	font-style: italic;
+}
+
+.recipe-notes{
+	margin: 1.5em 0em;
+	padding:  0;
+	list-style-type: none;
+	display:  inline;
+
+}
+
+.recipe-note{
+	font-size: 0.8em;
+	margin: 1em 0.3em 1em;
+	padding:  0;
+	list-style-type: none;
+	display:  inline;
+
+}
+
+.recipe-image{
+	float: right;
+	width: 50%;
+	padding: 1.25em;
+}
+.recipe-image-item{
+	border-radius: 0.8em;
+}
+
+.recipe-image img{width: 80%;}
+
+.recipe-ingredients{overflow: hidden;}
+
+.recipe-ingredients li{width: 50; float:left;}
+
+.recipe-directions{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: justify;
+
+}
+
+.recipe-directions li{
+	counter-increment: step-counter;
+	margin-bottom: 3em;
+}
+
+.recipe-directions li span{
+	display: block;
+	margin: -1.6em 0 0 3.3em;
+}
+
+.recipe-directions li::before{
+	content: : counter(step-counter);
+	font-size: 1.2em;
+	color: #34495e;
+	padding: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+}
+
+
+

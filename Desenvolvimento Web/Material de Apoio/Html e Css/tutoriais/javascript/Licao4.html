@@ -1,0 +1,100 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="translated-ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lição 4: Variáveis ​​e constantes - HTML.net</title>
+	<link rel="stylesheet" href="default.screen.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="default.print.css" type="text/css" media="print">
+</head>	
+<body>	
+	<a href="http://html.net/">  Início  </a>»Lição 4: Variáveis ​​e Constantes
+	<div id="tutorials">﻿	  <h1>  Lição 4: Variáveis ​​e Constantes  </h1>
+    <p>  Por  <em><a href="http://www.mariaantoniettaperna.com/"> Maria Antonietta Perna </a></em> <em> <a href="http://www.mariaantoniettaperna.com/">  </a></em></p>
+    <p><strong>  Variáveis  </strong>   ​​e   <strong>  constantes  </strong>   são como recipientes onde você armazena os dados e valores para o processamento de JavaScript.  </p>
+	<p>  A diferença entre uma   <strong>  variável  </strong>   e uma   <strong>  constante  </strong>   é esta: uma vez que você atribui um   <strong>  valor  </strong>   a uma   <strong>  constante o valor é para ser mantido inalterado  </strong>   ao longo do script.   Em todas as circunstâncias onde você razoavelmente prever que o   <strong>  valor original será modificado  </strong>   através do script, você deverá uma   <strong>  variável  </strong>   como seu espaço de armazenamento.   Na verdade,   <strong>  você vai usar variáveis ​​na maioria das vezes  </strong>   .  </p>
+	<p>  Nesta lição, você vai aprender:  </p>
+	<ul>
+	    <li>  como   <strong>  criar  </strong>   variáveis ​​e constantes;  </li>
+	    <li>  como   <strong>  atribuir  </strong>   valores a variáveis ​​e constantes;  </li>
+	    <li>  como   <strong>  usar  </strong>   variáveis ​​em seu código;  </li>
+	    <li>  como   <strong>  nomear  </strong>   variáveis ​​e constantes corretamente.  </li>
+	 </ul>
+	<h2>  Como criar variáveis ​​e constantes  </h2>
+	<p>  Veja como <strong>declarar uma variável</strong>:  </p>
+	<div class="codebox">
+	  <pre>	  
+	  <span class="code-comments">  // Para declarar uma variável você usa um nome precedido pela<strong> palavra-chave var</strong>* /  </span>  
+	  <span class="code-javascript">  var amountDue;  </span>  
+	  </pre>
+	  </div>
+	  <p>  No código do exemplo acima, você declarou uma variável chamada   <em>amountDue</em>   .  </p>
+	  <p>  A <strong> declaração da variável</strong> termina com um (;) ponto e vírgula, o que torna uma declaração auto-suficiente.  </p>
+	  <p>  Além disso, porque o JavaScript diferencia <strong>maiúsculas de minúsculas</strong>, cada vez que você usar a <em>variável amountDue</em>, certifique-se de   <strong>  manter as maíusculas e minúsculas exatamente como a da declaração original</strong></p>
+	  <p>  Veja como <strong>declarar uma constante </strong>:</p>
+	  
+	  <div class="codebox">
+	  <pre>	  
+	  <span class="code-comments">  / * Para declarar uma constante use nome precedido pela<strong>  palavra-chave const</strong></span>  
+	  <span class="code-comments">  <strong>tome nota: const não é suportado pelo Internet Explorer, por isto, usar var é mais seguro </strong>* /</span>  
+	  <span class="code-javascript">  taxRate const;  </span>  
+	  </pre>
+	  </div>
+	  
+	  <p>  No código de exemplo acima, você declarou uma constante taxRate.   Como você pode ver, a declaração é muito parecida com a declaração da variável, a única diferença sendo a palavra-chave utilizada:   <strong>  var no caso de uma variável  </strong>   e   <strong>const no caso de uma constante.</strong></p>
+	  <h2>  Como atribuir valores a variáveis  </h2>
+	  <p>  Depois de criar uma variável, você deve   <strong>  atribuir  </strong>   (dar) um valor a ela.   O   <strong>  sinal de igual (=)  </strong>   é chamado de   <strong>  operador de atribuição  </strong>   : atribuir o valor do que está no lado direito do sinal de = para o que está no lado esquerdo do sinal de =.</p>
+	  <p><strong>  Aviso: você não pode realizar operações com variáveis ​​vazias.  </strong></p>
+	  <p>  Prepare um documento HTML básico com o código JavaScript ilustrado abaixo:  </p>
+
+	  <div class="codebox">
+	  <pre>	      
+	  &lt;! DOCTYPE html&gt;      
+	  &lt;html&gt;      
+	  &lt;head&gt;      
+	  &lt;title&gt; Lição 4: Variáveis ​​e constantes &lt;/ title&gt;      
+	  &lt;/ Head&gt;      
+	  &lt;body&gt;      
+	  &lt;h1&gt; Lição 4: Variáveis ​​e constantes &lt;/ h1&gt;    
+	  &lt;script type="text/javascript"&gt;    
+	  <span class="code-comments">  // Cria uma variável  </span>  
+	  <span class="code-javascript">  var amountDue;  </span>  
+	  <span class="code-comments">  / * Atribuir um valor a ela:  </span>  
+	  <span class="code-comments">  você não sabe o valor ainda  </span>  
+	  <span class="code-comments">  Então, por hora é 0 * /  </span>  
+	  <span class="code-javascript">  amountDue = 0;  </span>  
+	  <span class="code-comments">  / * Crie 2 vars mais e atribuir   </span>  
+	  <span class="code-comments">  um valor a cada, ao mesmo tempo * /  </span>  
+	  <span class="code-javascript">  var ProductPrice = 5;  </span>  
+	  <span class="code-javascript">  var quantidade = 2;  </span>  
+	  <span class="code-comments">  / * Atribuir um valor a amountDue por  </span>  
+	  <span class="code-comments">  multiplicando pela quantidade ProductPrice * /  </span>  
+	  <span class="code-javascript">  amountDue = ProductPrice * quantidade;  </span>  
+	  <span class="code-comments">  / * Observe como o valor do amountDue é  </span>  
+	  <span class="code-comments">  alterado de 0 a 10 -  </span>  
+	  <span class="code-comments">  -Alertar o resultado para verificar se é OK  </span>  
+	  <span class="code-comments">  Aviso: você não pode usar ' ou " com o nome var em alerta () * /  </span>  
+	  <span class="code-javascript">  alert (amountDue);  </span>  
+	  &lt;/ Script&gt;    	    
+	  &lt;/ Body&gt;      
+	  &lt;/ Html&gt;    
+	  </pre>
+	  </div>
+	  <p>  Você viu a boa e velha caixa de alerta  exibindo o número 10?   Se você não viu, verifique se o código está digitado exatamente como no trecho acima ( <strong>Aviso: Quando o rastreamento bugs (erros) no seu código JavaScript, olhar para os parênteses, ponto e vírgula (;) e aspas ("")</strong>).</p>
+	  <p>  Isso é ótimo!   Experimente com o código acima.   Por exemplo, alterar o valor da quantidade e ProductPrice.  </p>
+	  <h2>  Como nomear variáveis ​​(e constantes)  </h2>
+	  <p>  Escolha   <strong>  nomes descritivos  </strong>   para as variáveis ​​(   <strong>  var amountDue;  </strong>   ao invés de   <strong>  var x;  </strong>   ): desta forma o seu código será mais   <strong>  legível e compreensível  </strong>   .  </p>  
+	  <p>  Embora isso possa ser chamado de boa prática de programação, também há <strong>  regras de sintaxe </strong>(sim, como qualquer língua natural) quando se trata de nomear variáveis, e elas devem ser obedecidas, pelo menos se você quiser que seu script JavaScript funcione.</p>
+	  <p>  Fique de olho nas seguintes regras simples quando você declarar variáveis:  </p>
+	  <h3>  1) O primeiro caractere deve ser uma letra, um sublinhado (_), ou um cifrão ($):  </h3>
+	  <div><img src="imagens/lesson4_img01.gif" alt="Ilustração: var nomes legais pode ser total, _total, $ total, mas não 5total porque começa com um número."><p class="caption-javascript">  5total está errado: var nome não pode começar com um número  </p></div>
+	  <h3>  2) Cada caractere após o primeiro caractere pode ser uma letra, um (_) sublinhado, um cifrão ($), ou um número:  </h3>
+	  <div><img src="imagens/lesson4_img02.gif" alt="Ilustração: var nomes legais pode ser total, to_tal, total de US $, total5"></div>
+	  <h3>  3) Espaços e caracteres especiais, com excepção (_) e $ não são permitidos em nenhum lugar:  </h3>
+	  <div><img src="imagens/lesson4_img03.gif" alt="Ilustração: total é um nome legal var, mas não a tal total, #, total de £">
+	  
+	  </div>
+	  <h2>  Resumo  </h2>
+	  <p>  Variáveis ​​e constantes são os blocos de construção de qualquer linguagem de programação.   Nesta lição você aprendeu o papel que desempenham em JavaScript, como você declarar e atribuir valores a elas e  como nomear suas variáveis ​​corretamente.  </p>
+	  <p>  Na próxima lição você vai aprender sobre   <strong>  operadores de JavaScript  </strong>   e praticar cada vez mais com variáveis.  </p>
+	  <p>  Faça uma pausa e se preparar para a aula 5.  </p>
+	<hr>
+	</div></body></html>

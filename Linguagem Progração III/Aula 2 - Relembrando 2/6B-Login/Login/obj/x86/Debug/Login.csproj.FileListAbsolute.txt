@@ -1,0 +1,18 @@
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\bin\Debug\Login.exe
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\bin\Debug\Login.pdb
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\obj\x86\Debug\Login.Form1.resources
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\obj\x86\Debug\Login.Properties.Resources.resources
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\obj\x86\Debug\Login.csproj.GenerateResource.Cache
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\obj\x86\Debug\Login.exe
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\obj\x86\Debug\Login.pdb
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\obj\x86\Debug\Login.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\6B-Login\Login\obj\x86\Debug\Login.exe
+C:\Users\Aluno\Desktop\6B-Login\Login\obj\x86\Debug\Login.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 2 - Relembrando 2\6B-Login\Login\obj\x86\Debug\Login.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 2 - Relembrando 2\6B-Login\Login\obj\x86\Debug\Login.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 2 - Relembrando 2\6B-Login\Login\bin\Debug\Login.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 2 - Relembrando 2\6B-Login\Login\bin\Debug\Login.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 2 - Relembrando 2\6B-Login\Login\obj\x86\Debug\Login.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 2 - Relembrando 2\6B-Login\Login\obj\x86\Debug\Login.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 2 - Relembrando 2\6B-Login\Login\obj\x86\Debug\Login.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 2 - Relembrando 2\6B-Login\Login\obj\x86\Debug\Login.csproj.GenerateResource.Cache

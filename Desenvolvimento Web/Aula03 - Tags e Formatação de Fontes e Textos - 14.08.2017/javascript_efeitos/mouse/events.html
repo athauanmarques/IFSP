@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Event Handlers Example</title>
+<script language="JavaScript">
+function DisplayEvent(e) {
+   span=document.getElementById("addhere");
+   logentry= e.type;
+   if (e.type=="keypress") {
+      if (e.keyCode) keycode=e.keyCode;
+	    else keycode=e.which;
+	  key=String.fromCharCode(keycode);
+	  logentry += " key=" + key;
+   }
+   if (e.type=="mousedown"||e.type=="mouseup"||e.type=="click") {
+      if (e.button) button=e.button;
+  	    else button=e.which;
+		logentry += " button=" + button;
+   }   
+   txt=document.createTextNode(logentry);
+   span.appendChild(txt);
+   span.appendChild(document.createElement("BR"));
+}
+</script> 
+</head>
+<body onKeyPress="DisplayEvent(event);">
+<h1>Event Handlers Example</h1>
+<p>Move the mouse in and out of the box below,
+or click on it. The events that occur will be listed below.</p>
+<h1 style="color:blue" align="center"
+ onMouseOver="DisplayEvent(event);"
+ onMouseOut="DisplayEvent(event);"
+ onClick="DisplayEvent(event);"
+ onMouseUp="DisplayEvent(event);"
+ onMouseDown="DisplayEvent(event);"
+>
+Generate Events Here
+</h1>
+<b>Event Log:</b><hr>
+<span ID="addhere"></span>
+</body>
+</html>

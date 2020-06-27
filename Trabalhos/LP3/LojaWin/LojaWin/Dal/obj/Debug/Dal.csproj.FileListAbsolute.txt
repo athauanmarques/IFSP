@@ -1,0 +1,24 @@
+D:\LojaWin\Dal\bin\Debug\Dal.dll
+D:\LojaWin\Dal\bin\Debug\Dal.pdb
+D:\LojaWin\Dal\bin\Debug\Modelos.dll
+D:\LojaWin\Dal\bin\Debug\mysql.data.dll
+D:\LojaWin\Dal\bin\Debug\Modelos.pdb
+D:\LojaWin\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+D:\LojaWin\Dal\obj\Debug\Dal.dll
+D:\LojaWin\Dal\obj\Debug\Dal.pdb
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Dal\bin\Debug\Dal.dll
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Dal\bin\Debug\Dal.pdb
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Dal\bin\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Dal\bin\Debug\mysql.data.dll
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Dal\bin\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Dal\obj\Debug\Dal.dll
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Dal\obj\Debug\Dal.pdb
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Dal\bin\Debug\Dal.dll
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Dal\bin\Debug\Dal.pdb
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Dal\bin\Debug\Modelos.dll
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Dal\bin\Debug\mysql.data.dll
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Dal\bin\Debug\Modelos.pdb
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Dal\obj\Debug\Dal.dll
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Dal\obj\Debug\Dal.pdb

@@ -1,0 +1,437 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="translated-ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lição 7:Comandos de Repetição</title>
+	<link rel="stylesheet" href="default.screen.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="default.print.css" type="text/css" media="print">
+</head>	
+<body data-twttr-rendered="true">	
+    <a href="index.html"> JavaScript  </a>  »Lição 7: Comandos de Repetição 
+	<div id="tutorials">﻿	
+	  <h1>Lição 7: Comandos de Repetição</h1>
+	  <p>  Seus scripts JavaScript podem fazer coisas inteligentes como calcular descontos, comparação de valores, e fazer escolhas.   No entanto, não se esqueça que estamos lidando com linguagem de máquina, e as máquinas são muito boas em fazer algumas coisas que nós seres humanos não somos.
+      	  Computadores são bons em fazer coisas repetitivas.   Você pode achar que é difícil de acreditar, mas o JavaScript ama repetição.   Tanto que ele tem vários comandos de repetição .  Aqui está o que você vai aprender nesta lição:  </p>
+	  <ul>
+	    <li><strong>  for  </strong>   ;  </li>
+	    <li><strong>  while  </strong>   ;  </li>
+	    <li><strong>  do  ...   while  </strong>   .  </li>
+	  </ul>
+	
+	  <p>  Nesta lição, você também vai aprender a:  </p>
+	
+	  <ul>
+	
+	    <li>  usar   <strong>  getElementById (Id elemento)  </strong>   para manipular um elemento HTML com JavaScript;  </li>
+	
+	    <li>  gerar   <strong>  números aleatórios com random() e floor(número)  </strong>   ;  </li>
+	
+	    <li>  inserir   <strong>  HTML mark-up dinamicamente com innerHTML  </strong>   .  </li>
+	
+	  </ul>
+	
+	   <h2>  Loops  </h2>
+	
+	  <p>  Às vezes você terá que repetir algum pedaço de código um número de vezes:  </p> 
+	
+	  <p><strong>  por exemplo  </strong>   : uma página web tem 10 botões de rádio e seu script precisa descobrir qual botão foi marcado pelo usuário.  </p>  
+	
+	  <p>  Para isso, o script tem que passar por cima de cada botão de opção e verificar se o seu   <strong>  atributo checked  </strong>   é definido como verdadeiro ou falso.   Isso significa ter que escrever este tipo de   <em>  código de verificação  </em>    10 vezes?  </p>
+	
+	  <p>  Felizmente, isso não acontece.   Você   pode <strong>  colocar o código em um loop, e ele vai executar qualquer número de vezes  </strong>   que você definir para ele.  </p>
+	
+	  <p>  Qualquer circuito é feito de   <strong>  quatro partes básicas  </strong>   :  </p>
+	
+	  <ol>
+	
+	    <li>
+		
+	      <h3>  o valor inicial  </h3>
+	  
+	      <p>  Um valor inicial é atribuído a uma variável, geralmente chamado de   <strong>  i  </strong>   (mas você pode chamá-lo de qualquer coisa que você quiser).   Esta variável atua como contador para o loop.  </p>
+	
+	    </li>
+	
+	    <li>
+	
+	      <h3>  o valor final ou condição de teste  </h3>  
+	
+	      <p>  O circuito precisa de um limite a ser definido: ou um número definido (Loop 5 vezes) ou uma condição de verdade (loop até que essa condição é avaliada como verdadeira).   Na falta deste, você corre o risco de desencadear uma   <strong>  loop infinito  </strong>   .   Isso é muito ruim: é uma repetição interminável do mesmo código, que pára navegadores dos usuários de responder.   Evitar loops infinitos a todo custo, certificando-se de definir uma condição de parada para seus loops;  </p>
+	
+	    </li>
+	
+	    <li>
+	
+	      <h3>  a ação ou código a ser executado  </h3>  
+	
+	      <p>  Você   <strong>  digita um bloco de código uma vez e ele vai ser executado o número de vezes entre o valor inicial eo valor final  </strong>   ;  </p>
+	
+	    </li>
+	
+	    <li>
+	
+	      <h3>  o incremento  </h3>  
+	
+	      <p>  Esta é a parte que move o ciclo para a frente: o contador de inicializar tem que se mover para cima (ou para baixo no caso de você optar por looping para trás).   Enquanto o circuito   <strong>  não atinge o valor final ou a condição de teste não for satisfeita  </strong>   , o contador é incrementado (ou decrementado).   Isso geralmente é feito usando operadores matemáticos.  </p>
+	
+	    </li>
+	
+	  </ol>
+	
+	  <h2>  for  </h2>
+	
+	  <p>  Este tipo de circuito, bem ...   percorre um bloco de código um determinado número de vezes.   Escolha um   <strong>  loop for  </strong>   , se você sabe de antemão quantas vezes o script deve ser executado.  </p>
+	
+	  <p>  Aqui está a sua estrutura básica:  </p>
+	
+	  <div class="codebox">
+	
+	  <pre>	
+	  <span class="code-comments">  // Loop para o número de vezes entre o valor inicial e o valor final  </span>  
+	  
+	  <span class="code-comments">  // Incrementar o valor a cada vez que o laço for executado </span>  
+	  
+	  <span class="code-comments">  // Até que o limite seja atingido  </span>  
+	  
+	  <span class="code-javascript">  for (var = startValue; var &lt;= endvalue; var = var + incremento)</span>  
+	  
+      <span class="code-javascript">    {  </span>  
+	  
+      <span class="code-comments">         // Código a ser executado  </span>  
+	  
+      <span class="code-javascript">    }  </span>  
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <h2>  while  </h2>
+	
+	  <p>  Se você não sabe o número exato de vezes que o código é suposto executar, deve  usar um   <strong>  loop while  </strong>   .  </p>
+	
+	  <p>  Com um loop <strong>while</strong> o código   <strong>  é executado enquanto uma condição é verdadeira  </strong> , logo que esta condição for avaliada como false, o loop while paradas.  </p>
+	
+	  <p>  Aqui está a sua estrutura básica:  </p>
+	
+	  <div class="codebox">
+	
+	  <pre>	
+	  <span class="code-comments">  // Loop enquanto valor inicial é inferior ou igual ao valor final  </span>  
+	  
+	  <span class="code-comments">  //   <strong>  Tome nota: se a condição for avaliada como falsa desde o início,  </strong></span>  
+	  
+	  <span class="code-comments">  //   <strong>  o código nunca será executado  </strong></span>  
+	  
+	  <span class="code-javascript">  while (variável &lt;= endvalue)  </span>  
+	  
+      <span class="code-javascript">    {  </span>  
+	  
+      <span class="code-comments">                // Código a ser executado  </span>  
+	  
+      <span class="code-javascript">    }  </span>  
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <h2>  do ... while  </h2>
+	
+	  <p>  Este tipo de circuito é semelhante ao  circuito <em>  while </em>.   A diferença entre os dois é a seguinte:  </p>
+	
+	  <p>  No caso do   <em>  while  </em>,   <strong>  se a condição de teste é falso, desde o início  </strong>   , o   <strong>  código no loop nunca será executado  </strong>.  </p>
+	
+	  <p>  No caso do <em>  do ...   while </em>, a condição de teste é avaliada   <strong>  após  </strong>   o loop ter realizado o primeiro ciclo.   Portanto, mesmo   <strong>  se a condição de teste é falso, o código no loop executará uma vez  </strong>   .  </p>
+	
+	  <p>  Aqui é a estrutura básica de um do ...   while:  </p>
+	
+	  <div class="codebox">
+	
+	  <pre>	
+	  <span class="code-comments">  // O comando é dado   <strong>  antes a condição de teste é verificado  </strong></span>  
+	  
+	  <span class="code-javascript">  do  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  // Código a ser executado  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	  
+	  <span class="code-comments">  //   <strong>  condição é avaliada neste momento  </strong>   :  </span>  
+	  
+	  <span class="code-comments">  // Se é falso o ciclo para aqui  </span>  
+	  
+	  <span class="code-javascript">  while (variável &lt;= endvalue)  </span>  
+		  
+	  </pre>
+	
+	  </div>
+	
+	  <h2>  Experimente: adicionar número aleatório de imagens com um   <em>  loop  </em></h2>
+	
+	  <p>  Tempo para se codificação: preparar um documento fresco HTML com uma tag div e um id de "wrapper" e adicionar a magia JavaScript a seguir:  </p>
+	
+	  <div class="codebox">
+	
+	  <pre>	    
+	  &lt;! DOCTYPE html&gt;      
+	  &lt;html&gt;      
+	  &lt;head&gt;      
+	  &lt;title&gt; Lição 7: Deixar coisas repetitivas chato para JavaScript com Loops &lt;/ title&gt;      
+	  &lt;/ Head&gt;      
+	  &lt;body&gt;      
+	  &lt;h1&gt; Lição 7: por loop &lt;/ h1&gt;    
+	    
+	  &lt;div id="wrapper"&gt; &lt;/ div&gt;    
+	      
+	  &lt;script type="text/javascript"&gt;    
+	  
+	  <span class="code-comments">  // Pegue o div html por seu atributo id  </span>  
+	  
+	  <span class="code-comments">  // E armazená-lo em um recipiente chamado var  </span>  
+	  
+	  <span class="code-javascript">  var recipiente = document.getElementById ("wrapper");  </span>  
+	  
+	  <span class="code-comments">  // Usar o Math.random para gerar um número aleatório  </span>  
+	  
+	  <span class="code-comments">  // Entre 0 e 1.   Armazenar número aleatório em um var  </span>  
+	  
+	  <span class="code-javascript">  var randomNumber = Math.random ();  </span>  
+	  
+	  <span class="code-comments">  // Uso Math.floor () para arredondar o número aleatório  </span>  
+	  
+	  <span class="code-comments">  // Para um valor inteiro entre 0 e 10 e armazená-lo em uma var  </span>  
+	  
+	  <span class="code-javascript">  numImages var = Math.floor (randomNumber * 11);  </span>  
+	  
+	  <span class="code-comments">  // Apenas para fins de teste, permite alertar o número resultante aleatória  </span>  
+	  
+	  <span class="code-javascript">  alert (numImages);  </span>  
+	  
+	  <span class="code-comments">  // O loop será executado para o número de vezes indicado  </span>  
+	  
+	  <span class="code-comments">  // Pelo número aleatório resultante  </span>  
+	  
+	  <span class="code-javascript">  for (var i = 1; i &lt;= numImages; i + +)  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  // Código a ser executado:  </span>  
+	  
+	  <span class="code-comments">  // Cria uma var e armazenar uma sequencia feita de um novo elemento img HTML  </span>  
+	  
+	  <span class="code-comments">  // E a variável de iteração i (usar + operador de concatenação):  </span>  
+	  
+	  <span class="code-comments">  // I contém o número de iteração  </span>  
+	  
+	  <span class="code-comments">  //   <strong>  Tome nota: certifique-se o img src corresponde a um arquivo de imagem real  </strong></span>  
+	  
+	  <span class="code-javascript">  var newimage = '&lt;img src="loop.gif" alt="#" /&gt;' + i;  </span>  
+	  
+	  <span class="code-comments">  // Var usar o recipiente que armazena o elemento div  </span>  
+	  
+	  <span class="code-comments">  // E usar   <strong>  innerHTML  </strong>   para inserir a cadeia armazenada na var newimage  </span>  
+	  
+	  <span class="code-comments">  / Cessão de atalho / Usar + = para valores anteriores não podem ser apagadas  </span>  
+	  
+	  <span class="code-javascript">  container.innerHTML + = newimage;  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	    
+	  &lt;/ Script&gt;    
+		    
+	  &lt;/ Body&gt;      
+	  &lt;/ Html&gt;    
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <div class="examplelink"><img src="imagens/icon_example.gif" alt=" - "> <a href="lesson7_ex1.html" title="Ver o código acima como um exemplo">  Ver exemplo  </a></div>
+	
+	  <p>  Selecione uma imagem e copie na mesma pasta do seu documento, salve o seu trabalho, executar a página no navegador e manter recarregá-lo: a caixa de alerta irá exibir um número aleatório, em seguida, um elemento img é dinamicamente adicionado ao página da web como muitas vezes, conforme indicado pelo número aleatório.  </p>
+	
+	  <h2>  Perguntas, perguntas, perguntas  </h2>
+	
+	  <p>  Eu sei, não há muito a perguntar sobre o código de exemplo acima.   Mais especificamente: 1) O que é isso   <strong>  document.getElementById (Id elemento)  </strong>   ?   2) Quais são   <strong>  Math.random () e Math.floor (número)  </strong>   ?   E, finalmente, 3) o que é   <strong>  innerHTML  </strong>   ?   Vamos abordar cada questão, por sua vez:  </p>
+	
+	  <ol>
+	
+	    <li>
+	  
+	      <h3>  Se apossar de elementos HTML com   <em>  document.getElementById (Id elemento)  </em></h3>
+		
+		  <p>  JavaScript pode executar todos os tipos de magia em qualquer elemento HTML uma vez que se apossar dela.   Isto pode ser feito em mais de uma maneira.   No entanto, a maneira mais simples é usando o   <strong>  document.getElementById (Id elemento)  </strong>   de comando.   O interpretador JavaScript lê como segue:  </p>
+		
+		  <blockquote>  "Ei navegador, encontrar o elemento HTML com o nome ID como a entre parênteses".  </blockquote>
+		
+		  <p>  Porque o JavaScript geralmente faz algo com o elemento, este fica convenientemente armazenados dentro de uma variável.   O que você fez no código de exemplo acima foi de agarrar a div com o atributo id chamado   <em>  invólucro  </em>   e armazená-lo em uma variável chamada   <em>  recipiente  </em>   .  </p>
+	  
+	    </li>
+	  
+	    <li>
+	  
+	      <h3>  Gerar números aleatórios com Math.random () e Math.floor (número)  </h3>
+		
+		  <p>  JavaScript foi construído com comandos para executar operações matemáticas complexas de forma rápida e facilmente.  </p>
+		
+		  <p><strong>  Math.random ()  </strong>   gera um número aleatório entre 0 e 1.   Experimente-o sobre o seu próprio digitando   <em>  var randomNum = Math.random (); alerta (randomNum);  </em>   dentro de uma tag &lt;script&gt;.  </p>
+		
+		  <p><strong>  Math.floor (número) Arredonda um número para baixo para o número inteiro mais próximo e retorna o resultado  </strong>   .   O interpretador JavaScript lê como segue:  </p>
+
+          <blockquote>  "Ei navegador, ter o número entre parênteses e volta-la para o próximo número inteiro."  </blockquote>
+
+          <p>  Experimente-o sobre o seu próprio digitando   <em>  var roundedNumber = Math.floor (6.2), alerta (roundedNumber);  </em>   dentro de uma tag &lt;script&gt;.   Ficar mudando o número entre parênteses e ver como JavaScript retorna o número inteiro correspondente.  </p>		
+		
+		  <p>  No exemplo anterior, é usado Math.floor () juntamente com Math.random (número) para gerar um número aleatório inteiro entre 0 e 10 (digitada 11 em vez de 10, porque o número redondo retornado por Math.random () inicia a 0 não 1).  </p>
+	  
+	    </li>
+	  
+	    <li>
+	  
+	      <h3>  Adicionar nova mark-up dentro de elementos HTML com   <em>  innerHTML  </em></h3>
+		
+		  <p>  Um script JavaScript pode fazer elementos HTML aparecer e desaparecer, mudar de lugar ou de cor, e muito mais.  </p>
+		
+		  <p>  Há mais de uma maneira de adicionar novos mark-up em seu documento HTML, mas usando   <strong>  innerHTML  </strong>   torna muito fácil e simples.   O interpretador JavaScript lê o comando da seguinte forma:  </p>
+		
+		  <blockquote>  "Ei navegador, pegue a   <strong>  corda para o direito do operador de atribuição  </strong>   e inseri-lo no código HTML mark-up. "  </blockquote>
+		
+		  <p>  O que você fez no código de exemplo acima foi tomar a variável que armazena o elemento div wrapper e aplicando innerHTML a ele para inserir uma tag img dentro do div.  </p>
+	  
+	    </li>
+	
+	  </ol>
+	
+	  <h2>  Experimente: adicionar imagens para a página com um   <em>  loop while  </em></h2>
+	
+	  <p>  Utilizar o mesmo documento HTML a partir do exemplo anterior, mas excluir todo o JavaScript entre o &lt;script&gt; ...   &lt;/ Script&gt;.   Agora, digite o seguinte código JavaScript:  </p>
+	
+	  <div class="codebox">
+	
+	  <pre>	    
+	  &lt;script type="text/javascript"&gt;    
+	  
+	  <span class="code-comments">  // Pegue o div html por seu atributo id  </span>  
+	  
+	  <span class="code-comments">  // E armazená-lo em um recipiente chamado var  </span>  
+	  
+	  <span class="code-javascript">  var recipiente = document.getElementById ("wrapper");  </span>  
+	  
+	  <span class="code-comments">  // Var criar o que contém o contador  </span>  
+	  
+	  <span class="code-comments">  // E dar-lhe um valor inicial de 0  </span>  
+	  
+	  <span class="code-javascript">  numImages var = 0;  </span>  
+	  
+	  <span class="code-comments">  // Iniciar o loop: enquanto que o número de imagens é inferior ou  </span>  
+	  
+	  <span class="code-comments">  // Igual a 10 (ciclo começa em 0 e não 1, portanto digite 9 não 10),  </span>  
+	  
+	  <span class="code-comments">  // Ciclagem e aumentar o contador em 1  </span>  
+	  
+	  <span class="code-javascript">  while (numImages &lt;= 9)  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  // Este é o bloco de código a ser executado:  </span>  
+	  
+	  <span class="code-comments">  // Construir a cadeia para inserir no documento HTML  </span>  
+	  
+	  <span class="code-comments">  // E armazená-lo no var newImage  </span>  
+	  
+	  <span class="code-comments">  //   <strong>  Tome nota: certifique-se o img src corresponde a um arquivo de imagem real  </strong></span>  
+	  
+	  <span class="code-javascript">  var newimage = '&lt;img src="loop.gif" alt="#" /&gt;' + numImages;  </span>  
+		  
+	  <span class="code-comments">  // Var usar o recipiente que armazena o elemento div  </span>  
+	  
+	  <span class="code-comments">  // E usar   <strong>  innerHTML  </strong>   para inserir a cadeia armazenada na var newimage  </span>  
+	  
+	  <span class="code-comments">  / Cessão de atalho / Usar + = para valores anteriores não podem ser apagadas  </span>  
+	  
+	  <span class="code-javascript">  container.innerHTML + = newimage;  </span>  
+	  
+	  <span class="code-comments">  // Incrementa o contador em 1 usando o operador de incremento  </span>  
+	  
+	  <span class="code-javascript">  numImages + +;  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	    
+	  &lt;/ Script&gt;    
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <div class="examplelink"><img src="imagens/icon_example.gif" alt=" - "> <a href="lesson7_ex2.html" title="Ver o código acima como um exemplo">  Ver exemplo  </a></div>
+	
+	  <p>  Verifique se o arquivo de imagem é no lugar, salve seu trabalho e executar a página no navegador.   Você deverá ver algo semelhante à página de exemplo indicado no link acima.  </p>
+	
+	  <h3>  Executar um loop while com uma condição falsa  </h3>
+	
+	  <p>  Agora faça apenas uma pequena mudança para o código acima: substituir   <em><strong>  numImages var = 0  </strong>   ;  </em>   com   <em><strong>  numImages var = 12;  </strong></em>   .   Agora, a   <strong>  condição inicial é falsa desde o início  </strong>   : o contador é um número maior do que 10.  </p>
+	
+	  <p>  Salve o seu trabalho, executar a página e ver o que acontece.   Se tudo funciona bem, nada deve acontecer: o loop não mesmo de começar.  </p>
+	
+      <h2>  Experimente: adicionar imagens para a página com um   <em>  do ...   while  </em></h2>
+	
+	  <p>  Utilizar o mesmo documento HTML como no exemplo anterior.   Além disso, o código JavaScript é muito semelhante ao exemplo anterior: basta mover o   <strong>  while (condição)  </strong>   fora do bloco de ação e tipo   <strong>  se  </strong>   em seu lugar, como no exemplo abaixo:  </p>
+	
+	  <div class="codebox">
+	
+	  <pre>	    
+	  &lt;script type="text/javascript"&gt;    
+	  
+	  <span class="code-javascript">  var recipiente = document.getElementById ("wrapper");  </span>  
+	  
+	  <span class="code-javascript">  numImages var = 0;  </span>  
+	  
+	  <span class="code-javascript">  do </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  // Este bloco é executado em primeiro lugar:  </span>  
+	  
+	  <span class="code-javascript">  var newimage = '&lt;img src="loop.gif" alt="#" /&gt;' + newimage;  </span>  
+	  
+	  <span class="code-javascript">  container.innerHTML + = newimage;  </span>  
+	  
+	  <span class="code-javascript">  numImages + +;  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	  
+	  <span class="code-comments">  // Aqui é a condição para avaliar:  </span>  
+	  
+	  <span class="code-comments">  // O   <strong>  primeiro ciclo já foi executado  </strong>   .  </span>  
+	  
+	  <span class="code-javascript">  while (numImages &lt;= 9);  </span>  
+	    
+	  &lt;/ Script&gt;    
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <div class="examplelink">
+	  <img src="imagens/icon_example.gif" alt=" - "> <a href="lesson7_ex3.html" title="Ver o código acima como um exemplo">  Ver exemplo  </a>
+	  </div>
+	
+	  <p>  Salve seu trabalho e execute a página no navegador.   Você deverá ver algo semelhante à página de exemplo indicado no link acima.  </p>
+	
+	  <h3>  Executar um do ...   while com uma condição falsa  </h3>
+	
+	  <p>  Faça apenas uma pequena mudança para o código acima: mais uma vez, substituir   <em><strong>  numImages var = 0  </strong>   ;  </em>   com   <em><strong>  numImages var = 12;  </strong></em>   .   Agora, a   <strong>  condição inicial é falsa desde o início  </strong>   : o contador é um número maior do que 10.  </p>
+	
+	  <p>  Salve o seu trabalho, execute a página e veja o que acontece.   Ao contrário do que aconteceu com o   <em>  loop while  </em>   , agora você deve ver uma imagem exibida na página da web: o   <strong>  loop tenha concluído o primeiro ciclo e só depois a condição de teste é avaliada  </strong>   .   Neste caso, a condição é falsa eo loop pára   <strong>  depois da primeira iteração completa  </strong>   .  </p>
+	
+	  <h2>  Resumo  </h2>
+	
+	  <p>  Isso é tudo por enquanto.   Sua caixa de ferramentas JavaScript está ficando cada vez mais rica: você pode escrever código repetitivo com loops, manipular o conteúdo HTML de forma dinâmica, e escrever scripts que geram números aleatórios.  </p>
+	
+	  <p> Próximo tópico:   <strong>  funções  </strong>   .  </p>
+		
+	<hr>
+		</div>
+</body>
+</html>
+

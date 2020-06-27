@@ -1,0 +1,75 @@
+﻿<html>
+<head>
+<title>Siga o Mouse!</title>
+<script language="JavaScript">
+var x=150,y=150;
+var dx=0,dy=1;
+var xpointer=0,ypointer=0;
+var counter=0;
+var Netscape=(navigator.appName.indexOf("Netscape") != -1);
+function SetPointer(e) {
+  if (Netscape)
+    event=e;
+  if (event.pageX) { // Netscape...
+    xpointer=event.pageX;
+    ypointer=event.pageY;
+  }
+  else if (event.x) { // Internet Explorer...
+    xpointer=event.x;
+	ypointer=event.y;
+  }
+}
+function Move() {
+  if (!document.getElementById) return;
+
+  obj=document.getElementById("mouse");
+  xdist=Math.abs(xpointer-x);
+  ydist=Math.abs(ypointer-y);
+  ChangeDirection(xdist,ydist);
+  if (xdist>2) x += dx*2;
+  if (ydist>2) y += dy*2;
+  obj.style.left=x - 50;
+  obj.style.top=y - 50;
+  window.setTimeout("Move();",1);
+}
+function ChangeDirection(xdist,ydist) {
+  counter++;
+  if (counter<30 || (xdist<2 && ydist<2)) return;
+  counter=0;
+  if (xdist > ydist)  {
+    dx = (xpointer-x<0) ? -1 : 1;
+    dy = 0;
+  } else if (ydist > xdist) {
+    dy = (ypointer-y<0) ? -1 : 1;
+    dx = 0;
+  }
+  if (dx>0) fn="mouseR.gif";
+  if (dx<0) fn="mouseL.gif";
+  if (dy>0) fn="mouseD.gif";
+  if (dy<0) fn="mouseU.gif";
+  document.images["mouseimg"].src=fn;
+}
+function Setup() {
+  if (!document.getElementById) return;
+  if (Netscape) 
+    document.captureEvents(Event.MOUSEMOVE);
+  document.onmousemove=SetPointer;
+  a1 = new Image();
+  a1.src="mouseR.gif";
+  a2 = new Image();
+  a2.src="mouseL.gif";
+  a3 = new Image();
+  a3.src="mouseU.gif";
+  a4 = new Image();
+  a4.src="mouseD.gif";
+  Move();
+}
+</script>
+</head>
+<body onLoad="Setup();">
+<h1>Animação em DHTML</h1>
+<div ID="mouse" style="position:absolute; left:150; top:150;">
+<img ID="mouseimg" src="mouseR.gif" width="100" height="100" border="0">
+</div>
+</body>
+</html>

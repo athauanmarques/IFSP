@@ -1,0 +1,8 @@
+D:\LojaWin\Dal\bin\Debug\Dal.dll
+D:\LojaWin\Dal\bin\Debug\Dal.pdb
+D:\LojaWin\Dal\bin\Debug\Modelos.dll
+D:\LojaWin\Dal\bin\Debug\mysql.data.dll
+D:\LojaWin\Dal\bin\Debug\Modelos.pdb
+D:\LojaWin\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+D:\LojaWin\Dal\obj\Debug\Dal.dll
+D:\LojaWin\Dal\obj\Debug\Dal.pdb

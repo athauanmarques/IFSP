@@ -1,0 +1,24 @@
+C:\Users\Raul\Documents\ADS\LP3\Projeto 29-10\Loja\Loja\DAL\bin\Debug\DAL.dll
+C:\Users\Raul\Documents\ADS\LP3\Projeto 29-10\Loja\Loja\DAL\bin\Debug\DAL.pdb
+C:\Users\Raul\Documents\ADS\LP3\Projeto 29-10\Loja\Loja\DAL\bin\Debug\Modelos.dll
+C:\Users\Raul\Documents\ADS\LP3\Projeto 29-10\Loja\Loja\DAL\bin\Debug\Modelos.pdb
+C:\Users\Raul\Documents\ADS\LP3\Projeto 29-10\Loja\Loja\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Raul\Documents\ADS\LP3\Projeto 29-10\Loja\Loja\DAL\obj\Debug\DAL.dll
+C:\Users\Raul\Documents\ADS\LP3\Projeto 29-10\Loja\Loja\DAL\obj\Debug\DAL.pdb
+C:\Users\Raul\Documents\ADS\LP3\Projeto 29-10\Loja\Loja\DAL\bin\Debug\mysql.data.dll
+C:\Users\Raul\Documents\ADS\LP3\LP3 Projeto (ent 19-11)\12-11-2014 Para Projeto (ent 19-11)\Projeto LP3 p 19-11\Loja\Loja\DAL\bin\Debug\DAL.dll
+C:\Users\Raul\Documents\ADS\LP3\LP3 Projeto (ent 19-11)\12-11-2014 Para Projeto (ent 19-11)\Projeto LP3 p 19-11\Loja\Loja\DAL\bin\Debug\DAL.pdb
+C:\Users\Raul\Documents\ADS\LP3\LP3 Projeto (ent 19-11)\12-11-2014 Para Projeto (ent 19-11)\Projeto LP3 p 19-11\Loja\Loja\DAL\bin\Debug\Modelos.dll
+C:\Users\Raul\Documents\ADS\LP3\LP3 Projeto (ent 19-11)\12-11-2014 Para Projeto (ent 19-11)\Projeto LP3 p 19-11\Loja\Loja\DAL\bin\Debug\mysql.data.dll
+C:\Users\Raul\Documents\ADS\LP3\LP3 Projeto (ent 19-11)\12-11-2014 Para Projeto (ent 19-11)\Projeto LP3 p 19-11\Loja\Loja\DAL\bin\Debug\Modelos.pdb
+C:\Users\Raul\Documents\ADS\LP3\LP3 Projeto (ent 19-11)\12-11-2014 Para Projeto (ent 19-11)\Projeto LP3 p 19-11\Loja\Loja\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Raul\Documents\ADS\LP3\LP3 Projeto (ent 19-11)\12-11-2014 Para Projeto (ent 19-11)\Projeto LP3 p 19-11\Loja\Loja\DAL\obj\Debug\DAL.dll
+C:\Users\Raul\Documents\ADS\LP3\LP3 Projeto (ent 19-11)\12-11-2014 Para Projeto (ent 19-11)\Projeto LP3 p 19-11\Loja\Loja\DAL\obj\Debug\DAL.pdb
+C:\Users\Raul\Documents\ADS\LP3\PROJ 26-11 oficial\Loja\Loja\DAL\bin\Debug\DAL.dll
+C:\Users\Raul\Documents\ADS\LP3\PROJ 26-11 oficial\Loja\Loja\DAL\bin\Debug\DAL.pdb
+C:\Users\Raul\Documents\ADS\LP3\PROJ 26-11 oficial\Loja\Loja\DAL\bin\Debug\Modelos.dll
+C:\Users\Raul\Documents\ADS\LP3\PROJ 26-11 oficial\Loja\Loja\DAL\bin\Debug\mysql.data.dll
+C:\Users\Raul\Documents\ADS\LP3\PROJ 26-11 oficial\Loja\Loja\DAL\bin\Debug\Modelos.pdb
+C:\Users\Raul\Documents\ADS\LP3\PROJ 26-11 oficial\Loja\Loja\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Raul\Documents\ADS\LP3\PROJ 26-11 oficial\Loja\Loja\DAL\obj\Debug\DAL.dll
+C:\Users\Raul\Documents\ADS\LP3\PROJ 26-11 oficial\Loja\Loja\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,14 @@
+D:\LojaWin\Modelos\bin\Debug\Modelos.dll
+D:\LojaWin\Modelos\bin\Debug\Modelos.pdb
+D:\LojaWin\Modelos\obj\Debug\Modelos.dll
+D:\LojaWin\Modelos\obj\Debug\Modelos.pdb
+D:\LojaWin\Modelos\obj\Debug\Modelos.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\LP3\LojaWin\Modelos\bin\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\LP3\LojaWin\Modelos\bin\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\LP3\LojaWin\Modelos\obj\Debug\Modelos.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\LP3\LojaWin\Modelos\obj\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\LP3\LojaWin\Modelos\obj\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\Modelos\bin\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\Modelos\bin\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\Modelos\obj\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\LojaWeb\LojaWeb\Modelos\obj\Debug\Modelos.pdb

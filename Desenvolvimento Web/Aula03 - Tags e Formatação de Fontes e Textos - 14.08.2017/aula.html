@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.tudo
+		{
+			background-color: #2E86C1; /*cor de fundo*/
+			height: 600px; /*espaçamento altura*/
+			width: 600px; /*espaçamento comprimento*/
+			padding: 5px; /*2 valores: top rigth / left bottom*/
+			box-sizing: content-box; /**/
+
+		}
+		.menu, .conteudo
+		{
+			
+			height: 100px;
+			width: 250px;
+			color: #000;
+			font-weight: bold;
+			box-shadow: 10px 5px 8px rgba(0, 0, 25, 0.5); /*colocar sombra nas caixa criado(plano cartesiano) - rbga(cor)*/
+			background-color: #fff;
+			margin: 10px; /*distância entre os elementos*/
+			position: relative; 
+			/*left: 20px; /*deslocando valores para esquerda a posição do elemento*/
+			outline: rgba(0,0,107,.65) solid 5px; /*cor ante de chegar na borda do elemento*/
+
+			/*display: inline;/*quebrar do elemento - block ou inline*/
+		}
+		.menu
+		{
+			float: left;
+			width: 70%; /*posição*/
+			/*visibility: hidden; /* esconder elemento*/
+
+		}
+		.conteudo
+		{
+			float: right;
+			width: 20%;
+		}
+		
+		/*p
+		{
+			clear: :both; /*limpa os floats		
+		}*/
+
+	</style>
+</head>
+<body>
+		<div class="tudo">
+			<div class="menu">Menu</div>
+			<div class="conteudo">conteudo</div>
+
+		</div>
+
+		<!-- -->
+</body>
+</html>

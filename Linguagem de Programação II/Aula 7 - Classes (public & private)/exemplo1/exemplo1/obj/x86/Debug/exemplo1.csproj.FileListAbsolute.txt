@@ -1,0 +1,16 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\exemplo1\bin\Debug\exemplo1.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\exemplo1\bin\Debug\exemplo1.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\exemplo1\obj\x86\Debug\exemplo1.Form1.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\exemplo1\obj\x86\Debug\exemplo1.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\exemplo1\obj\x86\Debug\exemplo1.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\exemplo1\obj\x86\Debug\exemplo1.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\exemplo1\obj\x86\Debug\exemplo1.pdb
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\obj\x86\Debug\exemplo1.exe
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\bin\Debug\exemplo1.exe
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\bin\Debug\exemplo1.pdb
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\obj\x86\Debug\exemplo1.Form1.resources
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\obj\x86\Debug\exemplo1.Properties.Resources.resources
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\obj\x86\Debug\exemplo1.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\obj\x86\Debug\exemplo1.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 7 - Classes (public & private)\exemplo1\exemplo1\obj\x86\Debug\exemplo1.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 7 - Classes (public & private)\exemplo1\exemplo1\obj\x86\Debug\exemplo1.pdb

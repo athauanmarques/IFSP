@@ -1,0 +1,117 @@
+
+code {
+  background: #2db34a;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 24px 15px;
+  text-align: center;
+}
+
+#lista {
+  background: #2db34a;
+  border-radius: 6px;
+  color: #fff;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 24px 15px;
+}
+
+#listagem {
+  /* list-style: list-style-type list-style-image list-style-position; */
+  list-style: decimal url('if.png') inside;
+}
+
+#frutas {
+  /* list-style: list-style-type list-style-image list-style-position; */
+  list-style-image: none;
+  list-style-type: decimal-leading-zero;
+}
+
+/**               **/
+/**  LAYOUT ITENS **/
+/**               **/
+
+nav,
+header,
+section,
+aside,
+footer {
+  margin: 0 1.5% 24px 1.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+nav {
+  /*float: left; 
+  width: 30%;*/
+}
+section {
+  /*float: left;
+  width: 31%;*/
+}
+aside {
+  /*float: right;
+  width: 30%;*/
+}
+footer {
+ /* clear: both;
+  margin-bottom: 0;*/
+}
+
+.t1, .t2, .t3, .t4 {
+  margin: 10% auto;
+  border: 2px solid white;
+  table-layout: fixed; /*depende do conteúdo, auto*/
+  caption-side: top; /* bottom */
+  width: 90%;
+}  
+
+.t1 td, .t2 td, .t3 td , .t4 td{
+  border: 2px dotted white;
+}
+
+.t1 {
+  border-collapse: collapse; /* separate*/
+  table-layout: fixed; /* auto*/
+  caption-side: top;
+}
+.t3 {
+  border-style: dashed;
+  empty-cells: hide; /* show*/
+  border-spacing: 10px;
+}
+
+.t4 tfoot {
+  background-color: black;
+}
+.t4 thead {
+  background-color: darkgreen;
+}
+
+/**                **/
+/* BACKGROUND ITENS */
+/**                **/
+
+header code {
+  background-color: black;
+}
+nav code {
+  background-color: lightblue;
+  border: 2px dashed black;
+}
+section code {
+  background-color: lightgreen;
+  color: black;
+  border: 2px dotted black;
+}
+aside code {
+  background-color: gray;
+}
+footer code {
+  background-color: black;
+}

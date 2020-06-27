@@ -1,0 +1,8 @@
+D:\LP3\LojaWin\Modelos\bin\Debug\Modelos.dll
+D:\LP3\LojaWin\Modelos\bin\Debug\Modelos.pdb
+D:\LP3\LojaWin\Modelos\obj\Debug\Modelos.dll
+D:\LP3\LojaWin\Modelos\obj\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\Modelos\bin\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\Modelos\bin\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\Modelos\obj\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\Modelos\obj\Debug\Modelos.pdb

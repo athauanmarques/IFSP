@@ -1,0 +1,112 @@
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\bin\Debug\PizzariaMania.exe
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\bin\Debug\PizzariaMania.pdb
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\bin\Debug\MetroFramework.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.csprojResolveAssemblyReference.cache
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmLogin.resources
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.Properties.Resources.resources
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.csproj.GenerateResource.Cache
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.exe
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.pdb
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmNovoCadastro.resources
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmMenu.resources
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmSistema.resources
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmUsuario.resources
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmLogo.resources
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmSobre.resources
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\bin\Debug\BLL.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\bin\Debug\Modelos.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\bin\Debug\MySql.Data.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\bin\Debug\DAL.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\bin\Debug\BLL.pdb
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\bin\Debug\Modelos.pdb
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\bin\Debug\DAL.pdb
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.exe
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.pdb
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\PizzariaMania.exe
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\PizzariaMania.pdb
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\BLL.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\MetroFramework.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\MySql.Data.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\DAL.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\BLL.pdb
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\bin\Debug\DAL.pdb
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmLogin.resources
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmLogo.resources
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmMenu.resources
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmNovoCadastro.resources
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmSistema.resources
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmSobre.resources
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmUsuario.resources
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmTabelaPreco.resources
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.exe
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.pdb
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\bin\Debug\PizzariaMania.exe
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\bin\Debug\PizzariaMania.pdb
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\bin\Debug\BLL.dll
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\bin\Debug\MetroFramework.dll
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\bin\Debug\Modelos.dll
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\bin\Debug\MySql.Data.dll
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\bin\Debug\DAL.dll
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\bin\Debug\BLL.pdb
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\bin\Debug\Modelos.pdb
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\bin\Debug\DAL.pdb
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.csprojResolveAssemblyReference.cache
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmTabelaPreco.resources
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmLogin.resources
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmLogo.resources
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmMenu.resources
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmNovoCadastro.resources
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmSistema.resources
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmSobre.resources
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmUsuario.resources
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.Properties.Resources.resources
+C:\Users\Athauan\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.csproj.GenerateResource.Cache
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmTabelaPreco.resources
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmSelecionarCliente.resources
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmAjuda.resources
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.exe
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.pdb
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.csprojResolveAssemblyReference.cache
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmAjuda.resources
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmSelecionarCliente.resources
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmTabelaPreco.resources
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmLogin.resources
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmLogo.resources
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmMenu.resources
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmNovoCadastro.resources
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmSistema.resources
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmSobre.resources
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.frmUsuario.resources
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.Properties.Resources.resources
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\obj\x86\Debug\PizzariaMania.csproj.GenerateResource.Cache
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\PizzariaMania.exe
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\PizzariaMania.pdb
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\BLL.dll
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\MetroFramework.dll
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\Modelos.dll
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\MySql.Data.dll
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\DAL.dll
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\BLL.pdb
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\Modelos.pdb
+C:\Users\vir_k\Desktop\Pizzaria\PizzariaMania\bin\Debug\DAL.pdb

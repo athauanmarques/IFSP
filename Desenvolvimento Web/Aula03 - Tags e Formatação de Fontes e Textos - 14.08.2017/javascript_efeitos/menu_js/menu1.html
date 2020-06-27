@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+	<title>Instituto Federal de São Paulo</title>
+	<script language="JavaScript">
+		function describe(text) {
+			if (!document.getElementById) return;
+			box=document.getElementById("desc")
+			box.innerHTML=text;
+		}
+	</script>
+</head>
+<body>
+	<img align="center" src="iflogo.jpg" width="200" height="100" border="0"><br>
+	<h1>Bem vindos ao IFSP</h1>
+	<p>O Instituto Federal de São Paulo é uma instituição federal de educação, ciência e tecnologia...
+	</p>
+	<table border="1" align="center">
+	<tr>
+	   <td width="20%"><a href="cursos.html" onMouseOut="describe('...');"
+		 onMouseOver="describe('Informações sobre os cursos oferecidos');">
+	   <b>Cursos</b></a></td>
+	   <td width="20%"><a href="contatos.html" onMouseOut="describe('...');"
+		 onMouseOver="describe('Entre em contato conosco');">
+	   <b>Contatos</b></a></td>
+	   <td width="20%"><a href="servicos.html" onMouseOut="describe('...');"
+		 onMouseOver="describe('Encontre serviços e suporte');">
+	   <b>Serviços</b></a></td>
+	   <td width="20%"><a href="pessoas.html" onMouseOut="describe('...');"
+		 onMouseOver="describe('Saiba mais sobre nossa equipe');">
+	   <b>Pessoas</b></a></td>
+	   <td width="20%"><a href="oportunidade.html" onMouseOut="describe('...');"
+		 onMouseOver="describe('Veja os editais disponíveis');">
+	   <b>Oportunidades</b></a></td>
+	</tr>
+	<tr><td ID="desc" align='center' colspan="5">...</td></tr>
+	</table>
+	<p>Click nos itens do menu para saber mais.</p>
+</body>
+</html>

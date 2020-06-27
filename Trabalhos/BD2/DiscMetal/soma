@@ -1,0 +1,16 @@
+-- --------------------------------------------------------------------------------
+-- Routine DDL
+-- Note: comments before and after the routine body will not be stored by the server
+-- --------------------------------------------------------------------------------
+DELIMITER $$
+drop procedure if exists Soma $$
+CREATE PROCEDURE `Somar` (n1 float, n2 float)
+mani: BEGIN
+
+declare resultado float;
+set resultado = n1 +n2;
+select resultado as result;
+
+
+
+END

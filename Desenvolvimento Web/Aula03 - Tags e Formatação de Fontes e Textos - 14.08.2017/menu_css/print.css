@@ -1,0 +1,101 @@
+/* Folha de estilos:
+Autor: Mauricio Samy Silva
+Data:  2006-08-29
+Rev-1: 2006-08-29
+Alterar em includes: meta - doctype - footer
+*/
+/* =GERAL */
+body {
+	width:95%;
+	background:#fff; 
+	color:#000; 
+	margin:5pt; 
+	font:   12pt/1.5 "Times New Roman", Times, serif;                                     
+	}
+/* =ESTRUTURA */
+#header {
+	}
+#lateral, #footer, #extra, #extra1, #extra2, #extra3, #extra4, #content p.rev, .print-out {display:none}
+.hidden, .pub-date, header h2, .notatopo, .widgets-topo, .banner-topo-adsense {display:none;} 
+.google-adsense {float:none;width:0;height:0;}
+/* =LINKS */
+a:link, a, a:visited  {color:#666; text-decoration:underline;}
+/* =CABECALHOS */
+#header div a img {display:none;
+	}
+
+#header h1 {
+	text-align:center;
+	}
+#header h2 {
+	}
+#header h1, #header h2 {
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#content h1 {
+	}
+#content h2 {
+	}
+#content h3, #content h4 {
+	}
+#content h4 { 
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* =INTERNA */
+#content p { 
+	}
+#content p.credits {
+	}
+#content ul, #content ol {
+	margin-left:3.0em;
+	}
+#content  ul.boxtut, #content  ol.boxtut {
+	list-style-position:inside;
+	margin-left:0;
+	}
+div.irtopo img {
+	display:none;
+	}
+/* =LOCAIS */
+pre, pre code {
+	display:block;
+	width:96%; 
+	font: normal 10pt "Courier New", courier, monospace;
+	line-height:1.2em;
+	margin:2pt 0;
+	padding:1pt;
+	border:1px solid #ccc; 
+	}
+fieldset {border-width:0;}
+code, kbd, samp {
+	}
+abbr[title], acronym[title] {
+	}
+abbr {
+	}
+acronym {
+	}
+q, cite, blockquote {	
+	font-style:italic;
+	}
+q {font-size:1.2em;}
+blockquote {	
+	border:1px solid #ccc;
+	padding:2pt 1pt;
+	}
+.nt {font-style:italic;} 
+/* =TABELAS */
+table.borda {
+border-collapse: collapse;
+	 }
+table tr td, table.borda tr th {
+padding:1px 8px;
+border:1px solid #c30;
+	 }
+/* =UTIL */
+.img-left {float:left; margin-right:5px;}
+.img-right {float:right; margin-left:5px;}
+.dest {font-weight:bold;}
+.center {text-align:center;}
+img {border:none;}
+.clear {clear:both;}

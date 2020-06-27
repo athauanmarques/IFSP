@@ -1,0 +1,1183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0049)http://html.net/tutorials/javascript/lesson18.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="translated-ltr"><div id="coFrameDiv" style="height:0px;display:none;"><iframe id="coToolbarFrame" src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/placeholder.html" style="height: 0px; width: 100%; display: none;"></iframe></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>Lição 18: Fazendo AJAX Callsentutorial - HTML.net</title>
+	
+	<meta name="title" content="Lesson 18: Making AJAX Calls - HTML.net">
+	<meta name="description" content="Lesson 18: Making AJAX Calls - Free tutorials on HTML, CSS and PHP - Build your own website">
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Forums, , ">
+	<meta name="language" content="en">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="PICS-Label" content="(PICS-1.1 &quot;http://www.classify.org/safesurf/&quot; l gen true for &quot;http://html.net/&quot; r (SS~~000 1))">
+	<meta http-equiv="PICS-Label" content="(PICS-1.1 &quot;http://www.icra.org/ratingsv02.html&quot; l gen true for &quot;http://html.net&quot; r (cz 1 lz 1 nz 1 oz 1 vz 1) &quot;http://www.rsac.org/ratingsv01.html&quot; l gen true for &quot;http://html.net&quot; r (n 0 s 0 v 0 l 0))"> 
+	<!--
+	<meta property="og:title" content="Lesson 18: Making AJAX Calls - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://html.net/tutorials/javascript/lesson18.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	-->
+	<link rel="canonical" href="http://www.html.net/tutorials/javascript/lesson18.php"><link rel="stylesheet" href="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/default.screen.css" type="text/css" media="screen"><link rel="stylesheet" href="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/default.print.css" type="text/css" media="print"><link rel="stylesheet" href="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/default.handheld.css" type="text/css" media="handheld">
+	<script src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/linkid.js" type="text/javascript" async=""></script><script src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/cb=gapi.loaded_1" async=""></script><script type="text/javascript" async="" src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/ga.js"></script><script src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" defer="" src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/ezoic_analytics.js"></script><script async="" type="text/javascript" src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/gpt.js"></script><script type="text/javascript">
+			
+		function toggleVisibility(objectID, imageID) {
+		vis = document.getElementById(objectID).style;
+		state = vis.display;
+		if (state == 'none') {
+			vis.display = 'block';	
+			document.getElementById(imageID).value = '▲ Collapse view';
+			}
+		else {		
+			if (state == 'block') {
+				vis.display = 'none';
+				document.getElementById(imageID).value = '▼ Expand view';
+				}	
+			else {
+				vis.display = 'block'; 
+				document.getElementById(imageID).value = '▲ Collapse view';
+				}
+		}}
+
+		//-->
+	</script>
+
+	<script type="text/javascript">
+	// <![CDATA[
+		var jump_page = '{LA_JUMP_PAGE}:';
+		var on_page = '{ON_PAGE}';
+		var per_page = '{PER_PAGE}';
+		var base_url = '{A_BASE_URL}';
+		var style_cookie = 'phpBBstyle';
+		var style_cookie_settings = '{A_COOKIE_SETTINGS}';
+		var onload_functions = new Array();
+		var onunload_functions = new Array();
+
+		/**
+		* Find a member
+		*/
+		function find_username(url)
+		{
+			popup(url, 760, 570, '_usersearch');
+			return false;
+		}
+
+		/**
+		* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+		*/
+		window.onload = function()
+		{
+			for (var i = 0; i < onload_functions.length; i++)
+			{
+				eval(onload_functions[i]);
+			}
+		}
+
+		window.onunload = function()
+		{
+			for (var i = 0; i < onunload_functions.length; i++)
+			{
+				eval(onunload_functions[i]);
+			}
+		}
+
+	// ]]>
+	</script>
+
+	<script type="text/javascript" src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/forum_fn.js"></script>
+
+	
+
+	<!-- GOOGLE DFP -->
+	
+	<script type="text/javascript">
+		(function() {
+		var useSSL = 'https:' == document.location.protocol;
+		var src = (useSSL ? 'https:' : 'http:') +
+		'//www.googletagservices.com/tag/js/gpt.js';
+		document.write('\u003Cscr' + 'ipt src="' + src + '">\u003C/scr' + 'ipt>');
+	})();
+	</script><script src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/gpt.js"></script>
+	
+	<script type="text/javascript">
+		googletag.pubads().set('page_url', 'http://html.net/tutorials/javascript/lesson18.php');
+		googletag.pubads().setTargeting('language', 'en');
+		googletag.pubads().setTargeting('page', 'tutorial');
+ 
+		googletag.defineSlot('/16232578/HTML_NET_160x600', [160, 600], 'div-gpt-ad-1406669457921-0').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML_NET_1x1', [1, 1], 'div-gpt-ad-1406669457921-1').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML_NET_300x250A', [300, 250], 'div-gpt-ad-1406669457921-2').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML_NET_300x250B', [300, 250], 'div-gpt-ad-1406669457921-3').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML_NET_728x90', [728, 90], 'div-gpt-ad-1406669457921-4').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML.net_Passback_160x600', [160, 600], 'div-gpt-ad-1415474780011-0').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML.net_Passback_300x250', [300, 250], 'div-gpt-ad-1415474914296-0').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML.net_Passback_300x250B', [300, 250], 'div-gpt-ad-1415474942999-0').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML.net_Passback_728x90', [728, 90], 'div-gpt-ad-1415474992242-0').addService(googletag.pubads());
+		
+		googletag.pubads().enableSyncRendering();
+		googletag.enableServices();
+
+	</script>
+	
+	<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16232578/HTML.net_Passback_160x600', [160, 600], 'div-gpt-ad-1415474780011-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16232578/HTML.net_Passback_300x250', [300, 250], 'div-gpt-ad-1415522828348-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16232578/HTML.net_Passback_300x250B', [300, 250], 'div-gpt-ad-1415474942999-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16232578/HTML.net_Passback_728x90', [728, 90], 'div-gpt-ad-1415474992242-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+	
+	
+	
+	
+<script type="text/javascript">var ezouid = "420779567";</script><script type="text/javascript">window.google_analytics_uacct = "UA-59094534-21";</script><script data-cfasync="false" type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['setCustomVariable',1,'t','126','visit']);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//a.ezoic.com/a/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId',  1891 ]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src='\/\/go.ezoic.net\/ezoic_analytics.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript>&lt;p&gt;&lt;img src="//a.ezoic.com/a/piwik.php?idsite={}" style="border:0;" alt="" /&gt;&lt;/p&gt;</noscript><!--<base href="http://html.net/tutorials/javascript/lesson18.php">--><base href="."><!--[if lt IE 9]>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+<!--[if (gte IE 9) | (!IE)]><!-->
+    <script src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/jquery.min.js"></script>
+<!--<![endif]--><script src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/ezjquery-noconflict.js"></script><script type="text/javascript">
+var ezoTemplate = 'old_site_gc';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+if(typeof $ !== "undefined")
+{
+$(document).ready(function($) {
+    var ezIgnoreTags = ['SCRIPT','IFRAME','STYLE','LINK','BODY','HEAD'];
+    $(document).bind('DOMNodeInserted', function(e) {  
+        var element = e.target;
+        
+        //move our before and after spans to be first or last sibling elements
+        var after_span = $(element).prev('.ezoic-after-el');
+        if(after_span != null)
+        {
+             after_span.insertAfter($(element));
+        }
+        var before_span = $(element).next('.ezoic-before-el');
+        if(before_span != null)
+        {
+             before_span.insertBefore($(element));
+        }
+        
+
+        if(ezIgnoreTags.indexOf(element.tagName) == -1)
+        {
+            if($(element).hasClass('ezoic-wrapper') == false && $(element).hasClass('ezoic-no-wrapper') == false)
+            {
+                if($(element).closest('.ezoic-no-wrapper').length < 1 && $(element).closest('.ezoic-ad').length < 1 && $(element).closest('.ezo_ad').length < 1 && $(element).closest('.ezoic-wrapper').length < 1  && $(element).css('position') != 'fixed' && $(element).css('position') != 'absolute')
+                {
+                    $(element).addClass('ezoic-wrapper');
+                    ezo_elements_to_check.push(element);
+                    ezo_resize_interval_count=0; //reset interval timer
+
+                    if($(element).hasClass('ez_wrap_ins') == false && $(element).parent().is('body'))
+                    {
+                        $(element).wrap("<ins class='ezoic-wrapper ez_wrap_ins'></ins>");
+                        $(element).css('max-width','none');
+                        var ezo_style = getComputedStyle(element);
+
+                        var rand_class = 'ezo_wrapper_'+Math.floor((Math.random()*100000)+1);
+
+                        var ezoTempStyle = document.createElement('style');
+                        ezoTempStyle.innerHTML = '.'+rand_class+'{'+ezo_style.cssText+'}';
+                        document.getElementsByTagName('head')[0].insertBefore(ezoTempStyle,document.getElementsByTagName('head')[0].firstChild)
+                        $(element).addClass('ez_wrap_ins');
+                        $(element).addClass(rand_class);
+                        $(element).unwrap('ins');
+                    }
+
+
+                }
+            }
+        }
+        
+        
+    });
+});
+}</script>
+
+<script>
+var old_jquery = null;
+var old_jquery_sign = null;
+function open_jquery_wrapper()
+{
+    if(typeof $ezJQuery != 'undefined')
+    {
+        old_jquery = jQuery;
+        old_jquery_sign = $;
+        $ = $ezJQuery;
+        jQuery = $ezJQuery;
+    }
+}
+function close_jquery_wrapper()
+{
+    if(typeof $ezJQuery != 'undefined')
+    {
+        $ = old_jquery_sign;
+        jQuery = old_jquery;
+    }
+}
+//minified table_resize_js.txt - http://refresh-sf.com/yui/
+function ez_get_widest_cells(c){var b=0;var d=0;var a=new Array();$ezJQuery("td,th",c).each(function(){if($ezJQuery(this).css("word-break")!="break-all"&&$ezJQuery(this).css("word-break")!="break-word"){if($ezJQuery(this).width()>b){b=$ezJQuery(this).width();d=0;a=new Array()}if($ezJQuery(this).width()==b){if($ezJQuery(this).data("ez_lpw")>d){d=$ezJQuery(this).data("ez_lpw");a=new Array()}if($ezJQuery(this).data("ez_lpw")==d){a.push(this)}}}});return a}function ez_scale_font(a){if($ezJQuery(a).children().length>0){$ezJQuery(a).children().each(function(){ez_scale_font(this)})}$ezJQuery(a).css("font-size",parseInt($ezJQuery(a).css("font-size"))-1)}function ez_get_min_font(a){var b=16;$ezJQuery("*",a).each(function(){if(parseInt($ezJQuery(this).css("font-size"))<b){b=parseInt($ezJQuery(this).css("font-size"))}});return b}function ez_get_max_font(b){var a=10;$ezJQuery("*",b).each(function(){if(parseInt($ezJQuery(this).css("font-size"))>a){a=parseInt($ezJQuery(this).css("font-size"))}});return a}function ez_get_max_padding(b){var a=0;$ezJQuery("td",b).each(function(){if(parseInt($ezJQuery(this).css("padding-left"))>a){a=parseInt($ezJQuery(this).css("padding-left"))}if(parseInt($ezJQuery(this).css("padding-right"))>a){a=parseInt($ezJQuery(this).css("padding-left"))}});return a}function ez_scale_padding(a){$ezJQuery("td",a).each(function(){if(parseInt($ezJQuery(this).css("padding-left"))>1){$ezJQuery(this).css("padding-left",parseInt($ezJQuery(this).css("padding-left"))-1)}if(parseInt($ezJQuery(this).css("padding-right"))>1){$ezJQuery(this).css("padding-right",parseInt($ezJQuery(this).css("padding-left"))-1)}})}var ez_word_break_tables=[];function ez_word_break_table(a){if(typeof $ezJQuery=="undefined"){ez_word_break_tables.push(a);if(ez_word_break_tables.length==1){ez_queue.push({method:run_ez_word_break_tables,priority:1})}}else{run_ez_word_break_table(a)}}function ez_reset_width(a){if($ezJQuery(a).data("ez-no-defined-width")===true){$ezJQuery(a).css("width","")}return 1}function run_ez_word_break_tables(){$ezJQuery.each(ez_word_break_tables,function(a,b){run_ez_word_break_table(b)})}function run_ez_word_break_table(a){var l=$ezJQuery("#ez_script_id_"+a).prev("table");var d=11;if($ezJQuery(l).data("ez-gwidth")!=null){var g=$ezJQuery(l).data("ez-gwidth");var m=false;if(String(g).indexOf("%")>=0){m=true;g=Math.ceil((parseInt(g)/100)*$ezJQuery(l).parent()[0].clientWidth)}if($ezJQuery(l).width()<=g){return ez_reset_width(l)}var b=true;if(m==false&&$ezJQuery(l).data("ez-no-defined-width")===true){b=false;$ezJQuery(l).css("width",g)}var j=false;$ezJQuery("td,th",l).each(function(){var q=$ezJQuery(this).clone().find("script").remove().end().text();var n=q.split(/[.,\/ -]/);var p=n.reduce(function(r,s){return r.length>s.length?r:s}).length;var i=ez_get_max_font(this);var o=p*i*0.6;$ezJQuery(this).data("ez_lpw",o);if($ezJQuery(this).width()>0&&o>($ezJQuery(this).width()*0.65)){j=true}});if(j==false){return ez_reset_width(l)}var c=ez_get_min_font(l);if(c==12){d=10}else{if(c==11){d=9}}while(c>d+1&&$ezJQuery(l).width()>g){var f=$ezJQuery(l).width();ez_scale_font(l);c--;if(f==$ezJQuery(l).width()){return ez_reset_width(l)}}if($ezJQuery(l).width()<=g){return ez_reset_width(l)}var k=ez_get_max_padding(l);var f=$ezJQuery(l).width();while(k>1&&$ezJQuery(l).width()>g){ez_scale_padding(l);k--;if($ezJQuery(l).width()<=g){return ez_reset_width(l)}}while(c>d&&$ezJQuery(l).width()>g){var f=$ezJQuery(l).width();ez_scale_font(l);c--;if(f==$ezJQuery(l).width()){return ez_reset_width(l)}}if($ezJQuery(l).width()<=g){return ez_reset_width(l)}var h=ez_get_widest_cells((l));while(h.length!=0&&$ezJQuery(l).width()>g){for(var e=0;e<h.length;e++){if(b===true){$ezJQuery(h[e]).css("width",$ezJQuery(h[e]).width())}$ezJQuery(h[e]).css("word-break","break-all");$ezJQuery(h[e]).css("word-break","break-word")}h=ez_get_widest_cells(l)}return ez_reset_width(l)}};
+</script>
+
+<!-- START EZHEAD -->
+<script type="text/javascript">
+var soc_app_id = '0';
+var did = 3543;
+var ezdomain = 'html.net';
+var ezoicSearchable = 1;
+</script>
+<!---->
+<!-- END EZHEAD -->
+<script type="text/javascript" async="" src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/a.min.js"></script><link rel="stylesheet" id="coToolbarStyle" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" type="text/css"><script type="text/javascript" id="cosymantecbfw_removeToolbar">(function () {				var toolbarElement = {},					parent = {},					interval = 0,					retryCount = 0,					isRemoved = false;				if (window.location.protocol === 'file:') {					interval = window.setInterval(function () {						toolbarElement = document.getElementById('coFrameDiv');						if (toolbarElement) {							parent = toolbarElement.parentNode;							if (parent) {								parent.removeChild(toolbarElement);								isRemoved = true;								if (document.body && document.body.style) {									document.body.style.setProperty('margin-top', '0px', 'important');								}							}						}						retryCount += 1;						if (retryCount > 10 || isRemoved) {							window.clearInterval(interval);						}					}, 10);				}			})();</script><script type="text/javascript" id="waxCS">var WAX = function () { var _arrInputs; return { getElement: function (i) { return _arrInputs[i]; }, setElement: function(i){ _arrInputs=i; } } }(); function waxGetElement(i) { return WAX.getElement(i); } function coSetPageData(t, d){ if('wax'==t) { WAX.setElement(d);} }</script><script type="text/javascript" id="waxCS">var WAX = function () { var _arrInputs; return { getElement: function (i) { return _arrInputs[i]; }, setElement: function(i){ _arrInputs=i; } } }(); function waxGetElement(i) { return WAX.getElement(i); } function coSetPageData(t, d){ if('wax'==t) { WAX.setElement(d);} }</script><link type="text/css" rel="stylesheet" charset="UTF-8" href="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/translateelement.css"></head>
+
+<body>	
+
+	<div id="login">
+		
+		<div><a href="http://html.net/forums/ucp.php?mode=login"><font><font>Entrar</font></font></a><font><font> | </font></font><a href="http://html.net/forums/ucp.php?mode=register"><font><font>Registre-se</font></font></a><font><font> | </font></font><a href="http://html.net/forums/faq.php"><font><font>FAQ</font></font></a></div><img src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/user.png" alt="Anônimo">		
+	</div>
+	
+	
+<div id="ad_leaderboard">
+
+	<!-- HTML_NET_728x90 -->
+	<div id="div-gpt-ad-1406669457921-4" style="width:728px; height:90px;">
+	<script type="text/javascript">
+	googletag.display('div-gpt-ad-1406669457921-4');
+	</script>
+
+</div>
+</div>
+
+
+	<div id="header">
+		
+			
+		<ul>
+			<li><a href="http://html.net/"><font><font>Casa</font></font></a></li>
+			<li class="selected"><a href="http://html.net/tutorials/"><font><font>Tutoriais</font></font></a></li>
+			<li><a href="http://html.net/forums/"><font><font>Fóruns</font></font></a></li>
+			<li><a href="http://html.net/about/"><font><font>Sobre</font></font></a></li>
+		</ul>
+		<form method="get" action="http://html.net/search/" id="cse-search-box">
+		<div id="searchbar">
+			<span>
+			
+				<input type="text" name="q" id="query" value=""><font><font><input type="submit" id="submit" value="Pesquisa"></font></font>
+				 <input type="hidden" name="cx" value="002160260272865772965:d4fb4jd-jh0">
+				<input type="hidden" name="cof" value="FORID:11;NB:1">
+				<input type="hidden" name="ie" value="UTF-8">	
+				<input type="hidden" name="lr" value="lang_en">	
+				<input type="hidden" name="hl" value="en">	
+			
+			</span>
+		</div>
+		</form>
+		
+		
+
+	</div>
+
+	
+		<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href="http://html.net/"><font><font>Início</font></font></a><font><font> » </font></font><a href="http://html.net/tutorials/"><font><font>Tutoriais</font></font></a><font><font> » </font></font><a href="http://html.net/tutorials/javascript/"><font><font>JavaScript</font></font></a><font><font> »Lição 18: Fazer chamadas AJAX</font></font></div>
+			<div id="socialBookmarks">
+				<a href="http://twitter.com/share?count=horizontal&" class="twitter-share-button"></a>
+				<span id="FbCont"><fb:like href="" layout="button_count" show_faces="false" width="" style="position:relative; top:-3px;"></fb:like></span>
+				<span id="gplusone"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1429814096435" name="I0_1429814096435" src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/fastbutton.html" title="+1" data-gapiattached="true"></iframe></div></span>
+				
+								
+			</div>
+			
+			
+			<!-- google_ad_section_start -->
+		
+		<div id="tutorials">﻿	
+	  <h1><font><font>Lição 18: Fazer chamadas AJAX</font></font></h1>
+	
+	  <p><em><font><font>Por </font></font><a href="http://www.mariaantoniettaperna.com/"><font><font>Maria Antonietta Perna</font></font></a></em></p>
+		
+		<p><font><font>Uma característica central de aplicativos web do século 21 é a sua fantástica capacidade de resposta. </font><font>Um pioneiro no negócio de fazer a web mais e mais semelhante a um aplicativo de desktop tem sido </font></font><em><font><font>Google</font></font></em><font><font> : assim que você começar a digitar um caractere em uma caixa de Google, todos os tipos de sugestões e resultados de pesquisa continuam surgindo para acelerar a sua pesquisa; </font><font>e, novamente, basta digitar algo usando o Google Maps, e você está imediatamente catapultou para quase qualquer rua do planeta.</font></font></p>
+	
+		<p><font><font class="">Por trás dessa incrível façanha de inteligência humana é a união de algumas tecnologias conhecidas coletivamente como </font></font><strong><font><font class="">AJAX</font></font></strong><font><font class=""> .</font></font></p>
+		
+		<p><font><font>Nesta lição você vai aprender:</font></font></p>
+		
+		<ul>
+		
+		  <li><font><font>o que </font></font><strong><font><font>AJAX significa</font></font></strong><font><font> e </font></font><strong><font><font>o que tem tudo a ver</font></font></strong><font><font> ;</font></font></li>
+			
+			<li><font><font>como </font></font><strong><font><font>fazer uma solicitação AJAX</font></font></strong><font><font> ;</font></font></li>
+			
+			<li><font><font>como </font></font><strong><font><font>lidar com uma resposta AJAX</font></font></strong><font><font> .</font></font></li>
+		
+		</ul>
+		
+		<p><font><font>Eu recomendo que você tenha acesso a um servidor web para realizar o código de exemplo ilustrado nesta lição. </font><font>Na verdade, AJAX é tudo sobre comunicação cliente-servidor. </font><font>Em vista disso, você pode fazer upload de seus arquivos para um servidor hospedado ou em um servidor local. </font><font>O </font></font><a href="http://html.net/tutorials/php/lesson2.php"><font><font>tutorial PHP</font></font></a><font><font> neste site oferece um excelente guia sobre este tema.</font></font></p>
+		
+		<h2><font><font>O que é AJAX tudo isso?</font></font></h2>
+		
+		<p><font><font>A sigla significa AJAX </font></font><strong><font><font>Asynchronous JavaScript And XML</font></font></strong><font><font> .</font></font></p>
+		
+		<p><font><font>Na realidade, é uma combinação de padrões da Internet composta por:</font></font></p>
+		
+		<ul>
+		
+		  <li><strong><font><font>baseada em padrões de apresentação</font></font></strong><font><font> usando </font></font><strong><font><font>HTML e CSS</font></font></strong><font><font> ;</font></font></li>
+			
+			<li><strong><font><font>exposição dinâmica</font></font></strong><font><font> usando o </font></font><strong><font><font>DOM</font></font></strong><font><font> ;</font></font></li>
+			
+			<li><strong><font><font>intercâmbio de dados</font></font></strong><font><font> e manipulação usando </font></font><strong><font><font>XML</font></font></strong><font><font> ;</font></font></li>
+			
+			<li><strong><font><font>assíncrona</font></font></strong><font><font> recuperação de dados usando o </font></font><strong><font><font>objeto XMLHttpRequest</font></font></strong><font><font> ;</font></font></li>
+			
+			<li><strong><font><font>JavaScript</font></font></strong><font><font> mágica para orquestrar todo o processo.</font></font></li>
+		
+		</ul>
+		
+		<p><font><font>Em aplicações web não-AJAX, a interação entre os servidores e clientes pode ser um negócio tedioso:</font></font></p>
+		
+		<ol>
+		
+		  <li><font><font>uma ação do usuário a partir do cliente envia uma solicitação para o servidor web via HyperText Transfer Protocol (HTTP);</font></font></li>
+			
+			<li><font><font>o servidor web recebe o pedido e processa-lo invocando scripts do lado do servidor, os dados do banco de dados, etc., e envia uma resposta de volta para o cliente via HTTP;</font></font></li>
+			
+			<li><font><font>o navegador do cliente recebe a resposta e carrega toda a página atualizada.</font></font></li>
+		
+		</ol>
+		
+		<p><font><font>Ter que ir de navegador para o servidor e voltar cada vez que um usuário solicita algum pedaço de dados do servidor, além de passar por toda uma atualização de página em cada atualização, pode ser muito estressante em servidores e em usuários da mesma forma.</font></font></p>
+		
+		<p><font><font>AJAX ajuda em pelo menos dois aspectos: </font></font><strong><font><font>atualizações da página fragmentada</font></font></strong><font><font> e </font></font><strong><font><font>comunicação assíncrona</font></font></strong><font><font> entre servidor e cliente.</font></font></p>
+		
+		<p><font><font>O que isto significa, em poucas palavras, é que cada vez que o usuário interage com a página da Web, apenas os bits que precisam de atualização são atualizados, e não toda a página. </font><font>Além disso, o facto de as operações são realizadas de forma assíncrona AJAX, significa que, durante o tempo que leva para a resposta do servidor, a página não é fechado e o utilizador pode ainda interagir com o sítio.</font></font></p>
+		
+		<h2><font><font>Como posso fazer um pedido de AJAX?</font></font></h2>
+		
+		<p><font><font>Um </font></font><strong><font><font>pedido AJAX</font></font></strong><font><font> é feita usando o </font></font><strong><font><font>objeto XMLHttpRequest</font></font></strong><font><font> e seu </font></font><strong><font><font>open () e enviar () métodos</font></font></strong><font><font> . </font><font>Isto é suportado por todos os principais navegadores. </font><font>No entanto, os navegadores mais antigos, varsions a saber mais antigas do Microsoft Internet Explorer (vesions 5 e 6), apoiar um </font></font><strong><font><font>ActiveXObject</font></font></strong><font><font> . </font><font>Este pequeno obstáculo é facilmente superada por meio de testes para suporte de recursos no script.</font></font></p>
+		
+		<p><font><font>O </font></font><strong><font><font>(, url, retrievalMethod bool) aberto</font></font></strong><font><font> método tem três argumentos:</font></font></p>
+		
+		<ol>
+		
+		  <li><strong><font><font>retrievalMethod</font></font></strong><font><font> : este pode ser um </font></font><strong><font><font>GET</font></font></strong><font><font> (usada para obter os dados a partir do servidor), ou um </font></font><strong><font><font>POST</font></font></strong><font><font> (utilizado para enviar dados para o servidor);</font></font></li>
+			
+			<li><strong><font><font>url</font></font></strong><font><font> : esta é a localização onde os dados são disponibilizados. </font><font>Pode ser um arquivo de texto, um documento XML, ou um script do lado do servidor que processa os dados provenientes de um banco de dados;</font></font></li>
+			
+			<li><strong><font><font>bool</font></font></strong><font><font> : este é um valor verdadeiro / falso. </font><font>Se é falso o pedido for feito de forma síncrona, se é verdade o pedido for feito de forma assíncrona, que é o que normalmente quer.</font></font></li>
+		
+		</ol>
+		
+		<p><font><font class="">O objeto XMLHttpRequest tem uma </font></font><strong><font><font class="">onreadystatechange</font></font></strong><font><font class=""> propriedade que lida com a resposta do servidor. </font><font>Isso procede ao longo dos 5 estágios seguintes:</font></font></p>
+		
+		<ul>
+		
+		  <li><font><font>0) o </font></font><strong><font><font>pedido não foi inicializado</font></font></strong><font><font> porque </font></font><strong><font><font>open () não foi chamado</font></font></strong><font><font> ;</font></font></li>
+			
+			<li><font><font>1) o </font></font><strong><font><font>pedido é especificado</font></font></strong><font><font> , mas </font></font><strong><font><font>send () não foi chamado ainda</font></font></strong><font><font> ;</font></font></li>
+			
+			<li><font><font>2) o </font></font><strong><font><font>pedido está sendo enviado</font></font></strong><font><font> , porque agora </font></font><strong><font><font>enviar () foi chamado</font></font></strong><font><font> ;</font></font></li>
+			
+			<li><font><font>3) a </font></font><strong><font><font>resposta está sendo recebido, mas ainda não está concluída</font></font></strong><font><font> ;</font></font></li>
+			
+			<li><font><font>4) a </font></font><strong><font><font>resposta é completa e os dados estão disponíveis para manipulação e exibição</font></font></strong><font><font> .</font></font></li>
+		
+		</ul>
+		
+		<p><font><font>Após a conclusão (estágio 4), o objeto XMLHttpRequest </font></font><strong><font><font>propriedade status</font></font></strong><font><font> é atribuído um </font></font><strong><font><font>código de status HTTP</font></font></strong><font><font> que descreve o resultado do pedido da seguinte forma:</font></font></p>
+		
+		<ul>
+		
+		  <li><strong><font><font>200</font></font></strong><font><font> : sucesso!</font></font></li>
+			
+			<li><strong><font><font>401</font></font></strong><font><font> : não autorizado - a autenticação é necessária e não foi fornecido;</font></font></li>
+			
+			<li><strong><font><font>403</font></font></strong><font><font> : proibido - o servidor se recusa a responder;</font></font></li>
+			
+			<li><strong><font><font>404</font></font></strong><font><font> : não encontrado - o recurso solicitado não pode ser encontrado.</font></font></li>
+		
+		</ul>
+		
+		<p><font><font>Este é um trecho de código simples que traduz o que foi dito em prática:</font></font></p>
+		
+		<div class="codebox">
+		
+		<pre>		
+		<span class="code-comments"><font><font>// Variável global para armazenar o objeto XMLHttpRequest</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>var myRequest;</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Package o pedido em sua própria função</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>funcionar getData ()</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Matéria técnica de testes para garantir que o navegador</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Suporta o objeto XMLHttpRequest</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>if (window.XMLHttpRequest)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Cria uma nova instância do objeto</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest = new XMLHttpRequest ();</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// O resto - o objeto XMLHttpRequest não é suportado:</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Criar uma instância de ActiveXObject</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>mais</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest = new ActiveXObject ("Microsoft.XMLHTTP");</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>(, RetrievalMethod "myDataFile.txt" bool) método // Use a céu aberto</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest.open ("GET", url, true);</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Use enviar () com um argumento nulo - não temos nada a enviar:</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest.send (null);</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Anexar uma função para lidar com onreadystatechange,</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Isto é, a resposta do servidor:</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest.onreadystatechange = getData;</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		</pre>
+		
+		</div>
+		
+		<h2><font><font>Como posso lidar com a resposta AJAX?</font></font></h2>
+		
+		<p><font><font>Se o navegador do cliente solicita dados de texto, a resposta do servidor é automaticamente armazenada na </font></font><strong><font><font>propriedade responseText</font></font></strong><font><font> .</font></font></p>
+		
+		<p><font><font>Se o navegador do cliente solicita dados em formato XML, a resposta do servidor é armazenado na </font></font><strong><font><font>propriedade responseXML</font></font></strong><font><font> .</font></font></p>
+		
+		<p><font><font>Aqui está um trecho de código que ilustra isso na prática.</font></font></p>
+		
+		<div class="codebox">
+		
+		<pre>		
+		<span class="code-comments"><font><font>// Package o código de resposta a movimentação em uma função</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>funcionar getData ()</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Certifique-se a resposta está em fase de conclusão (4):</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>se (myRequest.readyState === 4)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Se for, certifique-se o código de status é de 200 (sucesso):</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>se (myRequest.status === 200)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Se está tudo bem, lidar com a resposta:</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>var text = myRequest.responseText;</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>alert (texto);</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		</pre>
+		
+		</div>
+		
+		<p><font><font>Vamos abordar dois exemplos que incluem solicitação e resposta usando AJAX. </font><font>O primeiro exemplo será lidar com uma resposta em formato de texto simples, o segundo exemplo com uma resposta em formato XML.</font></font></p>
+		
+		<h2><font><font>AJAX pedido - exemplo de resposta: resposta de texto simples</font></font></h2>
+		
+		<p><font><font>Para acompanhar, você precisa de um servidor e um arquivo de texto simples carregado para o mesmo servidor que hospeda o seu código JavaScript.</font></font></p>
+		
+		<p><font><font>A página que você está indo para a construção permite que o usuário clique em um botão para exibir algum texto armazenadas em seu arquivo de texto usando AJAX.</font></font></p>
+		
+		<p><font><font>Aqui está uma página HTML simples com uma &lt;header&gt; tag e um elemento de botão:</font></font></p>
+		
+		<p></p>
+		
+		<div class="codebox">
+		
+		<pre>		<font></font><font><font>
+		&lt;! DOCTYPE html&gt;</font></font><font></font><font><font>
+		&lt;Html&gt;</font></font><font></font><font><font>
+		&lt;Head&gt;</font></font><font></font><font><font>
+		&lt;Title&gt; Lição 18: Fazer chamadas Ajax &lt;/ title&gt;</font></font><font></font>
+		<font></font><font><font>
+		&lt;/ Head&gt;</font></font><font></font><font><font>
+		&lt;Body&gt;</font></font><font></font><font><font>
+		&lt;H1&gt; Lição 18: Fazer chamadas Ajax - texto Plain resposta &lt;/ ​​h1&gt;</font></font><font></font>
+		<font></font>
+		<strong><font><font>&lt;Div&gt;</font></font><font></font>
+		<font></font><font><font>
+		&lt;H2 id = "MyHeader"&gt; Clique no botão para chamar seus dados &lt;/ h2&gt;</font></font><font></font>
+		<font></font><font><font>
+		&lt;Input type = value "botão" = "Clique-me!" </font><font>onclick = "getText ('lesson18_test.txt')" /&gt;</font></font><font></font>
+		<font></font><font><font>
+		&lt;/ Div&gt;</font></font><font></font>
+		<font></font><font><font>
+		&lt;Script type = "text / javascript"&gt;</font></font></strong><font></font>
+		<font></font>
+		<span class="code- comments"><font><font>// Código JavaScript AJAX aqui</font></font></span><font></font>
+		<font></font>
+		<strong><font><font>&lt;/ Script&gt;</font></font></strong><font></font>
+			<font></font><font><font>
+		&lt;/ Body&gt;</font></font><font></font><font><font>
+		&lt;/ Html&gt;</font></font><font></font>
+		<font></font>
+		</pre>
+		
+		</div>
+		
+		<p><font><font>Aqui está o código JavaScript que vai na encerrando tags &lt;script&gt; na página HTML acima:</font></font></p>
+		
+		<div class="codebox">
+		
+		<pre>		
+		<span class="code-comments"><font><font>// Prepara a variável global para a solicitação</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>var myRequest;</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Escreve a função getText (url)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>função getText (url)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Verificar o suporte para o objeto XMLHttpRequest</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>if (window.XMLHttpRequest)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest = new XMLHttpRequest ();</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Mais, criar um ActiveXObject para IE6</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>mais</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest = new ActiveXObject ("Microsoft.XMLHTTP");</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Chame o método open () para fazer o pedido</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest.open ("GET", url, true);</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Envia o pedido</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest.send (null);</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Atribuir a função getData () para o</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Propriedade onreadystatechange para lidar com a resposta do servidor</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest.onreadystatechange = getData;</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<font></font>
+		<font></font>
+		<span class="code-comments"><font><font>/ ********************************************** /</font></font></span><font></font>
+		<font></font>
+		<font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Essa função manipula a resposta do servidor</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>funcionar getData ()</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Obter uma referência para o elemento de cabeçalho onde</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// O resultado retornado será exibido</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>var MyHeader = document.getElementById ("MyHeader");</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Verificar a resposta está completa</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>se (myRequest.readyState === 4)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Verificar o código de estado da resposta é bem sucedido</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>se (myRequest.status === 200)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Conservar a resposta</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>var text = myRequest.responseText;</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Assing o texto retornado para o nodeValue</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Propriedade do elemento header (você também pode usar</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// InnerHTML aqui se você sente que simplifica sua tarefa)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myHeader.firstChild.nodeValue = text;</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		</pre>
+		
+		</div>
+		
+		<div class="examplelink"><img src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/icon.example.gif" alt=" - "> <a href="http://html.net/tutorials/javascript/lesson18_ex1.html" title="Ver o código acima como um exemplo"><font><font>Mostrar exemplo</font></font></a></div>
+		
+		<p><font><font>Salve o seu trabalho e visualizá-lo em um navegador. </font><font>Você deve ver algo como a página indicada, seguindo o link exemplo acima.</font></font></p>
+		
+		<p><font><font>Observe como o resultado é retornado do servidor, sem piscar página, nenhuma mudança de URL, sem atualização de página inteira: essa é a mágica AJAX.</font></font></p>
+		
+		<h2><font><font>Pedido AJAX - Exemplo de resposta: XML resposta formato</font></font></h2>
+		
+		<p><font><font>A página que você está indo para construir neste segundo exemplo permite que o usuário clique em um botão para exibir uma série de linguagens de programação que vêm de um arquivo XML usando AJAX.</font></font></p>
+		
+		<p><font><font>Para acompanhar neste exercício, elaborar um documento XML simples e uma página HTML.</font></font></p>
+		
+		<p><font><font>Aqui está o que o meu documento XML é semelhante:</font></font></p>
+		
+		<div class="codebox">
+		
+		<pre>		<font></font><font><font>
+		&lt;? Xml version = "1.0"?&gt;</font></font><font></font>
+		<font></font><font><font>
+		&lt;línguas&gt;</font></font><font></font><font><font>
+		 &lt;Idioma&gt; PHP &lt;/ language&gt;</font></font><font></font><font><font>
+		 &lt;Idioma&gt; Ruby On Rails &lt;/ language&gt;</font></font><font></font><font><font>
+		 &lt;Idioma&gt; C # &lt;/ language&gt;</font></font><font></font><font><font>
+		 &lt;Idioma&gt; JavaScript &lt;/ language&gt;</font></font><font></font><font><font>
+		&lt;/ Idiomas&gt;</font></font><font></font>
+		<font></font>
+		</pre>
+		
+		</div>
+		
+		<p><font><font>Salve o arquivo como acima </font></font><strong><font><font>lesson18_test.xml</font></font></strong><font><font> no mesmo local como sua página HTML.</font></font></p>
+		
+		<p><font><font>Aqui está a página HTML:</font></font></p>
+		
+		<div class="codebox">
+		
+		<pre>		<font></font><font><font>
+		&lt;! DOCTYPE html&gt;</font></font><font></font><font><font>
+		&lt;Html&gt;</font></font><font></font><font><font>
+		&lt;Head&gt;</font></font><font></font><font><font>
+		&lt;Title&gt; Lição 18: Fazer chamadas Ajax &lt;/ title&gt;</font></font><font></font>
+		<font></font><font><font>
+		&lt;/ Head&gt;</font></font><font></font><font><font>
+		&lt;Body&gt;</font></font><font></font><font><font>
+		&lt;H1&gt; Lição 18: Fazer chamadas Ajax - Resposta XML &lt;/ h1&gt;</font></font><font></font>
+		<font></font>
+		<strong><font><font>&lt;Div id = "teste"&gt;</font></font><font></font>
+		<font></font><font><font>
+		&lt;H2&gt; Clique no botão para obter uma lista de linguagens de programação &lt;/ h2&gt;</font></font><font></font>
+		<font></font><font><font>
+		&lt;Input type = value "botão" = "Clique-me!" </font><font>onclick = "LoadXml ('lesson18_test.xml')" /&gt;</font></font><font></font>
+		<font></font><font><font>
+		&lt;/ Div&gt;</font></font><font></font>
+		<font></font><font><font>
+		&lt;Script type = "text / javascript"&gt;</font></font></strong><font></font>
+		<font></font>
+		<span class="code- comments"><font><font>// Código JavaScript AJAX aqui</font></font></span><font></font>
+		<font></font>
+		<strong><font><font>&lt;/ Script&gt;</font></font></strong><font></font>
+			<font></font><font><font>
+		&lt;/ Body&gt;</font></font><font></font><font><font>
+		&lt;/ Html&gt;</font></font><font></font>
+		<font></font>
+		</pre>
+		
+		</div>
+		
+		<p><font><font>Agora, continue com o código JavaScript do seguinte modo:</font></font></p>
+		
+		<div class="codebox">
+		
+		<pre>		
+		<span class="code-javascript"><font><font>var myRequest;</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Função A maior parte do loadXML ()</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// É semelhante ao do exemplo anterior:</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>função loadXML (url)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>if (window.XMLHttpRequest)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest = new XMLHttpRequest ();</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>mais</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest = new ActiveXObject ("Microsoft.XMLHTTP");</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest.open ("GET", url, true);</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest.send (null);</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myRequest.onreadystatechange = getData;	</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+			<font></font>
+		<font></font>
+		<span class="code-comments"><font><font>/ ****************************************** /</font></font></span><font></font>
+		<font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>funcionar getData ()</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Obter uma referência ao elemento div</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Onde os dados retornados será exibida:</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>var myDiv = document.getElementById ("test");</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// A parte do código que verifica a resposta</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// É o mesmo que no exemplo anterior:</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>se (myRequest.readyState === 4)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>se (myRequest.status === 200)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Use a propriedade responseXML para pegar</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Os dados retornados, selecione a tag xml</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Chamado </font></font><em><font><font>língua</font></font></em><font><font> , e loja retornou</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// itens de língua em uma variável de matriz:</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>línguas var = myRequest.responseXML.getElementsByTagName ("língua");</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Faz um loop sobre cada item array contendo os dados</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// E criar um elemento &lt;p&gt; para conter cada devolvido</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Parte dos dados.   </font></font><strong><font><font>Observe o uso da firstChild.data</font></font></strong></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Para recuperar o valor do XML &lt;idioma&gt; tag:</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>for (var i = 0; i &lt;languages.length; i ++)</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>{</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>var n = document.createElement ("p");</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>myDiv.appendChild (parágrafo);</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>paragraph.appendChild (document.createTextNode (línguas [i]. </font></font><strong><font><font>firstChild.data</font></font></strong><font><font> ));</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Você pode também atribuir o resultado voltou a myDiv.innerHTML</font></font></span><font></font>
+		<font></font>
+		<span class="code-comments"><font><font>// Se você sente que seria mais simples.</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		<span class="code-javascript"><font><font>}</font></font></span><font></font>
+		<font></font>
+		</pre>
+		
+		</div>
+		
+		<div class="examplelink"><img src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/icon.example.gif" alt=" - "> <a href="http://html.net/tutorials/javascript/lesson18_ex2.html" title="Ver o código acima como um exemplo"><font><font>Mostrar exemplo</font></font></a></div>
+		
+		<p><font><font>Salve o seu trabalho e visualizá-lo em um navegador. </font><font>Você deve ver algo como a página indicada, seguindo o link exemplo acima.</font></font></p>
+		
+		<p><font><font>Observe como o resultado é retornado do servidor sem uma atualização de página inteira. </font><font>Isso é fantástico!</font></font></p>
+		
+		<h2><font><font>Resumo</font></font></h2>
+		
+		<p><font><font>Isso é tudo para esta lição. </font><font>Você trabalhou muito duro, mas agora você pode escrever código JavaScript que recupera dados do servidor, sem uma atualização de página inteira usando técnicas AJAX.</font></font></p>
+		
+		<p><font><font>Você não está limitado a arquivos de formato de texto ou arquivos XML, no entanto. </font><font>Na verdade, os bancos de dados são os instrumentos mais utilizados para armazenar permanentemente os dados em um servidor. </font><font>Técnicas AJAX são tão facilmente aplicada para lidar com banco de dados de informações recuperadas. </font><font>No entanto, você vai precisar de PHP ou uma linguagem de programação do lado do servidor para recuperar dados de ou postar dados para um banco de dados.</font></font></p>
+		
+		<p><font><font>Em todo caso, vamos voltar a este tema em nossa última lição e ver como jQuery simplifica bastante todo o </font></font><em><font><font>processo Ajaxification</font></font></em><font><font> .</font></font></p>
+		
+		<p><font><font>Mas, primeiro, precisamos ter alguma familiaridade com a biblioteca mais popular do mundo de programação JavaScript hoje, </font></font><strong><font><font>jQuery</font></font></strong><font><font> , que é o tema da nossa próxima lição.</font></font></p>
+	
+	<hr><div id="ad_rectangle">
+		
+		<span style="width:300px; height:250px; margin-right:20px; margin-bottom:10px; float:left">
+		
+			<!-- HTML_NET_300x250A -->
+			<div id="div-gpt-ad-1406669457921-2" style="width:300px; height:250px;">
+			<script type="text/javascript">
+			googletag.display('div-gpt-ad-1406669457921-2');
+			</script>
+			</div>
+
+		</span>
+	
+
+		<!-- HTML_NET_300x250B -->
+		
+		<div id="div-gpt-ad-1406669457921-3" style="width:300px; height:250px; float:left;">
+		<script type="text/javascript">
+		googletag.display('div-gpt-ad-1406669457921-3');
+		</script>
+		</div>
+		
+		
+		
+		<!--
+		<div data-type="ad" data-publisher="lqm.html.site" data-zone="ron" data-format="300x250" style='width:300px; height:250px; float:left;'></div>
+			
+		-->
+		
+</div><table id="forums" style="font-size:0.8em;"><thead><tr><th class="topic"><font><font>Tópicos relacionados no </font></font><a href="http://html.net/forums/viewforum.php?f=" style="font-size:1em;"></a></th><th class="replies"><font><font>Replies</font></font></th><th class="views"><font><font>Visualizações</font></font></th></tr></thead><tbody><tr><td colspan="3" style="text-align:center;"><strong><font><font>Ainda não há tópicos relacionados</font></font></strong></td></tr></tbody></table><p><a href="http://html.net/forums/posting.php?mode=post&f=&subject=Making%20AJAX%20Calls" title="Criar um novo tópico" style="text-decoration:none; font-size:0.8em;"><font><font>+ Enviar um novo tópico</font></font></a></p><hr><p class="previous"><a href="http://html.net/tutorials/javascript/lesson17.php"><font><font>&lt;&lt; Lição 17: JavaScript Cronometragem Eventos</font></font></a></p><p class="next"><a href="http://html.net/tutorials/javascript/lesson19.php"><font><font>Lição 19: Breve introdução ao jQuery &gt;&gt;</font></font></a></p></div>  		<!-- google_ad_section_end -->
+
+		</div>
+
+		
+<div id="ad_skyscraper">
+
+	<!-- HTML_NET_160x600 -->
+	<div id="div-gpt-ad-1406669457921-0" style="width:160px; height:600px;">
+	<script type="text/javascript">
+	googletag.display('div-gpt-ad-1406669457921-0');
+	</script>
+	
+</div>
+</div>
+
+
+
+
+
+	</div>
+
+	<div id="sidebar">
+					<h1><font><font>Tutoriais</font></font></h1>
+			<ul>
+			<li><a href="http://html.net/tutorials/html/"><font><font>Tutorial HTML</font></font></a></li><li><a href="http://html.net/tutorials/html5/"><font><font>HTML5 Tutorial</font></font></a></li><li><a href="http://html.net/tutorials/css/"><font><font>CSS Tutorial</font></font></a></li><li><a href="http://html.net/tutorials/php/"><font><font>PHP Tutorial</font></font></a></li><li><a href="http://html.net/tutorials/asp/"><font><font>ASP Tutorial</font></font></a></li><li><strong><a href="http://html.net/tutorials/javascript/"><font><font>JavaScript Tutorial</font></font></a></strong><ul><li><a href="http://html.net/tutorials/javascript/introduction.php"><font><font>Introdução</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson1.php"><font><font>O que é JavaScript</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson2.php"><font><font>Seu primeiro JavaScript</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson3.php"><font><font>Eventos</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson4.php"><font><font>Variáveis ​​e constantes</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson5.php"><font><font>Scripts mais esperto com operadores</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson6.php"><font><font>Scripts ainda mais inteligente com if ... else e interruptor</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson7.php"><font><font>Deixar aborrecida Repetitivos Stuff to JavaScript com Loops</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson8.php"><font><font>Compactar o código JavaScript com funções</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson9.php"><font><font>A Gentle Introdução a Objetos</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson10.php"><font><font>JavaScript Objects: Cordas</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson11.php"><font><font>JavaScript Objetos: Data Objeto</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson12.php"><font><font>JavaScript Objetos: Math objeto</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson13.php"><font><font>JavaScript Objetos: Arrays</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson14.php"><font><font>JavaScript Espaço Vital - o ambiente do navegador</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson15.php"><font><font>Tarefas úteis (I) - configurar e recuperar cookies</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson16.php"><font><font>Tarefas úteis (II) - Formulário de Validação</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson17.php"><font><font>JavaScript Cronometragem Eventos</font></font></a></li><li class="selected"><a href="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/Lição 18_ Fazendo AJAX Callsentutorial - HTML.net.html"><font><font>Fazer chamadas AJAX</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson19.php"><font><font>Breve introdução ao jQuery </font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson20.php"><font><font>Efeitos de Animação legal com jQuery</font></font></a></li><li><a href="http://html.net/tutorials/javascript/lesson21.php"><font><font>Fácil chamadas Ajax com jQuery</font></font></a></li></ul></li>			</ul>
+			
+		<!-- google_ad_section_start(weight=ignore) -->
+		<h2><font><font>Língua</font></font></h2>
+		
+		<form method="post" action="http://html.net/redirect.php">
+			<p>
+			<select name="location">
+				
+				<option value="http://ar.html.net/tutorials/javascript/lesson18.php"><font><font>العربية</font></font></option>
+				<option value="http://de.html.net/tutorials/javascript/lesson18.php"><font><font>Deutsch</font></font></option>
+				<option selected="selected" value="http://html.net/tutorials/javascript/lesson18.php"><font><font>Inglês</font></font></option>
+				<option value="http://es.html.net/tutorials/javascript/lesson18.php"><font><font>Español</font></font></option>
+				<option value="http://fr.html.net/tutorials/javascript/lesson18.php"><font><font>Français</font></font></option>
+				<option value="http://he.html.net/tutorials/javascript/lesson18.php"><font><font>עברית</font></font></option>
+				<option value="http://it.html.net/tutorials/javascript/lesson18.php"><font><font>Italiano</font></font></option>
+				<option value="http://pl.html.net/tutorials/javascript/lesson18.php"><font><font>Polski</font></font></option>
+				<option value="http://pt-br.html.net/tutorials/javascript/lesson18.php"><font><font>Portgués (Brasil)</font></font></option>
+				<option value="http://ru.html.net/tutorials/javascript/lesson18.php"><font><font>Русский</font></font></option>
+				<option value="http://zh.html.net/tutorials/javascript/lesson18.php"><font><font>中文</font></font></option>			</select>
+			<font><font><input type="submit" value="&gt;&gt;"></font></font>
+			</p>
+		</form>
+		
+		
+		<h2><font><font>Traçado</font></font></h2>
+		<form method="post" action="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/Lição 18_ Fazendo AJAX Callsentutorial - HTML.net.html">			<p>
+			<select name="strCSS">
+				
+				<option value="1"><font><font>Omissão</font></font></option>
+				<option value="2"><font><font>Padrão - Azul</font></font></option>
+				<option value="3"><font><font>No CSS</font></font></option>			</select>
+			<font><font><input type="submit" value="&gt;&gt;"></font></font>
+			</p>
+		</form>
+
+				
+
+	</div>
+
+	<div id="footer">
+
+		<hr>
+
+		
+		<h1><font><font>Quem está online:</font></font></h1>
+		<p><font><font>No total, há </font></font><strong><font><font>584</font></font></strong><font><font> usuários online :: 2 registrados, 0 ocultos e 582 convidados</font></font></p> 
+		<p><font><font>O recorde de usuários online foi de </font></font><strong><font><font>961</font></font></strong><font><font> em Sex 16 janeiro de 2015 09:53</font></font></p> 
+		<p id="userlist"><br><font><font>Usuários Registrados: </font></font><span style="color: #9E8DA7;" class="username-coloured"><font><font>Google [Bot]</font></font></span><font><font> , </font></font><span style="color: #9E8DA7;" class="username-coloured"><font><font>Yahoo [Bot]</font></font></span></p>
+		
+		<h1><font><font>Estatísticas:</font></font></h1>
+		<p><font><font>Total de mensagens </font></font><strong><font><font>16.492</font></font></strong><font><font> - Total de Tópicos </font></font><strong><font><font>10326</font></font></strong></p><p><font><font>Total de membros </font></font><strong><font><font>17980</font></font></strong><font><font> - O mais novo membro </font></font><strong><a href="http://html.net/forums/memberlist.php?mode=viewprofile&u=26944"><font><font>victorbayili</font></font></a></strong></p>
+		<p><br><a href="http://html.net/forums/memberlist.php"><font><font>Ver lista completa de membros</font></font></a></p>
+		
+
+		<h1><font><font>Idioma:</font></font></h1>
+		<p><span>
+		<a href="http://ar.html.net/tutorials/javascript/lesson18.php"><font><font>العربية</font></font></a><font><font> | </font></font><a href="http://de.html.net/tutorials/javascript/lesson18.php"><font><font>Deutsch</font></font></a><font><font> | Inglês | </font></font><a href="http://es.html.net/tutorials/javascript/lesson18.php"><font><font>Español</font></font></a><font><font> | </font></font><a href="http://fr.html.net/tutorials/javascript/lesson18.php"><font><font>Français</font></font></a><font><font> | </font></font><a href="http://he.html.net/tutorials/javascript/lesson18.php"><font><font>português</font></font></a><font><font> | </font></font><a href="http://it.html.net/tutorials/javascript/lesson18.php"><font><font>Italiano</font></font></a><font><font> | </font></font><a href="http://pl.html.net/tutorials/javascript/lesson18.php"><font><font>Polski</font></font></a><font><font> | </font></font><a href="http://pt-br.html.net/tutorials/javascript/lesson18.php"><font><font>Portgués (Brasil)</font></font></a><font><font> | </font></font><a href="http://ru.html.net/tutorials/javascript/lesson18.php"><font><font>Русский</font></font></a><font><font> | </font></font><a href="http://zh.html.net/tutorials/javascript/lesson18.php"><font><font>中文</font></font></a><font><font> | 		</font></font></span></p>
+
+			</div>
+
+	<!-- google_ad_section_end -->
+	
+<!-- Developer Media -->
+
+<script type="text/javascript">
+    function _dmBootstrap(file) { 
+        var _dma = document.createElement('script');  
+        _dma.type = 'text/javascript'; 
+        _dma.async = true;  
+        _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file; 
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+    }
+    function _dmFollowup(file) { if (typeof DMAds === 'undefined')  _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js');}
+    (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000);})();
+</script>
+
+
+<!-- BuySellAds FancyBar -->
+<script type="text/javascript" src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/fancybar.js" id="_fancybar_js"></script>
+
+
+<script type="text/javascript" src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/plusone.js" gapi_processed="true"></script>
+<script type="text/javascript" src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/widgets.js"></script>
+<script src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/all.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var campisi = document.createElement('g:plusone');
+campisi.setAttribute("align","left");
+campisi.setAttribute("size","medium");
+campisi.setAttribute("annotation","bubble");
+document.getElementById("gplusone").appendChild(campisi);
+//]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var fb = document.createElement('fb:like'); 
+fb.setAttribute("href",""); 
+fb.setAttribute("layout","button_count");
+fb.setAttribute("show_faces","false");
+fb.setAttribute("width","");
+fb.setAttribute("style","position:relative; top:-3px;");
+document.getElementById("FbCont").appendChild(fb);
+//--><!]]>
+</script>
+
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-59094534-21']);
+_gaq.push(['_setCustomVar',1,'template','old_site_gc',1]);
+_gaq.push(['_setCustomVar',2,'v','{ezoic_variation_id}',1]);
+_gaq.push(['_setCustomVar',3,'t','126',1]);
+_gaq.push(['_setAllowAnchor',true]);
+_gaq.push(['_setSiteSpeedSampleRate', 10]);
+_gaq.push(['_trackPageview']);
+_gaq.push(['b._setAccount', 'UA-38339005-1']);
+_gaq.push(['b._setCustomVar',1,'template','old_site_gc',1]);
+_gaq.push(['b._setCustomVar',2,'domain','html.net',3]);
+_gaq.push(['b._setSiteSpeedSampleRate', 20]);
+_gaq.push(['b._trackPageview']);
+
+_gaq.push(['c._setAccount', 'UA-6716118-1']);
+_gaq.push(['c._trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+var ez_tos_track_count = 0;
+var ez_last_activity_count = 0;
+(function (__ez_tos) {
+  window.setInterval(function () {
+    __ez_tos = (function (t) {
+      return t[0] == 45 ? (parseInt(t[1]) + 1) + ':00' : (t[1] || '0') + ':' + (parseInt(t[0]) + 15);
+    })(__ez_tos.split(':').reverse());
+
+    ez_tos_track_count++;
+    if(ez_tos_track_count > 1 && ez_tos_track_count < (ez_last_activity_count + 4) && ez_tos_track_count < 240)
+    {
+        if(window.pageTracker)
+        {
+            pageTracker._trackEvent('Time', 'Log', __ez_tos)
+        }
+        else
+        {
+           _gaq.push(['_trackEvent', 'Time', 'Log', __ez_tos]);
+           _gaq.push(['b._trackEvent', 'Time', 'Log', __ez_tos]);
+        }
+		
+		if(typeof(_paq) != 'undefined')
+        {
+            _paq.push(['trackEvent', 'Time', __ez_tos, 'TimeOnPage']);
+        }
+
+    }
+  }, 15000);
+})('00');
+
+</script>
+
+<script type="text/javascript">
+
+
+if(typeof $ezJQuery == 'undefined')
+{
+    if (typeof jQuery == 'undefined')
+    {
+        document.write('<scr'+'ipt type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></sc'+'ript>');
+    }
+    else
+    {
+        $ezJQuery = jQuery;
+    }
+}
+
+</script>
+
+<script type="text/javascript">
+
+
+if (typeof $ezJQuery == 'undefined' && typeof jQuery != 'undefined')
+{
+    $ezJQuery = jQuery.noConflict();
+}
+
+</script>
+
+<script type="text/javascript">
+if(typeof $ezJQuery != 'undefined')
+{
+    $ezJQuery("body").mousemove(function(e){
+      ez_last_activity_count = ez_tos_track_count;
+    });
+    $ezJQuery("body").keypress(function(e){
+      ez_last_activity_count = ez_tos_track_count;
+    });
+    $ezJQuery(window).scroll(function(e){
+      ez_last_activity_count = ez_tos_track_count;
+    });
+}
+else
+{
+    ez_last_activity_count = 8;
+}
+</script>
+<script type="text/javascript" src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/tb.php"></script>
+<script>
+$ezJQuery(function() {
+    if (typeof run_body_onload == 'function') {
+        run_body_onload();
+    }
+    if (typeof ezoicJSPageLoad == 'function') {
+        ezoicJSPageLoad($ezJQuery);
+    }
+});
+</script>
+
+
+<div id="goog-gt-tt" class="goog-tooltip skiptranslate" dir="ltr" style="visibility: hidden; left: 413px; top: 571px; display: none;"><div style="padding: 8px;"><div><div class="logo"><img src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/translate-32.png" width="20" height="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Texto original</h1></div><div class="middle" style="padding: 8px;"><div class="original-text">Behind this amazing feat of human cleverness is the coming together of a few technologies collectively known as AJAX.</div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Sugira uma tradução melhor</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none; opacity: 0;"></div></div><iframe name="oauth2relay630476044" id="oauth2relay630476044" src="./Lição 18_ Fazendo AJAX Callsentutorial - HTML.net_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body><object id="4a48592a-d9fb-8bbf-5b69-dbb46882aba9" width="0" height="0" type="application/gas-events-bb"></object></html>

@@ -1,0 +1,11 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer1Console\bin\Debug\Exer1Console.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer1Console\bin\Debug\Exer1Console.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer1Console\obj\x86\Debug\Exer1Console.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer1Console\obj\x86\Debug\Exer1Console.pdb
+C:\Users\Aluno\Desktop\Aula - Console\Exer1Console\Exer1Console\obj\x86\Debug\Exer1Console.exe
+C:\Users\Aluno\Desktop\Aula - Console\Exer1Console\Exer1Console\obj\x86\Debug\Exer1Console.pdb
+C:\Users\Aluno\Desktop\Aula - Console\Exer1Console\Exer1Console\bin\Debug\Exer1Console.exe
+C:\Users\Aluno\Desktop\Aula - Console\Exer1Console\Exer1Console\bin\Debug\Exer1Console.pdb
+C:\Users\Aluno\Desktop\Aula - Console\Exer1Console\Exer1Console\obj\x86\Debug\Exer1Console.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula - Console, Variavel eTipos de dados\Exer1Console\Exer1Console\obj\x86\Debug\Exer1Console.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula - Console, Variavel eTipos de dados\Exer1Console\Exer1Console\obj\x86\Debug\Exer1Console.pdb

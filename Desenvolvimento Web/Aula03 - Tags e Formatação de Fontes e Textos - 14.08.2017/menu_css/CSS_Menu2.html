@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br" xml:lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" >
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Tutorial CSS - CSS Menu</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Site do Maujor | Tutoriais sobre CSS, XHTML, HTML, acessibilidade e Padrões Web em geral. Traduções de documentos técnicos do W3C e de artigos de consagrados autores que advogam Web Standards.">
+	<meta name="keywords" content="css, folhas estilo cascata, tutoriais, web standards, padrões web, acessibiliadde, tableless">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Mauricio Samy Silva">
+	<link rel="stylesheet" type="text/css" media="screen" href="main20140515.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="branding.css">
+	<link href="prism.css" rel="stylesheet">
+<style type="text/css">
+/* Esta folha CSS visa a compatibilizar com as CSS do site.Para construir os menus utilize a folha descrita no tutorial */
+/*MENU VERTICAL*/
+html #content #menuver {
+width: 11em;
+padding: 0; 
+margin: 0;
+font: 12px Verdana, sans-serif;
+background: #000; 
+border-top: 3px solid red; 
+border-bottom: 3px solid red; 
+}
+html #content #menuver li {
+list-style: none;
+margin: 0.5em 0 0.5em 0.5em; 
+}
+html #content #menuver li a {
+margin:0; 
+padding:0;
+text-decoration:none;
+color: #fff;
+}
+html #content #menuver li a:visited {
+color: #fff;
+}
+html #content #menuver li a:hover { 
+background: #fff;
+color: #000; 
+}
+html #content #menuver li a:active { 
+background: #ccc;
+color: #000; 
+}
+/*CODIGO DO MENU #2*/
+html #content #menubv {
+width: 12em;
+padding: 0;
+margin: 0;
+font: 14px Verdana, sans-serif;
+background: none; 
+border: none; 
+}
+html #content #menubv li {
+list-style: none;
+border-bottom: 1px solid #f00;
+margin-bottom:0;
+}
+html #content #menubv li a {
+display: block;
+padding: 5px 5px 5px 0.5em;
+font-weight:bold;
+border-left: 10px solid #ffc0cb;
+border-right: 10px solid #fff5ee;
+background-color: #ffe4e1;
+color: #808000;
+text-decoration: none;
+}
+html #content #menubv li a:hover {
+border-left: 10px solid #fcc;
+border-right: 10px solid #fff;
+background-color: #fff0f5;
+color: #ccc;
+}
+/* Fix IE. Hide from IE Mac \*/
+* html #content ul#menubv li { float: left; height: 1%; }
+* html #content ul#menubv li a { height: 1%; }
+/* End */
+
+/*CODIGO DO MENU HORIZONTAL - BARRA DE NAVEGACAO*/
+body #menuhor {
+border:none;
+margin: 0;
+font: 9px Arial, sans-serif;
+}
+body #menuhor li {
+list-style: none; 
+margin: 0;
+ display: inline;
+ }
+body #menuhor li a {
+height:1px; /* IE5.0 bug */
+padding: 3px 1px; 
+margin:0;
+border: 1px solid #f00; 
+background: #999;
+text-decoration: none;
+}
+body #menuhor li a:link {
+color: #fff;
+}
+body #menuhor li a:visited {
+color: #fff;
+}
+body #menuhor li a:hover {
+background: #ccc;
+color: #000; 
+border-color: #000;
+}
+</style>
+</head>
+<body id="cssmenu" style="padding-top: 31px !important;">
+<div id="wrapper">
+<div id="pagebody">
+<div id="content">
+	<h1>Links e menus</h1>
+ 	<h2>Propriedades dos links</h2>
+	<p><abbr>CSS</abbr> possibilita definir uma variedade infinita de layouts e efeitos para um menu de navegação. O limite é a sua imaginação!</p>
+	<p>Um link visitado, não visitado, ativo ou no estado hover (quando você 
+passa o mouse sobre ele) pode assumir aspectos (cores, fundos, etc...) diferentes 
+através de <abbr>CSS</abbr>:</p>
+	<p>Abordarei neste tutorial  a construção de dois menus verticais e uma barra de navegação. </p>
+	<p>Numa visão inicial mostro o menu em ação e a seguir apresento a folha de estilo e a marcação do código que faz o menu funcionar.</p>
+	<p>Caso você resolva copiar e colar os códigos, use os mostrados no tutorial, pois o do código fonte está adaptado para não conflitar com as estilizações do site e não funcionarão como mostrado.</p>
+	<p>Bons estudos. </p>
+	<div class="clear"></div>	
+	<h2>Os seletores de links</h2>
+	<p>São quatro os seletores dos links:</p>
+	<ol>
+		<li><strong>a:link</strong> define o estilo do link no estado inicial;</li>
+		<li><strong>a:visited</strong> define o estilo do link visitado;</li>
+		<li><strong>a:hover</strong> define o estilo do link quando passa-se o mouse sobre ele;</li>
+		<li><strong>a:active</strong> define o estilo do link ativo (o que foi "clicado").</li>
+	</ol>
+ 	
+	<h2>Menu #1 </h2>
+	<p>O menu em ação:</p>
+	<ul id="menuver" style="background-color:#000; border-top: 3px solid red; 
+border-bottom: 3px solid red; margin-bottom:20px;">
+		<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Entrada no site">Home</a></li>
+		<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Área de tutorial CSS">CSS Tutorial</a></li>
+		<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Técnicas de layout com CSS">CSS Layout</a></li>
+		<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Técnicas de efeitos em links">CSS Links</a></li>
+		<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Construção de menus">CSS Menu</a></li>
+		<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="CSS para impressão">CSS Print</a></li>
+		<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Importação de folhas de estilo">CSS @import</a></li>
+		<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Fale conosco">Contato</a></li>
+	</ul>
+	<p>Folha de estilos do menu</p>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">#menuver </span><span class="token punctuation">{</span>
+<span class="token property">width</span><span class="token punctuation">:</span> 11em<span class="token punctuation">;</span>
+<span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span> 
+<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token property">font</span><span class="token punctuation">:</span> 12px Verdana, sans-serif<span class="token punctuation">;</span>
+<span class="token property">background</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span> 
+<span class="token property">border-top</span><span class="token punctuation">:</span> 3px solid red<span class="token punctuation">;</span> 
+<span class="token property">border-bottom</span><span class="token punctuation">:</span> 3px solid red<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">#menuver li </span><span class="token punctuation">{</span>
+<span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token property">margin</span><span class="token punctuation">:</span> 0.5em 0 0.5em 0.5em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">#menuver li a </span><span class="token punctuation">{</span>
+<span class="token property">margin</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span> 
+<span class="token property">padding</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span>
+<span class="token property">text-decoration</span><span class="token punctuation">:</span>none<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menuver li a:visited </span><span class="token punctuation">{</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menuver li a:hover </span><span class="token punctuation">{</span> 
+<span class="token property">background</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">#menuver li a:active </span><span class="token punctuation">{</span> 
+<span class="token property">background</span><span class="token punctuation">:</span> #ccc<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span></code></pre>
+
+		<p>Código HTML do menu</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>menuver<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Entrada no site<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Área de tutorial CSS<span class="token punctuation">"</span></span>
+<span class="token punctuation">&gt;</span></span>CSS Tutorial<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Técnicas de layout com CSS<span class="token punctuation">"</span></span>
+<span class="token punctuation">&gt;</span></span>CSS Layout<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Técnicas de efeitos em links<span class="token punctuation">"</span></span>
+<span class="token punctuation">&gt;</span></span>CSS Links<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Construção de menus<span class="token punctuation">"</span></span>
+<span class="token punctuation">&gt;</span></span>CSS Menu<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>CSS para impressão<span class="token punctuation">"</span></span>
+<span class="token punctuation">&gt;</span></span>CSS Print<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Importação de folhas de
+ estilo<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>CSS @import<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Fale conosco<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Contato<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+<hr>
+
+	<h2>Menu #2 </h2>
+			
+			<ul id="menubv" style="background:transparent; border:0; margin-bottom:20px;">
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Entrada no site">Home</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Tutorial CSS">CSS Tutorial</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Layout com CSS">CSS Layout</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Efeitos em links">CSS Links</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Menus">CSS Menu</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Impressão">CSS Print</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Importação">CSS @import</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Fale conosco">Contato</a></li>
+			</ul>
+		<p>Nos browsers citados no menu anterior todas as renderizações se mostraram iguais.
+		</p>
+		
+		<p>Folha de estilos do menu</p>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">#menubv </span><span class="token punctuation">{</span>
+<span class="token property">width</span><span class="token punctuation">:</span> 12em<span class="token punctuation">;</span>
+<span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token property">font</span><span class="token punctuation">:</span> 14px Verdana, sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menubv ul </span><span class="token punctuation">{</span>
+<span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menubv li </span><span class="token punctuation">{</span>
+<span class="token property">border-bottom</span><span class="token punctuation">:</span> 1px solid #f00<span class="token punctuation">;</span>
+<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menubv li a </span><span class="token punctuation">{</span>
+<span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+<span class="token property">padding</span><span class="token punctuation">:</span> 5px 5px 5px 0.5em<span class="token punctuation">;</span>
+<span class="token property">font-weight</span><span class="token punctuation">:</span>bold<span class="token punctuation">;</span>
+<span class="token property">border-left</span><span class="token punctuation">:</span> 10px solid #ffc0cb<span class="token punctuation">;</span>
+<span class="token property">border-right</span><span class="token punctuation">:</span> 10px solid #fff5ee<span class="token punctuation">;</span>
+<span class="token property">background-color</span><span class="token punctuation">:</span> #ffe4e1<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #808000<span class="token punctuation">;</span>
+<span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menubv li a:hover </span><span class="token punctuation">{</span>
+<span class="token property">border-left</span><span class="token punctuation">:</span> 10px solid #fcc<span class="token punctuation">;</span>
+<span class="token property">border-right</span><span class="token punctuation">:</span> 10px solid #fff<span class="token punctuation">;</span>
+<span class="token property">background-color</span><span class="token punctuation">:</span> #fff0f5<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #ccc<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">/* Fix IE. Hide from IE Mac \*/</span>
+<span class="token selector">* html ul#menubv  li </span><span class="token punctuation">{</span> <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span> <span class="token property">height</span><span class="token punctuation">:</span> 1%<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token selector">* html ul#menubv  li a </span><span class="token punctuation">{</span> <span class="token property">height</span><span class="token punctuation">:</span> 1%<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">/* End */</span></code></pre>
+
+	  <p>Código HTML do menu</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>menubv<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+...mesmo código do menu#1...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
+<p>Mais menu de navegação:<br>
+  <a href="http://www.maujor.com/tutorial/menu_vert.php">http://maujor.com/tutorial/menu_vert.php</a><br>
+  <a href="http://www.maujor.com/tutorial/menurollimg.php">http://maujor.com/tutorial/menurollimg.php</a></p>
+
+<hr>
+	
+	<h2> Barra de navegação</h2>
+
+			<ul id="menuhor" style="background:transparent; border:0; margin-bottom:20px;">
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Entrada no site">Home</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Tutorial CSS">CSS Tutorial</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Layout com CSS">CSS Layout</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Efeitos em links">CSS Links</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Menus">CSS Menu</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Impressão">CSS Print</a></li>
+				<li><a href="http://www.maujor.com/tutorial/cssmenu.php#" title="Fale conosco">Contato</a></li>
+			</ul>
+		<p>Nos browsers citados no menu#1 todas as renderizaçõos se mostraram iguais.</p>
+		<p><strong>Nota:</strong> Retirei o link <em>CSS @import</em> deste exemplo para acomodar ao espaço disponível</p>
+		
+		<p>Folha de estilos do menu</p>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">#menuhor </span><span class="token punctuation">{</span>
+<span class="token property">border</span><span class="token punctuation">:</span>none<span class="token punctuation">;</span>
+<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token property">font</span><span class="token punctuation">:</span> 9px Arial, sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menuhor li </span><span class="token punctuation">{</span>
+<span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span> 
+<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token property">display</span><span class="token punctuation">:</span> inline<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menuhor li a </span><span class="token punctuation">{</span>
+<span class="token property">height</span><span class="token punctuation">:</span>1px<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* IE5.0 bug */</span>
+<span class="token property">padding</span><span class="token punctuation">:</span> 3px 1px<span class="token punctuation">;</span> 
+<span class="token property">margin</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span>
+<span class="token property">border</span><span class="token punctuation">:</span> 1px solid #f00<span class="token punctuation">;</span> 
+<span class="token property">background</span><span class="token punctuation">:</span> #999<span class="token punctuation">;</span>
+<span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menuhor li a:link </span><span class="token punctuation">{</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menuhor li a:visited </span><span class="token punctuation">{</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menuhor li a:hover </span><span class="token punctuation">{</span>
+<span class="token property">background</span><span class="token punctuation">:</span> #ccc<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span> 
+<span class="token property">border-color</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+
+		<p>Código HTML do menu</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>menuhor<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+...mesmo código do menu#1...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+</div><!-- Fim da div content -->
+</div> <!--fim da pagebody -->
+<div id="lateral" onclick="void(0)">
+<div id="nav">
+<div id="menu">
+	<h3 class="link-titulo">Menus</h3>
+	<ul class="box">					
+		<li><a href="CSS_Menu1.html" title="Técnicas básicas para construção de menus com uso de CSS puro">Técnicas básicas</a></li>
+		<li><a href="CSS_Menu2.html" title="Links e menus ">Links e menus </a></li>
+		<li><a href="CSS_Menu4.html" title="Menu drop down">Menu drop down</a></li>
+		<li><a href="CSS_Menu6.html" title="Menus JUMP">JUMP Menu</a></li>
+		<li><a href="CSS_Menu7.html" title="Barras de navegação">Barra de navegação</a></li>
+	</ul>
+</div> <!--div menu-->
+</div> <!--div nav -->
+</div> <!--div lateral-->
+</div> <!--div wrapper-->
+</BODY>
+</html>

@@ -1,0 +1,62 @@
+==================Login=============
+- idLogin : int
+- codCartao : String
+- senha : String
+=======================usuario===========
+- idUsuario: int
+- tipoUsuario : enum("visitante","funcionario")
+- nomeCompleto : String
+- telefone : String
+- dataNascimento : String
+- sexo : String
+- email : String
+- receberConvite : boolean
+- cargo : String
+- numeroRA : String
+- idLogin_tbLogin : int
+=============vendas=========
+- idEstoque_tbEstoque : int
+- idUsuario_tbUsuario : int
+- quantidadeVendas : int
+- dataVenda : date
+=========================Estoque=============
+- idEstoque : int
+- codProduto : int
+- produto : int
+- marca : String
+- descricaoProduto : String
+- preco : float
+- quantidade : int
+=============Reservas_convites=========
+- idAcervo_tbAcervo : int
+- idUsuario_tbUsuario : int
+- reservar : int
+- convidado : int
+=========================acervo-=================
+- idAcervo : int
+- titulo : int
+- descricao : String
+- periodo : ENUM('temporario', 'permanente')
+- dataInicial : date
+- dataFinal : date
+- cidade : String
+- endereco : String
+- estado : String
+- cep : String
+- responsavel : String
+- telResponvel : String
+- limiteReserva : String
+- maxVisitante : String
+=================restauracao
+- idRestauracao : int
+- status : ENUM('analise', 'andamento', 'concluido', 'cancelado')
+- prazoInicial : date
+- prazoFinal : date
+- vezesRestaurado : int
+- idAcevro_tbAcervo : int
+- idUsuario_tbUsuario : int
+
+
+Mobi & Triptidon - Red Fuel Rage
+Curtir
+

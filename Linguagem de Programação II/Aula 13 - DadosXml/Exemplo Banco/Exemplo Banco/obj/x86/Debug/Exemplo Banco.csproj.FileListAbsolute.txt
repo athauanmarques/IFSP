@@ -1,0 +1,22 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo Banco\bin\Debug\Exemplo Banco.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo Banco\bin\Debug\Exemplo Banco.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo Banco\obj\x86\Debug\Exemplo_Banco.Form1.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo Banco\obj\x86\Debug\Exemplo_Banco.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo Banco\obj\x86\Debug\Exemplo Banco.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo Banco\obj\x86\Debug\Exemplo Banco.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo Banco\obj\x86\Debug\Exemplo Banco.pdb
+D:\Exemplo Banco\Exemplo Banco\obj\x86\Debug\Exemplo Banco.exe
+D:\Exemplo Banco\Exemplo Banco\obj\x86\Debug\Exemplo Banco.pdb
+D:\Exemplo Banco\Exemplo Banco\bin\Debug\Exemplo Banco.exe
+D:\Exemplo Banco\Exemplo Banco\bin\Debug\Exemplo Banco.pdb
+D:\Exemplo Banco\Exemplo Banco\obj\x86\Debug\Exemplo_Banco.Form1.resources
+D:\Exemplo Banco\Exemplo Banco\obj\x86\Debug\Exemplo_Banco.Properties.Resources.resources
+D:\Exemplo Banco\Exemplo Banco\obj\x86\Debug\Exemplo Banco.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 13 - DadosXml\Exemplo Banco\Exemplo Banco\obj\x86\Debug\Exemplo Banco.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 13 - DadosXml\Exemplo Banco\Exemplo Banco\obj\x86\Debug\Exemplo Banco.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 13 - DadosXml\Exemplo Banco\Exemplo Banco\bin\Debug\Exemplo Banco.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 13 - DadosXml\Exemplo Banco\Exemplo Banco\bin\Debug\Exemplo Banco.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 13 - DadosXml\Exemplo Banco\Exemplo Banco\obj\x86\Debug\Exemplo Banco.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 13 - DadosXml\Exemplo Banco\Exemplo Banco\obj\x86\Debug\Exemplo_Banco.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 13 - DadosXml\Exemplo Banco\Exemplo Banco\obj\x86\Debug\Exemplo_Banco.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 13 - DadosXml\Exemplo Banco\Exemplo Banco\obj\x86\Debug\Exemplo Banco.csproj.GenerateResource.Cache

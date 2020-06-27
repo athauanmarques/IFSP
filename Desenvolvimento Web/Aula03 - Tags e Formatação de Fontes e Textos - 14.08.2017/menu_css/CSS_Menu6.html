@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br" xml:lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" itemscope="" itemtype="http://schema.org/Article" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" style="">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./CSS_Menu6_files/shares.json"></script><script type="text/javascript" src="./CSS_Menu6_files/widgets.js"></script><script type="text/javascript" src="./CSS_Menu6_files/300lo.json"></script>
+	<title>Tutorial CSS - Menu de Salto</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Site do Maujor | Tutoriais sobre CSS, XHTML, HTML, acessibilidade e Padrões Web em geral. Traduções de documentos técnicos do W3C e de artigos de consagrados autores que advogam Web Standards.">
+	<meta name="keywords" content="css, folhas estilo cascata, tutoriais, web standards, padrões web, acessibiliadde, tableless">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Mauricio Samy Silva">
+	<link rel="stylesheet" type="text/css" media="screen" href="main20140515.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="branding.css">
+	<link href="prism.css" rel="stylesheet">
+</head>
+<body id="msaltotut" style="padding-top: 31px !important;">
+<div id="wrapper">
+<div id="pagebody">
+<div id="content">
+<h1>Estilizando um Menu de Salto (JumpMenu)</h1>
+<h2>O menu de salto</h2>
+<p>Um menu de salto é obtido com objetos de formulário. Uma 
+      tag <strong>select</strong> com várias tag's <strong> option</strong>.</p>
+<p>Abaixo um menu de salto já estilizado e que servirá de base 
+      para este tutorial. Clique na setinha para abrir o menu.</p>
+<form id="form" action="">
+  <p>
+    <label for="meuselect">Menu de salto</label>
+	<select id="meuselect" style="font:12px arial, helvetica, sans-serif; color:#36648B;background:#F0FFF0; width:155px;" title="menu">
+      <option value="">Meu Menu de Salto</option>
+      <option value="" style=" background:#FFFFFF; color:#000000;">---------------------------------------</option>
+      <option value="" style=" background:#C1CDCD; color:#003366;">TUTORIAIS CSS</option>
+      <option value="" style=" background:#E0EEE0; color:#00008B;">Sintaxe </option>
+      <option value="" style="  background:#F0FFF0; color:#009ACD;">Fontes</option>
+      <option value="" style=" background:#E0EEE0; color:#00008B;">Bordas</option>
+      <option value="" style="  background:#F0FFF0; color:#009ACD;">Fundos</option>
+      <option value="" style=" background:#E0EEE0; color:#00008B;">Menus</option>
+      <option value="" style=" background:#FFFFFF; color:#000000;">---------------------------------------</option>
+      <option value="" style=" background:#C1CDCD; color:#003366;">TUTORIAIS HTML</option>
+      <option value="" style=" background:#E0EEE0; color:#00008B;">Estrutura do documento</option>
+      <option value="" style="  background:#F0FFF0; color:#009ACD;">As metatags</option>
+      <option value="" style=" background:#E0EEE0; color:#00008B;">O uso da tag &lt;title&gt;</option>
+      <option value="" style="  background:#F0FFF0; color:#009ACD;">Entendendo &lt;acronym&gt;</option>
+      <option value="" style=" background:#E0EEE0; color:#00008B;">O que é XHTML</option>
+      <option value="" style="  background:#F0FFF0; color:#009ACD;">Normas HTML 4</option>
+      <option value="" style=" background:#FFFFFF; color:#000000;">---------------------------------------</option>
+      <option value="" style=" background:#C1CDCD; color:#003366;">TUTORIAIS JAVASCRIPT</option>
+      <option value="" style=" background:#E0EEE0; color:#00008B;">Relógio</option>
+      <option value="" style="  background:#F0FFF0; color:#009ACD;">Barra de status</option>
+      <option value="" style=" background:#E0EEE0; color:#00008B;">Efeito neve</option>
+      <option value="" style="  background:#F0FFF0; color:#009ACD;">Handlers de evento</option>
+      <option value="" style=" background:#E0EEE0; color:#00008B;">Janela pop up</option>
+    </select> 
+    </p>
+</form>
+<div class="clear"></div>
+    <h2>A estrutura do menu</h2>
+	<p>Ao abrir o menu mostrado acima você pode verificar a sua estrutura 
+      assim constituida:</p>
+    <ul class="boxtut">
+      <li>um título: Meu Menu de Salto;</li>
+      <li>uma linha de separação: ------------;</li>
+      <li>um subtítulo para links: TUTORIAIS <abbr title="Cascading Style Sheet">CSS</abbr>;
+      <ul>
+        <li>cinco links para tutoriais <abbr>CSS</abbr>;</li>
+      </ul></li>
+      <li>uma linha de separação: ------------;</li>
+      <li>um subtítulo para links: TUTORIAIS <abbr>CSS</abbr>;
+      <ul>
+        <li>cinco links para tutoriais css;</li>
+      </ul></li>
+      <li>uma linha de separação: ------------;</li>
+      <li>um subtítulo para links: TUTORIAIS <abbr title="Hyper Text Markup Language">HTML</abbr>;
+      <ul>
+        <li>seis links para tutoriais html;</li>
+      </ul></li>
+      <li>uma linha de separação: ------------;</li>
+      <li>um subtítulo para links: TUTORIAIS JAVASCRIPT;
+      <ul>
+        <li>cinco links para tutoriais javascript;</li>
+      </ul></li></ul> 
+      <h2>O <abbr>HTML</abbr> do menu</h2>
+	<p>Observe o <abbr>HTML</abbr> que constrói a estrutura 
+      do menu de salto:</p>
+<pre class=" language-markup">&gt;<code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Meu Menu de Salto<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Título do Menu--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>-----------------<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Separador--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>TUTORIAIS CSS<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Subtítulo--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Sintaxe <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Fontes<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Bordas<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Fundos<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Menus<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>------------------<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Separador--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>TUTORIAIS HTML<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Subtítulo--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Estrutura do documento<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>As metatags<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>O uso da tag <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Entendendo <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>acronym</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>O que é XHTML<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Normas HTML 4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>-----------------<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Separador--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>TUTORIAIS JAVASCRIPT<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Subtítulo--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Relógio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Barra de status<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Efeito neve<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Handlers de evento<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Janela pop up<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span> <span class="token comment" spellcheck="true">&lt;!--Link--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></code></pre>
+    <h2>A estilização</h2>
+    <p>AS CORES DE FUNDO</p>
+	<p> Foram usadas quatro cores de fundo para estilizar o menu:</p>
+    <ul class="boxtut">
+      <li>branca para fundo dos separadores;</li>
+      <li>tom escuro para os Subtítulos</li>
+      <li>tom médio para links ímpares (1°, 3° e 5° links)</li>
+      <li>tom claro para links pares (2°, 4° e 6° links)</li>
+    </ul>
+	<hr>
+	<p>AS CLASSES DE ESTILOS</p>
+	<p>Vamos então criar 04 (quatro) classes de estilização 
+      para estes fundos:</p>
+    <ul class="boxtut">
+      <li>classe <strong>.sep</strong> para os separadores;</li>
+      <li>classe <strong>.stit</strong> para os Subtítulos</li>
+      <li>classe <strong>.impar</strong> para os links ímpares (1°, 3° e 5° links)</li>
+      <li>classe <strong>.par</strong> para os links pares (2°, 4° e 6° links)</li>
+    </ul>
+	<hr>
+	<p>AS LETRAS E TAMANHOS</p>
+	<p>E, para completar a estilização do nosso menu falta apenas 
+      definir o tamanho e cor das letras, bem como a largura total da janela.</p>
+    <p> Estes parâmetros são válidos para todo o menu e podemos 
+      defini-los na tag &lt;select&gt; criando para isso uma <strong>id</strong> 
+      a ser aplicada naquela tag</p>
+    Chamaremos esta id de <strong> #meuselect</strong>
+    <h2>A folha de estilos</h2>
+<pre class=" language-css"><code class=" language-css">&lt;<span class="token selector">;style type="text/css"&gt;
+#meuselect </span><span class="token punctuation">{</span>  
+<span class="token property">width</span><span class="token punctuation">:</span>135px<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Largura da janela do menu */</span>
+<span class="token property">background</span><span class="token punctuation">:</span>#F0FFF0<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Cor do fundo do menu 
+em repouso */</span>
+<span class="token property">font</span><span class="token punctuation">:</span>11px arial, helvetica, 
+sans-serif<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Tamanho e tipo das letras */</span>
+<span class="token property">color</span><span class="token punctuation">:</span>#36648B<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Cor das letras do Título do menu */</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#meuselect option.stit </span><span class="token punctuation">{</span> 
+<span class="token property">width</span><span class="token punctuation">:</span>135px<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Largura da janela do menu para NN */</span>  
+<span class="token property">background-color</span><span class="token punctuation">:</span>#C1CDCD<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Cor do fundo dos 
+Subtítulos */</span> 
+<span class="token property">color</span><span class="token punctuation">:</span>#003366<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Cor das letras dos Subtítulos */</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">#meuselect option.sep </span><span class="token punctuation">{</span> 
+<span class="token property">width</span><span class="token punctuation">:</span>135px<span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">/* Largura da janela do menu para NN */</span> 
+<span class="token property">background-color</span><span class="token punctuation">:</span>#FFFFFF<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Cor do fundo dos 
+separadores */</span> 
+<span class="token property">color</span><span class="token punctuation">:</span>#000000<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Cor dos traços dos separadores */</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#meuselect option.impar </span><span class="token punctuation">{</span> 
+<span class="token property">width</span><span class="token punctuation">:</span>135px<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Largura da janela do menu para NN */</span>  
+<span class="token property">background-color</span><span class="token punctuation">:</span>#E0EEE0<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Cor do fundo dos 
+links impares */</span> 
+<span class="token property">color</span><span class="token punctuation">:</span>#00008B<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Cor das letras dos links impares */</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">#meuselect option.par </span><span class="token punctuation">{</span> 
+<span class="token property">width</span><span class="token punctuation">:</span>135px<span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">/* Largura da janela do menu para NN */</span> 
+<span class="token property">background-color</span><span class="token punctuation">:</span>#F0FFF0<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Cor do fundo dos 
+links pares */</span> 
+<span class="token property">color</span><span class="token punctuation">:</span>#009ACD<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* Cor das letras dos links pares */</span>
+<span class="token punctuation">}</span>
+<span class="token ignore">&lt;</span>/style&gt;</code></pre>
+    
+	
+	<h2>O código <abbr>HTML</abbr> completo</h2>
+    <p>Abaixo o código <abbr>HTML</abbr> da página que contém o menu de 
+      salto estilizado conforme mostrado neste tutorial, para você copiar 
+      para seu HD, estudar e fazer as adaptações para seu caso.</p>
+<pre class=" language-markup"><code class=" language-markup">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 
+Transitional//EN"&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pt-br<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Estilizar Menu de Salto<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Content-Type<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/html;charset<span class="token punctuation">=</span>iso-8859-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token style"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token selector">#meuselect </span><span class="token punctuation">{</span>  
+<span class="token property">width</span><span class="token punctuation">:</span>135px<span class="token punctuation">;</span>
+<span class="token property">background</span><span class="token punctuation">:</span>#F0FFF0<span class="token punctuation">;</span> 
+<span class="token property">font</span><span class="token punctuation">:</span>11px arial, helvetica, sans-serif<span class="token punctuation">;</span> 
+<span class="token property">color</span><span class="token punctuation">:</span>#36648B<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#meuselect option.stit </span><span class="token punctuation">{</span> 
+<span class="token property">width</span><span class="token punctuation">:</span>135px<span class="token punctuation">;</span>  
+<span class="token property">background-color</span><span class="token punctuation">:</span>#C1CDCD<span class="token punctuation">;</span> 
+<span class="token property">color</span><span class="token punctuation">:</span>#003366<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#meuselect option.sep </span><span class="token punctuation">{</span> 
+<span class="token property">width</span><span class="token punctuation">:</span>135px<span class="token punctuation">;</span>  
+<span class="token property">background-color</span><span class="token punctuation">:</span>#FFFFFF<span class="token punctuation">;</span> 
+<span class="token property">color</span><span class="token punctuation">:</span>#000000<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#meuselect option.impar </span><span class="token punctuation">{</span> 
+<span class="token property">width</span><span class="token punctuation">:</span>135px<span class="token punctuation">;</span>  
+<span class="token property">background-color</span><span class="token punctuation">:</span>#E0EEE0<span class="token punctuation">;</span> 
+<span class="token property">color</span><span class="token punctuation">:</span>#00008B<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#meuselect option.par </span><span class="token punctuation">{</span> 
+<span class="token property">width</span><span class="token punctuation">:</span>135px<span class="token punctuation">;</span>  
+<span class="token property">background-color</span><span class="token punctuation">:</span>#F0FFF0<span class="token punctuation">;</span> 
+<span class="token property">color</span><span class="token punctuation">:</span>#009ACD<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>form<span class="token punctuation">"</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>meuselect<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>Meu Menu de Salto<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sep<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+-----------------
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stit<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+TUTORIAIS CSS
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>impar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Sintaxe 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>par<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Fontes
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>impar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Bordas
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>par<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Fundos
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>impar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Menus
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sep<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+------------------
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stit<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+TUTORIAIS HTML
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>impar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Estrutura do documento
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>par<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+As metatags
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>impar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+O uso da tag 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>par<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Entendendo 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>acronym</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>impar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+O que é XHTML
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>par<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Normas HTML 4
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sep<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+-----------------
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stit<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+TUTORIAIS JAVASCRIPT
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>impar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Relógio
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>par<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Barra de status
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>impar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Efeito neve
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>par<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Handlers de evento
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>impar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Janela pop up
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
+</div><!-- Fim da div content -->
+</div> <!--fim da pagebody -->
+<div id="lateral" onclick="void(0)">
+<div id="nav">
+<div id="menu">
+	<h3 class="link-titulo">Menus</h3>
+	<ul class="box">					
+		<li><a href="CSS_Menu1.html" title="Técnicas básicas para construção de menus com uso de CSS puro">Técnicas básicas</a></li>
+		<li><a href="CSS_Menu2.html" title="Links e menus ">Links e menus </a></li>
+		<li><a href="CSS_Menu4.html" title="Menu drop down">Menu drop down</a></li>
+		<li><a href="CSS_Menu6.html" title="Menus JUMP">JUMP Menu</a></li>
+		<li><a href="CSS_Menu7.html" title="Barras de navegação">Barra de navegação</a></li>
+	</ul>
+</div> <!--div menu-->
+</div> <!--div nav -->
+</div> <!--div lateral-->
+</div> <!--div wrapper-->
+</BODY>
+</html>
+

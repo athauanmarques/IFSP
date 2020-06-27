@@ -1,0 +1,40 @@
+================================ Pré-Estudo(IFSP) ================================ 
+- Rezar antes dos estudos
+- Tomar banho e tomar café
+- Ver o plano de aula e ver qual materia vai ser abordado na aula
+- Marcar no celular o tempo que pretendo estudar
+- Marcar no caderno de revisao e anotação: 
+  * nome da materia, aula (numero,assunto ou os 2),data,Horário de inicio, Horário de 
+Termino
+=================================== Programação Orientada Objetos =============================== 
+Antes da aula:
+1-Consultar o plano de estudo e saber qual matéria vai será da aula.
+2- Ler rapidamente o conteúdo importantes do assunto da aula. (prof. Não oferecer o material, pesquisar na google)
+3- Pesquisar e revisar sobre o assunto.
+4- Fazer curso online do código referente da matéria
+5- Criar listas de dúvidas (se houver escrever no caderno de anotações IFSP).
+
+Durante aula:
+6-Pedir explicações das listas de dúvidas
+7-Anotar explicação do professor (incluindo referencias didático)
+8-Comentar no código a forma e a lógica como foi feita o exercicio
+9-Fazer exercício programação
+
+Pós-aula:
+10-Revisar e reescrever as notações realizadas (Decidir o que é mais importante para passar a limpo no fichário)
+11-Resumir e ler referência didático (slide,livros,artigos)
+12- Fazer curso online (refazer se fornecessário) 
+13-Realizar mapas mentais
+14-Preencher o acompanhamento e planejamento de estudos
+15-Armazenar na nuvem os conteúdos da aula e fazer update no pendriver
+
+
+========================================== Dicas ================================================ 
+Dicas:
+Achar referencia profissional da área,
+-Participar em comunidade e palestras da área de T.I
+-Palestas e consultoria
+-Fazer amizades com pessoal com a mesma área.
+10 % assistir aula
+20 % interação (troca informação pessoas e professores,esclarecimento de dúvida e pesquisa)
+70 % pratica

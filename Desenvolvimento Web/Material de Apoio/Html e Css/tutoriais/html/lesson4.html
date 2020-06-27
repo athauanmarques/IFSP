@@ -1,0 +1,115 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 4: Criando seu primeiro website - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 4: Criando seu primeiro website - HTML.net" />
+	<meta name="description" content="Lição 4: Criando seu primeiro website - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 4: Criando seu primeiro website - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/html/lesson4.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+	
+</head>
+
+<body>	
+	<div id="main">
+	<div id="content">
+	<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>HTML</a> &#187; Lição 4: Criando seu primeiro website</div>
+	<div id='tutorials'>	<h1>Lição 4: Criando seu primeiro website</h1>
+	<p>Com o que você aprendeu nas lições anteriores está a alguns minutos de criar seu primeiro   website.</p>
+	<h2>Como?</h2>
+	<p>Na lição 1 vimos o que é necessário para construir um  website: um navegador e o Notepad (ou um editor de texto similar). Uma vez que você esta lendo esta página, provavelmente está com seu navegador aberto. Agora abra outra janela do seu navegador de modo que você tenha duas janelas na tela, uma para ler este tutorial e outra para visualizar o website que você vai construir.</p>
+	<p>Abra também o  Notepad ( Iniciar » Programas » Acessórios):</p>
+	<p><img src="notepad.png" alt="O caminho para o Notepad" /></p>
+	<p>Agora, estamos prontos para começar!</p>
+	<h2>O que posso fazer?</h2>
+	<p>Vamos começar com algo simples. Que tal uma página que diga:  "Hurrah! Esta é a minha primeira página <abbr>web</abbr>." Continue e você verá como isto é simples de fazer.</p>
+	<p>HTML é simples e lógico. <strong>O navegador lê   HTML de modo idêntico ao que você lê um texto qualquer, de cima para baixo e da esquerda para a direita. </strong> Assim um documento <abbr>HTML</abbr> inicia com aquilo que deve ser a primeira coisa aparecer na página e termina com a última coisa a aparecer.</p>
+	<p>A primeira coisa a fazer é dizer ao navegador que você vai  "falar" com ele na linguagem <abbr>HTML</abbr>. Isto é feito com a tag <code>&lt;html></code> (nenhuma novidade nisto). Então, antes de mais nada digite "<code>&lt;html></code>" na primeira linha do documento, no Notepad.</p>
+	<p>Como sabemos das lições anteriores, <code>&lt;html></code> é uma tag de abertura e deve ser fechada com a tag de fechamento quando você acabar de digitar seu documento <abbr>HTML</abbr>. Para termos certeza que não iremos esquecer de fechar a tag  <abbr>HTML, faça isso agora mesmo, digitando </abbr>"<code>&lt;/html></code>" localizada a algumas linhas abaixo, assim você irá escrever seu  documento entre as tags digitadas <code>&lt;html></code> e <code>&lt;/html></code>.</p>
+	<p>A próxima coisa que o documento precisa é um "head" (cabeça), que fornece informações sobre o documento e um "body" (corpo), que abriga o conteúdo do documento. Como HTML não seria nada se não fosse lógico, a "cabeça"  (<code>&lt;head></code> e <code>&lt;/head></code>) fica em cima do "corpo" (<code>&lt;body></code> e <code>&lt;/body></code>).</p>
+	<p>Seu documento agora está como mostrado abaixo:</p>
+	<div class="codebox">
+	<pre><code>
+	&lt;html>
+	  &lt;head>
+	  &lt;/head>
+ 
+	  &lt;body>
+	  &lt;/body>
+ 
+	&lt;/html>
+	</code>
+	</pre>
+	</div>
+	<p>Notar como estruturamos o código em linhas diferentes (usar a tecla <kbd style="font-size:1.4em;">Enter</kbd> para pular para próxima linha) e também a indentação (recuos) do código (usar a tecla <kbd style="font-size:1.4em;">Tab</kbd> para indentar). A príncipio não faz qualquer diferença a maneira como você estrutura (linhas e recuos na digitação) seu documento <abbr>HTML</abbr>. Mas um código bem estruturado é mais fácil de ler e entender, <strong>é altamente recomendado  que você adote uma estrutura clara e nítida para seu <abbr>HTML,</abbr> usando  linhas e indentação (recuos)</strong>, como mostrado no exemplo acima.</p>
+	<p>Se o seu documento  está como o mostrado acima, você construiu sua primeira página web - uma página particularmente chata e provalvelmente nada parecido com o que você sonhou fazer quando começou a ler este tutorial, mas de qualquer forma um tipo de  website. Isto que você fez será um template base para seus futuros documentos <abbr>HTML</abbr>.</p>
+	<h2>Até aqui tudo bem, mas como colocar conteúdo no meu website?</h2>
+	<p>Como você já aprendeu, seu documento <abbr>HTML</abbr> é composto de duas partes: um head e um body. <strong>Na seção  head você escreve informações sobre a página e na seção body você coloca as informações que constituem a página.</strong></p>
+	<p>Por exemplo, para dar um título ao documento, título este que  apareça no topo da barra do navegador você deverá usar a seção"head". A tag para acresentar um título é <code>&lt;title></code>:</p>
+	<div class="codebox">
+	<pre><code>
+	&lt;title>Minha primeira página web&lt;/title>
+	</code>
+	</pre>
+	</div>
+	<p>Notar que o título não aparece na página propriamente dita. Tudo que você quer que apareça na página é conteúdo e deverá ser colocado entre as tags "body".</p>
+	<p>Conforme combinamos, queremos uma página dizendo, "Hurrah! Esta é a minha primeira página web." Este é o texto que queremos comunicar e ele deverá ser colocado na seção  body. Então digite na seção body o seguinte:</p>
+	<div class="codebox">
+	<pre><code>
+	&lt;p>Hurrah! Esta é a minha primeira página web.&lt;/p>
+	</code>
+	</pre>
+	</div>
+	<p>A letra  p na tag <code>&lt;p></code> é a abreviatura para "paragraph" (parágrafo) que é exatamente o que o texto é - um texto parágrafo.</p>
+	<p>Seu documento <abbr>HTML</abbr> agora está como mostrado a seguir:</p>
+	<div class="codebox">
+	<pre><code>
+	&lt;html>
+ 
+	  &lt;head>
+	    &lt;title>Minha primeira página web&lt;/title>
+	  &lt;/head>
+ 
+	  &lt;body>
+	    &lt;p>Hurrah! Esta é a minha primeira página web.&lt;/p>
+	  &lt;/body>
+ 
+	&lt;/html>
+	</code>
+	</pre></div>
+	<p>Pronto! Você acaba de construir seu primeiro  website! </p>
+	<p>Agora basta que você salve seu trabalho no <abbr title="Hard Drive">HD</abbr> e depois visualize no navegador:</p>
+	<ul>
+	<li>No  Notepad vá ao menu "Arquivo" no topo da janela e escolha a opção "Salvar como...".</li>
+	<li>Escolha "Todos os arquivos" no box "Salvar como tipo". Isto é muito importante - caso você não faça isto, o arquivo será salvo como texto e não como documento  <abbr>HTML</abbr>.</li>
+	<li>Salve seu documento com o nome "page1.htm" (a extensão ".htm" indica que se trata de um documento <abbr>HTML</abbr>. A extensão ".html" dá o mesmo resultado. Eu sempre uso ".htm", mas você pode escolher a que você preferir .htm ou .html). Você pode salvar o documento onde você quiser no seu <abbr>HD</abbr> - esteja certo de salvar em um lugar que depois você possa achar com facilidade.</li>
+	</ul>
+	<p><img src="saveas.png" alt="Salvando o documento" width="424" height="342" /></p>
+	<p>Agora vá ao seu navegador:</p>
+	<ul>
+	<li>No menu existente no topo do navegador vá em "Arquivo" e escolha a opção "Abrir" (CTRL+O).</li>
+	<li>Clique em "Procurar" no box que aparece.</li>
+	<li>Localize o seu documento  <abbr>HTML</abbr> e clique em "Abrir".</li>
+	</ul>
+	<p><img src="open.png" alt="Abrindo o documento" width="262" height="134" /></p>
+	<p>Você deverá ver no seu navegador: "Hurrah! Esta é a minha primeira página web." Parabéns!</p>
+	<p>Se você quer que o mundo todo veja sua página, vá direto para a Lição 14 e aprenda como fazer upload da sua página para a Internet. Se não, tenha paciência e continue lendo. A brincadeira apenas começou.</p>
+	<hr /><p class='previous'><a href='lesson3.html'>&lt;&lt; Lição 3: O que são tags HTML?</a></p><p class='next'><a href='lesson5.html'>Lição 5: O que você já aprendeu >></a></p>
+	</div>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+	----------Cores disponíveis------------ 
+	0 = Preto 		8 = Cinza 
+	1 = Azul 		9 = Azul claro 
+	2 = Verde 		A = Verde claro 
+	3 = Verde-água 		B = Verde-água claro 
+	4 = Vermelho 		C = Vermelho claro 
+	5 = Roxo 		D = Lilás 
+	6 = Amarelo 		E = Amarelo claro 
+	7 = Branco 		F = Branco brilhante
+
+//system ("color f0"); //fundo branco brilhante, letra preta
+// o 1ª posição do caracter ou do numero (neste caso f) define a fundo
+// o 2ª posição do caracter ou do numero (neste caso 0) define a letra
+// não á necidade de chamar alguma biblioteca para manipular cores
+

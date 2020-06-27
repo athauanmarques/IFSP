@@ -1,0 +1,14 @@
+F:\Trabalho lp3\Loja\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+F:\Trabalho lp3\Loja\DAL\bin\Release\DAL.dll
+F:\Trabalho lp3\Loja\DAL\bin\Release\DAL.pdb
+F:\Trabalho lp3\Loja\DAL\bin\Release\Loja.dll
+F:\Trabalho lp3\Loja\DAL\bin\Release\Loja.pdb
+F:\Trabalho lp3\Loja\DAL\obj\Release\DAL.dll
+F:\Trabalho lp3\Loja\DAL\obj\Release\DAL.pdb
+K:\Trabalho lp3\Loja\DAL\bin\Release\DAL.dll
+K:\Trabalho lp3\Loja\DAL\bin\Release\DAL.pdb
+K:\Trabalho lp3\Loja\DAL\bin\Release\Loja.dll
+K:\Trabalho lp3\Loja\DAL\bin\Release\Loja.pdb
+K:\Trabalho lp3\Loja\DAL\obj\Release\ResolveAssemblyReference.cache
+K:\Trabalho lp3\Loja\DAL\obj\Release\DAL.dll
+K:\Trabalho lp3\Loja\DAL\obj\Release\DAL.pdb

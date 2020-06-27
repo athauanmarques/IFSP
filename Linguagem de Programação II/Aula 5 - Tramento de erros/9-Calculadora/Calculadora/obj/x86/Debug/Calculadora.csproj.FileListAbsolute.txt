@@ -1,0 +1,16 @@
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Calculadora\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Calculadora\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Calculadora\Calculadora\obj\x86\Debug\Calculadora.Calc.resources
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Calculadora\Calculadora\obj\x86\Debug\Calculadora.Properties.Resources.resources
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Calculadora\Calculadora\obj\x86\Debug\Calculadora.csproj.GenerateResource.Cache
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Calculadora\Calculadora\obj\x86\Debug\Calculadora.exe
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Calculadora\Calculadora\obj\x86\Debug\Calculadora.pdb
+C:\Users\Aluno\Desktop\9-Calculadora\Calculadora\obj\x86\Debug\Calculadora.exe
+C:\Users\Aluno\Desktop\9-Calculadora\Calculadora\obj\x86\Debug\Calculadora.pdb
+C:\Users\Aluno\Desktop\9-Calculadora\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\Aluno\Desktop\9-Calculadora\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\Aluno\Desktop\9-Calculadora\Calculadora\obj\x86\Debug\Calculadora.Calc.resources
+C:\Users\Aluno\Desktop\9-Calculadora\Calculadora\obj\x86\Debug\Calculadora.Properties.Resources.resources
+C:\Users\Aluno\Desktop\9-Calculadora\Calculadora\obj\x86\Debug\Calculadora.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 5 - Tramento de erros\9-Calculadora\Calculadora\obj\x86\Debug\Calculadora.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 5 - Tramento de erros\9-Calculadora\Calculadora\obj\x86\Debug\Calculadora.pdb

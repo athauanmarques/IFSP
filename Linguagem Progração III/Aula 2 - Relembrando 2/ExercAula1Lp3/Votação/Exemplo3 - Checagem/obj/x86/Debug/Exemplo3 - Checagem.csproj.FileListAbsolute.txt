@@ -1,0 +1,7 @@
+C:\Users\Aluno\Desktop\Exemplo3 - Checagem\Exemplo3 - Checagem\bin\Debug\Exemplo3 - Checagem.exe
+C:\Users\Aluno\Desktop\Exemplo3 - Checagem\Exemplo3 - Checagem\bin\Debug\Exemplo3 - Checagem.pdb
+C:\Users\Aluno\Desktop\Exemplo3 - Checagem\Exemplo3 - Checagem\obj\x86\Debug\Exemplo3.Form1.resources
+C:\Users\Aluno\Desktop\Exemplo3 - Checagem\Exemplo3 - Checagem\obj\x86\Debug\Exemplo3.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Exemplo3 - Checagem\Exemplo3 - Checagem\obj\x86\Debug\Exemplo3 - Checagem.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Exemplo3 - Checagem\Exemplo3 - Checagem\obj\x86\Debug\Exemplo3 - Checagem.exe
+C:\Users\Aluno\Desktop\Exemplo3 - Checagem\Exemplo3 - Checagem\obj\x86\Debug\Exemplo3 - Checagem.pdb

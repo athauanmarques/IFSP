@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Moving Text Example</title>
+<script language="javascript">
+var pos=0;
+var direction=1;
+function Move() {
+   obj=document.getElementById("head1");
+   pos += direction;
+   if (pos >= 100 || pos <= -100) direction = 0 - direction;
+   obj.style.left=pos;
+   window.setTimeout("Move();",25);
+}
+</script>
+</head>
+<body onLoad="Move();">
+<h1 align="center" style="position: relative;" ID="head1">
+  Moving Text Example</h1>
+<p>The heading of this page moves back and forth
+across the page. This is done using DHTML and the
+style attributes that control positioning.</p>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="translated-ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lição 2: O seu Primeiro JavaScript - HTML.net</title>
+	<link rel="stylesheet" href="default.screen.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="default.print.css" type="text/css" media="print">
+</head>
+<body>
+	<a href="index.html"> JavaScript </a>  »Lição 2: O Primeiro JavaScript 
+	<div id="tutorials">﻿	  <h1> Lição 2: O Primeiro JavaScript </h1>
+		<p> Nesta lição você vai aprender: </p>
+		<ul>
+		    <li> como incorporar o seu JavaScript na página HTML; </li>
+		    <li> como referênciar o seu JavaScript a partir de um arquivo separado; </li>
+		    <li> como comentar seu código JavaScript; </li>
+		    <li> como criar sua primeira página web JavaScript-powered. </li>
+		</ul>
+		<h2> O HTML </h2>
+	    <p> Para inserir um script JavaScript em uma página HTML, você usa o <strong>&lt;script&gt; ... &lt;/ Script&gt;</strong>. </p>
+	   <p> Vamos começar com uma página de HTML básico, como esta: </p>
+	
+	  <div class="codebox">
+	  
+	  <pre>	     
+	  &lt;! DOCTYPE html&gt;    
+	  &lt;html&gt;    
+	  &lt;head&gt;    
+	  &lt;title&gt; Minha  primeira página JavaScript &lt;/ title&gt;   
+   
+	  &lt;/ Head&gt;    
+	  &lt;body&gt;   
+   
+	  &lt;/ Body&gt;    
+	  &lt;/ Html&gt;   
+	    
+	  </pre>
+	  </div>
+	
+	  <p> O script JavaScript é inserido tanto na página HTML em si ou em um arquivo separado. </p>
+	  <h2> JavaScript embutido na página HTML </h2>
+	  <p> A tag &lt;script&gt; e seu atributo   <strong><em> tipo </em></strong>  dizem ao navegador: "Hey, browser Há um script chegando, e é um script JavaScript!". </p>
+	  <p> É possível fazer isso, quer na secção &lt;head&gt;, como se segue: </p>
+	  <div class="codebox">
+	  
+	  <pre>	     
+	  &lt;! DOCTYPE html&gt;    
+	  &lt;html&gt;    
+	  &lt;head&gt;    
+	  &lt;title&gt; Minha  primeira página JavaScript &lt;/ title&gt;   
+		  
+      <span class="code-javascript"> &lt;script type="text/javascript"&gt;  </span>
+	  <span class="code-comments"> // código JavaScript vai aqui  </span>
+      <span class="code-javascript"> &lt;/ script&gt; </span>  
+		   
+	  &lt;/ Head&gt;    
+	  &lt;body&gt;   
+   
+	  &lt;/ Body&gt;    
+	  &lt;/ Html&gt;   
+	    
+	  </pre>
+	  </div>
+	
+	  <p> Ou na parte inferior do documento antes do fechamento &lt;/ body&gt; tag, assim: </p>
+	
+	  <div class="codebox">
+	  
+	  <pre>	   
+	  &lt;! DOCTYPE html&gt;    
+	  &lt;html&gt;    
+	  &lt;head&gt;    
+	  &lt;title&gt; Minha primeira página JavaScript &lt;/ title&gt;    
+	  &lt;/ Head&gt;    
+	  &lt;body&gt;   
+          
+      <span class="code-javascript"> &lt;script type="text/javascript"&gt;  </span>
+      <span class="code-comments"> // código JavaScript vai aqui  </span>
+      <span class="code-javascript"> &lt;/ script&gt; </span>  
+		   
+	  &lt;/ Body&gt;    
+	  &lt;/ Html&gt;   
+	    
+	  </pre>
+	
+	  </div>
+	  <p>Se você está se perguntando se é melhor colocar a sua marca &lt;script&gt; no &lt;head&gt; ou o &lt;body&gt;, então você não está sozinho.
+	  Isto sempre se resume a sua preferência pessoal. </p>
+	
+	  <h3> Comments, comentários, comentários </h3>
+	  <p> Uma última coisa a notar sobre ambos os trechos de código acima são as duas barras  <strong> // </strong>  antes do texto "código JavaScript vai aqui".   Isto é como você  <strong> comenta uma linha de código JavaScript </strong>  . </p>  
+	  <p> Quando um comentário se estende por mais de mais de uma linha, você pode usar  <strong> / * Comentário vai aqui * / </strong>  para delimitar um comentário, assim como você faz em uma folha de estilo.   Veja como isto é feito: </p>  
+	
+	  <div class="codebox">
+	  
+	  <pre>	   
+	  &lt;! DOCTYPE html&gt;    
+	  &lt;html&gt;    
+	  &lt;head&gt;    
+	  &lt;title&gt; Minha primeira página JavaScript &lt;/ title&gt;    
+	  &lt;/ Head&gt;    
+	  &lt;body&gt;   
+          
+      <span class="code-javascript"> &lt;script type="text/javascript"&gt;  </span>
+	  <span class="code-comments"> / * código JavaScript  </span>
+	  <span class="code-comments"> vai aqui * /  </span>
+      <span class="code-javascript"> &lt;/ script&gt; </span>  
+		   
+	  &lt;/ Body&gt;    
+	  &lt;/ Html&gt;   
+	    
+	  </pre>
+	
+	  </div>
+	  <p> Quando o interpretador JavaScript do seu navegador se depara com  '//' ou '/ ** /', ele simplesmente ignora qualquer texto está colocado entre os dois.
+	   Use comentários em seu código para lembrar no futuro do que seu código foi projetado para fazer.   </p>
+	  <h2> Inserir JavaScript em um arquivo separado </h2>
+	  <p> Se o seu script é mais longo do que algumas linhas, ou você precisa aplicar o mesmo código para diversas páginas em seu site, então é melhor empacotar seu código JavaScript em um arquivo separado. </p>  
+	  <p> Isto, facilitará a manutenção e reutilização de seus scripts. </p>
+	  <p> Veja como isto é feito: </p>
+	
+	  <div class="codebox">
+	  
+	  <pre>	   
+	  &lt;! DOCTYPE html&gt;    
+	  &lt;html&gt;    
+	  &lt;head&gt;    
+	  &lt;title&gt; Minha primeira página JavaScript &lt;/ title&gt;    
+      &lt;script type="text/javascript" src="yourjavascript.js"&gt; &lt;/ script&gt;    
+	  &lt;/ Head&gt;    
+	  &lt;body&gt;   
+           
+	  &lt;/ Body&gt;    
+	  &lt;/ Html&gt;   
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <p> Como você pode ver, o  <em> &lt;script&gt; </em>  referencia um arquivo externo,  <strong> "yourjavascript.js" </strong>  que tem a extensão  <strong> . js </strong>  e contém o script que coloca a magia em sua página web. </p>
+	
+	  <h2> Sua primeira página de JavaScript: Olá Mundo </h2>
+	
+	  <p> Sem mais delongas, vamos ver se funciona JavaScript no seu navegador. </p>
+    
+	  <h3> Experimente: JavaScript embutido em uma página HTML </h3>	
+	
+	  <p> Entre o &lt;script&gt; e &lt;/ script&gt; tanto na &lt;head&gt; quanto no &lt;body&gt; de seu documento HTML, adicione a seguinte linha de código, logo após o comentário: </p>
+	
+	  <div class="codebox">
+	  
+	  <pre>	   
+	  &lt;! DOCTYPE html&gt;    
+	  &lt;html&gt;    
+	  &lt;head&gt;    
+	  &lt;title&gt; Minha página primeiro JavaScript &lt;/ title&gt;    
+	  &lt;/ Head&gt;    
+	  &lt;body&gt;   
+          
+	  <span class="code-javascript"> &lt;script type="text/javascript"&gt;  </span>
+	  <span class="code-comments"> // código JavaScript vai aqui  </span>
+	  <span class="code-javascript"> alert ('Olá Mundo!');  </span>
+      <span class="code-javascript"> &lt;/ script&gt; </span>  
+		   
+	  &lt;/ Body&gt;    
+	  &lt;/ Html&gt;   
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <p> Esta é a sua  primeira  <strong> declaração </strong> JavaScript, isto é, você acabou instruído sua página web para fazer algo.   Não se preocupe com o código ainda, estaremos voltando para o  comando <strong> alert () </strong> de novo nas aulas seguintes. </p>  
+	
+	  <p> Basta notar o  <strong><em> ponto e vírgula (;) </em></strong>  no final da declaração.   Isso é importante: ele diz ao interpretador de JavaScript que a declaração está terminada e que vem a seguir é uma declaração diferente. </p>
+	
+	  <p> Agora salve o seu trabalho e execute a página no seu navegador favorito.   Você verá uma caixa de alerta aparecendo no carregamento da página.   Esta é a aparência da página no Firefox: </p>
+	
+	  <img src="imagens/lesson2_img01.gif" alt="Ilustração: teste de JavaScript com caixa de alerta Olá Mundo">
+	
+	  <p> Se a sua caixa de alerta não está aparecendo, então verifique se você digitou o comando JavaScript exatamente como está no código de exemplo. </p>
+	
+	  <p> Verifique se o seu  <strong> &lt;script&gt; ... &lt;/ script&gt; </strong>  estão lá, que o texto entre colchetes está  <strong> entre aspas ("") </strong>  , e que  <strong> existe um ponto e vírgula (;) no final da declaração </strong>  .   Em seguida, tente novamente. </p>
+	
+	  <h3> Experimente: JavaScript em um arquivo separado </h3>
+	
+	  <p> Criar um novo documento no seu editor de texto e salvá-lo como "helloworld.js".    <strong> Importante: a extensão do arquivo tem que ser js. </strong>  (esta é a extensão de arquivo apropriada JavaScript). </p>
+	
+	  <p> No novo documento, cole no comando JavaScript do exemplo anterior (  <strong> não há necessidade </strong>  de digitar o &lt;script&gt; ... &lt;/ script&gt; marcas aqui): </p>
+	
+	  <div class="codebox">
+	  
+	  <pre>	
+	  <span class="code-javascript"> alert ('Olá Mundo!'); </span>  
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <p> Agora, volte para a página HTML, exclua o código JavaScript anterior, e adicione o &lt;script&gt; ...   &lt;/ Script&gt; marcas na seção &lt;head&gt; da página com uma referência ao arquivo JavaScript helloworld.js, assim: </p>
+	
+	  <div class="codebox">
+	  
+	  <pre> 	  &lt;! DOCTYPE html&gt;    
+	  &lt;html&gt;    
+	  &lt;head&gt;    
+	  &lt;title&gt; Minha página primeiro JavaScript &lt;/ title&gt;    
+	  &lt;script type="text/javascript" src="helloworld.js"&gt; &lt;/ script&gt;    
+	  &lt;/ Head&gt;    
+	  &lt;body&gt;   
+           
+	  &lt;/ Body&gt;    
+	  &lt;/ Html&gt;   
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <p> Feche todos os seus documentos e execute a página HTML no navegador.   Você deve ver a caixa de aparecendo como no exemplo anterior. </p>
+	
+	  <p> Se o código não funcionar, verifique se o caminho  para o arquivo JavaScript está correto, a digitação está idêntica ao exemplo, e verifique se você adicionou um fechamento &lt;/ script&gt; tag.   Em helloworld.js certifique-se de seu comando JavaScript é digitado exatamente o mesmo que no código de exemplo acima, tente novamente. </p>
+	
+	  <h2> Resumo </h2>
+	
+	  <p> Você realmente aprendeu muito nesta lição.  <font class="">Você sabe  <strong> <font class="">como e onde incluir JavaScript </strong> <font class=""> em sua página web, como  <strong> <font class="">comentar seu código JavaScript e porque esta é uma boa idéia </strong> <font class=""> , e, finalmente, você acabou de ver sua página web ganhar vida com  <strong> <font class="">o seu primeiro script JavaScript </strong> <font class=""> . </p>
+	
+	  <p> Evidentemente, uma caixa de alerta dizendo "Olá Mundo!"   parece um pouco idiota, mas até mesmo os alertas podem ser úteis para testar, de forma rápida, se o JavaScript está habilitado em seu navegador e seu código está funcionando. </p>
+	
+	  <p> É tempo para uma pausa bem merecida.   Na  <strong> lição 3 </strong>  vai ser abordado outro tema central em sua jornada JavaScript:  <strong> eventos </strong>  .   Prepare-se! </p>
+	
+	<hr>
+</div>
+</body></html>

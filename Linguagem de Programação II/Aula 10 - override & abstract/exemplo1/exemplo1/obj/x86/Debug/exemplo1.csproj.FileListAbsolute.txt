@@ -1,0 +1,14 @@
+C:\Users\Aluno\Desktop\Aula 10 - override & abstract\exemplo1\exemplo1\obj\x86\Debug\exemplo1.Form1.resources
+C:\Users\Aluno\Desktop\Aula 10 - override & abstract\exemplo1\exemplo1\obj\x86\Debug\exemplo1.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Aula 10 - override & abstract\exemplo1\exemplo1\obj\x86\Debug\exemplo1.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Aula 10 - override & abstract\exemplo1\exemplo1\bin\Debug\exemplo1.exe
+C:\Users\Aluno\Desktop\Aula 10 - override & abstract\exemplo1\exemplo1\bin\Debug\exemplo1.pdb
+C:\Users\Aluno\Desktop\Aula 10 - override & abstract\exemplo1\exemplo1\obj\x86\Debug\exemplo1.exe
+C:\Users\Aluno\Desktop\Aula 10 - override & abstract\exemplo1\exemplo1\obj\x86\Debug\exemplo1.pdb
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\obj\x86\Debug\exemplo1.exe
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\obj\x86\Debug\exemplo1.pdb
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\bin\Debug\exemplo1.exe
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\bin\Debug\exemplo1.pdb
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\obj\x86\Debug\exemplo1.Form1.resources
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\obj\x86\Debug\exemplo1.Properties.Resources.resources
+C:\Users\Aluno\Desktop\exemplo1\exemplo1\obj\x86\Debug\exemplo1.csproj.GenerateResource.Cache

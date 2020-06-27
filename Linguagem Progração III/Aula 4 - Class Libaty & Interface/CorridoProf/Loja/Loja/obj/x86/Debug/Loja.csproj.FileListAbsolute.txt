@@ -1,0 +1,7 @@
+C:\Users\Aluno\Desktop\ExercA4\Loja\Loja\bin\Debug\Loja.exe
+C:\Users\Aluno\Desktop\ExercA4\Loja\Loja\bin\Debug\Loja.pdb
+C:\Users\Aluno\Desktop\ExercA4\Loja\Loja\obj\x86\Debug\Loja.Form1.resources
+C:\Users\Aluno\Desktop\ExercA4\Loja\Loja\obj\x86\Debug\Loja.Properties.Resources.resources
+C:\Users\Aluno\Desktop\ExercA4\Loja\Loja\obj\x86\Debug\Loja.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\ExercA4\Loja\Loja\obj\x86\Debug\Loja.exe
+C:\Users\Aluno\Desktop\ExercA4\Loja\Loja\obj\x86\Debug\Loja.pdb

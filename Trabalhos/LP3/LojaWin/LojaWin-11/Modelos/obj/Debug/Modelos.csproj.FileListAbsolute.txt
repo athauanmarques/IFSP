@@ -1,0 +1,5 @@
+D:\LojaWin\Modelos\bin\Debug\Modelos.dll
+D:\LojaWin\Modelos\bin\Debug\Modelos.pdb
+D:\LojaWin\Modelos\obj\Debug\Modelos.dll
+D:\LojaWin\Modelos\obj\Debug\Modelos.pdb
+D:\LojaWin\Modelos\obj\Debug\Modelos.csprojResolveAssemblyReference.cache

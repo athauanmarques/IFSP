@@ -1,0 +1,41 @@
+package Lista2;
+
+import javax.swing.JOptionPane;
+
+public class exer2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		int num [] = new int[3];
+		int maior;
+		int menor;
+		int aux ;
+		
+		for (int i = 0; i < 3; i++)
+		{
+		
+		num [i] = Integer.parseInt(JOptionPane.showInputDialog("Informe valor: ")); 
+		
+		aux = aux + i;
+		
+		}
+		
+		if (aux > i)
+		 {
+			maior = i;
+			
+		 }
+		 else if (aux < i)
+		 {
+			 menor = i;
+			 
+		 }
+		
+		 System.out.println("menor : " + menor);
+		
+		 
+	}
+
+}

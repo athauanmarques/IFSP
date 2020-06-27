@@ -1,0 +1,18 @@
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Cursos\Cursos\bin\Debug\Cursos.exe
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Cursos\Cursos\bin\Debug\Cursos.pdb
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Cursos\Cursos\obj\x86\Debug\Cursos.Form1.resources
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Cursos\Cursos\obj\x86\Debug\Cursos.Properties.Resources.resources
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Cursos\Cursos\obj\x86\Debug\Cursos.csproj.GenerateResource.Cache
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Cursos\Cursos\obj\x86\Debug\Cursos.exe
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\Cursos\Cursos\obj\x86\Debug\Cursos.pdb
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\1-ModBasico\ExercModBasico\6-Cursos\Cursos\obj\x86\Debug\Cursos.exe
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\1-ModBasico\ExercModBasico\6-Cursos\Cursos\obj\x86\Debug\Cursos.pdb
+C:\Users\Aluno\Desktop\Nova pasta\6-Cursos\Cursos\obj\x86\Debug\Cursos.exe
+C:\Users\Aluno\Desktop\Nova pasta\6-Cursos\Cursos\obj\x86\Debug\Cursos.pdb
+C:\Users\Aluno\Desktop\Nova pasta\6-Cursos\Cursos\bin\Debug\Cursos.exe
+C:\Users\Aluno\Desktop\Nova pasta\6-Cursos\Cursos\bin\Debug\Cursos.pdb
+C:\Users\Aluno\Desktop\Nova pasta\6-Cursos\Cursos\obj\x86\Debug\Cursos.Form1.resources
+C:\Users\Aluno\Desktop\Nova pasta\6-Cursos\Cursos\obj\x86\Debug\Cursos.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Nova pasta\6-Cursos\Cursos\obj\x86\Debug\Cursos.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 5 - Tramento de erros\6-Cursos\Cursos\obj\x86\Debug\Cursos.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 5 - Tramento de erros\6-Cursos\Cursos\obj\x86\Debug\Cursos.pdb

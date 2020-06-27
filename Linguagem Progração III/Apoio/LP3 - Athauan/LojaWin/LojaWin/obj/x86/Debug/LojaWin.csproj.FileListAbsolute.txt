@@ -1,0 +1,60 @@
+D:\LojaWin\LojaWin\bin\Debug\LojaWin.exe
+D:\LojaWin\LojaWin\bin\Debug\LojaWin.pdb
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Form1.resources
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Properties.Resources.resources
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csproj.GenerateResource.Cache
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.exe
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.pdb
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmCalendario.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.exe
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.pdb
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\bin\Debug\LojaWin.exe
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\bin\Debug\LojaWin.pdb
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Form1.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmCalendario.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Properties.Resources.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\bin\Debug\mysql.data.dll
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmLogin.resources
+D:\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.exe
+D:\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.pdb
+D:\LP3\LojaWin\LojaWin\bin\Debug\LojaWin.exe
+D:\LP3\LojaWin\LojaWin\bin\Debug\LojaWin.pdb
+D:\LP3\LojaWin\LojaWin\bin\Debug\mysql.data.dll
+D:\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csprojResolveAssemblyReference.cache
+D:\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Form1.resources
+D:\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmCalendario.resources
+D:\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmLogin.resources
+D:\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Properties.Resources.resources
+D:\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csproj.GenerateResource.Cache
+D:\LP3\LojaWin\LojaWin\bin\Debug\BLL.dll
+D:\LP3\LojaWin\LojaWin\bin\Debug\Modelos.dll
+D:\LP3\LojaWin\LojaWin\bin\Debug\DAL.dll
+D:\LP3\LojaWin\LojaWin\bin\Debug\BLL.pdb
+D:\LP3\LojaWin\LojaWin\bin\Debug\Modelos.pdb
+D:\LP3\LojaWin\LojaWin\bin\Debug\DAL.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.exe
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\bin\Debug\LojaWin.exe
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\bin\Debug\LojaWin.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\bin\Debug\BLL.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\bin\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\bin\Debug\DAL.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\bin\Debug\MySql.Data.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\bin\Debug\BLL.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\bin\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\bin\Debug\DAL.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Form1.resources
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmCalendario.resources
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmLogin.resources
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmUsuario.resources
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Properties.Resources.resources
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csproj.GenerateResource.Cache
+F:\IFSP\Linguagem Progração III\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.exe
+F:\IFSP\Linguagem Progração III\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.pdb
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.exe
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.pdb
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\0\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.exe
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\0\LP3 - Athauan\LojaWin\LojaWin\obj\x86\Debug\LojaWin.pdb

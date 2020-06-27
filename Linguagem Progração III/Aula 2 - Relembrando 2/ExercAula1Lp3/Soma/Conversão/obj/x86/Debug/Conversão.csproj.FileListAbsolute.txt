@@ -1,0 +1,7 @@
+C:\Users\Aluno\Desktop\Conversão\Conversão\bin\Debug\Conversão.exe
+C:\Users\Aluno\Desktop\Conversão\Conversão\bin\Debug\Conversão.pdb
+C:\Users\Aluno\Desktop\Conversão\Conversão\obj\x86\Debug\Conversão.Conversão.resources
+C:\Users\Aluno\Desktop\Conversão\Conversão\obj\x86\Debug\Conversão.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Conversão\Conversão\obj\x86\Debug\Conversão.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Conversão\Conversão\obj\x86\Debug\Conversão.exe
+C:\Users\Aluno\Desktop\Conversão\Conversão\obj\x86\Debug\Conversão.pdb

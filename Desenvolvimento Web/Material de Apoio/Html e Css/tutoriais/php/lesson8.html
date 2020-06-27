@@ -1,0 +1,260 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 8: Arrays - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 8: Arrays - HTML.net" />
+	<meta name="description" content="Lição 8: Arrays - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 8: Arrays - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/php/lesson8.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+</head>
+
+<body>	
+		<div id="main">
+		<div id="content">
+		<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>PHP</a> &#187; Lição 8: Arrays</div>
+		<div id='tutorials'>	<h1>Lição 8: Arrays</h1> 
+
+	<p>Nesta lição veremos o que array, como usá-los e o que podemos fazer com eles.</p> 
+
+	<p>Entender arrays pode ser um pouco difícil no início. Mas, não desanime, vamos tentar... nós iremos tornar o processo de aprendizado o mais fácil possível.</p> 
+
+	<h2>O que é array?</h2> 
+
+	<p>Array é uma coleção (ou conjunto) de elementos indexados na qual cada um dos elementos tem um número identificador único.</p> 
+
+	<p>Parece confuso? Creia, não é tão complicado.</p> 
+
+	<p>Imagine uma lista de palavras separadas por vírgula como a mostrada a seguir:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	maçãs, peras, bananas, laranjas, limões
+	
+	</pre> 
+	</div> 
+
+	<p>Agora imagine dividir a lista tomando como separador cada vírgula. Em seguite atribua a cada divisão um número identificador único:</p> 
+	<div class="codebox"> <img src="lesson8_img01.pt-br.jpg" alt="maçãs (0), peras (1), bananas (2), laranjas (3), limões (4)"> 
+	</div> 
+
+	<p>O que você acabou de ver é um array. Podemos dar um nome para o array como, por exemplo, "frutas". A idéa é que possamos acessar o array usando um número identificador e com ele consultar o valor correspondente usando uma sintaxe como mostrada a seguir:</p> 
+
+	<p>frutas(0) = maças<br />
+	frutas(1) = peras <br />
+	frutas(2) = bananas <br />
+	frutas(3) = laranjas <br />
+	frutas(4) = limões</p> 
+
+	<p>esta é a idéia por trás de arrays. Vamos ver um exemplo prático.</p> 
+
+	<h2>Como usar um array?</h2> 
+
+	<p>Continuaremos com o array de frutas. Passo a passo mostraremos como fazer para a lista funcionar como um array. Primeiro vamos criar uma variável para conter a lista como mostrado a seguir:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-php">$listadefrutas = "maçãs, peras, bananas, laranjas, limões";</span>
+	
+	<span class="code-php">?&gt;</span>
+	
+	</pre> 
+	</div> 
+
+	<p>A seguir vamos usar a função <a href="http://php.net/manual/en/function.explode.php" title="PHP documentation"> explode</a> para dividir a lista pelas vírgulas:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	<span class="code-php">&lt;?php</span>
+	 
+	<span class="code-php">$listadefrutas = "maçãs, peras, bananas, laranjas, limões";</span>
+	 
+	<span class="code-php">$arrFrutas = explode(",", $listadefrutas);</span>
+
+	<span class="code-php">?&gt;</span>
+	
+	</pre> 
+	</div> 
+
+	<p>Viva! "$arrFrutas" agora é um array!</p> 
+
+	<p>Observe que chamamos a função <a href="http://php.net/manual/en/function.explode.php" title="PHP documentation"> explode</a> com dois argumentos:</p> <ol> 
+	<li>a lista a ser dividida</li> 
+	<li>e o delimitador - isto é, o caractere usado para separar os itens da lista (no caso do exemplo a vírgula) colocado entre aspas ",".</li> </ol> 
+
+	<p>Usamos a vírgula como delimitador, mas podemos usar qualquer caractere e até mesmo uma palavra.</p> 
+
+	<p>Vamos comentar o script e colocá-lo em uma página PHP:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Array&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+ 
+	<span class="code-comments">// Lista separada por vírgula</span>
+	<span class="code-php">$listadefrutas = "maçãs, peras, bananas, laranjas, limões";</span>
+	 
+	<span class="code-comments">// Cria um array seprando os itens da lista (tendo a vírgula como delimitador)</span>
+	<span class="code-php">$arrFrutas = explode(",", $listadefrutas);</span>
+	 
+	<span class="code-comments">   // Escreve os valores do array</span>
+	<span class="code-php">   echo "&lt;p&gt;Lista de frutas:&lt;/p&gt;";</span>
+	 
+	<span class="code-php">   echo "&lt;ul&gt;";</span>
+	<span class="code-php">   echo "&lt;li&gt;" . $arrFrutas[0] . "&lt;/li&gt;";</span>
+	<span class="code-php">   echo "&lt;li&gt;" . $arrFrutas[1] . "&lt;/li&gt;";</span>
+	<span class="code-php">   echo "&lt;li&gt;" . $arrFrutas[2] . "&lt;/li&gt;";</span>
+	<span class="code-php">   echo "&lt;li&gt;" . $arrFrutas[3] . "&lt;/li&gt;";</span>
+	<span class="code-php">   echo "&lt;li&gt;" . $arrFrutas[4] . "&lt;/li&gt;";</span>
+	<span class="code-php">   echo "&lt;/ul&gt;";</span>
+
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink">  <a href="lesson8_ex1.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div> 
+
+	<p>este exemplo é muito simples e na verdade não há vantagem alguma em usar um array para realizar este tipo de tarefa. Mas, um momento... arrays podem ser usadas de maneira muito mais vantajosa.</p> 
+
+	<h2>Loop por um array</h2> 
+
+	<p>Na <a href="lesson5.html" title="Lição 5: Loops">lição 5</a> estudamos loops. A seguir veremos como realizar um loop por um array.</p> 
+
+	<p>Quando você conhece o número de itens de um array não encontra problemas para definir um loop por ele. Você começa em 0 e desenvolve o loop até atingir o número de itens do array. No exemplo das frutas um loop pelo array seria como mostrado a seguir:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Array&lt;/title&gt;
+
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+ 
+	<span class="code-comments">// Lista separada por vírgula</span>
+	<span class="code-php">$listadefrutas = "maçãs, peras, bananas, laranjas, limões";</span>
+	 
+	<span class="code-comments">// Cria um array seprando os itens da lista (tendo a vírgula como delimitador)</span>
+	<span class="code-php">$arrFrutas = explode (",", $listadefrutas);</span>
+	 
+	<span class="code-php">   echo "&lt;p&gt;Lista de frutas:&lt;/p&gt;";</span>
+	<span class="code-php">   echo "&lt;ul&gt;";</span>
+	 
+	<span class="code-comments">   // Loop pelo array $arrFrutas</span>
+	<span class="code-php">   for ($x=0; $x&lt;=4; $x++) {</span>
+	<span class="code-php">      echo "&lt;li&gt;" . $arrFrutas[$x] . "&lt;/li&gt;";</span>
+	<span class="code-php">   }</span>
+	 
+	<span class="code-php">   echo "&lt;/ul&gt;";</span>
+
+	<span class="code-php">?&gt;</span>
+	 
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink">  <a href="lesson8_ex2.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div> 
+
+	<p>Como você pode notar a variável <em>$x</em> (que cresce de 0 a 4 no loop) foi usada para chamar o array.</p> 
+
+	<h2>Como encontrar o tamanho de um array</h2> 
+
+	<p>Mas, o que acontecerá se uma outra fruta for adicionada à lista? Nosso array passará a ter mais um item cujo número identificador será <strong>5</strong>. Já deu para ver o problema? Precisamos alterar o loop para que ele funcione de 0 a 5, caso contrário não serão incluídos todos os elementos do array.</p> 
+
+	<p>Não seria maravilhoso se pudéssemos saber automaticamente quantos itens um array tem?</p> 
+
+	<p>É isso exatamente o que faremos a seguir com uso da função <a href="http://php.net/manual/en/control-structures.foreach.php"> foreach</a>. Agora podemos criar um loop que funciona em todo array independentemente do número de itens nele contido:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	<span class="code-php">&lt;?php</span>
+	<span class="code-php">   foreach ($arrFrutas as $x) {</span>
+	<span class="code-php">      echo arrFruta[$x];</span>
+	<span class="code-php">   }</span>
+	<span class="code-php">?&gt;</span>
+	
+	</pre>
+	</div> 
+
+	<p>este loop funciona independentemente do número de itens contido no array.</p> 
+
+	<h2>Outro exemplo</h2> 
+
+	<p>A seguir mostramos um exemplo, usando array, para  escrever os nomes dos meses:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Array&lt;title&gt;
+
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-comments">// Cria um array dos meses.</span>
+	<span class="code-comments">// Cria um array com os meses. Notar a vírgula antes do mês de janeiro. Isto é necessário //porque não existe mês representado pelo número </span>
+	<span class="code-php">$arrMes = array(,"Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro);</span>
+	 
+	<span class="code-comments">// Chama o array com o número do mês - escreve no navegador do usuário</span>
+	<span class="code-php">echo $arrMes[date("m")];</span>
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink">  <a href="lesson8_ex3.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div> 
+
+	<p>Notar que usamos a função <a href="http://php.net/manual/en/language.types.array.php"> array</a> e não <a href="http://php.net/manual/en/function.explode.php"> explode</a> para criar o array.</p> 
+
+	<p>Ok. Isto é tudo sobre arrays! Na próxima lição veremos como escrever nossas próprias funções.</p> 
+	<hr />
+	<hr /><p class='previous'><a href='lesson7.html'>&lt;&lt; Lição 7: Insira comentários nos seus scripts</a></p><p class='next'><a href='lesson9.html'>Lição 9: Funções >></a></p></div>  		<!-- google_ad_section_end -->
+
+	</div>
+
+	</div>
+
+	<div id="sidebar">
+					<h1>Tutorials</h1>
+			<ul>
+			<li><a href='..\html\index.html'>HTML Tutorial</a></li><li><a href='..\css\index.html'>CSS Tutorial</a></li><li><strong><a href='index.html'>Tutorial PHP</a></strong><ul><li><a href='introduction.html'>Introdução</a></li><li><a href='lesson1.html'>O que é PHP</a></li><li><a href='lesson2.html'>Servidores</a></li><li><a href='lesson3.html'>Sua primeira página PHP</a></li><li><a href='lesson4.html'>Trabalhando com datas e horas</a></li><li><a href='lesson5.html'>Loops</a></li><li><a href='lesson6.html'>Condicionais</a></li><li><a href='lesson7.html'>Insira comentários nos seus scripts</a></li><li class='selected'><a href='lesson8.html'>Arrays</a></li><li><a href='lesson9.html'>Funções</a></li><li><a href='lesson10.html'>Passando variáveis no URL</a></li><li><a href='lesson11.html'>Passando variáveis de um formulário</a></li><li><a href='lesson12.html'>Sessões</a></li><li><a href='lesson13.html'>Cookies</a></li><li><a href='lesson14.html'>Sistema de arquivos</a></li><li><a href='lesson15.html'>Ler arquivos de texto</a></li><li><a href='lesson16.html'>Escrever em arquivos de texto</a></li><li><a href='lesson17.html'>Banco de Dados</a></li><li><a href='lesson18.html'>Criando Banco de Dados e suas Tabelas</a></li><li><a href='lesson19.html'>Inserindo dados em um Banco de Dados</a></li><li><a href='lesson20.html'>Extraindo dados de um Banco de Dados</a></li><li><a href='lesson21.html'>Apagando dados de um Banco de Dados</a></li><li><a href='lesson22.html'>Atualizando dados de um Banco de Dados</a></li></ul></li>			</ul>
+			
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\Teste\bin\Debug\Teste.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Teste\bin\Debug\Teste.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\Teste\obj\x86\Debug\Teste.Form1.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Teste\obj\x86\Debug\Teste.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Teste\obj\x86\Debug\Teste.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\Teste\obj\x86\Debug\Teste.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Teste\obj\x86\Debug\Teste.pdb

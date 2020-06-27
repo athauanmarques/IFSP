@@ -1,0 +1,17 @@
+body, h1,h2,h3,h4,h5,h6,td {font-family: "Megrim", cursive; color: black;}
+p{color: black;}
+.w3-row-padding img {margin-bottom: 12px}
+
+.w3-sidebar {width: 120px;background: #222;}
+
+#main {margin-left: 120px}
+
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+#cor {color: white;}
+#fundo {background-image: url(img/algo.jpg)  no-repeat center fixed;
+      background-size: cover;
+      }
+#escolha{background: #BD0000;}
+
+a:link { text-decoration:none;} 

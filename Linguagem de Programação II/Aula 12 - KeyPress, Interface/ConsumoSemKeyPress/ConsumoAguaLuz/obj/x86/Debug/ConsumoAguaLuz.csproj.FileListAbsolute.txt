@@ -1,0 +1,24 @@
+C:\Users\Aluno\Desktop\ConsumoB\ConsumoAguaLuz\bin\Debug\ConsumoAguaLuz.exe
+C:\Users\Aluno\Desktop\ConsumoB\ConsumoAguaLuz\bin\Debug\ConsumoAguaLuz.pdb
+C:\Users\Aluno\Desktop\ConsumoB\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\ConsumoB\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.Form1.resources
+C:\Users\Aluno\Desktop\ConsumoB\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.Properties.Resources.resources
+C:\Users\Aluno\Desktop\ConsumoB\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\ConsumoB\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.exe
+C:\Users\Aluno\Desktop\ConsumoB\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.pdb
+D:\ConsumoSemKeyPress\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.pdb
+D:\ConsumoSemKeyPress\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.csprojResolveAssemblyReference.cache
+D:\ConsumoSemKeyPress\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.Form1.resources
+D:\ConsumoSemKeyPress\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.Properties.Resources.resources
+D:\ConsumoSemKeyPress\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.csproj.GenerateResource.Cache
+D:\ConsumoSemKeyPress\ConsumoAguaLuz\bin\Debug\ConsumoAguaLuz.exe
+D:\ConsumoSemKeyPress\ConsumoAguaLuz\bin\Debug\ConsumoAguaLuz.pdb
+D:\ConsumoSemKeyPress\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\ConsumoSemKeyPress\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\ConsumoSemKeyPress\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\ConsumoSemKeyPress\ConsumoAguaLuz\bin\Debug\ConsumoAguaLuz.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\ConsumoSemKeyPress\ConsumoAguaLuz\bin\Debug\ConsumoAguaLuz.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\ConsumoSemKeyPress\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\ConsumoSemKeyPress\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\ConsumoSemKeyPress\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\ConsumoSemKeyPress\ConsumoAguaLuz\obj\x86\Debug\ConsumoAguaLuz.csproj.GenerateResource.Cache

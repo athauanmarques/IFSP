@@ -1,0 +1,8 @@
+D:\LojaWin\Modelos\bin\Release\Modelos.dll
+D:\LojaWin\Modelos\bin\Release\Modelos.pdb
+D:\LojaWin\Modelos\obj\Release\Modelos.dll
+D:\LojaWin\Modelos\obj\Release\Modelos.pdb
+C:\Users\Aluno\Desktop\Aula7\LojaWin\Modelos\bin\Release\Modelos.dll
+C:\Users\Aluno\Desktop\Aula7\LojaWin\Modelos\bin\Release\Modelos.pdb
+C:\Users\Aluno\Desktop\Aula7\LojaWin\Modelos\obj\Release\Modelos.dll
+C:\Users\Aluno\Desktop\Aula7\LojaWin\Modelos\obj\Release\Modelos.pdb

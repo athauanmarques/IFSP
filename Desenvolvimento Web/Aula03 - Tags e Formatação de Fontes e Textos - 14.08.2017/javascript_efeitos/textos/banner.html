@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Figby Industries, Inc.</title>
+<script language="JavaScript" src="menu.js">
+</script>
+<script language="JavaScript" src="banner.js">
+</script>
+</head>
+<body leftmargin=0 topmargin=0 onLoad="ScrollMessage();">
+<table cellspacing="0" cellpadding="0" align="left"> <!-- layout table -->
+<tr><td valign="top">  <!-- menu on left side -->
+<table border="0" cellpadding="4"> <!-- menu table -->
+<tr>
+   <td ID="menu-products" width="100" bgcolor="Silver"
+      onMouseOver="Menu('products');" onMouseOut="Timeout('products');">
+     <a href="products.html"><b>Products</b></a>
+   </td>
+</tr>
+<tr>
+   <td ID="menu-sales" width="100" bgcolor="Silver"
+      onMouseOver="Menu('sales');" onMouseOut="Timeout('sales');">
+      <a href="sales.html"><b>Sales</b></a>
+   </td>
+</tr>
+<tr>
+   <td ID="menu-service" width="100" bgcolor="Silver"
+      onMouseOver="Menu('service');" onMouseOut="Timeout('service');">
+      <a href="service.html"><b>Service</b></a>
+   </td>
+</tr>
+<tr>
+   <td ID="menu-staff" width="100" bgcolor="Silver"
+      onMouseOver="Menu('staff');" onMouseOut="Timeout('staff');">
+      <a href="staff.html"><b>Staff</b></a>
+   </td>
+</tr>
+<tr>
+   <td ID="menu-jobs" width="100" bgcolor="Silver"
+      onMouseOver="Menu('jobs');" onMouseOut="Timeout('jobs');">
+      <a href="jobs.html"><b>Employment</b></a>
+   </td>
+</tr>
+</table>  <!-- end of menu table -->
+<div ID="products" STYLE="position:absolute; visibility: hidden">
+  <table width="100%" border="0" cellpadding="4" cellspacing="0">
+  <tr> <td width="100%" ID="p1" 
+     onMouseOver="Highlight('products','p1');"
+     onMouseOut="UnHighlight('products','p1');">
+  <a href="equip.html">Equipment</a></td></tr>
+  <tr> <td width="100%" ID="p2"
+     onMouseOver="Highlight('products','p2');"
+     onMouseOut="UnHighlight('products','p2');">
+  <a href="supplies.html">Supplies</a></td></tr>
+  </table>
+</div>
+<div ID="sales" STYLE="position:absolute; visibility: hidden">
+  <table width="100%" border="0" cellpadding="4" cellspacing="0">
+  <tr> <td width="100%" ID="s1"
+     onMouseOver="Highlight('sales','s1');"
+     onMouseOut="UnHighlight('sales','s1');">
+  <a href="prices.html">Price List</a></td></tr>
+  <tr> <td width="100%" ID="s2"
+     onMouseOver="Highlight('sales','s2');"
+     onMouseOut="UnHighlight('sales','s2');">
+  <a href="order.html">Order Form</a></td></tr>
+  <tr> <td width="100%" ID="s3"
+     onMouseOver="Highlight('sales','s3');"
+     onMouseOut="UnHighlight('sales','s3');">
+  <a href="specials.html">Specials</a></td></tr>
+  </table>
+</div>
+<div ID="service" STYLE="position:absolute; visibility: hidden">
+  <table width="100%" border="0" cellpadding="4" cellspacing="0">
+  <tr> <td width="100%" ID="r1"
+     onMouseOver="Highlight('service','r1');"
+     onMouseOut="UnHighlight('service','r1');">
+  <a href="support.html">Support</a></td></tr>
+  <tr> <td width="100%" ID="r2"
+     onMouseOver="Highlight('service','r2');"
+     onMouseOut="UnHighlight('service','r2');">
+  <a href="cservice.html">Contact Us</a></td></tr>
+  </table>
+</div>
+<div ID="staff" STYLE="position:absolute; visibility: hidden">
+  <table width="100%" border="0" cellpadding="4" cellspacing="0">
+  <tr> <td width="100%" ID="t1"
+     onMouseOver="Highlight('staff','t1');"
+     onMouseOut="UnHighlight('staff','t1');">
+  <a href="staff.html">Meet the Staff</a></td></tr>
+  </table>
+</div>
+<div ID="jobs" STYLE="position:absolute; visibility: hidden">
+  <table width="100%" border="0" cellpadding="4" cellspacing="0">
+  <tr> <td width="100%" ID="j1"
+     onMouseOver="Highlight('jobs','j1');"
+     onMouseOut="UnHighlight('jobs','j1');">
+  <a href="jobs.html">Job Listings</a></td></tr>
+  </table>
+</div>
+</td>
+<td>  <!-- body of page on right side -->
+<img align="center" src="logo.gif" width="486" height="180" border="0" alt=""><br>
+<h1>Welcome to Figby Industries!</h1>
+<p>Welcome! This is the home page of Figby Industries,
+your source for all sorts of imaginary products. Follow the links
+below or use the menu on the left to learn more about our company
+and our products.
+</p>
+<ul>
+	<li><a href="products.html"><b>Products</b></a></li>
+	<li><a href="sales.html"><b>Sales</b></a></li>
+	<li><a href="service.html"><b>Service</b></a></li>
+	<li><a href="staff.html"><b>Staff</b></a></li>
+	<li><a href="jobs.html"><b>Employment</b></a></li>
+</ul>
+<pre ID="scroll">(c) 2002 Figby Industries</pre>
+</td></tr>
+</table>  
+</body>
+</html>

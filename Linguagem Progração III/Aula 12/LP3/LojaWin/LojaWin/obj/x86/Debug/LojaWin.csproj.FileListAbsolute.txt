@@ -1,0 +1,65 @@
+D:\LojaWin\LojaWin\bin\Debug\LojaWin.exe
+D:\LojaWin\LojaWin\bin\Debug\LojaWin.pdb
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Form1.resources
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Properties.Resources.resources
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csproj.GenerateResource.Cache
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.exe
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.pdb
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmCalendario.resources
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csprojResolveAssemblyReference.cache
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmLogin.resources
+D:\LojaWin\LojaWin\bin\Debug\mysql.data.dll
+D:\LojaWin\LojaWin\bin\Debug\Bll.dll
+D:\LojaWin\LojaWin\bin\Debug\Modelos.dll
+D:\LojaWin\LojaWin\bin\Debug\Dal.dll
+D:\LojaWin\LojaWin\bin\Debug\Bll.pdb
+D:\LojaWin\LojaWin\bin\Debug\Modelos.pdb
+D:\LojaWin\LojaWin\bin\Debug\Dal.pdb
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmUsuarios.resources
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmClientes.resources
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmProdutos.resources
+D:\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmVendas.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.exe
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.pdb
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\bin\Debug\LojaWin.exe
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\bin\Debug\LojaWin.pdb
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\bin\Debug\Bll.dll
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\bin\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\bin\Debug\Dal.dll
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\bin\Debug\MySql.Data.dll
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\bin\Debug\Bll.pdb
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\bin\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\bin\Debug\Dal.pdb
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Form1.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmCalendario.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmClientes.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmLogin.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmProdutos.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmUsuarios.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmVendas.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Properties.Resources.resources
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmFichaClientes.resources
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.exe
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.pdb
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\bin\Debug\LojaWin.exe
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\bin\Debug\LojaWin.pdb
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\bin\Debug\Bll.dll
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\bin\Debug\Modelos.dll
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\bin\Debug\Dal.dll
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\bin\Debug\MySql.Data.dll
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\bin\Debug\Bll.pdb
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\bin\Debug\Modelos.pdb
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\bin\Debug\Dal.pdb
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csprojResolveAssemblyReference.cache
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Form1.resources
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmCalendario.resources
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmClientes.resources
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmFichaClientes.resources
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmLogin.resources
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmProdutos.resources
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmUsuarios.resources
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.frmVendas.resources
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.Properties.Resources.resources
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\Aula 12\LP3\LojaWin\LojaWin\obj\x86\Debug\LojaWin.csproj.GenerateResource.Cache

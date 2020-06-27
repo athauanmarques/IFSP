@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br" xml:lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Tutorial CSS - Construcao de uma barra de navegacao</title>
+	<meta name="description" content="Site do Maujor | Tutoriais sobre CSS, XHTML, HTML, acessibilidade e Padrões Web em geral. Traduções de documentos técnicos do W3C e de artigos de consagrados autores que advogam Web Standards.">
+	<meta name="keywords" content="css, folhas estilo cascata, tutoriais, web standards, padrões web, acessibiliadde, tableless">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Mauricio Samy Silva">
+	<link rel="stylesheet" type="text/css" media="screen" href="main20140515.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="branding.css">
+	<link href="prism.css" rel="stylesheet">
+</head>
+<body id="barnavcss" style="padding-top: 31px !important;">
+<div id="wrapper">
+<div id="pagebody">
+<div id="content">
+	<h1>Construção de uma barra de navegação</h1>
+	<h2>Introdução</h2>
+	<p>Neste tutorial mostrarei uma das técnicas de construção de uma barra de navegação com uso das <abbr title="Cascading Style Sheet">CSS</abbr>.</p><p>
+    Ao final da leitura deste tutorial você estará capacitado a  construir uma barra de navegação com rollover e controlável por um arquivo de Folha de Estilos em Cascata. </p>
+    <h2>Técnicas de construção de uma barra de navegação</h2>
+    <p>Uma técnica bastante simples para a construção de uma barra de navegação consiste em se enclausurar os links dentro um parágrafo. </p><p>
+       Outra, seria através do uso de listas com declaração inline (para torná-la horizontal). <br>
+       Vamos abordar neste tutorial a primeira opção e com  04 (quatro) links.</p><p>
+       Adiante você verá que este código é válido para qualquer número de links, podendo ser adaptado a qualquer necessidade atual e previsão de expansão futura - tamanho da barra de navegação.</p><p>Este código servirá de base para desenvolvermos todo o estudo proposto neste tutorial.</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo.html<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Quem somos<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Portfólio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Contato<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+									<p>Este código <abbr title="Hyper Text Markup Language">HTML</abbr> é renderizado  pelo navegador e apresentado na tela do computador conforme mostrado na figura abaixo: </p>
+									<p><img src="./CSS_Menu7_files/barnav_fig1.gif" alt="Renderização da barra sem estilização" width="420" height="260"></p>
+	 <h2>Classe e  estilização da barra de navegação</h2>
+      <p>Nossa barra de navegação está enclausurada dentro de um elemento <abbr>HTML</abbr>, <code>&lt;p&gt;</code> (parágrafo).</p><p>
+Vamos estilizar este elemento, sem contudo afetar TODOS os parágrafos da página.</p><p>
+Não vamos querer que TODOS os parágrafos da página tenham o mesmo aspecto da barra de navegação.</p><p>
+Criaremos então uma <strong>classe</strong> para aplicar no parágrafo que contém a barra de navegação.</p><p>
+Chamemos a classe de <code>.barNav</code> e vamos supor os seguintes parâmetros de estilização:</p>
+<ul class="boxtut">
+<li>família de letras:  Arial, Verdana,Helvetica, sans-serif;</li>
+<li>tamanho da letra: 12px;</li>
+<li>cor da letra: preta (#000) em fundo laranja (#FFC50C);</li>
+<li>decoração: links sem sublinhado;</li>
+<li>borda de 1px em cor preta (#000)</li>
+<li>espaçamento:em cima e em baixo=1px e nos lados=5px;</li> 
+<li>margens a direita: 1px (controla o espaçamento
+entre os links).</li> 
+</ul>
+     <p><strong>Nota</strong>: As propriedades padding e margin controlam:</p>
+     <p><code>padding:</code> o espaçamento entre as bordas e o texto de cada link;</p> 
+     <p><code>margin:</code> o espaço entre os links.</p>
+	 <h2>As regras <abbr>CSS</abbr> para o estado inicial dos links </h2>
+	  <p>Vamos primeiramente aplicar estilos para os links em seu estado inicial.</p>
+	  <p> 
+	    E aqui entra o seletor <code>a</code> dentro da classe <code>barNav</code></p>
+	  <p>
+      A seguir as regras <abbr>CSS</abbr> para os parâmetros que estabelecemos para os links na nossa barra de navegação: </p>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">.barNav a </span><span class="token punctuation">{</span>
+<span class="token property">font</span><span class="token punctuation">:</span>12px  Arial,Verdana,Helvetica,sans-serif<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span>
+<span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token property">background</span><span class="token punctuation">:</span> #FFC50C<span class="token punctuation">;</span>
+<span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token property">padding</span><span class="token punctuation">:</span> 1px 5px<span class="token punctuation">;</span>
+<span class="token property">margin-right</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+<span class="token property">border</span><span class="token punctuation">:</span> 1px solid #000<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+	 <h2>As regras <abbr>CSS</abbr> para o estado mouse sobre os links </h2>
+	  <p>A seguir  aplicaremos estilos para os links no estado quando o mouse passa sobre eles, para simular o efeito rollover proposto.</p>
+	  <p>Sejam os seguintes parâmetros para o estado hover dos links: </p>
+<ul class="boxtut">
+<li>cor da letra: cinza (#666) em fundo claro (#FCFCFC);</li>
+<li>decoração: links sem sublinhado;</li>
+<li>borda de 1px em cor cinza (#666)</li>
+</ul>
+	  <p>E as regras <abbr>CSS</abbr></p>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">.barNav a:hover </span><span class="token punctuation">{</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #666<span class="token punctuation">;</span>
+<span class="token property">background</span><span class="token punctuation">:</span> #FCFCFC<span class="token punctuation">;</span>
+<span class="token property">border</span><span class="token punctuation">:</span> 1px solid #666<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+	 <h2>O quatro estados dos links</h2>
+	  <p>Os links podem ter até 4 estados diferentes, refletindo cada um, uma ação diferente do usuário:</p>
+	  <p>1) o estado "UP" (estado inicial, quando a página é carregada) já está estilizado;</p><p>2) o estado "OVER" é estilizado com <code>a:hover</code> também foi estilizado;</p>
+	  <p>3) o estado "DOWN" é estilizado com <code>a:active</code> não foi tratado neste tutorial, propositadamente, ficando como exercício para você estudar;</p>
+	  <p>
+	  4) o estado "VISITED" para links já visitados com <code>a:visited</code>, também não tratado neste tutorial, propositadamente, ficando como exercício para você estudar;</p>
+	 <h2>O código completo </h2>
+	  <p>A seguir o código completo de uma página contendo a barra de navegação estilizada conforme este tutorial para você copiar-colar e estudar, fazendo suas adaptações e mudanças.</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Barra de Navegação<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token style"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token selector">.barNav a </span><span class="token punctuation">{</span>
+<span class="token property">font</span><span class="token punctuation">:</span> 12px  Arial, Verdana,Helvetica,sans-serif<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span>
+<span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token property">background</span><span class="token punctuation">:</span>  #FFC50C<span class="token punctuation">;</span>
+<span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token property">padding</span><span class="token punctuation">:</span> 1px 5px<span class="token punctuation">;</span>
+<span class="token property">margin-right</span><span class="token punctuation">:</span>1px<span class="token punctuation">;</span>
+<span class="token property">border</span><span class="token punctuation">:</span> 1px solid #000<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.barNav a:hover </span><span class="token punctuation">{</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #666<span class="token punctuation">;</span>
+<span class="token property">background</span><span class="token punctuation">:</span> #FCFCFC<span class="token punctuation">;</span>
+<span class="token property">border</span><span class="token punctuation">:</span> 1px solid #666<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+--&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>barNav<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo.html<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Quem somos<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Portfólio<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Contato<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
+	 <h2>O resultado final</h2>
+	  <p>A barra de navegação renderizada no navegador no estado em repouso - estado UP</p>
+	  <p><img src="./CSS_Menu7_files/barnav_fig2.gif" alt="Renderização da barra, estilizada" width="420" height="260"></p>
+	  <p>A barra de navegação renderizada no navegador no estado com o mouse em cima do link "Quem somos" - estado OVER. </p>
+	  <p><img src="./CSS_Menu7_files/barnav_fig3.gif" alt="Renderização da barra estilizada mostrando o estado over" width="420" height="260"></p>
+</div><!-- Fim da div content -->
+</div> <!--fim da pagebody -->
+<div id="lateral" onclick="void(0)">
+<div id="nav">
+<div id="menu">
+	<h3 class="link-titulo">Menus</h3>
+	<ul class="box">					
+		<li><a href="CSS_Menu1.html" title="Técnicas básicas para construção de menus com uso de CSS puro">Técnicas básicas</a></li>
+		<li><a href="CSS_Menu2.html" title="Links e menus ">Links e menus </a></li>
+		<li><a href="CSS_Menu4.html" title="Menu drop down">Menu drop down</a></li>
+		<li><a href="CSS_Menu6.html" title="Menus JUMP">JUMP Menu</a></li>
+		<li><a href="CSS_Menu7.html" title="Barras de navegação">Barra de navegação</a></li>
+	</ul>
+</div> <!--div menu-->
+</div> <!--div nav -->
+</div> <!--div lateral-->
+</div> <!--div wrapper-->
+</BODY>
+</html>

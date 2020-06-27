@@ -1,0 +1,40 @@
+C:\Users\Aluno\Desktop\ControleProjetos\ControleProjetos\bin\Debug\ControleProjetos.exe.config
+C:\Users\Aluno\Desktop\ControleProjetos\ControleProjetos\bin\Debug\ControleProjetos.exe
+C:\Users\Aluno\Desktop\ControleProjetos\ControleProjetos\bin\Debug\ControleProjetos.pdb
+C:\Users\Aluno\Desktop\ControleProjetos\ControleProjetos\obj\x86\Debug\ControleProjetos.CadastroEmpresa.resources
+C:\Users\Aluno\Desktop\ControleProjetos\ControleProjetos\obj\x86\Debug\ControleProjetos.Form1.resources
+C:\Users\Aluno\Desktop\ControleProjetos\ControleProjetos\obj\x86\Debug\ControleProjetos.Properties.Resources.resources
+C:\Users\Aluno\Desktop\ControleProjetos\ControleProjetos\obj\x86\Debug\ControleProjetos.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\ControleProjetos\ControleProjetos\obj\x86\Debug\ControleProjetos.exe
+C:\Users\Aluno\Desktop\ControleProjetos\ControleProjetos\obj\x86\Debug\ControleProjetos.pdb
+J:\3ª ADS\LP3\Aula 5 - ADO.NET (Banco de Dados)\ControleProjetos\ControleProjetos\bin\Debug\ControleProjetos.exe.config
+J:\3ª ADS\LP3\Aula 5 - ADO.NET (Banco de Dados)\ControleProjetos\ControleProjetos\obj\x86\Debug\ControleProjetos.exe
+J:\3ª ADS\LP3\Aula 5 - ADO.NET (Banco de Dados)\ControleProjetos\ControleProjetos\obj\x86\Debug\ControleProjetos.pdb
+J:\3ª ADS\LP3\Aula 5 - ADO.NET (Banco de Dados)\ControleProjetos\ControleProjetos\bin\Debug\ControleProjetos.exe
+J:\3ª ADS\LP3\Aula 5 - ADO.NET (Banco de Dados)\ControleProjetos\ControleProjetos\bin\Debug\ControleProjetos.pdb
+J:\3ª ADS\LP3\Aula 5 - ADO.NET (Banco de Dados)\ControleProjetos\ControleProjetos\obj\x86\Debug\ControleProjetos.CadastroEmpresa.resources
+J:\3ª ADS\LP3\Aula 5 - ADO.NET (Banco de Dados)\ControleProjetos\ControleProjetos\obj\x86\Debug\ControleProjetos.Form1.resources
+J:\3ª ADS\LP3\Aula 5 - ADO.NET (Banco de Dados)\ControleProjetos\ControleProjetos\obj\x86\Debug\ControleProjetos.Properties.Resources.resources
+J:\3ª ADS\LP3\Aula 5 - ADO.NET (Banco de Dados)\ControleProjetos\ControleProjetos\obj\x86\Debug\ControleProjetos.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\ControleProjetos - 2\ControleProjetos\bin\Debug\ControleProjetos.exe.config
+C:\Users\Aluno\Desktop\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.exe
+C:\Users\Aluno\Desktop\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.pdb
+C:\Users\Aluno\Desktop\ControleProjetos - 2\ControleProjetos\bin\Debug\ControleProjetos.exe
+C:\Users\Aluno\Desktop\ControleProjetos - 2\ControleProjetos\bin\Debug\ControleProjetos.pdb
+C:\Users\Aluno\Desktop\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.CadastroEmpresa.resources
+C:\Users\Aluno\Desktop\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.Form1.resources
+C:\Users\Aluno\Desktop\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.Properties.Resources.resources
+C:\Users\Aluno\Desktop\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.cadastroContato.resources
+C:\Users\Aluno\Desktop\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 6 - Comando SQL\ControleProjetos - 2\ControleProjetos\bin\Debug\ControleProjetos.exe.config
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 6 - Comando SQL\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 6 - Comando SQL\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 6 - Comando SQL\ControleProjetos - 2\ControleProjetos\bin\Debug\ControleProjetos.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 6 - Comando SQL\ControleProjetos - 2\ControleProjetos\bin\Debug\ControleProjetos.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 6 - Comando SQL\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 6 - Comando SQL\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.cadastroContato.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 6 - Comando SQL\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.CadastroEmpresa.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 6 - Comando SQL\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 6 - Comando SQL\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 6 - Comando SQL\ControleProjetos - 2\ControleProjetos\obj\x86\Debug\ControleProjetos.csproj.GenerateResource.Cache

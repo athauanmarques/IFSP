@@ -1,0 +1,11 @@
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 5\Revisão - Aula - 5\bin\Debug\Revisão - Aula - 5.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 5\Revisão - Aula - 5\bin\Debug\Revisão - Aula - 5.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 5\Revisão - Aula - 5\obj\x86\Debug\Revisão - Aula - 5.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 5\Revisão - Aula - 5\obj\x86\Debug\Revisão___Aula___5.frmCurso.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 5\Revisão - Aula - 5\obj\x86\Debug\Revisão___Aula___5.frmConsulta.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 5\Revisão - Aula - 5\obj\x86\Debug\Revisão___Aula___5.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 5\Revisão - Aula - 5\obj\x86\Debug\Revisão - Aula - 5.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 5\Revisão - Aula - 5\obj\x86\Debug\Revisão - Aula - 5.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 5\Revisão - Aula - 5\obj\x86\Debug\Revisão - Aula - 5.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 5\Revisão - Aula - 5\obj\x86\Debug\Revisão___Aula___5.Form3.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 5\Revisão - Aula - 5\obj\x86\Debug\Revisão___Aula___5.Form4.resources

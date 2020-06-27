@@ -1,0 +1,18 @@
+DROP PROCEDURE IF EXISTS MAISVENDIDOS;
+DELIMITER !
+
+CREATE PROCEDURE MAISVENDIDOS(IN TOP INT)
+BEGIN
+	SELECT id_produto_saida PRODUTO , sum(quantidade_saida) TOTAL -- into OUTFILE "J:MAISVENDIDOS2.TXT"
+	FROM saida
+	group by id_produto_saida
+	order by 2 desc
+	limit TOP;
+END;
+!
+DELIMITER ;
+
+-- TESTE
+CALL MAISVENDIDOS (3);
+
+ 

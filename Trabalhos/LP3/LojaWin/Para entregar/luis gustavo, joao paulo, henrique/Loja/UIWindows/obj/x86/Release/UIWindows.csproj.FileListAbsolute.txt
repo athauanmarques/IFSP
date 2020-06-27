@@ -1,0 +1,9 @@
+K:\Trabalho lp3\Loja\UIWindows\obj\x86\Release\ResolveAssemblyReference.cache
+K:\Trabalho lp3\Loja\UIWindows\obj\x86\Release\UIWindows.ClientesForm.resources
+K:\Trabalho lp3\Loja\UIWindows\obj\x86\Release\UIWindows.Form1.resources
+K:\Trabalho lp3\Loja\UIWindows\obj\x86\Release\UIWindows.ProdutosEmFaltaForm.resources
+K:\Trabalho lp3\Loja\UIWindows\obj\x86\Release\UIWindows.ProdutosForm.resources
+K:\Trabalho lp3\Loja\UIWindows\obj\x86\Release\UIWindows.Properties.Resources.resources
+K:\Trabalho lp3\Loja\UIWindows\obj\x86\Release\UIWindows.VendasForm.resources
+K:\Trabalho lp3\Loja\UIWindows\obj\x86\Release\GenerateResource.read.1.tlog
+K:\Trabalho lp3\Loja\UIWindows\obj\x86\Release\GenerateResource.write.1.tlog

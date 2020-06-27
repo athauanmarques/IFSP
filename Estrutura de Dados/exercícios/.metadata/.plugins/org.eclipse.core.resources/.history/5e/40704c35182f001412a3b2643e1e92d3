@@ -1,0 +1,34 @@
+package exerfor;
+
+public class exer08For {
+
+	public static void main(String[] args) {
+/*
+ * 1) O programa dever ler um valor que contenha 4 dígitos (1000 a 999)
+ * exibir na tela apenas os números que são par. ****no nº 1358, apenas o número 8 é par****
+ *
+ *2)Calcule a raiz quadrada de um número positivo. Escolha um algoritmo de sua preferência.
+ *
+ *3)Escreva um programa que utilize a série de fibonacci. A quantidade de termos pode ser informada pelo usuário.
+ *A série é: 0, 1, 1, 2, 3, 5, 8... 
+ */
+		
+		//1) 
+		int aux1, aux2, result, a, b;
+		for (int i = 999; i < 1000; i++)
+		{
+			if (i%2 == 2)
+			{
+				System.out.println("numero par: " + i);
+				
+			}
+			
+	
+			
+			
+		}
+		
+		
+	}
+
+}

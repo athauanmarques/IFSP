@@ -1,0 +1,16 @@
+D:\LP3\LojaWin\DAL\bin\Debug\DAL.dll
+D:\LP3\LojaWin\DAL\bin\Debug\DAL.pdb
+D:\LP3\LojaWin\DAL\bin\Debug\Modelos.dll
+D:\LP3\LojaWin\DAL\bin\Debug\mysql.data.dll
+D:\LP3\LojaWin\DAL\bin\Debug\Modelos.pdb
+D:\LP3\LojaWin\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\LP3\LojaWin\DAL\obj\Debug\DAL.dll
+D:\LP3\LojaWin\DAL\obj\Debug\DAL.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\DAL\bin\Debug\DAL.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\DAL\bin\Debug\DAL.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\DAL\bin\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\DAL\bin\Debug\mysql.data.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\DAL\bin\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\DAL\obj\Debug\DAL.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\DAL\obj\Debug\DAL.pdb

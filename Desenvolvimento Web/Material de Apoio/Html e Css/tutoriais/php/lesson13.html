@@ -1,0 +1,285 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 13: Cookies - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 13: Cookies - HTML.net" />
+	<meta name="description" content="Lição 13: Cookies - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 13: Cookies - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/php/lesson13.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='http://html.net/site/style/default.screen.css' type='text/css' media='screen' /><link rel='stylesheet' href='http://html.net/site/style/default.print.css' type='text/css' media='print' />
+		
+</head>
+
+<body>	
+	<div id="header">
+			
+		<ul>
+			<li><a href='../..\index.html'>Início</a></li>
+			<li class='selected'><a href='..\index.html'>Tutorials</a></li>
+			<li><a href='../..\forums\index.html'>Fóruns</a></li>
+			<li><a href='../..\about\index.html'>Sobre</a></li>
+		</ul>
+		<form method="get" action="../..\search\index.html" id="cse-search-box">
+		<div id="searchbar">
+			<span>
+			
+				<input type="text" name="q" id="query" value="" /><input type="submit" id="submit" value="Busca" />
+				 <input type="hidden" name="cx" value="002160260272865772965:d4fb4jd-jh0" />
+				<input type="hidden" name="cof" value="FORID:11;NB:1" />
+				<input type="hidden" name="ie" value="UTF-8" />	
+				<input type="hidden" name="lr" value="lang_pt-br" />	
+				<input type="hidden" name="hl" value="pt-br" />	
+			
+			</span>
+		</div>
+		</form>
+		
+	</div>
+
+	
+		<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>PHP</a> &#187; Lição 13: Cookies</div>
+			<div id="socialBookmarks">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"></a>
+				<span id="FbCont"></span>
+				<g:plusone size="medium"></g:plusone>
+								
+			</div>
+			<!-- google_ad_section_start -->
+		
+		<div id='tutorials'>	<h1>Lição 13: Cookies</h1> 
+
+	<p>Quais são as informações sobre seus visitantes, como elas são coletadas por um site e que uso o site faz das informações são questões que podem intrigar o usuário. Cookies são normalmente citados quando se quer exemplificar uma forma de coletar informações e de invasão de privacidade. Mas, afinal devemos nos preocupar com isso? Tire suas próprias conclusões. Ao terminar esta lição você saberá o que pode ser feito com cookies.</p> 
+
+	<h2>O que é cookie?</h2> 
+
+	<p>Cookie é um pequeno arquivo de texto no qual um site pode armazenar informações. Cookies são gravados no disco rígido do usuário e não no servidor.</p> 
+
+	<p>A maioria dos cookies expira (se auto apagam) depois de transcorrido um determinado tempo de pode variar de 1 minuto a vários anos. Contudo o usuário pode identificar e apagar cookies do seu computador a qualquer momento.</p> 
+
+	<p>A maioria dos navegadores, tais como, Microsoft Internet Explorer, Mozilla Firefox e Google Chrome, podem ser configurados de modo a que o usuário seja previamente avisado da gravação de cookie e dar-lhe a opção de aceitar ou não a gravação. Mas, por que simplesmente não permitir a gravação de cookies? Bem, isto é possível, contudo muitos sites não funcionarão sem uso dos cookies. Isto porque eles dependem de cookies para melhorar a usabilidade e viabilizar a funcionalidade do site.</p> 
+
+	<h2>Como a informação é armazenada no cookie?</h2> 
+
+	<p>É fácil configurar ou modificar um cookie com uso da função PHP <a href="http://php.net/manual/en/function.setcookie.php">
+	 setcookie</a>. No exemplo a seguir criaremos um cookie e a ele daremos um valor.</p> 
+
+	<p>Primeiro devemos escolher um nome para o cookie. No nosso exemplo escolhemos o nome "HTMLTest". A seguir definimos um valor para o cookie como mostrado a seguir:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	<span class="code-php">&lt;?php</span> 
+
+	<span class="code-comments">// Configura o cookie</span>
+	<span class="code-php">setcookie("HTMLTest", "Este é um cookie para teste");</span>   
+
+	<span class="code-php">?&gt;</span> 
+
+	</pre> 
+	</div> 
+	
+	<p>Por padrão, um cookie expira quando o navegador é fechado, mas isto pode ser facilmente alterado adicionando-se um parâmetro a mais na função definindo o tempo de vida do cookie:</p> 
+	
+	<div class="codebox"> 
+	<pre>
+
+	<span class="code-php">&lt;?php</span> 
+
+	<span class="code-comments">// Configura o cookie</span>
+	<span class="code-php">setcookie("Name", "C. Wing, time()+3600);</span>   
+	<span class="code-php">setcookie("Interests", "plane spotting", time()+3600);</span> 
+	
+	<span class="code-php">?&gt;</span>
+	
+	</pre> 
+	</div> 
+
+	<p>"Time()+3600" define que o cookie expira em 3600 segundos (60 minutos) a partir de agora.</p> 
+
+	<p>No exemplo mostrado armazenamos informações sobre o nome do usuário e seus interesses. Estas informações podem ser úteis, por exemplo, para direcionar o usuário para uma seção específica do site.</p> 
+
+	<h2>Como se recupera o valor de um cookie?</h2> 
+
+	<p>Para recuperar o valor de um cookie usamos <a href="http://php.net/manual/en/reserved.variables.cookies.php"> $_COOKIE</a>. Por exemplo; para recuperar o valor do cookie mostrado no exemplo anterior a sintaxe é conforme mostrada a seguir:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	<span class="code-php">&lt;?php</span> 
+
+	<span class="code-comments">// Recupera o vlor do cookie</span>
+	<span class="code-php">$strName = $_COOKIE["Name"];</span>   
+	<span class="code-php">strInterest = $_COOKIE["Interest"];</span>
+	 
+	<span class="code-comments">// Escreve no cliente</span>
+	<span class="code-php">echo "&lt;p&gt;" . strName . "&lt;/p&gt;"</span>   
+	<span class="code-php">echo "&lt;p&gt;Você é interessado em: . " strInterest . "&lt;/p&gt;"</span>
+	
+	<span class="code-php">?&gt;</span>
+	
+	</pre> 
+	</div> 
+
+	<h2>Quem pode ler um cookie?</h2> 
+
+	<p>Por padrão, um cookie pode ser lido por documentos de até segundo nível hospedados no mesmo domínio (por exemplo: html.net) no qual ele foi criado. Contudo, com uso dos parâmetros <em>domain</em> e <em>path</em>  você pode restringir mais este comportamento usando a sintaxe mostrada a seguir:</p> 
+
+	<div class="codebox">
+	<pre>
+	
+	setcookie<em>(name, value, expiration time, path, domain);</em>
+	
+	</pre>
+	</div> 
+
+	<p>Vejamos um exemplo:</p> 
+	
+	<div class="codebox">
+	<pre>
+	
+	<span class="code-php">&lt;?php</span>
+	
+	<span class="code-comments">// Configurando o cookie: nome, valor, tempo da vida, caminho, domínio</span>
+	<span class="code-php">setcookie("Name", "C. Wing", time()+60*60*24*365, "/tutorials/php/", "www.html.net");</span>   
+	<span class="code-php">?&gt;</span>
+	
+	</pre>
+	</div> 
+
+	<p>No exemplo mostrado criamos um cookie chamado "Name" com o valor "C. Wing." O cookie expira em 1 ano (60 segundos * 60 minutos * 24 horas * 365 dias) e pode ser lido apenas por arquivos no diretório "/tutorials/php/" no (sub-)domínio "www.html.net".</p>
+
+	<h2>Exemplo de cookie</h2> 
+
+	<p>Vamos gravar um cookie no seu computador e observar o que acontece.</p> 
+
+	<p>O código mostrado a seguir cria o cookie:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	<span class="code-php">&lt;?php</span> 
+
+	<span class="code-comments">// Criar cookie</span>
+	<span class="code-php">setcookie("HTMLTest", "Este é um cookie para teste!", time()+60*60*24, "/tutorials/php/", "www.html.net");</span>   
+	 
+	<span class="code-comments">// Escreve a informação no cliente</span>
+	<span class="code-php">echo $_COOKIE ["HTMLTest"];</span>    
+
+	<span class="code-php">?&gt;</span>
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink">  <a href="lesson13_ex1.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div> 
+
+	<p>O cookie foi gravado no seu disco rígido. O cookie e gravado em um local do disco rígido que varia com o sistema operacional usado pelo usuário. Uma vez que você consiga localizá-lo o seu formato parecido com o seguinte:</p> <div><img src="lesson13_img01.png" alt="Diretório de Cookies no Windows">
+	</div> 
+
+	<p>Como você pode ver um cookie é um arquivo de texto que pode ser aberto no Notepad, por exemplo. O conteúdo do cookie que acabamos de criar se parece com o seguinte:</p>
+	
+	<div class="codebox">
+	<pre>
+
+	HTMLTest TEXT=Este+é+um+cookie+para+teste%21 www.html.net/tutorials/php 0 80973619229399148 4216577264 29399141 * 
+	
+	</pre>
+	</div> 
+
+	<p>Não iremos nos aprofundar mais em cookies, contudo note que o usuário detém o controle sobre a gravação de cookies no seu computador.</p> 
+	
+	<p>Nesta lição estudamos os cookies e suas finalidades. É sabido que alguns sites usam cookies com propósitos excusos.  Mas, na maioria dos casos cookies são usados para tornar a interação com o site mais amigágel ou para individualizar o uso do site.</p> 
+
+	<p>Pode ser uma boa ideia usar cookies no seu site, mas neste caso é de boa prática informar o usuário sobre seu uso. Você pode passar esta informação na política de privacidade do site ou durante o processo de registro do usuário no site.</p> 
+	<hr />
+	<hr /><p class='previous'><a href='lesson12.html'>&lt;&lt; Lição 12: Sessões</a></p><p class='next'><a href='lesson14.html'>Lição 14: Sistema de arquivos >></a></p></div>  		<!-- google_ad_section_end -->
+
+		</div>
+
+		</div>
+
+	<div id="sidebar">
+					<h1>Tutorials</h1>
+			<ul>
+			<li><a href='..\html\index.html'>HTML Tutorial</a></li><li><a href='..\css\index.html'>CSS Tutorial</a></li><li><strong><a href='index.html'>Tutorial PHP</a></strong><ul><li><a href='introduction.html'>Introdução</a></li><li><a href='lesson1.html'>O que é PHP</a></li><li><a href='lesson2.html'>Servidores</a></li><li><a href='lesson3.html'>Sua primeira página PHP</a></li><li><a href='lesson4.html'>Trabalhando com datas e horas</a></li><li><a href='lesson5.html'>Loops</a></li><li><a href='lesson6.html'>Condicionais</a></li><li><a href='lesson7.html'>Insira comentários nos seus scripts</a></li><li><a href='lesson8.html'>Arrays</a></li><li><a href='lesson9.html'>Funções</a></li><li><a href='lesson10.html'>Passando variáveis no URL</a></li><li><a href='lesson11.html'>Passando variáveis de um formulário</a></li><li><a href='lesson12.html'>Sessões</a></li><li class='selected'><a href='lesson13.html'>Cookies</a></li><li><a href='lesson14.html'>Sistema de arquivos</a></li><li><a href='lesson15.html'>Ler arquivos de texto</a></li><li><a href='lesson16.html'>Escrever em arquivos de texto</a></li><li><a href='lesson17.html'>Banco de Dados</a></li><li><a href='lesson18.html'>Criando Banco de Dados e suas Tabelas</a></li><li><a href='lesson19.html'>Inserindo dados em um Banco de Dados</a></li><li><a href='lesson20.html'>Extraindo dados de um Banco de Dados</a></li><li><a href='lesson21.html'>Apagando dados de um Banco de Dados</a></li><li><a href='lesson22.html'>Atualizando dados de um Banco de Dados</a></li></ul></li>			</ul>
+			
+		<!-- google_ad_section_start(weight=ignore) -->
+		<h2>Idioma</h2>
+		
+		<form method="post" action="../..\redirect.html">
+			<p>
+			<select name="location">
+				
+				<option value='http://ar.html.net/tutorials/php/lesson13.php'>العربية</option>
+				<option value='http://de.html.net/tutorials/php/lesson13.php'>Deutsch</option>
+				<option value='http://html.net/tutorials/php/lesson13.php'>English</option>
+				<option value='http://es.html.net/tutorials/php/lesson13.php'>Español</option>
+				<option value='http://fr.html.net/tutorials/php/lesson13.php'>Français</option>
+				<option value='http://he.html.net/tutorials/php/lesson13.php'>עברית</option>
+				<option value='http://it.html.net/tutorials/php/lesson13.php'>Italiano</option>
+				<option value='http://pl.html.net/tutorials/php/lesson13.php'>Polski</option>
+				<option selected='selected' value='http://pt-br.html.net/tutorials/php/lesson13.php'>Português (Brasil)</option>
+				<option value='http://ru.html.net/tutorials/php/lesson13.php'>Русский</option>
+				<option value='http://zh.html.net/tutorials/php/lesson13.php'>中文</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+		
+		
+		<h2>Layout</h2>
+		<form method='post' action='lesson13.html'>			<p>
+			<select name="strCSS">
+				
+				<option value='1'>Default</option>
+				<option value='2'>Default - Blue</option>
+				<option value='3'>No CSS</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+
+		<h2>Traduzido por:</h2> <p><a href='http://www.maujor.com/'>Maurício Samy Silva</a></p>
+		
+			
+
+		
+
+	</div>
+
+	<div id="footer">
+
+		<hr />
+
+		
+		<h1>Quem está online:</h1>
+		<p>No total, temos <strong>99</strong> usuários online :: 4 registrados, 0 ocultos e  95 visitantes</p> 
+		<p>O recorde de usuários online foi de <strong>338</strong> em Ter Set 28, 2010 9:13 am</p> 
+		<p id="userlist"><br />Usuários Registrados: <span style="color: #9E8DA7;" class="username-coloured">Google [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Google Adsense [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Majestic-12 [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Yahoo [Bot]</span></p>
+		
+		<h1>Estatísticas:</h1>
+		<p>Total de Mensagens <strong>3330</strong> - Tópicos no Total: <strong>1407</strong></p><p>Membros no Total: <strong>4345</strong> - O mais novo usuário registrado: <strong><a href='../..\forums\memberlist.html'>jerseys4o5</a></strong></p>
+		<p><br /><a href="../..\forums\memberlist.html">Ver lista completa de membros</a></p>
+		
+
+		<h1>Idioma:</h1>
+		<p><span>
+		<a href='http://ar.html.net/tutorials/php/lesson13.php'>العربية</a> | <a href='http://de.html.net/tutorials/php/lesson13.php'>Deutsch</a> | <a href='http://html.net/tutorials/php/lesson13.php'>English</a> | <a href='http://es.html.net/tutorials/php/lesson13.php'>Español</a> | <a href='http://fr.html.net/tutorials/php/lesson13.php'>Français</a> | <a href='http://he.html.net/tutorials/php/lesson13.php'>עברית</a> | <a href='http://it.html.net/tutorials/php/lesson13.php'>Italiano</a> | <a href='http://pl.html.net/tutorials/php/lesson13.php'>Polski</a> | Português (Brasil) | <a href='http://ru.html.net/tutorials/php/lesson13.php'>Русский</a> | <a href='http://zh.html.net/tutorials/php/lesson13.php'>中文</a> | 		</span></p>
+
+		
+	</div>
+
+	
+</body>
+</html>

@@ -1,0 +1,13 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\Modelos\bin\Release\Modelos.dll
+C:\Users\Aluno\AppData\Local\Temporary Projects\Modelos\bin\Release\Modelos.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\Modelos\obj\Release\Modelos.dll
+C:\Users\Aluno\AppData\Local\Temporary Projects\Modelos\obj\Release\Modelos.pdb
+F:\Trabalho lp3\Loja\Loja\bin\Release\Loja.dll
+F:\Trabalho lp3\Loja\Loja\bin\Release\Loja.pdb
+F:\Trabalho lp3\Loja\Loja\obj\Release\Loja.dll
+F:\Trabalho lp3\Loja\Loja\obj\Release\Loja.pdb
+K:\Trabalho lp3\Loja\Loja\bin\Release\Loja.dll
+K:\Trabalho lp3\Loja\Loja\bin\Release\Loja.pdb
+K:\Trabalho lp3\Loja\Loja\obj\Release\ResolveAssemblyReference.cache
+K:\Trabalho lp3\Loja\Loja\obj\Release\Loja.dll
+K:\Trabalho lp3\Loja\Loja\obj\Release\Loja.pdb

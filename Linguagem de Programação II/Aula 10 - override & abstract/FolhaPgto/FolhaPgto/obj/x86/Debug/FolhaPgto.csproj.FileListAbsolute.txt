@@ -1,0 +1,18 @@
+C:\Users\Aluno\Desktop\FolhaPgto\FolhaPgto\bin\Debug\FolhaPgto.exe
+C:\Users\Aluno\Desktop\FolhaPgto\FolhaPgto\bin\Debug\FolhaPgto.pdb
+C:\Users\Aluno\Desktop\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.Form1.resources
+C:\Users\Aluno\Desktop\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.Properties.Resources.resources
+C:\Users\Aluno\Desktop\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.exe
+C:\Users\Aluno\Desktop\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.pdb
+C:\Users\Aluno\Desktop\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.csprojResolveAssemblyReference.cache
+F:\ADS\LP2\Aula 10 - override & abstract\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.exe
+F:\ADS\LP2\Aula 10 - override & abstract\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 10 - override & abstract\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 10 - override & abstract\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 10 - override & abstract\FolhaPgto\FolhaPgto\bin\Debug\FolhaPgto.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 10 - override & abstract\FolhaPgto\FolhaPgto\bin\Debug\FolhaPgto.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 10 - override & abstract\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 10 - override & abstract\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 10 - override & abstract\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 10 - override & abstract\FolhaPgto\FolhaPgto\obj\x86\Debug\FolhaPgto.csproj.GenerateResource.Cache

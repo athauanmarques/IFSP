@@ -1,0 +1,9 @@
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 1\Revisão - Aula - 1\bin\Debug\Revisão - Aula - 1.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 1\Revisão - Aula - 1\bin\Debug\Revisão - Aula - 1.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 1\Revisão - Aula - 1\obj\x86\Debug\Revisão1.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 1\Revisão - Aula - 1\obj\x86\Debug\Revisão1.Form2.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 1\Revisão - Aula - 1\obj\x86\Debug\Revisão1.Form3.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 1\Revisão - Aula - 1\obj\x86\Debug\Revisão1.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 1\Revisão - Aula - 1\obj\x86\Debug\Revisão - Aula - 1.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 1\Revisão - Aula - 1\obj\x86\Debug\Revisão - Aula - 1.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 1\Revisão - Aula - 1\obj\x86\Debug\Revisão - Aula - 1.pdb

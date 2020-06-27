@@ -1,0 +1,7 @@
+isolamento = não interfere com outra transação
+Duralidade = mantida no banco perticencia de falias, recuperação de falias 
+consistência = copia um valor de um para outro
+
+
+rollback = desfaz
+commit = matentei  

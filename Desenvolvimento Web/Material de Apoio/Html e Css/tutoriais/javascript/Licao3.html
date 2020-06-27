@@ -1,0 +1,106 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="translated-ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lição 3: Eventos - HTML.net</title>
+	<link rel="stylesheet" href="default.screen.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="default.print.css" type="text/css" media="print">
+</head>	
+<body>	
+	<a href="index.html">JavaScript</a> »Lição 3: Eventos
+	<div id="tutorials">﻿	  <h1>Lição 3: Eventos</h1>
+    <p> Por  <em><a href="http://www.mariaantoniettaperna.com/"> Maria Antonietta Perna </a></em> <em> <a href="http://www.mariaantoniettaperna.com/">  </a></em></p>
+	<p> A web é um ambiente dinâmico, onde um monte de coisas  <em> acontecem </em>  .   Mais apropriadamente, eles são chamados de  <strong> eventos </strong>  .   Alguns desses eventos, como um usuário  <strong> clicar em </strong>  um botão ou  <strong> mover o mouse </strong>  sobre um link, são de grande interesse para um codificador de JavaScript. </p>
+    <div><img src="imagens/lesson3_img01.gif" alt=" - "></div>
+	<p> Até o final desta lição você saberá: </p>
+	<ul>
+		<li> o que são eventos; </li>
+		<li> o que o JavaScript pode fazer com eventos</li>
+	</ul>
+	<h2> O que são eventos? </h2>
+	<p><strong> Eventos </strong>  são ocorrências que têm lugar no contexto das  <strong> interações </strong>  entre  <strong> servidor web </strong>  ,  <strong> navegador web </strong>  , e  <strong> usuário da web </strong>  . </p>
+	<p> Por exemplo, se você estiver em uma página web e clicar em um link, há pelo menos 3 eventos importantes que estão sendo desencadeadas: </p>
+	<ol>
+		<li><strong> onClick </strong>: desencadeado por você enquanto você clica no link; </li>
+		<li><strong> onUnload </strong>: desencadeado pelo navegador web, quando ele deixa a página da Web atual; </li>
+		<li><strong> onLoad </strong>: desencadeada pelo navegador como o novo conteúdo da página web é carregada. </li>
+	</ol>
+		<h2>Quais os eventos que você deveria focar?</h2>
+		<p> Tudo depende do programa JavaScript que você está escrevendo, ou seja, sobre os objetivos que pretende alcançar com o seu script. </p>
+	    <p> No entanto, os eventos mais comuns que você provavelmente vai tratar em sua JavaScript são: </p>
+	    <ul>
+			<li><em><strong> onLoad onUnload / </strong></em>  ; </li>
+			<li><em><strong> onClick </strong></em>  ; </li>
+			<li><em><strong> onSubmit </strong></em>  (acionado pelo usuário ao enviar um formulário); </li>
+			<li><em><strong> onFocus / onBlur </strong></em>  (acionado por um usuário como, por exemplo, ele clica em uma caixa de texto ou cliques de uma caixa de texto, respectivamente); </li>
+			<li><em><strong> onMouseOver / onMouseOut </strong></em>  (acionado pelo usuário ao mover o mouse sobre ou fora de um elemento HTML, respectivamente). </li>
+		</ul>
+	  
+	  <p> Neste tutorial, serão cobertos apenas os eventos listados acima. </p>
+	  <h2> O que eu faço com os eventos de um ponto de vista JavaScript? </h2>
+	  <p> Quando você escreve um programa em JavaScript, os eventos se tornam interessantes, porque dão ao seu script um gancho para ganhar o controle sobre o que acontece na página web. </p>
+	  <p> Uma vez que seu script tem de segurar o gancho fornecido pelo evento, o script é o chefe.   O jargão para isso é  <strong> programação orientada a eventos </strong>  : um evento acontece e JavaScript  <strong> manipulá-o </strong> , por exemplo,  <strong> exibir uma caixa de alerta com uma mensagem para o usuário. </strong></p>
+	  <div><img src="imagens/lesson3_img02.gif" alt="Ilustração: programação orientada a eventos"><p class="caption-javascript"> Hey, um evento onClick acontecendo! </p></div>
+	  <p><strong> Conclusão: </strong>  eventos curvar aos comandos JavaScript por meio de  <strong> manipuladores de eventos </strong>  .   Estas são afirmações no seu script JavaScript que estão devidamente  <strong> ligados </strong>  a esses eventos. </p>
+	  <h2> Como lidar com eventos JavaScript? </h2>
+	  <p> O  <strong> alert () </strong>  é um comando que faz parte da linguagem JavaScript.   O interpretador de JavaScript no navegador traduz ao longo destas linhas: </p>
+	  <blockquote> "Ei, navegador, exibir uma caixa de alerta que contém a mensagem digitada dentro do () colocando entre parênteses" </blockquote>
+	  <p> ( <strong>Aviso:</strong> O JavaScript é case sensitive. Se você escreve um <strong> L </strong>em vez de um <strong>!</strong>, o script não funcionará). </p>
+	  <p> Como você viu na lição anterior, simplesmente por escrever uma declaração de JavaScript entre <strong>&lt;script&gt; ... &lt;/ Script&gt;  </strong>a execução dessa declaração dispara o evento  <strong>onLoad.</strong> </p>
+	  <p> No entanto, os seus scripts JavaScript são capazes de fazer coisas mais interessantes quando se trata de eventos em resposta às ações do usuário, por exemplo um evento onClick.   Como fazemos isso? </p>
+	  <h2> Experimente: lidar com um evento onClick com JavaScript </h2>
+	  <p> O navegador já tem suas próprias maneiras de  <strong> manipulação de eventos </strong>  .   Por exemplo, quando uma página é carregada, o navegador dispara o evento onLoad e exibe o conteúdo da página, quando um usuário clica em um link, o navegador se comunica com o servidor para acessar a página solicitada, etc Estas são chamados de  <strong> ações padrão </strong>  . </p>
+	  <p> A diversão de estar no comando, porém, é  <strong> não deixar o navegador fazer o que gosta </strong>  , mas  <strong> deixar que o JavaScript faça o seu trabalho e decida o que é para ser feito </strong>  . </p>
+	  <p> A maneira mais simples para anexar um manipulador de eventos para um evento é inserir o código JavaScript necessário dentro do elemento HTML que produz o evento.   Vamos ter ir simplesmente impedindo a ação padrão do navegador quando o usuário clica em um link na página.   Dispare seu editor de texto e vamos começar a codificação! </p>
+	  <p> Prepare um documento básico HTML para exibir um link simples, como o mostrado abaixo: </p>
+	  
+	  <div class="codebox">
+	  
+	  <pre>	     
+	  &lt;! DOCTYPE html&gt;    
+	  &lt;html&gt;    
+	  &lt;head&gt;    
+	  &lt;title&gt; Lição 3: Eventos e manipuladores de eventos &lt;/ title&gt;    
+	  &lt;/ Head&gt;    
+	  &lt;body&gt;    
+	  &lt;h1&gt; Lição 3: Eventos e manipuladores de eventos &lt;/ h1&gt;   
+		   
+	  href="http://html.net"&gt; &lt;a Clique em Mim! &lt;/ a&gt;   
+		   
+	  &lt;/ Body&gt;    
+	  &lt;/ Html&gt;   
+	    
+	  </pre>
+	  </div>
+	  <p> Execute a página no navegador. Se você clicar no link agora, você vai direto para o site HTML.net. Esta é a ação padrão do navegador, como explicado acima. </p>
+	  <p> Agora volte para o documento HTML e digite o comando JavaScript a seguir dentro do  <strong> &lt;a&gt; </strong>  tag, como segue: </p>
+	  <div class="codebox">
+	  
+	  <pre>	     
+	  &lt;! DOCTYPE html&gt;    
+	  &lt;html&gt;    
+	  &lt;head&gt;    
+	  &lt;title&gt; Lição 3: Eventos e manipuladores de eventos &lt;/ title&gt;    
+	  &lt;/ Head&gt;    
+	  &lt;body&gt;    
+	  &lt;h1&gt; Lição 3: Eventos e manipuladores de eventos &lt;/ h1&gt;   
+		   
+	  &lt;A href = "http://html.net"  <span class="code-javascript"> onclick = "alert ('Não vai a lugar nenhum tão rápido?'); return false;" </span>  &gt;! Clique em Mim &lt;/ a&gt;   
+		   
+	  &lt;/ Body&gt;    
+	  &lt;/ Html&gt;   
+	    
+	  </pre>
+	  </div>
+	  <p> Vá em frente, execute a página no navegador, e ...  <strong> você está preso!   JavaScript está no controle! </strong></p>
+	  <h2> O que aconteceu lá? </h2>
+	  <p> Isso mostra como é fácil assumir o controle de um link com JavaScript!   Tudo o que você fez foi inserir um par de  <strong> instruções JavaScript </strong>  à  <strong> onclick </strong>  atributo da marca &lt;a&gt; HTML. </p>
+	  <p> Você já sabe tudo sobre o alert(), então eu vou pular esta parte. O <strong>return false;</strong> diz ao interpretador de JavaScript para retornar um valor, neste caso, o valor é igual a falso, o que impede o navegador de executar a ação padrão.   Você estará usando este comando pouco, muitas vezes em sua vida de programação JavaScript. </p>
+	  <p> Você lida com os outros eventos listados acima, da mesma forma: basta inserir o comando JavaScript como o valor do onfocus, onblur, onmouseover, onmouseout e atributos onsubmit de um elemento HTML. </p>
+	  <h2> Resumo </h2>
+	  <p> Nesta lição você aprendeu o que são eventos, porque os eventos são importantes na programação JavaScript, e como usar manipuladores de eventos para permitir que o JavaScript esteja no controle do comportamento da sua página web. </p>
+	  <p> Mas esta é apenas uma amostra minúscula do que o JavaScript pode fazer uma vez que está no comando.   Siga em frente para descobrir mais. </p> 
+	  <p> Prepare-se para o tópico principal da lição 4:  <strong> variáveis </strong>  ​​e  <strong> constantes </strong>  . </p>
+	<hr>
+	</div>
+</body>
+</html>

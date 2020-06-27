@@ -1,0 +1,2 @@
+C:\Users\Athauan Marques\Desktop\locadoraMania\locadoraMania\bin\Debug\locadoraMania.exe.config
+C:\Users\Athauan Marques\Desktop\TrabalhoLP3\locadoraMania\locadoraMania\bin\Debug\locadoraMania.exe.config

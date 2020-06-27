@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<LINK rel="stylesheet" HREF="jquery.CSS" type="text/css"/>
+	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#div1").fadeTo("slow", 0.15);
+				$("#div2").fadeTo("slow", 0.3);
+				$("#div3").fadeTo("slow", 0.45);
+			});
+		});
+	</script>
+</head>
+<body>
+	<DIV id="TOPO">
+			jQuery
+	</DIV>
+	
+	<DIV id="barNav">
+		<UL >
+			<LI> <a href= "animate.html">Animate</a> </LI>
+			<LI> <a href= "animate2.html">Animate Stop</a> </LI>
+			<LI> <a href= "fadeto.html">Fade to</a> </LI>
+			<LI> <a href= "stop1.html">Stop</a> </LI>
+			<LI> <a href= "toggle2.html">Toggle</a> </LI>
+			<LI> <a href= "slideUp.html">Slide Up</a> </LI>
+			<LI> <a href= "slideDown.html">Slide Down</a> </LI>
+			<LI> <a href= "slideToggle.html">Slide Toggle</a> </LI>
+			<LI> <a href= "sliding.html">Sliding</a> </LI>
+			<LI> <a href= "focusblur.html">Focus</a></LI>
+			<LI> <a href= "attribute.html">Attribute</a></LI>
+			<LI> <a href= "text_html.html">Text</a></LI>
+		</UL>
+	</div>
+	
+	<DIV id="CONTEUDO">
+	<p>Demonstra o uso do  fadeTo() com diferentes parâmetros.</p>
+
+	<button>Click to desbotar as figuras</button><br><br>
+	<TABLE>
+		<TR>
+		<TD>
+			<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+		</TD>
+		<TD>
+			<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+		</TD>
+		<TD>
+			<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+		</TD>
+		</TR>
+	</div>
+</body>
+</html>

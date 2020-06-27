@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 4: Fontes - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 4: Fontes - HTML.net" />
+	<meta name="description" content="Lição 4: Fontes - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 4: Fontes - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/css/lesson4.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+
+</head>
+
+<body>	
+	<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>CSS</a> &#187; Lição 4: Fontes</div>
+			<div id="socialBookmarks">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"></a>
+				<span id="FbCont"></span>
+				<g:plusone size="medium"></g:plusone>
+								
+			</div>
+			<!-- google_ad_section_start -->
+		
+		<div id='tutorials'>	<h1>Lição 4: Fontes</h1>
+	<p>Nesta lição estudaremos as fontes e como aplicá-las usando <abbr>CSS</abbr>. Veremos como criar situações para que determinada fonte seja visualizada pelo usuário mesmo não estando instalada em seu sistema operacional. Descreveremos as seguintes propriedades <abbr>CSS</abbr>:</p>
+	<ul>
+		<li><a href="#s1">font-family</a></li>
+		<li><a href="#s2">font-style</a></li>
+
+		<li><a href="#s3">font-variant</a></li>
+		<li><a href="#s4">font-weight</a></li>
+		<li><a href="#s5">font-size</a></li>
+		<li><a href="#s6">font</a></li>
+	</ul>
+
+	<h2 id="s1">Família de fontes  [font-family]</h2>
+	<p>A propriedade <code>font-family</code> é usada para definir uma lista de fontes e sua prioridade para apresentação de um elemento em uma página. Se a primeira fonte da lista não estiver instalada na máquina do usuário, deverá ser usada a segunda e assim por diante até ser encontrada uma fonte instalada.</p>
+
+	<p>Existem dois tipos de nomes para definir fontes: nomes para famílias de fontes e nomes para famílias genéricas. Os dois são explicados a seguir: </p>
+
+	<dl>
+	<dt>nome para famílias de fontes </dt>
+	<dd>Exemplos para este tipo (normalmente conhecidas como "font") são "Arial", "Times New Roman" ou "Tahoma".</dd>
+
+	<dt>nome para famílias genéricas </dt>
+	<dd>Famílias genéricas são fontes que pertencem a um grupo com aparência uniforme. Um exemplo são as fontes sans-serif que englobam a coleção de fontes que "não têm pé".</dd>
+	</dl>
+
+	<p>A diferença está mostrada na figura a seguir:</p>
+
+	<p><img src="figure005.pt-br.gif" alt="Tres exemplos de familias de fontes genericas e alguns de seus membros" width="414" height="362" /></p>
+
+	<p>Ao listar fontes para seu website, comece com aquela preferida, seguindo-se algumas alternativas para ela. É recomendável encerrar a listagem das fontes com uma fonte genérica. Assim fazendo, em último caso a página será renderizada com fonte  da mesma família das que foram  especificadas quando todas as demais estiverem indisponíveis na máquina do usuário.</p>
+	<p>A seguir mostramos um exemplo de listagem de fontes:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {font-family: arial, verdana, sans-serif;}
+	h2 {font-family: "Times New Roman", serif;}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson4_ex1.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<p>Cabeçalhos <code>&lt;h1></code> serão renderizados com fonte "Arial". Se o usuário não tiver a font Arial instalada, será usada a fonte "Verdana". Se ambas estiverem indisponíveis na máquina do usuário será usada uma fonte da família <strong>sans-serif</strong>.</p>
+	<p>Notar que para especificar a fonte "Times New Roman" foram usadas aspas. Isto é necessário para  fontes com nomes compostos e que contenham espaços entre os nomes.</p>
+
+	<h2 id="s2">Estilo da fonte  [font-style]</h2>
+	<p>A propriedade <code>font-style</code> define a escolha da fonte em <strong>normal</strong>, <strong>italic</strong> ou <strong>oblique</strong>. No exemplo a seguir todos as cabeçalhos <code>&lt;h2></code> serão em itálico.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {font-family: arial, verdana, sans-serif;}
+	h2 {font-family: "Times New Roman", serif; <strong>font-style: italic;</strong>}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson4_ex2.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+
+	</ul>
+
+	<h2 id="s3">Fonte variante [font-variant]</h2>
+	<p>A propriedade <code>font-variant</code> é usada para escolher as variantes <strong>normal</strong> ou <strong>small-caps</strong>. Uma fonte <strong>small-caps</strong> é aquela que usa letras maiúsculas de tamanhos reduzidos.  Confundiu? Dê uma olhada nos exemplos a seguir:</p>
+
+	<p><img src="figure006.gif" alt="Quatro exemplos de fontes em small caps" width="465" height="67" /></p>
+
+	<p>Se a propriedade <code>font-variant</code> for definida para <strong>small-caps</strong> e não estiver disponível na máquina do usuário, será usada fonte em maiúscula.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {font-variant: small-caps;}
+	h2 {font-variant: normal;}
+	</code>
+
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson4_ex3.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<h2 id="s4">Peso da fonte  [font-weight]</h2>
+	<p>A propriedade <code>font-weight</code> define quão negrito ou "pesada" deve ser renderizada a fonte. Uma fonte pode ser <strong>normal</strong> ou <strong>bold</strong>. Alguns navegadores suportam números de  100-900 (em intervalos de 100 em 100) para definir o peso da fonte.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	p {font-family: arial, verdana, sans-serif;}
+	td {font-family: arial, verdana, sans-serif; <strong>font-weight: bold;</strong>}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson4_ex4.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<h2 id="s5">Tamanho da fonte  [font-size]</h2>
+	<p>On tamanho da fonte é definido pela propriedade <code>font-size</code>.</p>
+	<p>Existem muitas unidades  (p. ex.:. pixels e percentagens) que podem ser usadas para definir o tamanho da fonte. Neste tutorial nós usaremos as unidades mais comuns e apropriadas. Ver exemplos a seguir:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {font-size: <strong>30px</strong>;}
+	h2 {font-size: <strong>12pt</strong>;}
+	h3 {font-size: <strong>120%</strong>;}
+	p {font-size: <strong>1em;</strong>}
+
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson4_ex5.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<p>Existe uma diferença fundamental entre as quatro unidades adotadas no exemplo acima. As unidades '<strong>px</strong>' e '<strong>pt</strong>' são absolutas, enquanto '<strong>%</strong>' e '<strong>em</strong>' permitem ao usuário ajustar o tamanho das fontes ao seu gosto e necessidade. Muitos usuários têm restrições, como por exemplo, pessoas idosas, pessoas com visão limitada ou as que usam um monitor de baixa qualidade. <strong>Para fazer seu site acessível </strong> a todos, você deverá usar unidades como '<strong>%</strong>' ou '<strong>em</strong>'. </p>
+
+	<p>Abaixo uma figura mostrando como ajustar o tamanho das fontes nos navegadores Mozilla Firefox e Internet Explorer. Tente você mesmo este ajuste — uma excelente funcionalidade do navegador, não é mesmo?</p>
+
+	<p><img src="figure007.pt-br.gif" alt="" width="512" height="615" /></p>
+
+	<h2 id="s6">Compilando [font]</h2>
+	<p>Usar <code>font</code> é uma abreviação que permite definir várias propriedades em uma só.</p>
+	<p>Veja a seguir quatro linhas de código usadas para definir propriedades de fonte para um parágrafo <code>&lt;p></code>:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	p {
+		<strong>font-style: italic;
+		font-weight: bold;
+		font-size: 30px;
+		font-family: arial, sans-serif;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<p>Usar a abreviação simplifica o código como mostrado abaixo:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+
+	p {
+		<strong>font: italic bold 30px arial, sans-serif;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<p>A ordem dos valores para <code>font</code> é a mostrada a seguir :</p>
+	<p><code>font-style</code> | <code>font-variant</code> | <code>font-weight</code> | <code>font-size</code> | <code>font-family</code></p>
+
+	<h2>Sumário</h2>
+	<p>Você acaba de aprender algumas possibilidades relativas a fontes. Lembre-se que a grande vantagem de especificar fontes usando <abbr>CSS</abbr> é que você poderá alterar em alguns minutos, as fontes de um website inteiro. <abbr>CSS</abbr> economiza tempo e facilita sua vida. Na <a href="lesson5.html">próxima lição</a> veremos as propriedades para textos.</p>	
+	
+	<hr />
+	<p class='previous'><a href='lesson3.html'>&lt;&lt; Lição 3: Cores e fundos</a></p><p class='next'><a href='lesson5.html'>Lição 5: Textos >></a></p></div>  		<!-- google_ad_section_end -->
+
+	</div>
+</div>
+</body>
+</html>

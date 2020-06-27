@@ -1,0 +1,30 @@
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\BLL\bin\Debug\BLL.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\BLL\bin\Debug\BLL.pdb
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\BLL\bin\Debug\DAL.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\BLL\bin\Debug\Modelos.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\BLL\bin\Debug\MySql.Data.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\BLL\bin\Debug\DAL.pdb
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\BLL\bin\Debug\Modelos.pdb
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\BLL\obj\Debug\BLL.dll
+C:\Users\Athauan\Desktop\Estudando c#\Trabalho para entregar\Original\Pizzaria\BLL\obj\Debug\BLL.pdb
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\BLL\bin\Debug\BLL.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\BLL\bin\Debug\BLL.pdb
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\BLL\bin\Debug\DAL.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\BLL\bin\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\BLL\bin\Debug\MySql.Data.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\BLL\bin\Debug\DAL.pdb
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\BLL\bin\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\BLL\obj\Debug\BLL.dll
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\BLL\obj\Debug\BLL.pdb
+C:\Users\Athauan\Desktop\Pizzaria\BLL\bin\Debug\BLL.dll
+C:\Users\Athauan\Desktop\Pizzaria\BLL\bin\Debug\BLL.pdb
+C:\Users\Athauan\Desktop\Pizzaria\BLL\bin\Debug\DAL.dll
+C:\Users\Athauan\Desktop\Pizzaria\BLL\bin\Debug\Modelos.dll
+C:\Users\Athauan\Desktop\Pizzaria\BLL\bin\Debug\MySql.Data.dll
+C:\Users\Athauan\Desktop\Pizzaria\BLL\bin\Debug\DAL.pdb
+C:\Users\Athauan\Desktop\Pizzaria\BLL\bin\Debug\Modelos.pdb
+C:\Users\Athauan\Desktop\Pizzaria\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Athauan\Desktop\Pizzaria\BLL\obj\Debug\BLL.dll
+C:\Users\Athauan\Desktop\Pizzaria\BLL\obj\Debug\BLL.pdb

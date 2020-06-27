@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 3: Cores e fundos - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 3: Cores e fundos - HTML.net" />
+	<meta name="description" content="Lição 3: Cores e fundos - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 3: Cores e fundos - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/css/lesson3.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+</head>
+
+<body>	
+	</div>
+
+	
+		<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>CSS</a> &#187; Lição 3: Cores e fundos</div>
+			<div id='tutorials'>	<h1>Lição 3: Cores e fundos </h1>
+
+			<p>Nesta lição você aprenderá como aplicar cores de primeiro plano e cores de fundo no seu website. Abordaremos ainda os métodos avançados de controle e posicionamento de imagens de fundo.  Serão explicadas as  seguintes propriedades <abbr>CSS</abbr>:</p>
+
+	<ul>
+		<li><a href="#s1">color</a></li>
+
+		<li><a href="#s2">background-color</a></li>
+		<li><a href="#s3">background-image</a></li>
+		<li><a href="#s4">background-repeat</a></li>
+		<li><a href="#s5">background-attachment</a></li>
+		<li><a href="#s6">background-position</a></li>
+		<li><a href="#s7">background</a></li>
+
+	</ul>
+
+	<h2 id="s1">Cor do primeiro plano: a propriedade 'color'</h2>
+
+	<p>A propriedade <code>color</code> define a cor do primeiro plano de um elemento.</p>
+	<p>Considere, por exemplo, que desejamos que todos os cabeçalhos de primeiro nível no documento sejam na cor vermelha. O elemento <abbr>HTML</abbr> que marca tais cabeçalhos é o elemento <code>&lt;h1></code>. O código a seguir define todos os <code>&lt;h1></code> na cor vermelha.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {
+		<strong>color: #ff0000;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson3_ex1.html" title="Mostra um exemplo para o código acima">Ver exemplo </a></li>
+	</ul>
+
+	<p>As cores podem ser definidas pelo seu valor  hexadecimal como no exemplo acima (#ff0000),  com uso do nome da cor  ("red") ou ainda pelo seu valor rgb (rgb(255,0,0)).</p>
+
+	<h2 id="s2">A propriedade  'background-color'</h2>
+	<p>A propriedade <code>background-color</code> define a cor do fundo de um elemento.</p>
+	<p>O elemento <code>&lt;body></code> contém todo o conteúdo de um documento <abbr>HTML</abbr>. Assim, para mudar a cor de fundo da página, devemos aplicar a propriedade  <code>background-color</code> ao elemento <code>&lt;body></code>. </p>
+
+	<p>Você pode aplicar cores de fundo para outros elementos, inclusive para cabeçalhos e textos. No exemplo abaixo foram aplicadas diferentes cores de fundo para os elementos <code>&lt;body></code> e <code>&lt;h1></code>.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	body {
+		<strong>background-color: #FFCC66;</strong>
+	}
+
+	h1 {
+		color: #990000;
+		<strong>background-color: #FC9804;</strong>
+
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson3_ex2.html" title="Mostra o codigo acima">Ver exemplo </a></li>
+	</ul>
+
+	<p>Notar que foram aplicadas duas propriedades ao elemento <code>&lt;h1></code> separadas por um ponto e vírgula.</p>
+
+	<h2 id="s3">Images de fundo [background-image]</h2>
+	<p>A propriedade  <abbr>CSS</abbr> <code>background-image</code> é usada para definir uma imagem de fundo.</p>
+	<p>Usaremos a imagem de uma borboleta para exemplificar a aplicação de imagens de fundo. Você pode fazer o download da imagem mostrada abaixo e usá-la nos seus experimentos (clique com o botão direito do mouse sobre a imagem e escolha "salvar imagem como") ou você poderá usar uma outra imagem qualquer ao seu gosto.</p>
+	<p><img src="butterfly.gif" alt="Borboleta" width="250" height="270" /></p>
+	<p>Para inserir uma imagem de fundo na página basta aplicar a propriedade <code>background-image</code> ao elemento <code>&lt;body></code> e especificar o caminho para onde está gravada a imagem.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	body {
+		background-color: #FFCC66;
+		<strong>background-image: url("butterfly.gif");</strong>
+	}
+
+	h1 {
+		color: #990000;
+		background-color: #FC9804;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson3_ex3.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+
+	</ul>
+
+	<p>NB: Notar como foi especificado o caminho para a imagem usando <strong>url("butterfly.gif")</strong>. Isto significa que a imagem está localizada no mesmo diretório da folha de estilos. Pode ser escolhido um outro diretório para gravar as imagens e o caminho seria <strong>url("../images/butterfly.gif")</strong> ou até mesmo hospedá-la na Internet: <strong>url("http://www.html.net/butterfly.gif")</strong>.</p>
+
+	<h2 id="s4">Imagem de fundo repetida  [background-repeat]</h2>
+	<p>No exemplo anterior você observou que a imagem da borboleta repetiu tanto na vertical como na horizontal cobrindo toda a tela? A propriedade <code>background-repeat</code> controla o comportamento de repetição da imagem de fundo.</p>
+	<p>A tabela a seguir mostra os quatro diferentes valores para <code>background-repeat</code>.</p>
+
+	<table border="1">
+	<tr><th>Value</th><th>Description</th><th>Example</th></tr>
+
+	<tr><td><code>Background-repeat: repeat-x</code></td>
+	<td>A imagem se repete na horizontal </td>
+	<td><a href="lesson3_ex4.html">Ver exemplo</a></td></tr>
+	<tr><td><code>background-repeat: repeat-y</code></td><td>A imagem se repete na vertical</td><td><a href="lesson3_ex5.html">Ver exemplo</a></td></tr>
+	<tr><td><code>background-repeat: repeat</code></td>
+	  <td>A imagem se repete na tanto na horizontal como na vertical</td><td><a href="lesson3_ex6.html">Ver exemplo</a></td></tr>
+	<tr><td><code>background-repeat: no-repeat</code></td>
+	  <td>A imagem não se repete </td><td><a href="lesson3_ex7.html">Ver exemplo</a></td></tr>
+	</table>
+
+	<p>Por exemplo, o código  mostrado a seguir é para que a imagem não se repita na tela: </p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	body {
+		background-color: #FFCC66;
+		background-image: url("butterfly.gif");
+		<strong>background-repeat: no-repeat;</strong>
+	}
+
+	h1 {
+		color: #990000;
+		background-color: #FC9804;
+	}
+	</code>
+	</pre>
+	</div>
+
+
+	<ul class="examplelinklist">
+		<li><a href="lesson3_ex7.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<h2 id="s5">Image de fundo fixa [background-attachment]</h2>
+	<p>A propriedade <code>background-attachment</code> define se a imagem será fixa ou se irá rolar juntamente com o elemento que a contém. </p>
+	<p>Uma imagem de fundo fixa permanece no mesmo lugar e não rola com a tela ao contrário da imagem que não é fixa e rola acompanhando o conteúdo da tela.</p>
+	<p>A tabela a seguir mostra os quatro diferentes valores para <code>background-attachment</code>. Veja os exemplos para constatar a diferença entre imagem fixa e imegem que rola.</p>
+
+	<table border="1">
+	<tr><th>Value</th><th>Description</th><th>Example</th></tr>
+	<tr><td><code>Background-attachment: scroll</code></td>
+	<td>A imagem rola com a página </td>
+	<td><a href="lesson3_ex8.html">Ver exemplo</a></td></tr>
+	<tr><td><code>Background-attachment: fixed</code></td>
+	<td>A imagem é fixa </td>
+	<td><a href="lesson3_ex9.html">Ver exemplo</a></td></tr>
+	</table>
+
+	<p>Por exemplo, o código abaixo fixa a imagem na tela.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	body {
+		background-color: #FFCC66;
+		background-image: url("butterfly.gif");
+		background-repeat: no-repeat;
+		<strong>background-attachment: fixed;</strong>
+	}
+
+	h1 {
+		color: #990000;
+		background-color: #FC9804;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson3_ex9.html">Ver exemplo</a></li>
+
+	</ul>
+
+	<h2 id="s6">Posição da imagem de fundo [background-position]</h2>
+	<p>Por padrão uma imagem de fundo é posicionada no canto superior esquerdo da tela. A propriedade <code>background-position</code> permite alterar este posicionamento padrão e colocar a imagem em qualquer lugar na tela. </p>
+	<p>Existem várias maneiras de definir o posicionamento da imagem na tela definindo valores para  <code>background-position</code>. Todas elas se utilizam de um sistema de coordenadas. Por exemplo, os valores '100px 200px' posiciona a imagem a 100px do topo  e a 200px do lado esquerdo da janela do navegador. </p>
+	<p>As coordenadas podem ser expressas em percentagem da largura da janeja, em unidades fixas (pixels, centímetros, etc.) ou pode-se usar as palavras top, bottom, center, left e right. A figura a seguir ilustra o modelo de coordenadas:</p>
+	<p><img src="figure004.gif" alt="" width="436" height="365" /></p>
+
+	<p><br />
+	Na tabela a seguir são mostrados alguns exemplos .</p>
+
+	<table border="1">
+	<tr><th>Value</th><th>Description</th><th>Example</th></tr>
+	<tr><td><code>background-position: 2cm 2cm</code></td>
+	<td>A imagem é posicionada  a 2 cm da esquerda e 2 cm para baixo na página </td>
+	<td><a href="lesson3_ex10.html">Ver exemplo</a></td></tr>
+	<tr><td><code>background-position: 50% 25%</code></td>
+	<td>A imagem é centrada na horizontal e a um quarto (25%) para baixo na página</td>
+	<td><a href="lesson3_ex11.html">Ver exemplo</a></td></tr>
+	<tr><td><code>background-position: top right</code></td>
+	<td>A imagem é posicionada no canto superior direito da página </td>
+	<td><a href="lesson3_ex12.html">Ver exemplo</a></td></tr>
+
+	</table>
+
+	<p>No exemplo de código a seguir a imagem é posicionada no canto inferior direito da página:  </p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	body {
+		background-color: #FFCC66;
+		background-image: url("butterfly.gif");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		<strong>background-position: right bottom;</strong>
+	}
+
+	h1 {
+		color: #990000;
+		background-color: #FC9804;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson3_ex13.html">Ver exemplo</a></li>
+	</ul>
+
+	<h2 id="s7">Compilando [background]</h2>
+	<p>A propriedade <code>background</code> é uma abreviação para todas as propriedades listadas anteriormente.</p>
+	<p>Com <code>background</code> você declara várias propriedades de modo abreviado, economizando digitação e alguns bites, além de tornar a folha de estilo mais fácil de se ler e entender.</p>
+
+	<p>Por exemplo, observe as cinco linhas a seguir:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	background-color: #FFCC66;
+	background-image: url("butterfly.gif");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right bottom;
+	</code>
+	</pre>
+	</div>
+
+	<p>Usando <code>background</code> você consegue o mesmo resultado, abreviando como mostrado abaixo:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	background: #FFCC66 url("butterfly.gif") no-repeat fixed right bottom;
+	</code>
+	</pre>
+	</div>
+
+	<p>A declaração abreviada deve seguir a seguinte ordem:</p>
+	<p><code>[background-color]</code> | <code>[background-image]</code> | <code>[background-repeat]</code> | <code>[background-attachment]</code> | <code>[background-position]</code></p>
+
+	<p>Se uma das propriedades não for declarada ela assume automaticamente o seu valor default. Por exemplo, a propriedade <code>background-attachment</code> e <code>background-position</code> não foram declaradas no código mostrado a seguir:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	background: #FFCC66 url("butterfly.gif") no-repeat;
+	</code>
+	</pre>
+
+	</div>
+
+	<p>As duas propriedades não declaradas assumirão o valor default que como você já sabe são: a imagem rola na tela e será posicionada no canto superior esquerdo (que são os valores default para as propriedades não declaradas). </p>
+
+	<h2>Sumário</h2>
+	<p>Nesta lição você aprendeu técnicas que não são possíveis com uso de <abbr>HTML</abbr>. A brincadeira continua na <a href="lesson4.html">próxima lição</a> onde examinaremos as possibilidades de estilização das fontes. </p>
+	<hr />
+	<p class='previous'><a href='lesson2.html'>&lt;&lt; Lição 2: Como funciona  CSS?</a></p><p class='next'><a href='lesson4.html'>Lição 4: Fontes >></a></p></div>  		<!-- google_ad_section_end -->
+
+		</div>
+
+	</div>
+</body>
+</html>

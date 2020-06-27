@@ -1,0 +1,16 @@
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\12-Loja-Library\Negocios\bin\Debug\Negocios.dll
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\12-Loja-Library\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\12-Loja-Library\Negocios\obj\Debug\Negocios.dll
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\12-Loja-Library\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\12-Loja-Vendas\Negocios\bin\Debug\Negocios.dll
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\12-Loja-Vendas\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\12-Loja-Vendas\Negocios\obj\Debug\Negocios.dll
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\12-Loja-Vendas\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Informatica\Desktop\12-Loja-Vendas\Negocios\bin\Debug\Negocios.dll
+C:\Users\Informatica\Desktop\12-Loja-Vendas\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Informatica\Desktop\12-Loja-Vendas\Negocios\obj\Debug\Negocios.dll
+C:\Users\Informatica\Desktop\12-Loja-Vendas\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Aluno\Desktop\LP3\ExercAula4Lp3\12-Loja-Vendas\Negocios\bin\Debug\Negocios.dll
+C:\Users\Aluno\Desktop\LP3\ExercAula4Lp3\12-Loja-Vendas\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Aluno\Desktop\LP3\ExercAula4Lp3\12-Loja-Vendas\Negocios\obj\Debug\Negocios.dll
+C:\Users\Aluno\Desktop\LP3\ExercAula4Lp3\12-Loja-Vendas\Negocios\obj\Debug\Negocios.pdb

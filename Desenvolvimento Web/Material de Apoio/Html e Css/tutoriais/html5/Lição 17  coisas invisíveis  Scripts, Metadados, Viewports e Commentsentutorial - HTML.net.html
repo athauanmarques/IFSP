@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0044)http://html.net/tutorials/html5/lesson17.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="translated-ltr"><div id="coFrameDiv" style="height:0px;display:none;"><iframe id="coToolbarFrame" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/placeholder.html" style="height: 0px; width: 100%; display: none;"></iframe></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>Lição 17: coisas invisíveis: Scripts, Metadados, Viewports e Commentsentutorial - HTML.net</title>
+	
+	<meta name="title" content="Lesson 17: Invisible Things: Scripts, Metadata, Viewports, and Comments - HTML.net">
+	<meta name="description" content="Lesson 17: Invisible Things: Scripts, Metadata, Viewports, and Comments - Free tutorials on HTML, CSS and PHP - Build your own website">
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Forums, , ">
+	<meta name="language" content="en">
+	<meta name="robots" content="index, follow">
+	<meta http-equiv="PICS-Label" content="(PICS-1.1 &quot;http://www.classify.org/safesurf/&quot; l gen true for &quot;http://html.net/&quot; r (SS~~000 1))">
+	<meta http-equiv="PICS-Label" content="(PICS-1.1 &quot;http://www.icra.org/ratingsv02.html&quot; l gen true for &quot;http://html.net&quot; r (cz 1 lz 1 nz 1 oz 1 vz 1) &quot;http://www.rsac.org/ratingsv01.html&quot; l gen true for &quot;http://html.net&quot; r (n 0 s 0 v 0 l 0))"> 
+	<!--
+	<meta property="og:title" content="Lesson 17: Invisible Things: Scripts, Metadata, Viewports, and Comments - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://html.net/tutorials/html5/lesson17.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	-->
+	<link rel="canonical" href="http://www.html.net/tutorials/html5/lesson17.php"><link rel="stylesheet" href="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/default.screen.css" type="text/css" media="screen"><link rel="stylesheet" href="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/default.print.css" type="text/css" media="print">
+	<script src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/linkid.js" type="text/javascript" async=""></script><script src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/cb=gapi.loaded_1" async=""></script><script type="text/javascript" async="" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/ga.js"></script><script src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" defer="" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/ezoic_analytics.js"></script><script async="" type="text/javascript" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/gpt.js"></script><script type="text/javascript">
+			
+		function toggleVisibility(objectID, imageID) {
+		vis = document.getElementById(objectID).style;
+		state = vis.display;
+		if (state == 'none') {
+			vis.display = 'block';	
+			document.getElementById(imageID).value = '▲ Collapse view';
+			}
+		else {		
+			if (state == 'block') {
+				vis.display = 'none';
+				document.getElementById(imageID).value = '▼ Expand view';
+				}	
+			else {
+				vis.display = 'block'; 
+				document.getElementById(imageID).value = '▲ Collapse view';
+				}
+		}}
+
+		//-->
+	</script>
+
+	<script type="text/javascript">
+	// <![CDATA[
+		var jump_page = '{LA_JUMP_PAGE}:';
+		var on_page = '{ON_PAGE}';
+		var per_page = '{PER_PAGE}';
+		var base_url = '{A_BASE_URL}';
+		var style_cookie = 'phpBBstyle';
+		var style_cookie_settings = '{A_COOKIE_SETTINGS}';
+		var onload_functions = new Array();
+		var onunload_functions = new Array();
+
+		/**
+		* Find a member
+		*/
+		function find_username(url)
+		{
+			popup(url, 760, 570, '_usersearch');
+			return false;
+		}
+
+		/**
+		* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+		*/
+		window.onload = function()
+		{
+			for (var i = 0; i < onload_functions.length; i++)
+			{
+				eval(onload_functions[i]);
+			}
+		}
+
+		window.onunload = function()
+		{
+			for (var i = 0; i < onunload_functions.length; i++)
+			{
+				eval(onunload_functions[i]);
+			}
+		}
+
+	// ]]>
+	</script>
+
+	<script type="text/javascript" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/forum_fn.js"></script>
+
+	
+
+	<!-- GOOGLE DFP -->
+	
+	<script type="text/javascript">
+		(function() {
+		var useSSL = 'https:' == document.location.protocol;
+		var src = (useSSL ? 'https:' : 'http:') +
+		'//www.googletagservices.com/tag/js/gpt.js';
+		document.write('\u003Cscr' + 'ipt src="' + src + '">\u003C/scr' + 'ipt>');
+	})();
+	</script><script src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/gpt.js"></script><script async="" type="text/javascript" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/check_359604.js"></script><iframe src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/container.html" style="visibility: hidden; display: none;"></iframe>
+	
+	<script type="text/javascript">
+		googletag.pubads().set('page_url', 'http://html.net/tutorials/html5/lesson17.php');
+		googletag.pubads().setTargeting('language', 'en');
+		googletag.pubads().setTargeting('page', 'tutorial');
+ 
+		googletag.defineSlot('/16232578/HTML_NET_160x600', [160, 600], 'div-gpt-ad-1406669457921-0').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML_NET_1x1', [1, 1], 'div-gpt-ad-1406669457921-1').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML_NET_300x250A', [300, 250], 'div-gpt-ad-1406669457921-2').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML_NET_300x250B', [300, 250], 'div-gpt-ad-1406669457921-3').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML_NET_728x90', [728, 90], 'div-gpt-ad-1406669457921-4').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML.net_Passback_160x600', [160, 600], 'div-gpt-ad-1415474780011-0').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML.net_Passback_300x250', [300, 250], 'div-gpt-ad-1415474914296-0').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML.net_Passback_300x250B', [300, 250], 'div-gpt-ad-1415474942999-0').addService(googletag.pubads());
+		googletag.defineSlot('/16232578/HTML.net_Passback_728x90', [728, 90], 'div-gpt-ad-1415474992242-0').addService(googletag.pubads());
+		
+		googletag.pubads().enableSyncRendering();
+		googletag.enableServices();
+
+	</script><script type="text/javascript" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/pubads_impl_58.js"></script>
+	
+	<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16232578/HTML.net_Passback_160x600', [160, 600], 'div-gpt-ad-1415474780011-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16232578/HTML.net_Passback_300x250', [300, 250], 'div-gpt-ad-1415522828348-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16232578/HTML.net_Passback_300x250B', [300, 250], 'div-gpt-ad-1415474942999-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16232578/HTML.net_Passback_728x90', [728, 90], 'div-gpt-ad-1415474992242-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>	
+	
+<script type="text/javascript">var ezouid = "475061323";</script><script type="text/javascript">window.google_analytics_uacct = "UA-59094534-21";</script><script data-cfasync="false" type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['setCustomVariable',1,'t','126','visit']);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//a.ezoic.com/a/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId',  1891 ]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src='\/\/go.ezoic.net\/ezoic_analytics.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript>&lt;p&gt;&lt;img src="//a.ezoic.com/a/piwik.php?idsite={}" style="border:0;" alt="" /&gt;&lt;/p&gt;</noscript><!--<base href="http://html.net/tutorials/html5/lesson17.php">--><base href="."><!--[if lt IE 9]>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+<!--[if (gte IE 9) | (!IE)]><!-->
+    <script src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/jquery.min.js"></script>
+<!--<![endif]--><script src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/ezjquery-noconflict.js"></script><script type="text/javascript">
+var ezoTemplate = 'old_site_gc';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+if(typeof $ !== "undefined")
+{
+$(document).ready(function($) {
+    var ezIgnoreTags = ['SCRIPT','IFRAME','STYLE','LINK','BODY','HEAD'];
+    $(document).bind('DOMNodeInserted', function(e) {  
+        var element = e.target;
+        
+        //move our before and after spans to be first or last sibling elements
+        var after_span = $(element).prev('.ezoic-after-el');
+        if(after_span != null)
+        {
+             after_span.insertAfter($(element));
+        }
+        var before_span = $(element).next('.ezoic-before-el');
+        if(before_span != null)
+        {
+             before_span.insertBefore($(element));
+        }
+        
+
+        if(ezIgnoreTags.indexOf(element.tagName) == -1)
+        {
+            if($(element).hasClass('ezoic-wrapper') == false && $(element).hasClass('ezoic-no-wrapper') == false)
+            {
+                if($(element).closest('.ezoic-no-wrapper').length < 1 && $(element).closest('.ezoic-ad').length < 1 && $(element).closest('.ezo_ad').length < 1 && $(element).closest('.ezoic-wrapper').length < 1  && $(element).css('position') != 'fixed' && $(element).css('position') != 'absolute')
+                {
+                    $(element).addClass('ezoic-wrapper');
+                    ezo_elements_to_check.push(element);
+                    ezo_resize_interval_count=0; //reset interval timer
+
+                    if($(element).hasClass('ez_wrap_ins') == false && $(element).parent().is('body'))
+                    {
+                        $(element).wrap("<ins class='ezoic-wrapper ez_wrap_ins'></ins>");
+                        $(element).css('max-width','none');
+                        var ezo_style = getComputedStyle(element);
+
+                        var rand_class = 'ezo_wrapper_'+Math.floor((Math.random()*100000)+1);
+
+                        var ezoTempStyle = document.createElement('style');
+                        ezoTempStyle.innerHTML = '.'+rand_class+'{'+ezo_style.cssText+'}';
+                        document.getElementsByTagName('head')[0].insertBefore(ezoTempStyle,document.getElementsByTagName('head')[0].firstChild)
+                        $(element).addClass('ez_wrap_ins');
+                        $(element).addClass(rand_class);
+                        $(element).unwrap('ins');
+                    }
+
+
+                }
+            }
+        }
+        
+        
+    });
+});
+}</script>
+
+<script>
+var old_jquery = null;
+var old_jquery_sign = null;
+function open_jquery_wrapper()
+{
+    if(typeof $ezJQuery != 'undefined')
+    {
+        old_jquery = jQuery;
+        old_jquery_sign = $;
+        $ = $ezJQuery;
+        jQuery = $ezJQuery;
+    }
+}
+function close_jquery_wrapper()
+{
+    if(typeof $ezJQuery != 'undefined')
+    {
+        $ = old_jquery_sign;
+        jQuery = old_jquery;
+    }
+}
+//minified table_resize_js.txt - http://refresh-sf.com/yui/
+function ez_get_widest_cells(c){var b=0;var d=0;var a=new Array();$ezJQuery("td,th",c).each(function(){if($ezJQuery(this).css("word-break")!="break-all"&&$ezJQuery(this).css("word-break")!="break-word"){if($ezJQuery(this).width()>b){b=$ezJQuery(this).width();d=0;a=new Array()}if($ezJQuery(this).width()==b){if($ezJQuery(this).data("ez_lpw")>d){d=$ezJQuery(this).data("ez_lpw");a=new Array()}if($ezJQuery(this).data("ez_lpw")==d){a.push(this)}}}});return a}function ez_scale_font(a){if($ezJQuery(a).children().length>0){$ezJQuery(a).children().each(function(){ez_scale_font(this)})}$ezJQuery(a).css("font-size",parseInt($ezJQuery(a).css("font-size"))-1)}function ez_get_min_font(a){var b=16;$ezJQuery("*",a).each(function(){if(parseInt($ezJQuery(this).css("font-size"))<b){b=parseInt($ezJQuery(this).css("font-size"))}});return b}function ez_get_max_font(b){var a=10;$ezJQuery("*",b).each(function(){if(parseInt($ezJQuery(this).css("font-size"))>a){a=parseInt($ezJQuery(this).css("font-size"))}});return a}function ez_get_max_padding(b){var a=0;$ezJQuery("td",b).each(function(){if(parseInt($ezJQuery(this).css("padding-left"))>a){a=parseInt($ezJQuery(this).css("padding-left"))}if(parseInt($ezJQuery(this).css("padding-right"))>a){a=parseInt($ezJQuery(this).css("padding-left"))}});return a}function ez_scale_padding(a){$ezJQuery("td",a).each(function(){if(parseInt($ezJQuery(this).css("padding-left"))>1){$ezJQuery(this).css("padding-left",parseInt($ezJQuery(this).css("padding-left"))-1)}if(parseInt($ezJQuery(this).css("padding-right"))>1){$ezJQuery(this).css("padding-right",parseInt($ezJQuery(this).css("padding-left"))-1)}})}var ez_word_break_tables=[];function ez_word_break_table(a){if(typeof $ezJQuery=="undefined"){ez_word_break_tables.push(a);if(ez_word_break_tables.length==1){ez_queue.push({method:run_ez_word_break_tables,priority:1})}}else{run_ez_word_break_table(a)}}function ez_reset_width(a){if($ezJQuery(a).data("ez-no-defined-width")===true){$ezJQuery(a).css("width","")}return 1}function run_ez_word_break_tables(){$ezJQuery.each(ez_word_break_tables,function(a,b){run_ez_word_break_table(b)})}function run_ez_word_break_table(a){var l=$ezJQuery("#ez_script_id_"+a).prev("table");var d=11;if($ezJQuery(l).data("ez-gwidth")!=null){var g=$ezJQuery(l).data("ez-gwidth");var m=false;if(String(g).indexOf("%")>=0){m=true;g=Math.ceil((parseInt(g)/100)*$ezJQuery(l).parent()[0].clientWidth)}if($ezJQuery(l).width()<=g){return ez_reset_width(l)}var b=true;if(m==false&&$ezJQuery(l).data("ez-no-defined-width")===true){b=false;$ezJQuery(l).css("width",g)}var j=false;$ezJQuery("td,th",l).each(function(){var q=$ezJQuery(this).clone().find("script").remove().end().text();var n=q.split(/[.,\/ -]/);var p=n.reduce(function(r,s){return r.length>s.length?r:s}).length;var i=ez_get_max_font(this);var o=p*i*0.6;$ezJQuery(this).data("ez_lpw",o);if($ezJQuery(this).width()>0&&o>($ezJQuery(this).width()*0.65)){j=true}});if(j==false){return ez_reset_width(l)}var c=ez_get_min_font(l);if(c==12){d=10}else{if(c==11){d=9}}while(c>d+1&&$ezJQuery(l).width()>g){var f=$ezJQuery(l).width();ez_scale_font(l);c--;if(f==$ezJQuery(l).width()){return ez_reset_width(l)}}if($ezJQuery(l).width()<=g){return ez_reset_width(l)}var k=ez_get_max_padding(l);var f=$ezJQuery(l).width();while(k>1&&$ezJQuery(l).width()>g){ez_scale_padding(l);k--;if($ezJQuery(l).width()<=g){return ez_reset_width(l)}}while(c>d&&$ezJQuery(l).width()>g){var f=$ezJQuery(l).width();ez_scale_font(l);c--;if(f==$ezJQuery(l).width()){return ez_reset_width(l)}}if($ezJQuery(l).width()<=g){return ez_reset_width(l)}var h=ez_get_widest_cells((l));while(h.length!=0&&$ezJQuery(l).width()>g){for(var e=0;e<h.length;e++){if(b===true){$ezJQuery(h[e]).css("width",$ezJQuery(h[e]).width())}$ezJQuery(h[e]).css("word-break","break-all");$ezJQuery(h[e]).css("word-break","break-word")}h=ez_get_widest_cells(l)}return ez_reset_width(l)}};
+</script>
+
+<!-- START EZHEAD -->
+<script type="text/javascript">
+var soc_app_id = '0';
+var did = 3543;
+var ezdomain = 'html.net';
+var ezoicSearchable = 1;
+</script><script async="" type="text/javascript" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/check_359604.js"></script><iframe src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/container.html" style="visibility: hidden; display: none;"></iframe>
+<!---->
+<!-- END EZHEAD -->
+<script type="text/javascript" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/osd.js"></script><script src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/expansion_embed.js"></script><script type="text/javascript" async="" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/a.min.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style><link rel="stylesheet" id="coToolbarStyle" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" type="text/css"><script type="text/javascript" id="cosymantecbfw_removeToolbar">(function () {				var toolbarElement = {},					parent = {},					interval = 0,					retryCount = 0,					isRemoved = false;				if (window.location.protocol === 'file:') {					interval = window.setInterval(function () {						toolbarElement = document.getElementById('coFrameDiv');						if (toolbarElement) {							parent = toolbarElement.parentNode;							if (parent) {								parent.removeChild(toolbarElement);								isRemoved = true;								if (document.body && document.body.style) {									document.body.style.setProperty('margin-top', '0px', 'important');								}							}						}						retryCount += 1;						if (retryCount > 10 || isRemoved) {							window.clearInterval(interval);						}					}, 10);				}			})();</script><script id="_fbn_projs" type="text/javascript" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/C6ADVKE.json"></script><script type="text/javascript" async="" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/a.min(1).js"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/translateelement.css"></head>
+
+<body data-twttr-rendered="true" style="">	
+	<div id="main">
+	<div id="content">
+	<div id="breadcrumb"><a href="http://html.net/"><font><font>Início</font></font></a><font><font> » </font></font><a href="http://html.net/tutorials/"><font><font>Tutoriais</font></font></a><font><font> » </font></font><a href="http://html.net/tutorials/html5/"><font><font>HTML5</font></font></a><font><font> »Lição 17: As coisas invisíveis: Scripts, Metadados, viewports e Comentários</font></font></div>
+	<div id="tutorials">﻿	
+	<h1><font><font>Lição 17: As coisas invisíveis: Scripts, Metadados, viewports e Comentários</font></font></h1>
+	
+	<p><font><font>Nesta lição, você vai entender mais sobre como controlar coisas invisíveis ... que são realmente importantes.</font></font></p>
+	
+	<h2><font><font>Scripts</font></font></h2>
+	
+	<p><font><font>Tags de script são uma maneira fácil de conectar JavaScript ou quaisquer outros tipos de linguagem de programação em suas páginas HTML5.</font></font></p>
+	
+	<p><font><font>Eles agora são também muito fácil de usar. </font><font>Em algum lugar do corpo de sua página, adicionar o elemento de script da seguinte forma:</font></font></p>
+	
+	<p><strong><font><font>Exemplo de roteiro</font></font></strong></p>
+	
+	<div class="codebox">
+	<pre>	<code><font></font><font><font class="">
+	&lt;Script&gt;</font></font><font></font><font><font>
+	  document.write ("Olá a partir HTML.net!")</font></font><font></font><font><font>
+	&lt;/ Script&gt;</font></font><font></font>
+	</code>
+	</pre>
+	</div>
+	
+	<p><font><font>Salve o arquivo e usuário o seu navegador para experimentá-lo. </font><font>Não é chique, mas qualquer tipo de script pode ser colocado aqui, a partir de algo que calcula os valores para algo que executar controles vídeos.</font></font></p>
+	
+	<p><font><font class="">Se você queria voltar a usar um script uma e outra vez em várias páginas, você iria colocar esse script em um arquivo .js - apenas salvar um arquivo com os js de extensão em vez de .htm - e se referem a ele a partir do elemento de script sempre que você precisar.</font></font></p>
+	
+	<p><strong><font><font>Exemplo de script externo</font></font></strong></p>
+	
+	<div class="codebox">
+	<pre>	<code><font></font><font><font>
+	&lt;Script src = "MyScript.js" /&gt;</font></font><font></font>
+	</code>
+	</pre>
+	</div>
+	
+	<p><font><font>HTML5 pressupõe que qualquer roteiro é por padrão JavaScript, por isso, se você estiver usando outro idioma, você teria que definir o </font></font><code><font><font>tipo de</font></font></code><font><font> atributo também.</font></font></p>
+	
+	<p><font><font>Você também pode colocar os scripts que controlam a página inteira no </font></font><code><font><font>&lt;head&gt;</font></font></code><font><font> ou </font></font><code><font><font>&lt;footer&gt;</font></font></code><font><font> elementos vez. </font><font>Algumas das melhores práticas defensores dizem que colocar os scripts de trabalho intensivo no elemento de rodapé, logo antes do </font></font><code><font><font>&lt;/ body&gt;</font></font></code><font><font> tag ajuda mais rápido que o navegador do carregamento da página ler e mostrar o HTML simples e CSS antes de começar sobre os cálculos mais complicados no script.</font></font></p>
+	
+	<h2><font><font>Metadados</font></font></h2>
+	
+	<p><font><font>Os documentos contêm mais do que apenas o código e o conteúdo - que também deve incluir metadados, que é a informação sobre a página. </font><font>Esta informação não está visível para os leitores, mas se acostumar pelo navegador e pelos motores de busca.</font></font></p>
+	
+	<p><font><font>Colocamos metadados no </font></font><code><font><font>&lt;head&gt;</font></font></code><font><font> elemento, onde ele pode ser lido rapidamente pelos motores de busca.</font></font></p>
+	
+	<p><font><font>O </font></font><code><font><font>&lt;meta&gt;</font></font></code><font><font> tag tem uma série de atributos e é considerada uma boa prática para adicionar as quatro linhas de seguir </font></font><code><font><font>&lt;meta&gt;</font></font></code><font><font> tags para cada página, mas alterando o valor de </font></font><em><font><font>conteúdo</font></font></em><font><font> em cada caso, para coincidir com o tipo de conteúdo que você tem em que página e quem a escreveu.</font></font></p>
+	
+	<p><strong><font><font>Exemplo de metadados para dar a cada página</font></font></strong></p>
+	
+	<div class="codebox">
+	<pre>	<code><font></font><font><font>
+	&lt;Head&gt; </font></font><font></font>
+	  <strong><font><font>&lt;name = "description" content = "meta cursos livres HTML5"&gt; </font></font><font></font><font><font>
+	  &lt;Meta name = "keywords" content = "HTML, CSS, JavaScript"&gt; </font></font><font></font><font><font>
+	  &lt;Name = conteúdo "autor" meta = "HTML.net"&gt; </font></font><font></font><font><font>
+	  &lt;Meta charset = "UTF-8"&gt; </font></font></strong><font></font><font><font>
+	&lt;/ Head&gt; </font></font><font></font>
+	</code>
+	</pre>
+	</div>
+	
+	<p><font><font>Quanto mais exatas palavras-chave e descrição, o mais provável é que sua página vai voltar no topo da lista de um motor de busca de resultados quando alguém procura por esses termos particulares.</font></font></p>
+	
+	<p><font><font>O </font></font><code><font><font>charset</font></font></code><font><font> atributo é novo para HTML5 e permite que você especifique o conjunto de caracteres que você está usando. </font><font>Ele substitui esta linha em HTML4: </font></font><code><font><font>&lt;meta http-equiv = conteúdo "Content-Type" = "text / html; charset = utf-8"&gt;</font></font></code><font><font> . </font><font>Para Inglês, o valor é sempre UTF-8. </font><font>Se o seu conteúdo é cirílico, grego, francês ou qualquer outro conjunto de caracteres, você precisará configurá-lo de acordo (alfabeto latino, por exemplo, tem a certificação ISO-8859). </font><font>Você pode verificar </font></font><a href="http://www.iana.org/assignments/character-sets/character-sets.xhtml" target="_blank"><font><font>esta tabela</font></font></a><font><font> para o código de direito se você estiver usando um outro conjunto de caracteres.</font></font></p>
+	
+	<h2><font><font>Viewports</font></font></h2>
+	
+	<p><font><font>Há mais uma coisa a acrescentar em seus metadados no </font></font><code><font><font>&lt;head&gt;</font></font></code><font><font> elemento e isso é uma linha que garante que o seu conteúdo é pouco visível, não importa que tipo de dispositivo que alguém está usando para navegar no seu site: smartphone, tablet, laptop, ou qualquer outra coisa então eles podem usar.</font></font></p>
+	
+	<div class="codebox">
+	<pre>	<code><font></font><font><font>
+	&lt;Head&gt; </font></font><font></font><font><font>
+	  &lt;name = "description" content = "meta cursos livres HTML5"&gt; </font></font><font></font><font><font>
+	  &lt;Meta name = "keywords" content = "HTML, CSS, JavaScript"&gt; </font></font><font></font><font><font>
+	  &lt;Name = conteúdo "autor" meta = "HTML.net"&gt; &lt;meta charset = "UTF-8"&gt; </font></font><font></font>
+	  <strong><font><font>&lt;Meta name = "viewport" content = "width =-largura do dispositivo, escala inicial = 1,0"&gt; </font></font></strong><font></font><font><font>
+	&lt;/ Head&gt; </font></font><font></font>
+	</code>
+	</pre>
+	</div>
+	
+	<p><font><font class="">O valor do conteúdo define a largura da página para a largura padrão que o navegador do dispositivo suporta e também define o nível de zoom a partir de um valor que vai fazer a maior parte do conteúdo visível na maioria dos aparelhos, vai mudar e atualização se girar o dispositivo, embora também vai ser capaz de aumentar o zoom. Há muitas outras propriedades possível aqui, como a criação de uma largura máxima em pixels, mas os valores que temos dado são uma boa prática reconhecida (tão bom como podemos obter) neste momento.</font></font></p>
+	
+	<h2><font><font>Comentários</font></font></h2>
+	
+	<p><font><font>Às vezes pode ser muito útil para deixar-se uma nota no código. </font><font>Talvez seja porque você está organizando as coisas ou talvez seja porque você precisa se lembrar por que você fez alguma coisa em particular ou que fez algo - quem sabe. </font><font>É realmente fácil de adicionar em um comentário que não seja analisado pelo navegador - o navegador ignora direito sobre ele.</font></font></p>
+	
+	<p><font><font>Como tudo mais, um comentário HTML deve estar dentro de seu próprio conjunto de suportes angulares, mas o suporte aberto é imediatamente seguido pelo! </font><font>símbolo e dois traços. </font><font>Para fechar um comentário, adicionar mais dois traços e um outro ângulo de montagem. </font><font>Você pode ter a quantidade de texto entre os símbolos que você precisa, incluindo outras tags.</font></font></p>
+	
+	<p><strong><font><font>Exemplo de comentários HTML</font></font></strong></p>
+	
+	<div class="codebox">
+	<pre>	<code><font></font><font><font>
+	&lt;! - Me lembrando de verificar este código para validade HTML5 -&gt; </font></font><font></font>
+<font></font><font><font>
+	&lt;! - Atualizado por AA em 1 de Julho -&gt; </font></font><font></font>
+<font></font><font><font>
+	&lt;! - Este é um pedaço de código que eu estou indo para solucionar &lt;title&gt; Notas &lt;/ title&gt; -&gt; </font></font><font></font>
+	</code>
+	</pre>
+	</div>
+	
+	<p><font><font>Você já sabe como controlar todas essas coisas invisíveis que você pode nunca ter conhecido existiu, mas que são muito importantes e úteis.</font></font></p>
+	
+	<hr>
+</div>
+</div>
+</div>
+<div id="sidebar">
+	<h1><font><font>Tutoriais</font></font></h1>
+	<ul>
+		<li><a href="http://html.net/tutorials/html/"><font><font>Tutorial HTML</font></font></a></li>
+		<li><strong><a href="http://html.net/tutorials/html5/"><font><font>HTML5 Tutorial</font></font></a></strong>
+	<ul>
+	<li><a href="http://html.net/tutorials/html5/introduction.php"><font><font>Introdução</font></font></a></li>
+		<li><a href="http://html.net/tutorials/html5/lesson1.php"><font><font>Vamos começar</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson2.php"><font><font>O que é HTML?</font></font></a></li>
+		<li><a href="http://html.net/tutorials/html5/lesson3.php"><font><font>Elementos e tags</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson4.php"><font><font>Criando seu primeiro website</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson5.php"><font><font>O que você aprendeu até agora</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson6.php"><font><font>Mais alguns elementos</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson7.php"><font><font>Atributos</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson8.php"><font><font>Links</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson9.php"><font><font>Imagens</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson10.php"><font><font>Tabelas</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson11.php"><font><font>Mais tabelas</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson12.php"><font><font>Layout (CSS)</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson13.php"><font><font>Páginas Upload</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson14.php"><font><font>Web standards e validação</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson15.php"><font><font>HTML5 - The New Kid on the Block</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson16.php"><font><font>Novas marcas e atributos</font></font></a></li><li class="selected"><a href="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net.html"><font><font>Coisas Invisíveis: Scripts, Metadados, viewports e Comentários</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson18.php"><font><font>Forms</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson19.php"><font><font>APIs</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson20.php"><font><font>Mais Imagens</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson21.php"><font><font>Vídeo e Áudio</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson22.php"><font><font>APIs avançadas</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson23.php"><font><font>Geolocalização: Você está aqui</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson24.php"><font><font>Armazenamento Web</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson25.php"><font><font>Arrastar e soltar</font></font></a></li><li><a href="http://html.net/tutorials/html5/lesson26.php"><font><font>Dicas finais</font></font></a></li></ul></li><li><a href="http://html.net/tutorials/css/"><font><font>CSS Tutorial</font></font></a></li><li><a href="http://html.net/tutorials/php/"><font><font>PHP Tutorial</font></font></a></li><li><a href="http://html.net/tutorials/asp/"><font><font>ASP Tutorial</font></font></a></li><li><a href="http://html.net/tutorials/javascript/"><font><font>JavaScript Tutorial</font></font></a></li>			</ul>
+</div>
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Quadro Comunicação Domínio Facebook Cruz" tabindex="-1" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/6Dg4oLkBbYq.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Quadro Comunicação Domínio Facebook Cruz" tabindex="-1" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/6Dg4oLkBbYq(1).html" style="border: none;"></iframe></div></div></div><iframe name="oauth2relay689839884" id="oauth2relay689839884" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><div id="_fbn_C6ADVKE" class="fancybar_hide"><style type="text/css">.fancybar_hide ._fancybar{top:-100%;}.fancybar_show ._fancybar {top:0;}._fancybar{display:block;width:100%;float:left;position:fixed;top:-50px;left:0;right:0;z-index:100001;background-color:#0AB0BF;-webkit-transition:top 700ms;-moz-transition:top 700ms;-o-transition:top 700ms;transition:top 700ms;text-align:center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;font-family:helvetica,arial,sans-serif;margin:0 auto;box-shadow: 0 1px 5px rgba(0,0,0,.6);backface-visibility:hidden;}._fancybar a {display:block;position:relative;text-align:left;text-decoration:none;margin:0 auto;float:left;width:100%;padding:10px 5%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}._fancybar a:hover {background:#1fc4d3;display: block;}._fancybar a .fancybar-cta {display:block;float:right;color:#ffffff;background-color:#FA492B;border-radius:2px;line-height:28px;font-size:15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0 12px;}._fancybar a:hover .fancybar-cta {background:#FA492B;color:#ffffff;}._fancybar a .fancybar-logo {display:block;float:left;padding:0;margin:-10px 0;}._fancybar a .fancybar-logo img {display:block;max-width:110px;}._fancybar a .fancybar-text {float:left;font-size:16px;line-height:16px;padding:8px 0 0 15px;color:#ffffff;}._fancybar a:hover .fancybar-text {color:#ffffff;}@media all and (max-width: 680px){._fancybar a .fancybar-logo {margin:0 auto;display:block;min-width:100%;}._fancybar a .fancybar-logo img {max-width:110px;display:block;margin:0 auto;}._fancybar a .fancybar-text {font-size:13px;line-height:13px;padding:10px 0;text-align:center;width:100%;display:block;}._fancybar a .fancybar-cta {display:block;float:left;width:100%;margin:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;text-align:center;}}._fancybar .fancybar-close{display: block;position: absolute;top: 11px;right: 15px;padding: 5px 10px 7px;border-radius: 2px;color:#ffffff;z-index: 2;font-size: 14px;line-height: 12px;}._fancybar .fancybar-close:hover{cursor: pointer;background:#1fc4d3;}</style><div class="_fancybar" id="_fancybar_div"><span class="fancybar-close" onclick="_fancybar.close(&#39;_fbn_C6ADVKE&#39;)"><font><font>x </font></font></span><a href="http://srv.buysellads.com/ads/click/x/GTND423LFTBIEKJNCVS4YKQWCVADP2J7CVAD4Z3JCE7DE2QNC6SIEK7KC6BD653MFTBDVK3EHJNCLSIZ?segment=placement:htmlnet;" target="_blank"><span class="fancybar-logo"><img src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/16568"></span><span class="fancybar-cta"><font><font>livre t-shirt, por favor! </font></font></span><span class="fancybar-text"><font><font>Quando seu software parece ser bom, você olha bom. </font><font>Implantar New Relic e você verá o que queremos dizer.</font></font></span></a></div></div><iframe width="1" height="1" src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/saved_resource.html" id="DMGlobalUserIdetifierIFRAME" name="DMGlobalUserIdetifierIFRAME" style="display: none;"></iframe><div id="goog-gt-tt" class="goog-tooltip skiptranslate" dir="ltr" style="visibility: hidden; left: 813px; top: 310px; display: none;"><div style="padding: 8px;"><div><div class="logo"><img src="./Lição 17  coisas invisíveis  Scripts, Metadados, Viewports e Commentsentutorial - HTML.net_files/translate-32.png" width="20" height="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Texto original</h1></div><div class="middle" style="padding: 8px;"><div class="original-text">The content value sets the width of the page to the default width that the device's browser supports and also sets the starting zoom level at a value that will make most of the content visible on most devices, will change and update if they rotate the device, although they'll also be able to zoom in. There are many other properties possible here, like setting a maximum width in pixels, but the values we have given are an acknowledged best practice (as good as we can get) at this time.</div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Sugira uma tradução melhor</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none; opacity: 0;"></div></div><iframe id="google_osd_static_frame_5252176022622" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

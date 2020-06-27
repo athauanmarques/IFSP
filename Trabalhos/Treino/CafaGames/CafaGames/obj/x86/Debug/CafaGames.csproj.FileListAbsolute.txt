@@ -1,0 +1,26 @@
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\bin\Debug\CafaGames.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\bin\Debug\CafaGames.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\obj\x86\Debug\CafaGames.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\obj\x86\Debug\CafaGames.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\obj\x86\Debug\CafaGames.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\obj\x86\Debug\CafaGames.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.TesteComeco.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.frmResultado1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.frmResultado2.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.frmResultado3.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.frmResultado4.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\obj\x86\Debug\CafaGames.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\obj\x86\Debug\CafaGames.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\bin\Debug\CafaGames.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\bin\Debug\CafaGames.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\obj\x86\Debug\CafaGames.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.TesteComeco.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.frmResultado1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.frmResultado2.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.frmResultado3.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.frmResultado4.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\My promans\CafaGames\CafaGames\obj\x86\Debug\CafaGames.csproj.GenerateResource.Cache

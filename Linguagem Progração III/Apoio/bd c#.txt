@@ -1,0 +1,9 @@
+http://www.devmedia.com.br/acesso-a-banco-de-dados-em-c-nivel-basico-parte-1/21695
+http://msdn.microsoft.com/pt-br/library/ms233763.aspx
+https://www.youtube.com/watch?v=brgOp8e98Z8
+
+Data Source=(LocalDB)\v11.0;AttachDbFilename="C:\Users\Athauan Marques\Documents\banco_dados.mdf";Integrated Security=True;Connect Timeout=30
+
+banco_dadosConnectionString
+
+tHE DATABASE YOU SELECTED NEW OR DOES NOT CONTAIN AN OBJECTS.Click Finisf to create an empty dataset. Once database objects are added to the database open the empty dataset in the dataset Designer to reconfigure the dataset.

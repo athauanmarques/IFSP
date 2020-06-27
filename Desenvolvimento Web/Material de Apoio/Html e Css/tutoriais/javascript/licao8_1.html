@@ -1,0 +1,30 @@
+<! DOCTYPE html>      
+<html>      
+  <head>      
+	  <title> Lição 8: Declare uma função </title>      
+  </Head>      
+	  <body>      
+	  <h1> Lição 8: Declare uma função </h1>    
+	  <div>    
+	    <h2> data de hoje é: </h2>    
+	    <p id="hoje"> </p>    
+	    <input type="button" id="meuBotao" value="Obter a data de hoje" onclick="showDate();" />    
+	  </Div>    
+	      
+	  <script type="text/javascript">    
+	    function showDate()  
+		{    
+			// Primeiro declare todas as suas vars    
+			var d = new Date();    
+		  
+			// Se aproprie do elemento hoje da página html
+			// onde a data de hoje será exibida  
+			var varhoje = document.getElementById("hoje");    
+
+			// Inserir a data no elemento span.    
+			// ToDateString() muda a data para um formato apropriado para exibição    
+			varhoje.innerHTML = d.toDateString();    
+		}    
+	 </Script>    	    
+  </Body>      
+</Html> 

@@ -1,0 +1,12 @@
+D:\LojaWin\Bll\bin\Release\Bll.dll
+D:\LojaWin\Bll\bin\Release\Bll.pdb
+D:\LojaWin\Bll\bin\Release\Dal.dll
+D:\LojaWin\Bll\bin\Release\Modelos.dll
+D:\LojaWin\Bll\bin\Release\MySql.Data.dll
+D:\LojaWin\Bll\bin\Release\Dal.pdb
+D:\LojaWin\Bll\bin\Release\Modelos.pdb
+D:\LojaWin\Bll\obj\Release\Bll.csprojResolveAssemblyReference.cache
+D:\LojaWin\Bll\obj\Release\Bll.dll
+D:\LojaWin\Bll\obj\Release\Bll.pdb
+C:\Users\Aluno\Desktop\Aula7\LojaWin\Bll\obj\Release\Bll.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Aula7\LojaWin\Bll\obj\Release\Bll.dll

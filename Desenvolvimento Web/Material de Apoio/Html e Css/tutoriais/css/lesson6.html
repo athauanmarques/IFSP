@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+	<title>Lição 6: Links - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 6: Links - HTML.net" />
+	<meta name="description" content="Lição 6: Links - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 6: Links - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/css/lesson6.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+</head>
+
+<body>	
+	<div id="main">
+	<div id="content">
+	<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>CSS</a> &#187; Lição 6: Links</div>
+	<div id='tutorials'>	<h1>Lição 6: Links </h1>
+	<p>Você pode aplicar aos links tudo que aprendeu nas lições anteriores (i.e. mudar cores, fontes, sublinhados, etc). A novidade aqui é que você pode definir as propriedades de maneira diferenciada de acordo com o estado do link ou seja visitado, não visitado, ativo ou com o ponteiro do mouse sobre o link. Isto possibilita adicionar interessantes efeitos ao seu website. Para estilizar estes efeitos você usará as chamadas pseudo-classes. </p>
+
+	<h2>O que é  pseudo-classe?</h2>
+	<p>Uma  pseudo-classe permite estilizar levando em conta condições diferentes ou eventos ao definir uma propriedade de estilo para uma tag <abbr>HTML</abbr>.</p>
+
+	<p>Vamos ver um exemplo. Como você já sabe, links são marcados no <abbr>HTML</abbr> com tags <code>&lt;a></code>. Podemos então usar <code>a</code> como um seletor <abbr>CSS</abbr>:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	a {
+		color: blue;
+	}
+	</code>
+	</pre>
+	Um link pode ter diferentes estados. Por exemplo, pode ter sido visitado ou não visitado. Você usará pseudo-classes para estilizar links visitados e não visitados.  
+	</div>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	<strong>a:link</strong> {
+		color: blue;
+	}
+
+	<strong>a:visited</strong> {
+		color: red;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<p>Use as pseudo-classes <code>a:link</code> e <code>a:visited</code> para estilizar links não visitados e visitados respectivamente. Links ativos são estilizados com a pseudo-classe <code>a:active</code> e <code>a:hover</code>, esta última é  a pseudo-classe para links com o ponteiro do mouse sobre ele. </p>
+
+	<p>A seguir explicaremos com mais detalhes e exemplificação, as quatro  pseudo-classes.</p>
+
+	<h3>Pseudo-classe: link</h3>
+	<p>A pseudo-classe <code>:link</code> é usada para links não visitados.</p>
+	<p>No exemplo a seguir links não vistados serão na cor verde. </p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	<strong>a:link</strong> {
+		color: green;
+	}
+
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson6_ex1.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<h3>Pseudo-classe: visited</h3>
+	<p>A pseudo-clases <code>:visited</code> é usada para links visitados. No exemplo a seguir links visitados serão na cor amarela:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	<strong>a:visited</strong> {
+		color: yellow;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson6_ex2.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<h3>Pseudo-classe: active</h3>
+	<p>A pseudo-classe <code>:active</code> é usada para links ativos.</p>
+	<p>No exemplo a seguir links ativos terão seu fundo na cor  vermelha:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	<strong>a:active</strong> {
+		background-color: red;
+	}
+	</code>
+
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson6_ex3.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<h3>Pseudo-classe: hover</h3>
+	<p>A pseudo-classe <code>:hover </code>é usada para  quando o ponteiro do mouse está sobre o link.</p>
+	<p>Isto pode ser usado  para conseguir efeitos bem interessantes. Por exemplo, podemos mudar a cor do link para laranja e o texto para itálico quando o ponteiro do mouse passa sobre ele, o código <abbr>CSS</abbr> para estes efeitos é o mostrado a seguir:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	<strong>a:hover</strong> {
+		color: orange;
+		font-style: italic;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson6_ex4.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<h2>Exemplo 1: Efeito quando o ponteiro está sobre o link </h2>
+	<p>É comum a criação de efeitos diferentes quando o ponteiro está sobre o link. Veremos a seguir alguns exemplos extras de estilização da pseudo-classe  <code>:hover</code>.</p>
+
+	<h3>Exemplo 1a: Espaçamento entre as letras </h3>
+	<p>Como você deve estar lembrado da <a href="lesson5.html">lição 5</a>, o espaçamento entre as letras de um texto pode ser controlado pela propriedade <code>letter-spacing</code>. Isto pode ser aplicado aos links para obter um efeito interessante:</p>
+
+	<div class="codebox">
+
+	<pre>
+	<code>
+	<strong>a:hover</strong> {
+		letter-spacing: 10px;
+		font-weight:bold;
+		color:red;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson6_ex5.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<h3>Exemplo 1b: UPPERCASE e lowercase </h3>
+
+	<p>Na <a href="lesson5.html">lição 5</a> vimos a propriedade <code>text-transform</code>, para estilizar com letras maiúsculas e minúsculas. Isto pode ser usado para estilizar links:</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	<strong>a:hover</strong> {
+		text-transform: uppercase;
+		font-weight:bold;
+		color:blue;
+		background-color:yellow;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson6_ex6.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+
+	<p>Os exemplos mostrados dão uma idéia das inúmeras possibilidades de combinação de diferentes propriedades. Você pode criar seus próprios efeitos — faça uma tentativa!  </p>
+
+	<h2>Exemplo 2: Removendo sublinhado dos links</h2>
+	<p>Uma pergunta comum: Como remover o sublinhado dos links? </p>
+	<p><strong>Você deve estudar com muito cuidado a necessidade de retirar o sublinhado dos links, pois isto poderá reduzir signifcativamente a usabilidade do website.</strong> As pessoas estão acostumadas com links na cor azul e sublinhados e sabem que ali há um texto a ser clicado. Até minha mãe sabe disto! Se você muda a cor e retira o sublinhado dos links, poderá confundir seus visitantes e em conseqüência não retirar o máximo dos conteúdos do seu website. </p>
+
+	<p>Feita esta ressalva, é muito fácil retirar o sublinhado dos links. Conforme explicado na <a href="lesson5.html">lição 5</a>, a propriedade <code>text-decoration</code> pode ser usada para definir se o texto é ou não  sublinhado. Para remover o sublinhado, basta definir o valor none para a propriedade <code>text-decoration</code>.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	a {
+		<strong>text-decoration:none;</strong>
+
+	}
+	</code>
+	</pre>
+	</div>
+
+	<p>Alternativamante, você pode definir <code>text-decoration</code> juntamente com outras propriedades para as quatro  pseudo-classes.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	a:link {
+		color: blue;
+		<strong>text-decoration:none;</strong>
+
+	}
+
+	a:visited {
+		color: purple;
+		<strong>text-decoration:none;</strong>
+	}
+
+	a:active {
+		background-color: yellow;
+		<strong>text-decoration:none;</strong>
+	}
+
+	a:hover {
+		color:red;
+		<strong>text-decoration:none;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson6_ex7.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+
+	</ul>
+
+	<h2>Sumário</h2>
+	<p>Nesta lição você aprendeu pseudo-classes, usando algumas propriedades já estudadas nas lições anteriores. Isto deve ter proporcionado uma idéia das possibilidades das <abbr>CSS</abbr>.  </p>
+	<p> Na <a href="lesson7.html">próxima lição</a> ensinaremos como definir propriedades para elementos específicos e grupamentos de elementos.</p>	
+	
+	
+    <hr /><p class='previous'><a href='lesson5.html'>&lt;&lt; Lição 5: Textos</a></p><p class='next'><a href='lesson7.html'>Lição 7: Identificando e agrupando elementos (class and id) >></a></p>
+	</div>
+	</div>
+	</div>
+</body>
+</html>

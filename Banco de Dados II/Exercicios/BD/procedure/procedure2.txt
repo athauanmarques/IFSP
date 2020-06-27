@@ -1,0 +1,250 @@
+CREATE DATABASE  IF NOT EXISTS `biblioteca`;
+USE `biblioteca`;
+
+DROP TABLE IF EXISTS acervo;
+CREATE TABLE acervo (
+  codpro int(10) unsigned NOT NULL AUTO_INCREMENT,
+  datainscricao date DEFAULT NULL,
+  quantidade int(10) unsigned DEFAULT NULL,
+  observacoes char(50) DEFAULT NULL,
+  disponivel int(11) DEFAULT NULL,
+  PRIMARY KEY (codpro)
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+
+INSERT INTO acervo VALUES (1,'2010-08-30',1,NULL,1);
+INSERT INTO acervo VALUES (2,'2010-05-12',1,NULL,1);
+INSERT INTO acervo VALUES (3,'2010-06-02',2,NULL,2);
+INSERT INTO acervo VALUES (4,'2010-09-03',3,NULL,3);
+INSERT INTO acervo VALUES (5,'2009-05-08',5,NULL,5);
+INSERT INTO acervo VALUES (6,'2008-08-07',9,NULL,9);
+INSERT INTO acervo VALUES (7,'2006-05-02',3,NULL,3);
+INSERT INTO acervo VALUES (8,'2011-01-01',2,NULL,2);
+INSERT INTO acervo VALUES (9,'2011-05-06',7,NULL,7);
+INSERT INTO acervo VALUES (10,'2011-06-09',7,NULL,7);
+INSERT INTO acervo VALUES (11,'2010-08-30',1,NULL,1);
+INSERT INTO acervo VALUES (12,'2010-05-12',2,NULL,2);
+INSERT INTO acervo VALUES (13,'2010-06-02',10,NULL,10);
+INSERT INTO acervo VALUES (14,'2010-09-03',9,NULL,9);
+INSERT INTO acervo VALUES (15,'2009-05-08',2,NULL,2);
+INSERT INTO acervo VALUES (16,'2008-08-07',3,NULL,3);
+INSERT INTO acervo VALUES (17,'2006-05-02',9,NULL,9);
+INSERT INTO acervo VALUES (18,'2011-01-01',10,NULL,10);
+INSERT INTO acervo VALUES (19,'2011-05-06',2,NULL,2);
+INSERT INTO acervo VALUES (20,'2011-06-09',1,NULL,1);
+INSERT INTO acervo VALUES (21,'2010-08-30',4,NULL,4);
+INSERT INTO acervo VALUES (22,'2010-05-12',3,NULL,3);
+INSERT INTO acervo VALUES (23,'2010-06-02',2,NULL,2);
+INSERT INTO acervo VALUES (24,'2010-09-03',8,NULL,8);
+INSERT INTO acervo VALUES (25,'2009-05-08',7,NULL,7);
+INSERT INTO acervo VALUES (26,'2008-08-07',9,NULL,9);
+INSERT INTO acervo VALUES (27,'2006-05-02',6,NULL,6);
+INSERT INTO acervo VALUES (28,'2011-01-01',4,NULL,4);
+INSERT INTO acervo VALUES (29,'2011-05-06',3,NULL,3);
+INSERT INTO acervo VALUES (30,'2011-06-09',1,NULL,1);
+INSERT INTO acervo VALUES (31,'2008-08-07',9,NULL,9);
+INSERT INTO acervo VALUES (32,'2006-05-02',6,NULL,6);
+INSERT INTO acervo VALUES (33,'2011-01-01',4,NULL,4);
+INSERT INTO acervo VALUES (34,'2011-05-06',3,NULL,3);
+INSERT INTO acervo VALUES (35,'2011-06-09',1,NULL,1);
+
+DROP TABLE IF EXISTS bibliotecario;
+CREATE TABLE bibliotecario (
+  idbibliotecario int(11) NOT NULL AUTO_INCREMENT,
+  CPF char(20) NOT NULL,
+  nome char(45) DEFAULT NULL,
+  endereco char(45) DEFAULT NULL,
+  telefone char(30) DEFAULT NULL,
+  email char(45) DEFAULT NULL,
+  PRIMARY KEY (idbibliotecario)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+INSERT INTO bibliotecario VALUES (1,'426759874139','Renato Jose','Rua Atibaia, 83- Atibaia','82418963','renato@email.com.br\r');
+INSERT INTO bibliotecario VALUES (2,'524789368422','Jose de Souza','Rua São Paulo, 27-Bragança','85452114','jose@email.com.br\r');
+INSERT INTO bibliotecario VALUES (3,'548721274214','Alexandre Godoy','Rua Primavera, 65- Bragança','69874125','alexandre@email.com.br\r');
+INSERT INTO bibliotecario VALUES (4,'852472514545','Maria Aparecida','Rua XV Novembrro, 78 - Bragança','98741254','maria@email.com.br');
+
+DROP TABLE IF EXISTS editora;
+CREATE TABLE editora (
+  ideditora int(10) unsigned NOT NULL AUTO_INCREMENT,
+  nomeeditora char(30) DEFAULT NULL,
+  teleditora char(30) DEFAULT NULL,
+  PRIMARY KEY (ideditora)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+
+INSERT INTO editora VALUES (1,'Active Delphi','(16) 3024-8713\r');
+INSERT INTO editora VALUES (2,'Alta Books','(21) 3278-8159\r');
+INSERT INTO editora VALUES (3,'Guanabara Koogan','(21) 3543-0770\r');
+INSERT INTO editora VALUES (4,'Prentice Hall','(11) 2178-8686\r');
+INSERT INTO editora VALUES (5,'Thomas Nelson Brasil','(21) 3138-9600\r');
+INSERT INTO editora VALUES (6,'Agir','(21) 509-6424\r');
+INSERT INTO editora VALUES (7,'Campus','(11) 3257-7221\r');
+INSERT INTO editora VALUES (8,'INDG','(11) 3226-3111\r');
+INSERT INTO editora VALUES (9,'Sextante','(21) 2538-4100\r');
+INSERT INTO editora VALUES (10,'Academia de Inteligencia','(43) 3274-6698\r');
+INSERT INTO editora VALUES (11,'VectorPRO','(11) 3814-8145\r');
+INSERT INTO editora VALUES (12,'Ediouro','(11) 3051-7000\r');
+INSERT INTO editora VALUES (13,'Editora Abril','0800-7752035\r');
+INSERT INTO editora VALUES (14,'Fundação Getúlio Vargas','0800 162 311');
+
+DROP TABLE IF EXISTS livro;
+CREATE TABLE livro (
+  codpro int(10) unsigned NOT NULL,
+  ideditora int(10) unsigned NOT NULL,
+  titulo_livro varchar(60) DEFAULT NULL,
+  ano_publicação char(4) DEFAULT NULL,
+  autor char(45) DEFAULT NULL,
+  tipo char(45) DEFAULT NULL,
+  PRIMARY KEY (codpro),
+  KEY ideditora (ideditora),
+  KEY livro_FKIndex1 (codpro),
+  CONSTRAINT livro_ibfk_1 FOREIGN KEY (ideditora) REFERENCES editora (ideditora),
+  CONSTRAINT livro_ibfk_2 FOREIGN KEY (codpro) REFERENCES acervo (codpro)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO livro VALUES (16,2,'Use a Cabeça Java','2005',NULL,'Informatica');
+INSERT INTO livro VALUES (17,2,'Use a Cabeça JSP & Servlet',NULL,NULL,'Informatica');
+INSERT INTO livro VALUES (18,2,'Use a Cabeça PMP','2005',NULL,'Informatica');
+INSERT INTO livro VALUES (19,2,'Use a Cabeça HTML & XHTML',NULL,NULL,'Informatica');
+INSERT INTO livro VALUES (20,2,'Use a Cabeça Ajax','2004',NULL,'Informatica');
+INSERT INTO livro VALUES (21,2,'Use a Cabeça Padrões de Projeto','2005',NULL,'Informatica');
+INSERT INTO livro VALUES (22,2,'Use a Cabeça Análise e Projeto Orientado a Objeto',NULL,NULL,'Informatica');
+INSERT INTO livro VALUES (23,2,'Use a Cabeça SQL','2005',NULL,'Informatica');
+INSERT INTO livro VALUES (24,3,'Sistemas Operacionais Modernos','1999','TANENBAUM, Andrew S.','Informática');
+INSERT INTO livro VALUES (25,4,'Sistemas Operacionais','2000','Abraham Silberschatz, Peter Baer Galvin','Informatica');
+INSERT INTO livro VALUES (26,5,'Investidores Inteligentes','2008','Gustavo Cerbasi','Administração');
+INSERT INTO livro VALUES (27,6,'A cabeça de Steve Jobs','2008','Leander Kahney','Administração');
+INSERT INTO livro VALUES (28,7,'Como se tornar um vendedor Pit-Bull','2009','Luis Paulo Luppa','Administração');
+INSERT INTO livro VALUES (29,8,'O verdadeiro Poder','2009','Vicente Falconi Campos','Administração');
+INSERT INTO livro VALUES (30,9,'Transformando suor em ouro','2006','Bernardo Rocha de Rezende','Administração');
+INSERT INTO livro VALUES (31,7,'Mantendo os Talentos da sua Empresa','2007','Harvard Business Review','Administração');
+INSERT INTO livro VALUES (32,9,'Como Motivar a sua equipe','2006','Anne Bruce','Administração');
+INSERT INTO livro VALUES (33,10,'12 Semanas para mudar uma vida','2007','Augusto Cury','Psicologia');
+INSERT INTO livro VALUES (34,11,'Tecnicas de Intervenção Psicopedagógica','2008','Leila Sara, Jose Chamat','Psicologia');
+INSERT INTO livro VALUES (35,12,'Os Desafios da Terapia','2007','Irvin D. Yalom','Psicologia');
+
+
+DROP TABLE IF EXISTS revistas;
+CREATE TABLE revistas (
+  codpro int(10) unsigned NOT NULL,
+  ideditora int(10) unsigned NOT NULL,
+  nome char(30) DEFAULT NULL,
+  tema varchar(100) DEFAULT NULL,
+  ano int(10) unsigned DEFAULT NULL,
+  numero int(10) unsigned DEFAULT NULL,
+  KEY ideditora (ideditora),
+  KEY revistas_FKIndex1 (codpro),
+  CONSTRAINT revistas_ibfk_1 FOREIGN KEY (ideditora) REFERENCES editora (ideditora),
+  CONSTRAINT revistas_ibfk_2 FOREIGN KEY (codpro) REFERENCES acervo (codpro)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO revistas VALUES (1,1,'ACTIVE DELPHI','ORIENTAÇÃO A OBJETOS NO DELPHI',2010,3);
+INSERT INTO revistas VALUES (2,1,'ACTIVE DELPHI','COMPONENTES DEV EXPRESS',2001,5);
+INSERT INTO revistas VALUES (3,1,'ACTIVE DELPHI','DESENVOLVIMENTO PARA IPHONE COM D.PRISM',2011,1);
+INSERT INTO revistas VALUES (4,1,'ACTIVE DELPHI','ESPECIAL DELPHI CONFERENCE 2010',2000,6);
+INSERT INTO revistas VALUES (5,1,'ACTIVE DELPHI','CRIANDO APLICAÇÕES WIN. SERVICE',2009,3);
+INSERT INTO revistas VALUES (6,1,'ACTIVE DELPHI','FIREBIRD 2.5',2011,1);
+INSERT INTO revistas VALUES (7,13,'Info','Ipad - Você ainda vai ter um',2011,5);
+INSERT INTO revistas VALUES (8,13,'Info','Como Será seu próximo celular?',2011,4);
+INSERT INTO revistas VALUES (9,13,'Info','A invasão do Facebook',2011,3);
+INSERT INTO revistas VALUES (10,13,'Info','Android - 51 Dicas',2011,2);
+INSERT INTO revistas VALUES (11,13,'Info','Viva na casa do Futuro Hoje',2011,1);
+INSERT INTO revistas VALUES (12,13,'Info','109 testes',2010,12);
+INSERT INTO revistas VALUES (13,13,'Info','Alguem bate o Iphone 4?',2010,11);
+INSERT INTO revistas VALUES (14,14,'RAE','Revista de Administração de Empresas vol.51',2011,3);
+INSERT INTO revistas VALUES (15,14,'RAE','Revista de Administração de Empresas vol.51',2011,2);
+
+DROP TABLE IF EXISTS tipousuario;
+CREATE TABLE tipousuario (
+  idTipoUsuario int(10) unsigned NOT NULL AUTO_INCREMENT,
+  nometipo char(30) DEFAULT NULL,
+  valormulta float(10,2) DEFAULT NULL,
+  prazoentrega int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (idTipoUsuario)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+INSERT INTO tipousuario VALUES (1,'Aluno',2.00,7);
+INSERT INTO tipousuario VALUES (2,'Professor',1.00,10);
+INSERT INTO tipousuario VALUES (3,'Funcionario',2.00,8);
+
+DROP TABLE IF EXISTS usuarios;
+CREATE TABLE usuarios (
+  CPF char(20) NOT NULL DEFAULT '',
+  idTipoUsuario int(10) unsigned NOT NULL,
+  nome char(45) DEFAULT NULL,
+  endereco char(45) DEFAULT NULL,
+  cidade char(30) DEFAULT 'Bragança Paulista',
+  telefone int(10) unsigned DEFAULT NULL,
+  datanasc date DEFAULT NULL,
+  PRIMARY KEY (CPF),
+  KEY idTipoUsuario (idTipoUsuario),
+  CONSTRAINT usuarios_ibfk_1 FOREIGN KEY (idTipoUsuario) REFERENCES tipousuario (idTipoUsuario)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO usuarios VALUES ('12435455667',1,'RIVALDO BATISTA','Rua Dr Cândido Rodrigues, 68','Bragança Paulista',40317845,'1985-06-12');
+INSERT INTO usuarios VALUES ('21548541213',1,'Joana Almeida','Rua Campinas, 25','Bragança Paulista',88745456,'1990-05-06');
+INSERT INTO usuarios VALUES ('34524575897',1,'DAIANE PIMENTEL','Av José Gomes Rocha Leal, 1498','Bragança Paulista',40047844,'1990-01-05');
+INSERT INTO usuarios VALUES ('38987877624',1,'ANA LUIZA','Rua João Polidori, 426','Bragança Paulista',40343219,'1989-06-06');
+INSERT INTO usuarios VALUES ('43498956854',1,'FRANCINE DORTA','Rua José Domingues, 624','Bragança Paulista',40043539,'1987-05-04');
+INSERT INTO usuarios VALUES ('45412989898',1,'CÁTIA APARECIDA','Rua Cel João Leme, 1019','Bragança Paulista',40344739,'1981-05-12');
+INSERT INTO usuarios VALUES ('45937579621',1,'MARIA AUGUSTA','Av Pres Humberto A C Branco, 189','Bragança Paulista',40047707,'1987-03-06');
+INSERT INTO usuarios VALUES ('54132454513',3,'Aparecida Silva','Rua Piracicaba, 98','Bragança Paulista',72145789,'1987-06-08');
+INSERT INTO usuarios VALUES ('54387696785',1,'BRUNO SAMPAIO','Rua Cel João Leme, 286','Bragança Paulista',40359840,'1991-05-01');
+INSERT INTO usuarios VALUES ('54714785521',2,'Marcia Azevedo','Rua Suzano, 30','Bragança Paulista',95847252,'1995-02-02');
+INSERT INTO usuarios VALUES ('54892321857',2,'Willian Viana','Rua São Paulo, 15','Bragança Paulista',64521478,'1986-05-06');
+INSERT INTO usuarios VALUES ('55643257896',1,'LEANDRO JOSE','Rua Liberdade, 256','Bragança Paulista',40310632,'1993-12-13');
+INSERT INTO usuarios VALUES ('62552145222',1,'Tiago Xavier','Rua Piracaia, 54','Bragança Paulista',98745214,'1986-05-06');
+INSERT INTO usuarios VALUES ('63321144782',2,'Joao Silva','Rua Piracicaba, 15','Bragança Paulista',97854125,'1992-02-02');
+INSERT INTO usuarios VALUES ('65468746871',1,'Joana Ferreira','Av. São João, 115','Bragança Paulista',69130058,'1990-12-03');
+INSERT INTO usuarios VALUES ('65497821321',2,'Otavio Cunha','Rua Ubatuba, 13','Bragança Paulista',96324411,'1991-12-12');
+INSERT INTO usuarios VALUES ('65644349876',1,'GABRIEL SILVA','Av Dr José Adriano Marrey Jr, 486','Bragança Paulista',40318754,'1990-11-01');
+INSERT INTO usuarios VALUES ('65828290980',1,'INACIO SANTANA','Rua Arthur Siqueira, 480','Bragança Paulista',40355646,'1987-05-01');
+INSERT INTO usuarios VALUES ('65851147982',1,'Maria Almeida','Rua 13 de Maio, 28','Bragança Paulista',96458712,'1993-01-06');
+INSERT INTO usuarios VALUES ('67824475980',1,'GIOVANE MALENGO','Av Antônio Pires Pimentel, 1191','Bragança Paulista',40358967,'1990-06-03');
+INSERT INTO usuarios VALUES ('69411585214',2,'Mariana Santos','Rua 13 de Julho, 11','Bragança Paulista',65412874,'1975-12-06');
+INSERT INTO usuarios VALUES ('76755434767',1,'IVONILDO CEARÁ','Rua Br Juqueri, 59','Bragança Paulista',40314628,'1988-11-01');
+INSERT INTO usuarios VALUES ('76889898864',1,'MARIA RITA','Rua Nicolino Nacaratti, 682','Bragança Paulista',40345390,'1990-06-05');
+INSERT INTO usuarios VALUES ('78521453369',3,'Fabio França','Rua São Jose, 56','Bragança Paulista',94125896,'1987-03-08');
+INSERT INTO usuarios VALUES ('85748484846',1,'TAINA ALVES','Rua Liberdade, 98','Bragança Paulista',40044421,'1991-01-01');
+INSERT INTO usuarios VALUES ('85897501983',1,'MIGUEL ASSIS','Rua Marcelo Stefani, 142','Bragança Paulista',40351727,'1996-12-31');
+INSERT INTO usuarios VALUES ('86326644878',1,'CASSIA SILVA','Rua Prof Luiz Nardy, 15','Bragança Paulista',40345739,'1985-05-04');
+INSERT INTO usuarios VALUES ('86531368644',1,'ROSANGELA VASCONCELOS','Rua Policarpo Guimarães, 18','Bragança Paulista',40046249,'1986-12-02');
+INSERT INTO usuarios VALUES ('87516872125',1,'Alex Pereira','Rua das flores, 22','Bragança Paulista',87412158,'1991-01-01');
+INSERT INTO usuarios VALUES ('87678667791',1,'GABRIELA GODOY','Rua Adelino Campos, 87','Bragança Paulista',40342411,'1993-01-01');
+INSERT INTO usuarios VALUES ('87897965764',1,'RICARDO BONIFACIO','Rua Prof Antônio DI Franco, 137','Bragança Paulista',40355326,'1985-12-27');
+INSERT INTO usuarios VALUES ('89714536987',1,'Joao Silva','Rua 21 de Abril, 37','Bragança Paulista',86541278,'1990-01-05');
+INSERT INTO usuarios VALUES ('98712125472',1,'Mario Augusto','Av. Primavera, 13','Bragança Paulista',68742158,'1990-01-11');
+INSERT INTO usuarios VALUES ('98736121865',1,'Murilo Almeida','Rua Taubate, 44','Bragança Paulista',94654788,'1985-03-11');
+INSERT INTO usuarios VALUES ('98787565454',1,'DANIEL OLIVEIRA','Rua A Siqueira, 67','Bragança Paulista',40319785,'1980-06-03');
+
+DROP TABLE IF EXISTS emprestimo;
+CREATE TABLE emprestimo (
+  idemprestimo int(10) unsigned NOT NULL AUTO_INCREMENT,
+  CPF char(20) NOT NULL,
+  codpro int(10) unsigned NOT NULL,
+  idbibliotecario int(11) NOT NULL,
+  dataretirada date DEFAULT NULL,
+  dataentrega date DEFAULT NULL,
+  observacoes char(50) DEFAULT 'Retirada na biblioteca',
+  PRIMARY KEY (idemprestimo),
+  KEY codpro (codpro),
+  KEY idbibliotecario (idbibliotecario),
+  KEY CPF (CPF),
+  CONSTRAINT emprestimo_ibfk_1 FOREIGN KEY (codpro) REFERENCES acervo (codpro),
+  CONSTRAINT emprestimo_ibfk_2 FOREIGN KEY (idbibliotecario) REFERENCES bibliotecario (idbibliotecario),
+  CONSTRAINT emprestimo_ibfk_3 FOREIGN KEY (CPF) REFERENCES usuarios (CPF)
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS multa;
+CREATE TABLE multa (
+  idMulta int(10) unsigned NOT NULL AUTO_INCREMENT,
+  idemprestimo int(10) unsigned NOT NULL,
+  idTipoUsuario int(10) unsigned NOT NULL,
+  datamulta date DEFAULT NULL,
+  diasdeatraso int(10) unsigned DEFAULT NULL,
+  valormulta float(10,2) DEFAULT NULL,
+  PRIMARY KEY (idMulta),
+  KEY idemprestimo (idemprestimo),
+  KEY idTipoUsuario (idTipoUsuario),
+  CONSTRAINT multa_ibfk_1 FOREIGN KEY (idemprestimo) REFERENCES emprestimo (idemprestimo),
+  CONSTRAINT multa_ibfk_2 FOREIGN KEY (idTipoUsuario) REFERENCES tipousuario (idTipoUsuario)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

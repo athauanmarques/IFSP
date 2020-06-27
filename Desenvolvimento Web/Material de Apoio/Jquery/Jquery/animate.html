@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+	<script> 
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("div").animate({left: '250px'});
+			});
+		});
+	</script> 
+</head>
+<body>
+
+<button>Iniciar Animação</button>
+
+<p>Por definição, todos os elementos HTML tem uma posição estática e não podem ser movidos.
+Entretanto, pode-se manipular a posição usando através dos valores relative, fixed, or absolute!</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>

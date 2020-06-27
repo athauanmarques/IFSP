@@ -1,0 +1,2 @@
+mude o caminho do  App.config para reconhecer banco
+clik no projeto e ver o caminho do banco

@@ -1,0 +1,9 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\Certo\bin\Debug\Certo.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Certo\bin\Debug\Certo.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\Certo\obj\x86\Debug\Certo.Form1.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Certo\obj\x86\Debug\Certo.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Certo\obj\x86\Debug\Certo.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\Certo\obj\x86\Debug\Certo.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Certo\obj\x86\Debug\Certo.pdb
+F:\3ª ADS\LP3\Aula 1 - Relembrando\Certo\Certo\obj\x86\Debug\Certo.exe
+F:\3ª ADS\LP3\Aula 1 - Relembrando\Certo\Certo\obj\x86\Debug\Certo.pdb

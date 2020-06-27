@@ -1,0 +1,56 @@
+﻿<html>
+<head>
+   <title>Menu Tree</title>
+   <style>
+      A {text-decoration: none;}
+   </style>
+   <script language="javascript" src="menutree.js">
+   </script>
+</head>
+<body>
+<table>
+	<tr>
+		<td></td>
+		<td>
+			<img align="center" src="iflogo.jpg" width="200" height="100" border="0"><br>
+		</td>
+		<td>
+			<h1>Bem vindos ao IFSP</h1>
+		</td>
+	</tr>
+	<tr><td></td></tr>
+</table>
+
+<b><a ID="mcursos" href="javascript:Toggle('cursos');">[+]</a>
+   Cursos</b><br>
+   <div ID="cursos" style="display:none; margin-left:2em;">
+	   <a ID="mtecnologos" href="javascript:Toggle('tecnologos');">[+]</a> 
+	   Tecnólogos<br>
+	   <div ID="tecnologos" style="display:none; margin-left:2em">
+		   <a href="ads.html">ADS</a><br>
+		   <a href="mecatronica.html">Mecatrônica</a><br>
+	   </div>
+	   <a ID="mtecnicos" href="javascript:Toggle('tecnicos');">[+]</a>
+	   Técnicos<br>
+	   <div ID="tecnicos" style="display:none; margin-left:2em">
+		  <a href="mecanica.html">Mecânica</a><br>
+		  <a href="eletronica.html">Eletrônica</a><br>
+	   </div>
+	</div>
+<b><a ID="mservicos" href="javascript:Toggle('servicos');">[+]</a>
+   Serviços</b><br>
+   <div ID="servicos" style="display:none; margin-left:2em;">
+   <a href="suporte.html">Suporte</a><br>
+   <a href="solicitacoes.html">Solicitações</a><br>
+</div>
+<b><a ID="mcontatos" href="javascript:Toggle('contatos');">[+]</a>
+   Contatos</b>
+<div ID="contatos" style="display:none; margin-left:2em;">
+   <a href="campus.html">Campus</a><br>
+   <a href="reitoria.html">Reitoria</a><br>
+ </div>
+<p> </p>
+<a href="javascript:Expand();">[Expand All]</a><br>
+<a href="javascript:Collapse();">[Collapse All]</a>
+</body>
+</html>

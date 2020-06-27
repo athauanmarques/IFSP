@@ -1,0 +1,19 @@
+<html>
+<head>
+   <title>Blinking Text Example</title>
+<script language="javascript">
+function Blink() {
+   obj=document.getElementById("blink");
+   if (obj.style.visibility=="hidden") obj.style.visibility="visible";
+      else obj.style.visibility="hidden";
+   window.setTimeout("Blink();",500);
+}
+</script>
+</head>
+<body onLoad="Blink();">
+<h1>Blinking Text Example</h1>
+<p>This is a quick example of blinking text. 
+<span ID="blink">This sentence is blinking</span> because a
+DHTML script is manipulating its visibility property.</p>
+</body>
+</html>

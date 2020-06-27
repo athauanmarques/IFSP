@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 10: Margin e padding - CSS Tutorial - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 10: Margin e padding - CSS Tutorial - HTML.net" />
+	<meta name="description" content="Lição 10: Margin e padding - CSS Tutorial - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 10: Margin e padding - CSS Tutorial - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/css/lesson10.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+</head>
+
+<body>	
+	<div id="main">
+		<div id="content">
+		<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>CSS</a> &#187; Lição 10: Margin e padding - CSS Tutorial</div>
+		<div id='tutorials'>	<h1>Lição 10: Margin e padding</h1>
+	<p>Na lição anterior vimos o   box model. Nesta lição veremos como controlar a apresentação de um elemento definindo as propriedades <code>margin</code> e <code>padding</code>.</p>
+	<ul>
+	  <li><a href="lesson10.html#s1">Definindo margin de um elemento</a></li>
+	  <li><a href="lesson10.html#s2">Definindo padding de um elemento</a></li>
+	</ul>
+	<h2 id="s1">Definindo margin de um elemento</h2>
+	<p>Um elemento tem quatro lados:   right, left, top e bottom (direito, esquerdo, superior e inferior). A <code>margin</code> é a distância entre os lados de elementos vizinhos (ou às bordas do documento). Ver o diagrama mostrado na <a href="lesson9.html">lição 9</a>.</p>
+	<p>Vamos começar com um exemplo mostrando como definir margins para o documento, ou seja, para o elemento <code>&lt;body></code>. A ilustração a seguir mostra como serão as margens da página.</p>
+	<p><img src="figure011.gif" alt="Exemplos de margens" /></p>
+	<p>As <abbr>CSS</abbr> são mostradas abaixo:</p>
+	<div class="codebox">
+	  <pre><code>
+	body {
+		margin-top: 100px;
+		margin-right: 40px;
+		margin-bottom: 10px;
+		margin-left: 70px;
+	}
+	</code>
+	</pre>
+	</div>
+	<p>Ou, adotando uma sintaxe mais elegante:</p>
+	<div class="codebox">
+	  <pre><code>
+	body {
+		margin: 100px 40px 10px 70px;
+	}
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson10_ex1.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<p>As margens para a maioria dos elementos pode ser definida conforme o exemplo acima. Podemos então, por exemplo, definir margens para todos os parágrafos <code>&lt;p></code>:</p>
+	<div class="codebox">
+	  <pre><code>
+	body {
+		margin: 100px 40px 10px 70px;
+	}
+
+	<strong>p {
+		margin: 5px 50px 5px 50px;
+	}</strong>
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson10_ex2.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<h2 id="s2">Definindo padding de um elemento</h2>
+	<p>Padding pode também ser entendido como "enchimento". Isto faz sentido, porque padding não é computado na distância entre elementos, padding define simplesmente a distância entre a borda e o conteúdo do elemento.</p>
+	<p>Ilustramos  o uso de padding através de um exemplo onde todos os cabeçalhos têm uma cor de fundo definida: </p>
+	<div class="codebox">
+	  <pre><code>
+	h1 {
+		<strong>background: yellow;</strong>
+	}
+
+	h2 {
+		<strong>background: orange;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson10_ex3.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<p>Definindo padding para os cabeçalhos, alteramos a quantidade de enchimento existente ao redor de cada um deles:</p>
+	<div class="codebox">
+	  <pre><code>
+	h1 {
+		background: yellow;
+		<strong>padding: 20px 20px 20px 80px;</strong>
+	}
+
+	h2 {
+		background: orange;
+		<strong>padding-left:120px;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson10_ex4.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<h2>Sumário</h2>
+	<p> Você está no caminho para se tornar um mestre em <abbr>CSS</abbr> box model. Na próxima lição veremos com detalhes como atribuir bordas coloridas e formas aos elementos. </p>	
+	<hr />
+<p class='previous'><a href='lesson9.html'>&lt;&lt; Lição 9: O box model</a></p><p class='next'><a href='lesson11.html'>Lição 11: Bordas >></a></p>
+</div>
+</div>
+</div>
+</body>
+</html>

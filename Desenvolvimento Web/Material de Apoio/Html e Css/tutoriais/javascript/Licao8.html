@@ -1,0 +1,373 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="translated-ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lição 8 - Funções</title>
+	<link rel="stylesheet" href="default.screen.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="default.print.css" type="text/css" media="print">
+</head>
+
+<body data-twttr-rendered="true">	
+	<a href="index.html">Início</a>»Lição 8: Funções
+	<div id="tutorials">﻿	
+	  <h1> <font class="goog-text-highlight">Lição 8: Funções</h1>
+
+	  <p>  Nesta lição, você vai aprender:  </p>
+	
+	  <ul>
+	    <li>  o que são  <strong>  funções  </strong> e como elas são usadas ​​em JavaScript;  </li>
+	    <li>  como   <strong>  recuperar informações de funções  </strong>   ;  </li>
+	    <li>  como   <strong>  dar informações para funções  </strong>   ;  </li>
+	    <li>  o   <strong>  escopo de variáveis  </strong>   ​.  </li>
+	  </ul>
+	
+	  <p>  Nesta lição,  você também vai aprender a:  </p>
+	
+	  <ul>
+	    <li>  obter a data de hoje dinamicamente;  </li>
+	    <li>  alterar o valor de um elemento de botão de HTML dinamicamente.  </li>
+	  </ul>
+	
+	  <h2>  Funções: o que são e para o que servem  </h2>
+	
+	  <p>  Nas lições anteriores, você usou funções JavaScript para executar algumas ações de forma rápida e facilmente, como a geração de números aleatórios, escrevendo algo em uma página web, etc Na verdade, JavaScript tem um grande built-in funções como   <strong>  write(), alert(), getElementById (), random(), floor()  </strong>   , e vários outros.   Sempre que você encontrar um par de parênteses há provavelmente uma função em ação.  </p>
+	
+	  <p>  JavaScript também lhe dá a opção de criar suas próprias funções.  </p>
+	
+	  <p><strong>  Uma função é uma forma de embalar seus comandos de JavaScript para que você possa facilmente reutilizá-los cada vez que você precisar do mesmo pedaço de funcionalidade implementada em seu site  </strong>   .  </p>
+	
+	  <p>  Isto sugere que há duas fases distintas para uma função:  </p>
+	
+	  <ol>
+	    <li><h3>  A fase em que a   <strong>  função é declarada (criada)  </strong>   ;  </h3></li>
+	    <li><h3>  A fase em que a   <strong>  função é chamada (usada)  </strong>   .  </h3></li>
+	  </ol>
+	
+	  <p>  Vamos passar por cada fase de separadamente.  </p>
+	
+	  <h2>  Declarar uma função  </h2>
+	
+	  <p>  A estrutura básica de uma função JavaScript parece com isso:  </p>
+	
+	  <div class="codebox">
+	  <pre>	
+	  <span class="code-comments">  // Escolher nome para a função  </span>  
+	  <span class="code-comments">  // <strong>Não esqueça os parênteses!</strong></span>  
+	  <span class="code-javascript">  function   <em>functionName ()</em></span>  
+	  <span class="code-javascript">  {  </span>  
+	  <span class="code-comments">  // Código que você deseja executar vai aqui  </span>  
+	  <span class="code-javascript">  }  </span>  
+	  </pre>
+	  </div>
+	
+	  <h2>  Chamada de uma função</h2>
+	
+	  <p>  Uma vez que você colocou um bloco de código em uma função, você pode usá-lo em qualquer lugar que você precisa que a funcionalidade em seu site.   O que você precisa fazer é apenas   <strong>  chamar a função  </strong>   .  </p>
+	
+	  <p>  Você pode fazer isso digitando o nome da função seguido por colchetes e a função irá fazer o seu trabalho - tal como fez com alert().   Veja como é feito:  </p>
+	
+	  <div class="codebox">
+	  <pre>	
+	  <span class="code-comments">// o nome da função (sem a palavra-chave <em>function</em>)</span>  
+	  <span class="code-comments">//<strong>  Não esqueça os parênteses!</strong></span>  
+	  <span class="code-javascript"><em>functionName()</em>;</span>  
+	  </pre>
+	  </div>
+	
+	  <p>Isso é tudo que você precisa: o código que você colocou em sua função é executado neste momento.  </p>
+	  <p>Vamos ver como isso funciona na prática.   Abra o seu editor de texto: é hora de se programar!  </p>
+	  <h2>Experimente: declarar sua função  </h2>
+	  <p>Prepare uma página HTML simples como a abaixo.   O programa que vamos construir tem os seguintes objetivos:  </p>
+	
+	  <ul>
+	    <li>obter a data de hoje dinamicamente quando o usuário clica em um botão;  </li>
+	    <li>exibir a data de hoje na página da web;  </li>
+	    <li>alterar o atributo valor do botão após ser clicado: ter o botão ainda exibindo <em>Get Data</em>depois que a data foi apresentada parece um pouco confuso para o usuário.  </li>
+	  </ul>
+	
+	  <div class="codebox">
+	
+	  <pre>	    
+	  &lt;! DOCTYPE html&gt;      
+	  &lt;html&gt;      
+	  &lt;head&gt;      
+	  &lt;title&gt; Lição 8: Declare uma função &lt;/ title&gt;      
+	  &lt;/ Head&gt;      
+	  &lt;body&gt;      
+	  &lt;h1&gt; Lição 8: Declare uma função &lt;/ h1&gt;    
+	    
+	  &lt;div&gt;    
+	    
+	    &lt;h2&gt; data de hoje é: &lt;/ h2&gt;    
+	      
+	    &lt;span id="calendar"&gt; &lt;/ span&gt;    
+	      
+	    &lt;input type="button" id="myButton" value="Get Date" /&gt;    
+	  
+	    
+	  &lt;/ Div&gt;    
+	      
+	  &lt;script type="text/javascript"&gt;    
+	  
+	  <span class="code-comments">  // Declare sua função aqui  </span>  
+	  
+	  <span class="code-javascript">  showDate function ()  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">  // O bloco de código começa aqui:  </span>  
+	  
+	  <span class="code-comments">  // Primeiro tire todas as suas vars pronto  </span>  
+	  
+	  <span class="code-comments">  // Esta é a forma como JavaScript recupera a data de hoje  </span>  
+	  
+	  <span class="code-javascript">  var hoje = new Date ();  </span>  
+	  
+	  <span class="code-comments">  // Se apossar do elemento span calendário  </span>  
+	  
+	  <span class="code-comments">  // Onde a data de hoje será inserido  </span>  
+	  
+	  <span class="code-javascript">  var MyCalendar = document.getElementById ("calendar");  </span>  
+	  
+	  <span class="code-comments">  // Se apossar do botão: você precisa disso quando se trata  </span>  
+	  
+	  <span class="code-comments">  // Para alterar seu atributo de valor  </span>  
+	  
+	  <span class="code-javascript">  var myButton = document.getElementById ("myButton");  </span>  
+	  
+	  <span class="code-comments">  // Inserir a data no elemento span.  </span>  
+	  
+	  <span class="code-comments">  // ToDateString () muda a data apenas recuperado  </span>  
+	  
+	  <span class="code-comments">  // Em um formato user-friendly para exibição  </span>  
+	  
+	  <span class="code-javascript">  myCalendar.innerHTML = today.toDateString();  </span>  
+	  
+	  <span class="code-comments">  // Alterar o atributo valor do botão  </span>  
+	  
+	  <span class="code-comments">  // Para dizer algo mais apropriado uma vez que a data é exibida  </span>  
+	  
+	  <span class="code-javascript">   myButton.value = "Well Done!!";  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	    
+	  &lt;/ Script&gt;    
+		    
+	  &lt;/ Body&gt;      
+	  &lt;/ Html&gt;    
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <h2>  Experimente: chamar sua função  </h2>
+	  <p>  Se você revisar os objetivos do seu programa, tal como estabelecido no início, você vai ver que   <strong>  toda a acção tem lugar após o usuário clicar no botão  </strong>   na página.   Isto diz-nos que temos de   <strong>  lidar com o botão do evento onclick  </strong>   .  </p>
+	  <p>  Se você voltar para a aula 3, por um momento, você se lembra que uma das formas em que isso pode facilmente ser feito é colocar algum código JavaScript como o valor do   <strong>  atributo do elemento HTML onclick  </strong>   .  </p>
+	  <p>  Basta adicionar um   <em>  onclick  </em>   atributo para o elemento de botão e ligar o seu showDate () direito funcionam lá, assim:  </p>
+
+	  <div class="codebox">
+		<pre>  	
+	  &lt;Input type = "button" id = "myButton" value = "Get Data"   <strong>  onclick = "showDate();"  </strong>   /&gt;    
+		</pre>
+	  </div>
+	  <div class="examplelink"><img src="imagens/icon_example.gif" alt=" - "> <a href="lesson8_ex1.html" title="Ver o código acima como um exemplo"/>  Ver exemplo </a></div>
+	
+	  <p>  Salve seu trabalho e executar a página no navegador.   Clique no botão e você deve ver a data de hoje exibido na página eo atributo valor botão dando-lhe uma mensagem apropriada.  </p>
+	
+	  <h2>  Perguntas, perguntas, perguntas  </h2>
+	
+	  <p>  Eu sei, há algumas coisas novas nos exemplos de código acima.   Você pode estar se perguntando: 1) o que é isso   <em>  new Date ()  </em>   negócio?   E 2) O que toDateString () fazer para a data?   Vamos resolver cada pergunta por sua vez.  </p>
+	
+	  <ol>
+	
+	    <li>
+	  
+	      <h3>  O que é new Date() ?  </h3>
+		
+		  <p>  A   palavra-chave  <em>  Date  </em>  cria uma   <strong>  nova instância de um objeto JavaScript  </strong>   , neste caso um objeto Data com base no relógio do computador do usuário.   Objetos são o tema da próxima lição, e o objeto Date é o tema da lição 11.</p>
+		
+		  <p>  A única coisa importante que você precisa saber agora é que uma vez que você tenha criado uma instância do objeto Date, você tem todos os tipos de funções úteis (chamados   <em>  métodos do objeto  </em>   ) ao seu alcance para manipular data e hora.  </p>
+	  
+	    </li>
+	  
+	    <li>
+	  
+	      <h3>  Por que eu uso   <em>  toDateString ()  </em>   com a data?  </h3>
+		  
+		  <p>  Na sequência do ponto anterior,   <strong>  toDateString ()  </strong>   é apenas um dos vários métodos que você pode usar com o objeto Data.   O interpretador JavaScript lê como segue:  </p>
+		
+		  <blockquote>  "Ei navegador, tomar a data em que estive ligado ao e torná-lo um pouco mais humano-amigável!"  </blockquote>
+		
+		  <p>  Isto é o que eu quero dizer.   Digite o seguinte dentro encerrando marcas &lt;script&gt; de uma página HTML:   <em>  var myDate = new Date (); document.write (myDate);  </em></p>
+		
+		  <p>  Salve a página e executá-lo no navegador: sua data deve ser exibido em um formato como a abaixo (obviamente eu espero que a data para ser diferente):  </p>
+		
+		  <p><strong>  Dom 06 de novembro de 2011 14:45:30 GMT 0000 (GMT Standard Time)  </strong></p>
+		
+		  <p>  Feio!   Felizmente, o objeto Date tem uma solução para isto.   Reescreva o trecho de código anterior da seguinte forma:   <em>  var myDate = new Date (); document.write (myDate.toDateString ());  </em></p>  
+		
+		  <p>  E aqui está como a data acima parece  depois do  <em>  toDateString ()  </em>   :  </p>
+		
+		  <p><strong>  Dom 06 de novembro de 2011  </strong>   .  </p>
+		
+		  <p>  Muito melhor, menos assustador, e muito mais legível para nós seres humanos.  </p>
+	  
+	    </li>
+	
+	  </ol>
+	
+	  <h2>  Alimentar as informações para e recuperar informações de uma função  </h2>
+	
+	  <p>  Funções para manipular dados: a função alert() exibe mensagens para mostrar como seus dados, a função  write() escreve seus dados na página da web, etc  </p>
+	
+	  <p>  Você também pode   <strong>  passar dados para uma função  </strong>.   A maneira de fazer isso é através de   <strong>  argumentos (ou parâmetros)  </strong>.   Um   <strong>  argumento é colocado entre parênteses da função quando a função é declarada  </strong>   .   Você pode colocar um ou mais argumentos, separados por vírgulas (,) dentro de uma função.  </p>
+	
+	  <p>  Aqui está a estrutura básica:  </p>
+	
+	  <div class="codebox">
+		  <pre>	
+			  <span class="code-javascript">  function  <em>  functionName (arg1, arg2, arg3)  </em></span>  
+			  <span class="code-javascript">  {  </span>  
+			  <span class="code-comments">  	// Corpo da função vai aqui  </span>  
+			  <span class="code-javascript">  }  </span>  
+		  </pre>
+	  </div>
+	
+	  <p>  O argumento da função é como um <strong>espaço reservado para o valor que é fornecido quando a função é chamada</strong>. Isso vai parecer mais claro no exemplo abaixo.</p>
+	  <p>  Finalmente, uma coisa útil que as funções podem fazer com os dados, uma vez que foi manipulado, é <strong>devolvê-lo</strong>.</p>
+	  <p>  Por exemplo, considere a <strong>função floor(número)</strong>   que você já conhece da lição anterior.   Esta função<strong>recebe como argumento um número</strong>   e   <strong>retorna um número inteiro</strong>.</p>
+	  <p>  Se o seu script faz algo com o <strong>valor retornado em seguida, ele precisa atribuir a função a uma variável</strong> ao chamar a função.</p>
+	  <p>  Vamos colocar esse conhecimento em prática imediatamente.   Crie uma função e depois faça uma chamada a função para usar seu <strong>valor de retorno</strong> em seu documento.  </p>
+	  <h3>  Declarar uma função com um parâmetro  </h3>
+	  <p>  Prepare uma página HTML simples e digite o seguinte código JavaScript dentro das tags <em>&lt;script&gt; ...   &lt;/ Script&gt;</em> </p>
+
+	  <div class="codebox">
+	
+	  <pre>	    
+	  &lt;! DOCTYPE html&gt;      
+	  &lt;html&gt;      
+	  &lt;head&gt;      
+	  &lt;title&gt; Lição 8: Argumentos de Funções e Valores de Retorno &lt;/ title&gt;      
+	  &lt;/ Head&gt;      
+	  &lt;body&gt;      
+	  &lt;h1&gt; Lição 8: Argumentos de Funções e Valores de Retorno &lt;/ h1&gt;    
+	      
+	  &lt;script type="text/javascript"&gt;    
+	  
+	  <span class="code-comments">  // Declara uma função com dois argumentos do número de tipo  </span>  
+	  
+	  <span class="code-javascript">  function SomaNumeros(num1, num2)  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-comments">       // Esta é uma função simples:  </span>  
+	  
+	  <span class="code-comments">       // Apenas retornar a soma dos dois argumentos de número  </span>  
+	  
+	  <span class="code-javascript">     return num1 + num2;  </span>  
+	  
+	  <span class="code-comments">      // Sua função termina aqui  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	    
+	  &lt;/ Script&gt;    
+		    
+	  &lt;/ Body&gt;      
+	  &lt;/ Html&gt;    
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <h3>  Chamar sua função e usar o valor de retorno  </h3>
+	
+	  <p>  Continue a partir do código anterior.   Fora de sua função, apenas   <strong>  após a chave de fechamento}  </strong>   , digite o seguinte:  </p>
+	
+	  <div class="codebox">
+	
+	  <pre>	
+	  <span class="code-comments">  // Chamar a sua função </span>  
+	  
+	  <span class="code-comments">  // Criar uma var e atribuir o valor retornado pela sua função a ela  </span>  
+	  
+	  <span class="code-comments">  // Além disso, passar dois números como argumentos  </span>  
+	  
+	  <span class="code-comments">  // Digitando dois números separados por vírgula entre colchetes  </span>  
+	  
+	  <span class="code-javascript"><strong>  var total = SomaNumeros (3, 5);  </strong></span>  
+	  
+	  <span class="code-comments">  // Mostrar os dados retornados na página  </span>  
+	  
+	  <span class="code-javascript">  document.write (total);  </span>  
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <p>  Salve seu trabalho e execute a página no navegador.   Se tudo correr bem, a soma dos números que você inseriu como argumentos para SomaNumeros() função deve ser exibido na página web.</p>
+	
+	  <p>  Argumentos de funções não são limitados a um tipo de dados específicos.   Você também pode usar strings e booleanos, e até mesmo outras funções. </p>
+	
+	  <h2>  Variáveis ​​dentro e fora de escopo funções:  </h2>
+	
+	  <p>  Uma variável pode ter   <strong>  âmbito local ou global, dependendo de ter sido declarada dentro ou fora de um bloco de função.  </strong>   .   Mas, o que isso significa exatamente?  </p>
+	
+	  <p>  Simplificando, uma variável com   <strong>  escopo local significa que é visível, ou acessível, apenas dentro da função em que vive  </strong>   .   Nenhuma outra parte do seu código pode ver uma variável local.  </p>
+	
+	  <p>  Por outro lado, uma variável com   <strong>  escopo global quer dizer que é acessível, isto é, ela pode ser utilizada, em qualquer lugar no script.  </strong>   .   Vamos ver isso na prática.   Obtenha seu editor de texto pronto e digite o seguinte trecho entre a abertura e fechamento &lt;script&gt; em uma página HTML:  </p>
+	
+	  <div class="codebox">
+	
+	  <pre>	
+	  <span class="code-comments">  // Cria duas variáveis ​​globais  </span>  
+	  
+	  <span class="code-javascript">  var mensagem = "mensagem global fora";  </span>  
+	  
+	  <span class="code-javascript">  var otherGlobalVariable = "outra variável global";  </span>  
+		  
+	  <span class="code-comments">  // Criar uma função com uma variável local  </span>  
+	  
+	  <span class="code-comments">  // Ter o mesmo nome que a primeira variável global,  </span>  
+	  
+	  <span class="code-javascript">  função getMessage ()  </span>  
+	  
+	  <span class="code-javascript">  {  </span>  
+	  
+	  <span class="code-javascript">  var mensagem = "dentro variável local";  </span>  
+	  
+	  <span class="code-comments">  // A função de alerta a variável mensagem  </span>  
+	  
+	  <span class="code-javascript">  alert (mensagem);  </span>  
+	  
+	  <span class="code-comments">  // E também alerta o segunda variável global  </span>  
+	  
+	  <span class="code-javascript">  alert (otherGlobalVariable);  </span>  
+	  
+	  <span class="code-comments">  // A função termina aqui  </span>  
+	  
+	  <span class="code-javascript">  }  </span>  
+	  
+	  <span class="code-comments">  // Chamar a função  </span>  
+	  
+	  <span class="code-javascript">  getMessage ();  </span>  
+		  
+	  <span class="code-comments">  // Alerta a variável mensagem  </span>  
+	  
+	  <span class="code-javascript">  // (Que uma será, local ou global?)  </span>  
+	  
+	  <span class="code-javascript">  alert (mensagem);  </span>  
+	  
+	  </pre>
+	
+	  </div>
+	
+	  <p>  Salve seu trabalho e visualize a página em seu navegador.   Como você pode ver, a <strong>função alert() não tem acesso à variável mensagem dentro da função  </strong>   .   Por outro lado, a   <strong>  função pode ter acesso tanto ao seu variável local e para qualquer variável no espaço global</strong>.</p>
+	
+	  <p>  Isso pode parecer um pouco confuso no início, mas é tudo uma questão de praticar suas habilidades de codificação tão frequentemente como você pode.   A coisa importante a lembrar é que, se, por vezes, as variáveis ​​parecem não ter os valores esperados, pode ser um bug relacionado ao escopo das variáveis.  </p>
+	
+	  <h2>  Resumo  </h2>
+	
+	  <p>  Isso é tudo por esta lição.   Agora você pode compactar o código JavaScript em funções reutilizáveis ​​e gerenciável, de entrada e saída de dados por meio de uma função, use o objeto Date para recuperar e exibir a data atual, alterar o valor de um elemento botão HTML on-the-fly, e distinguir entre variáveis ​​locais e globais.   Você realizou um grande negócio, parabéns!  </p>
+	
+	<hr>
+	</div>
+	</body></html>

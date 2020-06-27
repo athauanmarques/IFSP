@@ -1,0 +1,16 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\Revisao2\bin\Debug\Revisao2.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Revisao2\bin\Debug\Revisao2.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\Revisao2\obj\x86\Debug\Revisao2.Form1.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Revisao2\obj\x86\Debug\Revisao2.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Revisao2\obj\x86\Debug\Revisao2.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\Revisao2\obj\x86\Debug\Revisao2.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Revisao2\obj\x86\Debug\Revisao2.pdb
+D:\Revisão\Revisao2\Revisao2\obj\x86\Debug\Revisao2.exe
+D:\Revisão\Revisao2\Revisao2\obj\x86\Debug\Revisao2.pdb
+D:\Revisão\Revisao2\Revisao2\bin\Debug\Revisao2.exe
+D:\Revisão\Revisao2\Revisao2\bin\Debug\Revisao2.pdb
+D:\Revisão\Revisao2\Revisao2\obj\x86\Debug\Revisao2.Form1.resources
+D:\Revisão\Revisao2\Revisao2\obj\x86\Debug\Revisao2.Properties.Resources.resources
+D:\Revisão\Revisao2\Revisao2\obj\x86\Debug\Revisao2.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\ExercAula1Lp3\Revisao2\Revisao2\obj\x86\Debug\Revisao2.exe
+C:\Users\Aluno\Desktop\ExercAula1Lp3\Revisao2\Revisao2\obj\x86\Debug\Revisao2.pdb

@@ -1,0 +1,15 @@
+C:\Users\Aluno\Desktop\Aula - Console\Exer1Variavel\Exer1Variavel\bin\Debug\Exer1Variavel.exe
+C:\Users\Aluno\Desktop\Aula - Console\Exer1Variavel\Exer1Variavel\bin\Debug\Exer1Variavel.pdb
+C:\Users\Aluno\Desktop\Aula - Console\Exer1Variavel\Exer1Variavel\obj\x86\Debug\WindowsFormsApplication1.frmInclusao.resources
+C:\Users\Aluno\Desktop\Aula - Console\Exer1Variavel\Exer1Variavel\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Aula - Console\Exer1Variavel\Exer1Variavel\obj\x86\Debug\Exer1Variavel.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Aula - Console\Exer1Variavel\Exer1Variavel\obj\x86\Debug\Exer1Variavel.exe
+C:\Users\Aluno\Desktop\Aula - Console\Exer1Variavel\Exer1Variavel\obj\x86\Debug\Exer1Variavel.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 1 & 2 - Console, Variavel eTipos de dados\Exer1Variavel\Exer1Variavel\obj\x86\Debug\Exer1Variavel.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 1 & 2 - Console, Variavel eTipos de dados\Exer1Variavel\Exer1Variavel\obj\x86\Debug\Exer1Variavel.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 1 & 2 - Console, Variavel eTipos de dados\Exer1Variavel\Exer1Variavel\bin\Debug\Exer1Variavel.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 1 & 2 - Console, Variavel eTipos de dados\Exer1Variavel\Exer1Variavel\bin\Debug\Exer1Variavel.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 1 & 2 - Console, Variavel eTipos de dados\Exer1Variavel\Exer1Variavel\obj\x86\Debug\Exer1Variavel.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 1 & 2 - Console, Variavel eTipos de dados\Exer1Variavel\Exer1Variavel\obj\x86\Debug\WindowsFormsApplication1.frmInclusao.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 1 & 2 - Console, Variavel eTipos de dados\Exer1Variavel\Exer1Variavel\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 1 & 2 - Console, Variavel eTipos de dados\Exer1Variavel\Exer1Variavel\obj\x86\Debug\Exer1Variavel.csproj.GenerateResource.Cache

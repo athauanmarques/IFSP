@@ -1,0 +1,157 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 8: Links - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 8: Links - HTML.net" />
+	<meta name="description" content="Lição 8: Links - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 8: Links - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/html/lesson8.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+	
+</head>
+
+<body>	
+	<div id="main">
+	<div id="content">
+	<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>HTML</a> &#187; Lição 8: Links</div>
+ 	<div id='tutorials'>	<h1>Lição 8: Links</h1>
+  <p>Nesta lição você aprenderá como construir links entre páginas.</p>
+  <h2>O que eu preciso para construir um  link?</h2>
+  <p>Para construir um link você usa o que tem usado até agora para codificar  <abbr title="HyperText Markup Language">HTML</abbr>: uma tag. <strong>Uma simples e pequenina tag com um elemento e um atributo é suficiente para você construir links para onde quiser. </strong> A seguir um exemplo de link para o site  HTML.net:</p>
+  <h3>Exemplo 1:</h3>
+  <div class="codebox">
+    <pre><code>
+&lt;a href="http://www.html.net/">Aqui um link para HTML.net&lt;/a>
+</code>
+  </pre>
+  </div>
+<p>Será renderizado no navegador assim:</p>
+  <div class="examplebox"> <a href="http://www.html.net/">Aqui um link para HTML.net</a> </div>
+  <p>O elemento <code>a</code> refere-se a "anchor" - âncora . O atribuito <code>href</code> é abreviação para "hypertext reference" - referência a hypertexto - e especifica o destino do link - que normalmente é um endereço na Internet ou um arquivo.</p>
+  <p>No exemplo acima o atributo <code>href</code> tem o valor "http://www.html.net", que é o endereço completo do site HTML.net e é chamado de URL (Uniform Resource Locator). Notar que "http://" deve sempre ser incluido nas URLs. A frase "Aqui um link para HTML.net" é o texto mostrado no navegador como link. Lembre-se de fechar a tag com um <code>&lt;/a></code>.</p>
+  <h2>Como são os links entre minhas próprias páginas?</h2>
+  <p>Se você quer construir links entre páginas de um mesmo website você não precisa escrever o endereço completo de cada página (URL). Por exemplo, se você tem duas páginas  (vamos chamá-las de pagina1.htm e pagina2.htm) e salvou as duas em um mesmo diretório você constrói um link de uma para a outra usando somente o nome do arquivo no link. Nestas condições, um link da página1.htm para a pagina2.htm é como mostrado abaixo: </p>
+  <h3>Exemplo 2:</h3>
+<div class="codebox">
+  <pre><code>
+&lt;a href="page2.htm">Aqui um link para a pagina 2&lt;/a>
+</code>
+  </pre></div>
+  <p>Se a pagina2 for colocada em um subdiretório (chamado de "subdiretorio"), o link é como mostrado abaixo: </p>
+  <h3>Exemplo 3:</h3>
+  <div class="codebox">
+    <pre><code>
+&lt;a href="subdiretorio/pagina2.htm">Aqui um link para a pagina 2&lt;/a>
+</code>
+  </pre>
+</div>
+  <p>Por outro lado, um link da pagina2 no "subdiretorio" para a pagina1 é como mostrado a seguir:</p>
+  <h3>Exemplo 4:</h3>
+  <div class="codebox">
+    <pre><code>
+&lt;a href="../pagina1.htm">Aqui um link para a pagina 1&lt;/a>
+</code>
+  </pre>
+  </div>
+  <p>"../" aponta para o diretório a um nível acima do arquivo onde foi feito o link. Seguindo o mesmo princípio você pode apontar para dois (ou mais) níveis acima, escrevendo "../../".</p>
+  <p>Você entendeu? Como alternativa você pode usar sempre o endereço completo do arquivo (URL).</p>
+  <h2>Como são os links dentro de uma mesma página?</h2>
+  <p>Você pode criar links internos, dentro da própria página - por exemplo, uma tabela de conteúdos ou índice com links para cada um dos capítulos em uma página. Tudo o que você precisa é usar o atributo id e o símbolo "#".</p>
+  <p>Use o atributo id para marcar o elemento que é o destino do link. Por exemplo:</p>
+  <div class="codebox">
+    <pre><code>
+&lt;h1 id="heading1">Cabeçalho 1&lt;/h1>
+</code>
+  </pre>
+  </div>
+  <p>Você agora pode criar um link que leve àquele elemento usando o símbolo  "#" no atributo do link. O símbolo "#" informa ao navegador para ficar na mesma página que está. O símbolo "#" deve ser seguido pelo valor atribuido a id para onde o link vai. Por exemplo:</p>
+  <div class="codebox">
+    <pre><code>
+&lt;a href="#heading1">Link para o cabeçalho 1&lt;/a>
+</code>
+  </pre>
+  </div>
+  <p>Tudo fica claro com um exemplo:</p>
+  <h3>Exemplo 5:</h3>
+  <div class="codebox">
+    <pre><code>
+&lt;html>
+  
+  &lt;head>
+  &lt;/head>
+ 
+  &lt;body>
+ 
+    &lt;p>&lt;a href="#heading1">Link para cabeçalho 1&lt;/a>&lt;/p>
+    &lt;p>&lt;a href="#heading2">Link para cabeçalho 2&lt;/a>&lt;/p>
+ 
+    &lt;h1 id="heading1">Cabeçalho 1&lt;/h1>
+    &lt;p>Texto texto texto texto&lt;/p>
+ 
+    &lt;h1 id="heading2">Cabeçalho 2&lt;/h1>
+    &lt;p>Texto texto texto texto&lt;/p>
+  
+  &lt;/body>
+ 
+&lt;/html>
+</code>
+  </pre>
+</div>
+  <p>Será renderizado no navegador assim (clique nos dois links):</p>
+  <div class="examplebox">
+    <p><a href="lesson8.html#heading1">Link para cabeçalho 1</a></p>
+    <p><a href="lesson8.html#heading2">Link para cabeçalho 2 </a></p>
+    <h1 id="heading1">Cabeçalho 1</h1>
+    <p>Texto texto texto texto</p>
+    <h1 id="heading2">Cabeçalho 2</h1>
+    <p>Texto texto texto texto</p>
+  </div>
+  <p>(Nota: O nome de um atributo id deve começar com uma letra)</p>
+  <h1>Posso criar link para mais alguma coisa?</h1>
+  <p>Você pode criar link para um endereço de  e-mail. Isto é feito de modo semelhante aos links para documentos.</p>
+  <h3>Exemplo 6:</h3>
+  <div class="codebox">
+    <pre><code>
+&lt;a href="mailto:nobody@html.net">Enviar e-mail para nobody em HTML.net&lt;/a>
+</code>
+  </pre>
+  </div>
+<p>Será renderizado no navegador assim:</p>
+  <div class="examplebox">
+    <p><a href="mailto:nobody@html.net"><code>Enviar e-mail para nobody em HTML.net</code></a></p>
+  </div>
+  <p>A única diferença é que no lugar do endereço do documento você escreve <code>mailto:</code> seguido pelo endereço de e-mail. Quando o link é clicado o programa de e-mail padrão do usuário é aberto com o endereço do link já digitado na linha para destinatário. Mas, atenção, isto só irá funcionar se o usuário tiver um programa de e-mail instalado na sua máquina. Faça uma experiência com este tipo de link clicando no exemplo acima.</p>
+  <h2>Existem outros atributos que eu deva conhecer?</h2>
+  <p>Par criar links você  sempre usa o atributo <code>href</code>. Adicionalmente você pode usar um <code>title (título) </code> para seu link:</p>
+  <h3>Exemplo 7:</h3>
+  <div class="codebox">
+    <pre><code>
+&lt;a href="http://www.html.net/" title="Visite HTML.net e aprenda HTML">HTML.net&lt;/a>
+</code>
+  </pre>
+  </div>
+<p>Será renderizado no navegador assim:</p>
+  <div class="examplebox">
+    <p><a href="http://www.html.net/" title="Visite o site HTML.net e apenda HTML">HTML.net</a></p>
+  </div>
+  <p>O atributo  title é usado para fornecer uma breve descrição do link. Se você  - sem clicar no link - colocar o cursor do mouse sobre o link, vai aparecer o texto "Visite o site HTML.net e aprenda HTML".</p>
+  <hr /><p class='previous'><a href='lesson7.html'>&lt;&lt; Lição 7: Atributos</a></p><p class='next'><a href='lesson9.html'>Lição 9: Imagens >></a></p></div>  		<!-- google_ad_section_end -->
+
+	</div>
+	</div>
+	</div>
+</body>
+</html>

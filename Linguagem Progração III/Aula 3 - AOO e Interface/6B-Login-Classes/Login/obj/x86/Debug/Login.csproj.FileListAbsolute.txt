@@ -1,0 +1,28 @@
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\bin\Debug\Login.exe
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\bin\Debug\Login.pdb
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\obj\x86\Debug\Login.Form1.resources
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\obj\x86\Debug\Login.Properties.Resources.resources
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\obj\x86\Debug\Login.csproj.GenerateResource.Cache
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\obj\x86\Debug\Login.exe
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\obj\x86\Debug\Login.pdb
+C:\Users\Informatica\Documents\CursoCSharp-Wincomp\2-ModIntermediario\ExercModInter\6B-Login\Login\obj\x86\Debug\Login.csprojResolveAssemblyReference.cache
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula2Lp3\6B-Login\Login\obj\x86\Debug\Login.exe
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula2Lp3\6B-Login\Login\obj\x86\Debug\Login.pdb
+C:\Users\Aluno\Desktop\6B-Login-Classes\Login\obj\x86\Debug\Login.exe
+C:\Users\Aluno\Desktop\6B-Login-Classes\Login\obj\x86\Debug\Login.pdb
+C:\Users\Aluno\Desktop\6B-Login-Classes\Login\bin\Debug\Login.exe
+C:\Users\Aluno\Desktop\6B-Login-Classes\Login\bin\Debug\Login.pdb
+C:\Users\Aluno\Desktop\6B-Login-Classes\Login\obj\x86\Debug\Login.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\6B-Login-Classes\Login\obj\x86\Debug\Login.Form1.resources
+C:\Users\Aluno\Desktop\6B-Login-Classes\Login\obj\x86\Debug\Login.Properties.Resources.resources
+C:\Users\Aluno\Desktop\6B-Login-Classes\Login\obj\x86\Debug\Login.csproj.GenerateResource.Cache
+F:\3ª ADS\LP3\Aula 3 - AOO e Interface\6B-Login-Classes\Login\obj\x86\Debug\Login.exe
+F:\3ª ADS\LP3\Aula 3 - AOO e Interface\6B-Login-Classes\Login\obj\x86\Debug\Login.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 3 - AOO e Interface\6B-Login-Classes\Login\obj\x86\Debug\Login.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 3 - AOO e Interface\6B-Login-Classes\Login\obj\x86\Debug\Login.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 3 - AOO e Interface\6B-Login-Classes\Login\bin\Debug\Login.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 3 - AOO e Interface\6B-Login-Classes\Login\bin\Debug\Login.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 3 - AOO e Interface\6B-Login-Classes\Login\obj\x86\Debug\Login.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 3 - AOO e Interface\6B-Login-Classes\Login\obj\x86\Debug\Login.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 3 - AOO e Interface\6B-Login-Classes\Login\obj\x86\Debug\Login.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\0Linguagem de Programação 3\Aula 3 - AOO e Interface\6B-Login-Classes\Login\obj\x86\Debug\Login.csproj.GenerateResource.Cache

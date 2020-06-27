@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 7: Atributos - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 7: Atributos - HTML.net" />
+	<meta name="description" content="Lição 7: Atributos - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 7: Atributos - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/html/lesson7.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+</head>
+
+<body>	
+	<div id="main">
+	<div id="content">
+	<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>HTML</a> &#187; Lição 7: Atributos</div>
+	<div id='tutorials'>	<h1>Lição 7: Atributos</h1>
+	  <p>Você pode adicionar atributos às tags.</p>
+	  <h2>O que é atributo?</h2>
+	  <p>Como você deve estar lembrado, uma tag é um comando para o navegador  (por exemplo,<code> &lt;br /></code> é um comando para mudar de linha). Em algumas tags você pode ser mais específico, acresentando na tag, informações adicionais de comando. Isto é feito através dos atributos.</p>
+	  <p><strong>Exemplo 1:</strong></p>
+	  <div class="codebox">
+		<pre><code>
+	&lt;h2 style="background-color:#ff0000;">Eu adoro HTML&lt;/h2>
+	</code>
+	  </pre>
+	  </div>
+	  <p>Atributos são escritos dentro da tag, seguidos por um sinal de igual e depois entre aspas são declaradas as informações do atributo. As informações quando mais de uma, devem ser separadas por ponto e vírgula, tudo conforme mostrado no exemplo acima. Adiante voltaremos a este assunto.</p>
+	  <h2>Como é isto?</h2>
+	  <p>Existem vários atributos. O primeiro que você aprenderá é o atributo style. <strong>Com o atributo  style você pode adicionar estilização e layout ao seu website</strong>. Por exemplo, uma cor de fundo:</p>
+	  <p><strong>Exemplo 2:</strong></p>
+	<div class="codebox">
+		<pre><code>
+	&lt;html>
+	  
+	  &lt;head>
+	  &lt;/head>
+ 
+	  &lt;body style="background-color:#ff0000;">
+	  &lt;/body>
+ 
+	&lt;/html>
+	</code>
+	  </pre></div>
+	  <p>O código acima renderiza uma página com cor de fundo vermelha - vá em frente! experimente você mesmo, construa uma página vermelha. A seguir explicaremos como funcionam as cores. </p>
+	  <p>Notar que algumas tags e atributos usam nomes do idioma inglês dos E.U.A. É muito importante que você use os nomes exatamente como mostrados neste tutorial - se você mudar uma letra que seja, o navegador não irá entender seu código. É importante também que você não se esqueça de fechar as aspas nas informações do atributo.</p>
+	  <h2>Como a página ficou vermelha?</h2>
+	  <p>No exemplo acima nós usamos o código "#ff0000" para fazer a página na cor vermelha. Eate é o código para a cor vermelha no sistema chamado de números hexadecimal  (HEX). <strong>Cada cor é representada por um número hexadecimal</strong>. A seguir alguns exemplos:</p>
+	  <p>Branco: #ffffff<br>
+	  Preto: #000000 (zeros)<br>
+	  Vermelho: #ff0000<br>
+	  Azul: #0000ff<br>
+	  Verde: #00ff00<br>
+	  Amarelo: #ffff00</p>
+	  <p>Um código hexadecimal para cores é formado por um sinal # seguido de seis dígitos e/ou letras. Existe mais de 1000 códigos HEX e não é fácil decorar o código para todas as cores. Para facilitar as coisas nós desenvolvemos uma carta com as 216 cores mais usadas na web: <a href="lesson7_216websafecolourchart.html">Carta das 216 cores seguras para a Web</a>.</p>
+	  <p>Para algumas cores, você pode usar o nome das cores em inglês  (white, black, red, blue, green e yellow - branco, preto, vermelho, azul, verde, amarelo).</p>
+	  <p><strong>Exemplo 3:</strong></p>
+	  <div class="codebox">
+		<pre><code>
+	&lt;body style="background-color: red;">
+	</code>
+	  </pre>
+	  </div>
+	  <p>Chega de cores. Voltemos aos atributos.</p>
+	  <h2>Quais  tags podem usar atributos?</h2>
+	  <p><strong>Atributos podem ser aplicados à maioria das tags</strong>.</p>
+	  <p>Você normalmente usará atributos com mais freqüência em algumas tags, tais como a tag <samp style="font-size:1.4em;">body</samp> e raramente usará em outras, como por exemplo, a tag <samp style="font-size:1.4em;">br</samp> que é um comando para pular de linha e não precisa de nenhuma informação adicional. </p>
+	  <p>Assim como existem muitas tags, também existem muitos  atributos. Alguns atributos são empregados em tags específicas enquanto outros servem para várias tags. E vice-versa: algumas tags podem conter somente um tipo de atributo, enquanto outras podem conter vários tipos.</p>
+	  <p>Isto pode parecer um pouco confuso, mas à medida que você for praticando vai constatar que tudo é fácil e lógico, bem como vai verificar as inúmeras possibilidades que os atributos oferecem. </p>
+	  <p>Este tutorial apresentou a você, os atributos.</p>
+	  <h2>Então, quais são as partes que constituem uma tag?</h2>
+	  <p><strong>A constituição básica de uma tag é denominada elemento</strong> (por exemplo p em <code>&lt;p></code>). Assim, uma tag é constituida de um elemento (por exemplo <code>&lt;p></code>), ou por um elemento e um ou mais atributos  (por exemplo <code>&lt;p style="background-color:#ff0000;"></code>). Simples!</p>
+	<hr />
+    <p class='previous'><a href='lesson6.html'>&lt;&lt; Lição 6: Mais tags HTML</a></p><p class='next'><a href='lesson8.html'>Lição 8: Links >></a></p></div>  		<!-- google_ad_section_end -->
+	</div>
+	</div>
+
+	
+</body>
+</html>

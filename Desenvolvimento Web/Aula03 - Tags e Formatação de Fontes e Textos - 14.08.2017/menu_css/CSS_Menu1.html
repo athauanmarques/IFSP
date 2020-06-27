@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<HHTML>
+<head>
+	<title>Tutorial CSS - Técnicas de construção de menus CSS</title>
+	<meta name="description" content="Site do Maujor | Tutoriais sobre CSS, XHTML, HTML, acessibilidade e Padrões Web em geral. Traduções de documentos técnicos do W3C e de artigos de consagrados autores que advogam Web Standards.">
+	<meta name="keywords" content="css, folhas estilo cascata, tutoriais, web standards, padrões web, acessibiliadde, tableless">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Mauricio Samy Silva">
+	<link rel="stylesheet" type="text/css" media="screen" href="main20140515.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="branding.css">
+	<link href="prism.css" rel="stylesheet">
+</head>
+<body id="tecmenu">
+<div id="wrapper">
+<div id="pagebody">
+<div id="content">
+	<h1>Técnicas  de construção de menus</h1>
+    <p>Neste tutorial abordarei as técnicas básicas para construção 
+      de menus utilizando <abbr title="Cascading Style Sheet">CSS</abbr> PURO.</p>
+	<h2>O elemento <abbr title="Hyper Text Markup Language">HTML</abbr> para construção de menus</h2>
+	<p>Teoricamente qualquer elemento <abbr>HTML</abbr> capaz de descrever texto ( p, 
+      h1, h2, ..., ul, ol, etc...) poderá ser estilizado para construção 
+      de menus. No entanto, dentre todos eles, o elemento semanticamente correto e indicado e que maior flexibilidade, 
+      recursos e facilidades propiciam a estilização são sem 
+      dúvida aqueles elementos que definem as listas, quer sejam de definiçao <code>dl</code>, quer ordenadas <code>ol</code> quer <code>ul</code> que define as <strong>listas 
+      não ordenadas</strong> e que usaremos neste tutorial <abbr></abbr>.</p>
+	<div class="clear"></div>    
+	<h2>Vantagens do uso dos elementos de <code>listas</code></h2>
+    <p>O uso do elemento <code>ul</code> ou outro elemento de lista, na criação dos menus com <abbr>CSS</abbr> tem as principais vantagens listadas abaixo:</p>
+    <ul class="boxtut">
+	<li>Quando renderizados sem CSS são consistentes; </li> 
+	<li>no código <abbr>HTML</abbr> do menu você tem 
+quatro elementos aninhados para aplicar estilos (quais sejam: <code>div - ul 
+- li</code> e <code>a</code>) - isto aumenta a flexibilidade para estilizar;</li>
+	<li>os critérios de acessibilidade ao seu documento são mais consistentes - na visualização do documento 
+sem a aplicação da folha de estilo o menu será exibido de uma forma bastante conveniente;</li>
+	<li>com uso de uma só propriedade <abbr>CSS</abbr> (a propriedade display) você altera o layout de menu (em disposição 
+vertical) para barra de navegação (em disposição horizontal);</li>
+	<li>são facilmente expansíveis - acréscimo de itens no futuro, isto é novos links.</li>
+</ul>
+          <h2>O código <abbr>HTML</abbr> típico para um menu</h2>
+<p>A seguir mostro  o código <abbr>HTML</abbr> típico para a criação de um menu com 05 (cinco) links (adiante você verá que este código é válido para qualquer número de links, podendo ser adaptado a qualquer necessidade atual e previsão de expansão futura - tamanho do menu).Este código servirá de base para desenvolvermos todo o estudo proposto neste tutorial.</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>menu<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo1.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo2.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Produto A<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo3.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Produto B<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo4.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Serviços<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo5.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Contacto<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+<p>Este código <abbr>HTML</abbr> é processado pelo navegador e apresentado na tela do computador conforme figura abaixo:</p>
+<p style="margin: 20px 0;"><img src="./CSS_Menu2_files/fig1.gif" alt="Exibição na tela do elemento HTML ul do codigo acima " width="400" height="230"></p>
+    <p>Com o código <abbr>HTML</abbr> pronto, nosso próximo passo é escrever uma folha de estilo em cascata capaz de dar a forma e o visual ao menu, para apresentá-lo na tela com as cores, efeitos e disposições do nosso projeto.</p><p>Na figura abaixo o projeto gráfico do nosso menu, conforme criado pelo <span xml:lang="en">webdesigner</span>.</p><p><strong>Nota:</strong> Não se trata de uma obra de arte sob o ponto de vista de <span xml:lang="en">design</span>, mas a finalidade aqui e explorar os recursos do <abbr>CSS</abbr>  :-)</p><p>Observe a figura e identifique os pontos marcados de 1 a 9:</p><p style="margin: 20px 0;"><img src="./CSS_Menu2_files/fig2.gif" alt="Projeto gráfico do menu, aponta nove locais de estilização" width="400" height="145"></p>
+<ol>
+<li>este é o <strong>elemento div</strong> 
+com uma cor de fundo cinza claro;</li>
+<li>este é o<strong> elemento ul</strong> 
+com uma cor de fundo preta;</li>
+<li>este é o <strong>elemento li</strong> 
+com uma cor de fundo cinza escura; </li>
+<li>aqui um pequeno espaçamento entre os 
+<strong> elementos li</strong>;</li>
+<li>estado mouse over, quando o mouse passa em cima 
+do link, <strong>elemento a,</strong> em letra escura com fundo claro;</li>
+<li>uma borda no <strong>elemento div</strong> produzindo 
+um efeito de baixo relevo;</li>
+<li>estado default do link (quando a página 
+é carregada) <strong>elemento a</strong> em letra clara sob o fundo do 
+elemento li;</li>
+<li>estado do link após ter sido visitado, 
+<strong>elemento a</strong> em letra amarela clara sob o fundo do elemento li;</li>
+<li>uma borda no <strong>elemento ul</strong> produzindo 
+um efeito de alto relevo.</li>
+</ol>
+<p>Observe que neste gráfico fica bem caracterizado o aninhamento dos 04 (quatro) elementos <abbr>HTML</abbr> conforme foi citado no item "Vantagens do uso do elemento ul" acima.</p>
+<h2> As dimensões do menu e a identificação dos elementos <abbr>HTML</abbr></h2>
+    <p>Do projeto gráfico do menu já consolidado e com suas dimensões 
+      finais, identificamos os elementos <abbr>HTML</abbr> envolvidos e levantamos os dados 
+      para a estilização. Observe a figura abaixo:</p>
+    <p style="margin: 20px 0;"><img src="./CSS_Menu2_files/fig3.gif" alt="Aponta os elementos HTML e espaçamentos no menu estilizado" width="293" height="204"></p> 
+    <p>A "caixa" mais exterior na cor cinza clara é o elemento 
+      <code>div</code>;</p>
+    <p>Seguem-se as "caixas" dos elementos <code>ul</code> 
+      (cor preta), <code>li</code> (cor cinza escura - 5 caixas) 
+      e <code>a </code>(contém os 5 textos dos links) - nesta 
+      sequência e aninhadas, e de acordo com o código <abbr>HTML</abbr> já 
+      visto anterioriormente e abaixo:</p>
+    <p>Os dados a seguir, retirados do projeto gráfico servirão de base para criarmos a folha de estilo:</p>
+<ul class="boxtut">
+<li>O elemento <code>div </code>tem 120 pixels 
+de largura e sua altura varia com o número de links inseridos no menu. 
+Possui ainda uma borda que confere um efeito de baixo-relevo. Entre o elemento 
+<code>div</code> e elemento <code>ul</code> há um espaçamento 
+de 5 pixels;</li>
+<li>O elemento <code>ul</code> tem uma borda 
+que lhe confere um efeito de alto-relevo. Entre o elemento <code>ul</code> 
+e elemento <code>li </code>há um espaçamento de 5 pixels;</li>
+<li>O elemento <code>a</code> contém 
+o texto havendo um espaçamento ao redor deste texto.</li>
+</ul>
+<h2>A regra de estilo para o elemento <code>div</code>:</h2>
+    <p>Antes de começar a estilização do elemento <code>div</code>, 
+      vamos atribuir ID para o elemento. A div será menu e a sintaxe: <code>#menu.</code></p>
+    <p>E as<strong> propriedades</strong> e<strong> valores</strong> 
+      css do elemento <code>div</code> são:</p>
+<ul class="boxtut">
+<li>uma largura de 120px ====&gt; width:120px;</li>
+<li>um fundo cinza claro ====&gt; background:#999999;</li>
+<li>um espaçamento de 5px para ul 
+<p>(igual em toda volta)====&gt; padding:5px;</p></li>
+<li>uma borda simulando um efeito de 
+<p>baixo-relevo (inset)====&gt; border:3px inset #cccccc.</p></li>
+</ul>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">#menu </span><span class="token punctuation">{</span>
+<span class="token property">width</span><span class="token punctuation">:</span>104px<span class="token punctuation">;</span>
+<span class="token property">_width</span><span class="token punctuation">:</span>120px<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* hack para IE */</span>
+<span class="token property">background</span><span class="token punctuation">:</span>#999999<span class="token punctuation">;</span>
+<span class="token property">padding</span><span class="token punctuation">:</span>5px<span class="token punctuation">;</span>
+<span class="token property">border</span><span class="token punctuation">:</span>3px inset #cccccc<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>A aplicação dessa regra de estilo no elemento <code>div</code> resulta em exibição do menu no navegador, conforme mostrado na figura abaixo:</p>
+    <p style="margin: 20px 0;"><img src="./CSS_Menu2_files/fig4.gif" alt="Menu com apenas a div estilizada!" width="240" height="130"></p>
+<h2>A regra de estilo para o elemento <code>ul</code>:</h2>
+<p>As<strong> propriedades</strong> e<strong> valores</strong> css  do elemento <code>ul</code> são:</p>
+<ul class="boxtut">
+<li>uma largura de 110px ====&gt; width:110px;</li>
+<li>um fundo preto ====&gt; background:#000000;</li>
+<li>um espaçamento de 6px para li 
+<p>(igual em toda volta)====&gt; padding:6px;</p></li>
+<li>uma borda simulando um efeito de <p>alto-relevo (outset) 
+====&gt; border:3px outset #cccccc.</p></li>
+<li>e aqui um macete: os navegadores quando renderizam 
+listas reservam uma margem esquerda de 50px para os marcadores da lista. Como 
+não queremos marcadores temos que eliminar a margem default declarando 
+====&gt; margin:0px;</li>
+</ul>
+<pre class=" language-markup"><code class=" language-markup">#menu ul {
+widht:110px;
+background: #000000;
+padding:6px;
+border:3px outset #ffffff;
+margin:0;  					}</code></pre>
+    <p>A aplicação das regras de estilo nos elementos <code>div</code> e <code>ul</code> resulta em exibição do menu no navegador, conforme mostrado na figura abaixo:</p>
+    <p style="margin: 20px 0;"><img src="./CSS_Menu2_files/fig5.gif" alt="Menu com a div e a ul estilizada!" width="240" height="129"></p>
+<h2>A regra de estilo para o elemento <code>li</code></h2>
+<p>As<strong> propriedades</strong> e<strong> valores</strong> css  do elemento <code>li</code> são:</p>
+<ul class="boxtut">
+<li>vamos eliminar os marcadores de listas<p> (as bolinhas 
+pretas em cada item de lista )====&gt; liste-style: none;</p></li>
+      <li>colocar um espaçamento em volta das tags &lt;li&gt; 
+        <p>( 5px à esquerda e à direita, 3px em cima e embaixo) 
+          ====&gt; padding: 3px 5px;</p>
+      </li>
+<li>uma fundo cinza escuro ====&gt; color:#666666;</li>
+<li>uma margem embaixo para obter espaço 
+entre<p> os itens da lista ====&gt; margin-bottom:2px;</p></li>
+<li>e a definição do tipo e tamanho 
+de letra ====&gt; font: 12px verdana, arial, helvetica sans-serif;</li>
+</ul>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">#menu li </span><span class="token punctuation">{</span>
+<span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token property">padding</span><span class="token punctuation">:</span>3px 5px<span class="token punctuation">;</span>
+<span class="token property">background</span><span class="token punctuation">:</span>#666666<span class="token punctuation">;</span>
+<span class="token property">margin-bottom</span><span class="token punctuation">:</span>2px<span class="token punctuation">;</span>
+<span class="token property">font</span><span class="token punctuation">:</span> 12px verdana, arial, helvetiva, sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+    <p>A aplicação das regras de estilo nos elementos <code>div</code> <code>ul</code> e<code> li</code> resulta em exibição do menu no navegador, conforme mostrado na figura abaixo:</p>
+    <p style="margin: 20px 0;"><img src="./CSS_Menu2_files/fig6.gif" alt="Menu com  a div  a ul e a li estilizada!" width="240" height="169"></p>
+    <p>Observe que faltando definir apenas, as regras  para o elemento <code>a,</code> o nosso menu já assumiu o aspecto do projeto, exceto os links que estão com as cores e o sublinhado default:</p>
+	<h2>A regra de estilo para o elemento <code>a</code></h2><p>Vamos estilizar três estados do link:</p> 
+<ul class="boxtut">
+      <li>link inicial quando a página é carregada<p>a: link, cor branca - sem sublinhado;</p></li>
+      <li>link visitado<p>a: visited, cor beje - sem sublinhado;</p></li>
+      <li>link com o mouse em cima<p>a: hover, cor preta - fundo branco;</p></li>
+      <li>link clicado<p>a:active, não será estilizado!</p></li>
+    </ul>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">#menu li a </span><span class="token punctuation">{</span>
+<span class="token property">display</span><span class="token punctuation">:</span>block<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>
+<span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menu li a:visited </span><span class="token punctuation">{</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #ffffcc<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menu li a:hover </span><span class="token punctuation">{</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #000000<span class="token punctuation">;</span>
+<span class="token property">background-color</span><span class="token punctuation">:</span>#ffffff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2>O código completo do documento <abbr>HTML</abbr> com o menu:</h2><p>Aqui completamos as regras de estilo para o menu. Abaixo o código da página:</p>
+<pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Menu -  CSS<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+&lt;meta http-equiv="...&gt;
+<span class="token style"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token selector">#menu</span><span class="token punctuation">{</span>
+<span class="token property">width</span><span class="token punctuation">:</span>104px<span class="token punctuation">;</span>
+<span class="token property">_width</span><span class="token punctuation">:</span>120px<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* hack para IE */</span>
+<span class="token property">background</span><span class="token punctuation">:</span>#999999<span class="token punctuation">;</span>
+<span class="token property">padding</span><span class="token punctuation">:</span>5px<span class="token punctuation">;</span>	
+<span class="token property">border</span><span class="token punctuation">:</span>3px inset #cccccc<span class="token punctuation">;</span>	
+<span class="token punctuation">}</span>
+<span class="token selector">#menu ul</span><span class="token punctuation">{</span>
+<span class="token property">widht</span><span class="token punctuation">:</span>110px<span class="token punctuation">;</span>
+<span class="token property">padding</span><span class="token punctuation">:</span>6px<span class="token punctuation">;</span>
+<span class="token property">margin</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span>
+<span class="token property">background</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span>
+<span class="token property">border</span><span class="token punctuation">:</span>3px outset #ffffff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#menu li </span><span class="token punctuation">{</span>	
+<span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span> 	
+<span class="token property">padding</span><span class="token punctuation">:</span>3px 5px<span class="token punctuation">;</span> 
+<span class="token property">background</span><span class="token punctuation">:</span>#666666<span class="token punctuation">;</span>
+<span class="token property">margin-bottom</span><span class="token punctuation">:</span>2px<span class="token punctuation">;</span>
+<span class="token property">font</span><span class="token punctuation">:</span> 12px verdana, arial, helvetiva, sans-serif<span class="token punctuation">;</span>	
+<span class="token punctuation">}</span>
+<span class="token selector">#menu li a </span><span class="token punctuation">{</span> 	
+<span class="token property">display</span><span class="token punctuation">:</span>block<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>	 
+<span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">#menu li a:visited </span><span class="token punctuation">{</span>	
+<span class="token property">color</span><span class="token punctuation">:</span> #ffffcc<span class="token punctuation">;</span>	
+<span class="token punctuation">}</span>
+<span class="token selector">#menu li a:hover </span><span class="token punctuation">{</span> 	
+<span class="token property">color</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span> 	
+<span class="token property">background-color</span><span class="token punctuation">:</span>#fff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>menu<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo1.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Home<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo2.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Produto A<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo3.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Produto B<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo4.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Servi<span class="token entity" title="ç">&amp;ccedil;</span>os<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>caminho/arquivo5.html<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Contacto<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
+</div><!-- Fim da div content -->
+</div> <!--fim da pagebody -->
+<div id="lateral" onclick="void(0)">
+<div id="nav">
+<div id="menu">
+	<h3 class="link-titulo">Menus</h3>
+	<ul class="box">					
+		<li><a href="CSS_Menu1.html" title="Técnicas básicas para construção de menus com uso de CSS puro">Técnicas básicas</a></li>
+		<li><a href="CSS_Menu2.html" title="Links e menus ">Links e menus </a></li>
+		<li><a href="CSS_Menu4.html" title="Menu drop down">Menu drop down</a></li>
+		<li><a href="CSS_Menu6.html" title="Menus JUMP">JUMP Menu</a></li>
+		<li><a href="CSS_Menu7.html" title="Barras de navegação">Barra de navegação</a></li>
+	</ul>
+</div> <!--div menu-->
+</div> <!--div nav -->
+</div> <!--div lateral-->
+</div> <!--div wrapper-->
+</BODY>
+</html>

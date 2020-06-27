@@ -1,0 +1,6 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer2Console\bin\Debug\Exer2Console.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer2Console\bin\Debug\Exer2Console.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer2Console\obj\x86\Debug\Exer2Console.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer2Console\obj\x86\Debug\Exer2Console.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 1 & 2 - Console, Variavel eTipos de dados\Exer2Console\Exer2Console\obj\x86\Debug\Exer2Console.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 1 & 2 - Console, Variavel eTipos de dados\Exer2Console\Exer2Console\obj\x86\Debug\Exer2Console.pdb

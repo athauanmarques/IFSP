@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#div1").fadeTo("slow", 0.15);
+				$("#div2").fadeTo("slow", 0.3);
+				$("#div3").fadeTo("slow", 0.45);
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<p>Demonstra o uso do  fadeTo() com diferentes parâmetros.</p>
+
+	<button>Click to desbotar as figuras</button><br><br>
+
+	<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+	<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+	<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+</body>
+</html>

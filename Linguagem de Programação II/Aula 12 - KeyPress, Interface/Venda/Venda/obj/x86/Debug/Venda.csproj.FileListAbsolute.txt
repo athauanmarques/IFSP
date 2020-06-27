@@ -1,0 +1,18 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\Venda\bin\Debug\Venda.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Venda\bin\Debug\Venda.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\Venda\obj\x86\Debug\Venda.Form1.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Venda\obj\x86\Debug\Venda.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Venda\obj\x86\Debug\Venda.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\Venda\obj\x86\Debug\Venda.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Venda\obj\x86\Debug\Venda.pdb
+D:\Venda\Venda\obj\x86\Debug\Venda.exe
+D:\Venda\Venda\obj\x86\Debug\Venda.pdb
+F:\ADS\LP2 - athauan\Aula 12 - KeyPress, Interface\Venda\Venda\obj\x86\Debug\Venda.exe
+F:\ADS\LP2 - athauan\Aula 12 - KeyPress, Interface\Venda\Venda\obj\x86\Debug\Venda.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\Venda\Venda\obj\x86\Debug\Venda.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\Venda\Venda\obj\x86\Debug\Venda.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\Venda\Venda\bin\Debug\Venda.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\Venda\Venda\bin\Debug\Venda.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\Venda\Venda\obj\x86\Debug\Venda.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\Venda\Venda\obj\x86\Debug\Venda.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\Venda\Venda\obj\x86\Debug\Venda.csproj.GenerateResource.Cache

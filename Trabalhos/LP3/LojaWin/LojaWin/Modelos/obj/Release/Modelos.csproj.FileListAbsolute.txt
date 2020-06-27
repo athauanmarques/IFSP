@@ -1,0 +1,4 @@
+D:\LojaWin\Modelos\bin\Release\Modelos.dll
+D:\LojaWin\Modelos\bin\Release\Modelos.pdb
+D:\LojaWin\Modelos\obj\Release\Modelos.dll
+D:\LojaWin\Modelos\obj\Release\Modelos.pdb

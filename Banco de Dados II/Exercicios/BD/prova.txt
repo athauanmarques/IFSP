@@ -1,0 +1,45 @@
+use bd2;
+
+-- TRIGGER PARA INSERIR JOGADOR
+DELIMITER ||
+CREATE TRIGGER jogador_ai AFTER INSERT ON Jogador
+FOR EACH ROW
+BEGIN
+	update Clube c set c.qtdJogador = qtdJogador + 1 where c.idClube = new.idClube;
+END;
+||
+DELIMITER ;
+
+-- TRIGGERS PARA TABELA TRANSACAO
+DELIMITER ||
+CREATE TRIGGER transacao_ai AFTER INSERT ON Transacao
+FOR EACH ROW
+BEGIN 
+	DECLARE valor float8;
+	select j.valor into valor from Jogador j where idJogador = new.idJogador;-- recebendo o valor do jogador
+
+	update Clube c set qtdJogador = qtdJogador + 1 where idClube = new.idClubeComp;-- atualizando saldo de jogadores nos times.
+    update Clube c set qtdJogador = qtdJogador - 1 where idClube = new.idClubeVend;
+    
+	update Jogador j set j.idClube = new.idClubeComp where j.idJogador = new.idJogador; -- mudando o clube do jogador comprado
+    
+	update Clube c set caixa = c.caixa - valor where idClube = new.idClubeComp; -- tirando valor do caixa do clube comprador.
+	update Clube c set caixa = c.caixa + valor where idClube = new.idClubeVend; -- adicionando o valor do jogador no caixa do clube que está vendendo
+END;
+||
+DELIMITER ;
+
+-- FUNCAO PARA SOMAR SALARIOS DOS JOGADORES DE DETERMINADO TIME.
+DELIMITER ||
+CREATE FUNCTION soma_salario_funcionario(Clube int)
+returns float8
+BEGIN
+	DECLARE soma_salario float8 default 0;
+
+	SELECT SUM(SALARIO) INTO SOMA_SALARIO 
+    FROM FUNCIONARIO 
+    WHERE FUNCIONARIO.CLUBE=CLUBE;
+    
+	return soma_salario;
+END;
+|| DELIMITER ;

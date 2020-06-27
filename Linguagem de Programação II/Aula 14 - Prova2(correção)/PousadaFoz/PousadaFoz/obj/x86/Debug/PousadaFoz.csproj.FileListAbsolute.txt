@@ -1,0 +1,20 @@
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\PousadaFoz\PousadaFoz\bin\Debug\PousadaFoz.exe
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\PousadaFoz\PousadaFoz\bin\Debug\PousadaFoz.pdb
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.Form1.resources
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.Properties.Resources.resources
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.csproj.GenerateResource.Cache
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.exe
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.pdb
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Prova2\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.exe
+C:\Users\Aluno\Desktop\Prova2\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.pdb
+C:\Users\Aluno\Desktop\Prova2\PousadaFoz\PousadaFoz\bin\Debug\PousadaFoz.exe
+C:\Users\Aluno\Desktop\Prova2\PousadaFoz\PousadaFoz\bin\Debug\PousadaFoz.pdb
+C:\Users\Aluno\Desktop\Prova2\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Prova2\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.Form1.resources
+C:\Users\Aluno\Desktop\Prova2\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Prova2\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.csproj.GenerateResource.Cache
+F:\ADS\LP2 - athauan\Aula 14 - Prova2(correção)\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.exe
+F:\ADS\LP2 - athauan\Aula 14 - Prova2(correção)\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 14 - Prova2(correção)\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 14 - Prova2(correção)\PousadaFoz\PousadaFoz\obj\x86\Debug\PousadaFoz.pdb

@@ -1,0 +1,95 @@
+-- Solução da lista de procedures 3
+-- Ex. 1 Relatorio dos emprestimos do mes atual
+delimiter !
+create procedure RelatorioEmprestimo()
+begin
+	select * from emprestimo where dataretirada = month(curdate())
+	into outfile "D://RelatorioEmprestimo.txt";
+end;
+!
+delimiter ;
+
+call RelatorioEmprestimo;
+
+-- Ex. 2 Relatorio dos livros mais emprestados
+delimiter @
+create procedure Top10()
+begin
+	select l.codpro, l.titulo_livro, count(l.codpro) emprestimos
+    from livro l join emprestimo e on l.codpro = e.codpro
+	group by l.codpro
+    order by 3 desc
+	limit 10;
+end;
+@
+delimiter ;
+
+call Top10;
+
+-- Ex. 3 Relatorio dos usuarios mais frequentes
+delimiter $
+create procedure Top5()
+begin
+	select u.nome, u.cpf, count(u.nome) emprestimos
+    from usuarios u join emprestimo e on u.cpf = e.cpf
+    group by u.nome
+	order by 3 desc
+	limit 5;
+end;
+$
+delimiter ;
+
+call Top5;
+
+-- Ex. 4
+delimiter $$
+create procedure RelatorioMultas()
+begin
+	select * from multa where datamulta = month(curdate())
+	into outfile "D://RelatorioMultas.txt";
+end;
+$$
+delimiter ;
+
+call RelatorioMultas;
+
+-- Ex. 5
+delimiter %
+create procedure RelatorioMultasVencidasNaoPagas()
+begin
+	select u.nome, u.cpf, u.telefone, m.valormulta, m.datamulta, m.diasdeatraso
+	from usuarios u join tipousuario t on u.idtipousuario = t.idtipousuario
+	join multa m on t.idtipousuario = m.idtipousuario
+    where diasdeatraso>0
+	into outfile "D://RelatorioMultasVencidasNaoPagas.txt";	
+end;
+%
+delimiter ;
+
+call RelatorioMultasVencidasNaoPagas;
+
+-- Ex. 6
+delimiter &
+create trigger LivroEmprestado after insert on emprestimo
+for each row
+begin
+	update acervo
+	set disponivel = disponivel - 1
+	where codpro = new.codpro;
+end;
+&
+delimiter ;
+
+drop trigger livrodevolvido;
+delimiter &
+create trigger LivroDevolvido after update on emprestimo
+for each row
+begin
+	if (old.dataentrega <> new.dataentrega and new.dataentrega is not null) then
+		update acervo
+		set disponivel = disponivel + 1
+		where codpro = old.codpro;
+    end if;
+end;
+&
+delimiter ;

@@ -1,0 +1,14 @@
+C:\Users\Aluno\Desktop\Aula 3 - AOO e Interface\industria\industria\obj\x86\Debug\industria.bntAlterar.resources
+C:\Users\Aluno\Desktop\Aula 3 - AOO e Interface\industria\industria\obj\x86\Debug\industria.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Aula 3 - AOO e Interface\industria\industria\obj\x86\Debug\industria.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Aula 3 - AOO e Interface\industria\industria\bin\Debug\industria.exe
+C:\Users\Aluno\Desktop\Aula 3 - AOO e Interface\industria\industria\bin\Debug\industria.pdb
+C:\Users\Aluno\Desktop\Aula 3 - AOO e Interface\industria\industria\obj\x86\Debug\industria.exe
+C:\Users\Aluno\Desktop\Aula 3 - AOO e Interface\industria\industria\obj\x86\Debug\industria.pdb
+C:\Users\Aluno\Desktop\Aula 3 - AOO e Interface\industria - arrumar\industria\obj\x86\Debug\industria.exe
+C:\Users\Aluno\Desktop\Aula 3 - AOO e Interface\industria - arrumar\industria\obj\x86\Debug\industria.pdb
+F:\3ª ADS\LP3\Aula 3 - AOO e Interface\industria - arrumar\industria\obj\x86\Debug\industria.exe
+F:\3ª ADS\LP3\Aula 3 - AOO e Interface\industria - arrumar\industria\obj\x86\Debug\industria.pdb
+F:\3ª ADS\LP3\Aula 3 - AOO e Interface\industria - arrumar\industria\obj\x86\Debug\industria.bntAlterar.resources
+F:\3ª ADS\LP3\Aula 3 - AOO e Interface\industria - arrumar\industria\obj\x86\Debug\industria.Properties.Resources.resources
+F:\3ª ADS\LP3\Aula 3 - AOO e Interface\industria - arrumar\industria\obj\x86\Debug\industria.csproj.GenerateResource.Cache

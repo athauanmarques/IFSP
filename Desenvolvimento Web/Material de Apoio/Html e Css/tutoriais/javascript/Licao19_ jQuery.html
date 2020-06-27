@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0049)http://html.net/tutorials/javascript/lesson19.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="translated-ltr">
+<head>
+	<meta name="title" content="Lesson 19: Short Introduction to jQuery  - HTML.net">
+	<title>Lição 19: Breve introdução ao entutorial jQuery - HTML.net</title>
+	<link rel="stylesheet" href="default.screen.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="default.print.css" type="text/css" media="print">
+</head>	
+<body>
+	<a href="index.html"> JavaScript </a>
+	<div id="tutorials">﻿	
+	  <h1> Lição 19: Breve introdução ao jQuery </h1>
+	  <p><em> Por  <a href="http://www.mariaantoniettaperna.com/"> Maria Antonietta Perna </a></em></p>
+		<p> Nesta lição você vai aprender: </p>
+		<ul>
+		  <li> sobre os  <strong> benefícios do uso de jQuery </strong>  ; </li>
+			<li> como  <strong> incluir jQuery em seu projeto </strong>  ; </li>
+			<li> sobre  <strong> seletores jQuery </strong>  para manipular elementos DOM no código; </li>
+			<li> como  <strong> jQuery trata os eventos </strong>  ; </li>
+			<li> como usar  <strong> funções anônimas </strong>  com jQuery; </li>
+			<li> Como  <strong> adicionar </strong>  e  <strong> remover elementos DOM </strong>  com jQuery. </li>
+		</ul>
+		<h2> Por que devo usar jQuery? </h2>
+		<p> Aqui estão algumas boas razões para usar jQuery em seus projetos de JavaScript. </p>
+		<p> jQuery é: </p>
+		<ul>
+		  <li> extremamente leve (apenas 31 kb); </li>
+			<li> É grátis e muito fácil de incluir em seus projetos: basta baixar a versão mais recente do site do jQuery, ou usar um Content Delivery Network on-line; </li>
+			<li> é continuamente atualizado, mantido e documentado por uma comunidade dedicada de grandes desenvolvedores. </font><font>Isso garante alta qualidade e apoio na internet; </li>
+			<li> ajuda a superar inconsistências de alguns recursos de JavaScript em diferentes navegadores; </li>
+			<li> e por último mas não menos importante, oferece uma grande variedade de efeitos de animação pré-fabricados que são divertidos de usar. </li>
+		</ul>
+		<h2> Como posso incluir jQuery em meu site? </h2>
+		<p> Incluir jQuery em seu projeto é rápido e fácil. </font><font>Você tem a opção de baixar uma cópia da biblioteca e salvá-lo localmente, ou você pode usar um  <strong> Content Delivery Network (CDN) </strong>  para servir o seu site. </p>
+		<p> Vá para a  <a href="http://docs.jquery.com/Downloading_jQuery"> página de download do site jQuery </a></p>
+		<h3> Como incluir uma cópia local do jQuery </h3>
+		<p> Se você preferir ter uma cópia local do jQuery: </p> 
+		<ol>
+		  <li> vá para a página de download e clique na  <strong> versão reduzida(minified) mais recente </strong>  do jQuery. </font><font>No momento em que escrevo,  a versão atual é  <strong> a versão 1.9 </strong>  ; </li>
+			<li> copie e cole o código em um arquivo de texto; </li>
+			<li> salve o arquivo no diretório do projeto web (melhor se você salvá-lo em sua própria subpasta); </li>
+			<li> em sua página html incluem as apropriadas tags &lt;script&gt;, na seguinte ordem: </li>
+		</ol>
+		<div class="codebox">
+		<pre>		  
+		&lt;! DOCTYPE html&gt;   
+		&lt;Html&gt;   
+			&lt;Head&gt;   
+				&lt;Title&gt; Lição 19: Introdução ao jQuery &lt;/ title&gt;  
+				<strong> &lt;Script type = "text / javascript" src = "js/latestjquery.js"&gt; &lt;/ script&gt; </strong> 
+				<strong> &lt;Script type = "text / javascript" src = "js/yourscript.js"&gt; &lt;/ script&gt; </strong> 
+			&lt;/ Head&gt;   
+			&lt;Body&gt;   
+				&lt;H1&gt; Lição 19: Introdução ao jQuery &lt;/ h1&gt;  
+			&lt;/ Body&gt;   
+		&lt;/ Html&gt;  
+		</pre>
+		</div>
+		<p> A referência à jQuery vem antes de seu próprio arquivo de código JavaScript. </font><font>Na verdade, seu código precisa encontrar jQuery totalmente carregado para ser capaz de usá-lo. </p>
+		<h3> Como incluir uma cópia hospedada do jQuery </h3>
+		<p> Se optar por um CDN para servir-se uma cópia do jQuery para o seu site, siga estes passos: </p>
+		<ol>
+		  <li> ir para o  <em> jQuery CDN </em>  e escolha um dos diversos serviços de CDN disponíveis; </li>
+			<li> 
+			  copiar a URL do seu CDN de escolha e colá-lo como valor do  <strong> &lt;script&gt; atributo src da tag </strong>  , assim:
+			   <pre> &lt;Script type = "text / javascript" src = "yourCDNUrlAddressjQueryFile.js"&gt; &lt;/ script&gt; </pre>
+			</li>
+			<li> colocar uma tag &lt;script&gt; com uma referência ao seu próprio arquivo JavaScript debaixo do jQuery tag &lt;script&gt;, como você fez no exemplo anterior. </li>
+		</ol>
+		<p> É isso aí, está feito! </p>
+		<h3> Como se certificar de jQuery está funcionando </h3>
+		<p> Agora, a biblioteca jQuery pode ser usada em seu projeto. </font><font>Para certificar-se as coisas funcionam como esperado, crie um arquivo de texto e grave-o como  <em> jquery_test.js </em>  . </font><font>Digite o seguinte código: </p>
+		<div class="codebox">
+		<pre>		
+		<span class="code-comments"> // A maior parte do seu código vai para dentro </span> 
+		<span class="code-comments"> // O jQuery  <em> () função de pronto </em>  : </span> 
+		<span class="code-javascript"><strong> $(document).ready(function () </strong></span> 
+		<span class="code-javascript"> { </span> 
+		<span class="code-javascript"> 	alert ("jQuery está trabalhando!"); </span> 
+		<span class="code-javascript"><strong> }); </strong></span> 
+		<span class="code-comments"> // Certifique-se de manter o controle de chaves, colchetes e ponto e vírgula (;) </span> 
+		</pre>
+		</div>
+		<p> Salve todos os seus arquivos e execute a página HTML em um navegador. </font><font>Se você digitou o código exatamente como o exemplo acima, você deve ser saudado por ... bem, uma caixa de alerta. </p>
+		<p> O  <strong> sinal $ </strong>  é um alias para jQuery. </font><font>Você poderia substituí-lo com a palavra-chave  <em> jQuery </em>  e seu código JavaScript-jQuery iria funcionar muito bem. </font><font>No entanto, menos digitação é o lema do jQuery (e todos os codificadores '), portanto, usar  <em> $ </em>  é a convenção aceita. </p>
+		<pre><strong> .ready (function () {// código JavaScript aqui ...}); </strong></pre> 
+		<p> é onde a maior parte do seu código JavaScript será colocado. </font><font>Esta é a maneira inteligente do jQuery saber onde está sendo usado. </p>
+		<p></p>
+		<h2> Como faço para acessar os elementos DOM usando jQuery? </h2>
+		<p> jQuery agrada tanto web designers porque nos permite selecionar elementos DOM no código tal como fazemos com CSS. </font><font>Vamos vê-lo em ação. </p>
+		<h3> Selecione os elementos html por id </h3>
+		<p> Lembre-se de nosso velho document.getElementById ()? </font><font>Bem, jQuery faz seleção por id. </font><font>Veja como é feito: </p>
+		<div class="codebox">
+		<pre>		
+		<span class="code-javascript"> $(document).ready(function() </span> 
+		<span class="code-javascript"> { </span> 
+		<span class="code-javascript"> 	var myDiv =  <strong> $("# myDiv") </strong>  ; </span> 
+		<span class="code-javascript"> }); </span> 
+		</pre>
+		</div>
+		<p><font><font class="">O  <em><font><font class="">sinal $ </em><font><font class=""> na frente de  <em><font><font class="">("#myDiv") </em><font><font class=""> pode ser traduzido como: "Hey, browser, conseguir me o elemento com o id de myDiv!" </p>
+		<p> Como você pode ver, o atributo id é agarrado usando o sinal #, o mesmo que o CSS. </p>
+		<h3> Selecione os elementos html por nome tag </h3>
+		<p> Você também conhece o document.getElementsByTagName (). </font><font>Este método permite-nos pegar todos os elementos HTML por sua tag. </p>
+		<p> Veja como jQuery torna isto muito simples: </p>
+		<div class="codebox">
+		<pre>		
+		<span class=""> $(document).ready (function) </span> 
+		<span class=""> { </span> 
+		<span class="code-comments"> 	// Armazena todas as imagens na página em uma matriz </span> 
+		<span class=""> 	imagens var =  <strong> $("img") </strong>  ; </span> 
+		<span class=""> }); </span> 
+		</pre>
+		</div>
+		<p> Como você pode ver, o $ é mágico. </p>
+		<h3> Selecione os elementos HTML pelo nome da classe </h3>
+		<p> Uma maneira rápida de atingir elementos HTML que compartilham da mesma classe é a seguinte: </p>
+		<div class="codebox">
+		<pre>		
+		<span class="code-javascript"> $(document).ready (function () </span> 
+		<span class="code-javascript"> { </span> 
+		<span class="code-javascript"> 	var redElements =  <strong> $ (".classRed") </strong>  ; </span> 
+		<span class="code-javascript"> }); </span> 
+		</pre>
+		</div>
+		<p> Agora  <em> redElements </em>  contém uma matriz de todos os elementos HTML da classe  <em> classRed </em>  na página. </p>
+		<p> Mais uma vez, observe como jQuery facilita a seleção usando a mesma notação que você usa em suas  <strong> declarações CSS para atingir classes: .className </strong>  . </p>
+		<h3> Selecione os elementos HTML usando filtros jQuery </h3>
+		<p> jQuery oferece uma  <strong> sintaxe de filtragem para consultar o DOM </strong>  que é simples e eficiente. </p>
+		<p> Aqui está uma lista dos filtros mais comuns: </p>
+		<table class="javascript-table">
+		  <tbody><tr>
+			  <th> Filtro </th>
+				<th> Descrição </th>
+			</tr>
+			<tr>
+			  <td> :first </td>
+				<td> O primeiro item de uma correspondência </font><code><font>$ ('p:first')</font></code><font> retorna o primeiro parágrafo. <br><code> </code> </td>
+			</tr>
+			<tr class="alt">
+			  <td> :last </td>
+				<td> O último item de uma correspondência </font><code><font>$ ('p:last')</font></code><font> retorna o último parágrafo. <br><code> </code> </td>
+			</tr>
+			<tr>
+			  <td> :odd </td>
+				<td> Os itens ímpares indexados em um conjunto combinado </font><code><font>$ ('tr:odd')</font></code><font> retorna linhas ímpares da tabela indexada com 1, 3, etc. <br><code> </code> </td>
+			</tr>
+			<tr class="alt">
+			  <td> :even </td>
+				<td> Os itens pares indexados em um conjunto combinado </font><code><font>$ ('tr:even')</font></code><font> retorna linhas pares da tabela indexada à taxa de 0, 2, etc. <br><code> </code> </td>
+			</tr>
+			<tr>
+			  <td> :has </td>
+				<td> encontra elementos que têm o elemento filho especificado </font><code><font>$ ('p:has (span)')</font></code><font> retorna todos os parágrafos que contêm um elemento de span. <br><code> </code> </td>
+			</tr>
+			<tr class="alt">
+			  <td> :eq </td>
+				<td> retorna o elemento com o índice combinado </font><code><font>$ ('p:eq (1)')</font></code><font> retorna o segundo parágrafo começando a contar de 0. <br><code> </code> </td>
+			</tr>
+			<tr>
+			  <td> :contains(x) </td>
+				<td> Retorna todos os elementos que contém o texto x </font><code><font>$ ('div:contains(foo)')</font></code><font> tem como alvo todos os divs com o texto 'foo'. <br><code> </code> </td>
+			</tr>
+		</tbody></table>
+		<p> A lista completa de todos os métodos de seleção e de filtros estão disponíveis no  <a href="http://api.jquery.com/category/selectors/"> website jQuery </a>  . </font><font>Dê uma olhada e fazer experiências com as amostras de código disponíveis para ganhar mais familiaridade com a nova abordagem. </p>
+		<h2> Como posso atribuir manipuladores de eventos usando jQuery? </h2>
+		<p><strong> Os manipuladores de eventos </strong>  são blocos de código, geralmente funções, que especificam o que sua aplicação deve fazer quando um evento específico, como, por exemplo, um clique de botão, ocorre. </p>
+		<p> Até agora, você já usou duas abordagens: </p>
+		<ol>
+		  <li><strong> atribuir uma função para o próprio elemento html </strong>  :  <code> &lt;type = "button" input  <strong> onclick = "doSomething ()" </strong>  /&gt; </code></li>
+			<li><strong> atribuir uma função a propriedade adequada do objeto DOM </strong>  :  <strong><code> myElement.onclick = doSomething </code></strong>  ; </li>
+		</ol>
+		<p> Ambas as abordagens são boas. </font><font>No entanto, a primeira peca contra o  <strong> princípio da separação de interesses </strong>  . </font><font>Na verdade, ele mistura código JavaScript com código HTML. </p>
+		<p> A segunda abordagem está em conformidade com o princípio da separação de interesses, mas limitada no caso de desejarmos anexar mais de função para o mesmo elemento. </p>
+		<p> Na verdade, há uma terceira abordagem que supera todas as deficiências, mas com uma restrição: ele é implementado de forma diferente em navegadores Internet Explorer em relação a todos os outros principais navegadores. </p>
+		<p> A boa notícia é: jQuery está aqui para fazer tratamento de evento rápido e fácil.  </p>
+		<h3> O método bind () </h3>
+		<p><strong> bind (eventType, manipulador) </strong>  funciona da seguinte maneira. </p>
+		<p> Suponha que você tenha um elemento html com um id  <em> myElement </em>  , e uma função chamada  <em> sayHello() </em>  . </font><font>Você quer disparar sayHello() quando o usuário clicar no elemento html. </font><font>Isto é como você conseguir isso usando bind (): </p>
+		<div class="codebox">
+		<pre>		
+		<span class="code-javascript"> $(document).ready (function () </span> 
+		<span class="code-javascript"> { </span> 
+		<span class="code-comments"> 	// Cria a função sayHello </span> 
+		<span class="code-javascript"> 	function sayHello() </span> 
+		<span class="code-javascript"> 	{ </span> 
+		<span class="code-javascript"> 		alert ("Olá jQuery"); </span> 
+		<span class="code-javascript"> 	} </span> 
+		<span class="code-comments"> 	// Anexar o manipulador usando .bind (): </span> 
+		<span class="code-javascript"> 	myElement  <strong> .bind ('click', sayHello) </strong>  ; </span> 
+		<span class="code-javascript"> }); </span> 
+		</pre>
+		</div>
+		<p> Você pode encontrar mais detalhes sobre o método bind () em  <a href="http://api.jquery.com/bind/"> http://api.jquery.com/bind/ </a>  . </p>
+		<h3> A abordagem ready-made </h3>
+		<p> jQuery oferece alguns manipuladores ready-made correspondentes aos eventos de JavaScript. </font><font>Aqui está uma lista dos mais utilizados: </p>
+		<table class="javascript-table">
+		  <tbody><tr>
+			  <th> Manipulador </th>
+				<th> Descrição </th>
+			</tr>
+			<tr>
+			  <td><strong> click() </strong></td>
+				<td> Vincula um manipulador a um evento  <strong> onclick </strong> </td>
+			</tr>
+			<tr class="alt">
+			  <td><strong>hover()</strong></td>
+				<td> Vincula um manipulador para os eventos   <strong> onmouseover </strong>  e  <strong> onmouseout </strong></td>
+			</tr>
+			<tr>
+			  <td><strong> change() </strong></td>
+				<td> Vincula um manipulador para o evento  <strong> onchange </strong><font> (quando o conteúdo de um campo de mudanças).</font></td>
+			</tr>
+			<tr class="alt">
+			  <td><strong> select() </strong></td>
+				<td> Vincula um manipulador para o evento  <strong> onselect </strong>  (quando o texto for selecionado). </td>
+			</tr>
+			<tr>
+			  <td><strong> submit() </strong></td>
+				<td> Vincula um manipulador para o  <strong> onsubmit </strong>  caso de um elemento de formulário. </td>
+			</tr>
+			<tr class="alt">
+			  <td><strong> focus() </strong></td>
+				<td> Vincula um manipulador para o evento  <strong> onfocus </strong>  (quando um elemento recebe foco). </td>
+			</tr>
+			<tr>
+			  <td><strong> keypress() </strong></td>
+				<td> Vincula um manipulador para o evento  <strong> onkeypress </strong>  (quando uma tecla no teclado do computador é pressionado). </td>
+			</tr>
+		</tbody></table>
+		<p> Supondo que você tenha um elemento html com um atributo id de  <em> myElement </em>  , e uma função chamada  <em> sayHello() </em>  - como no exemplo anterior - você pode vincular sayHello () para o evento onclick de myElement dentro função pronto do jQuery () da seguinte forma: </p>
+		<div class="codebox">
+		<pre>		
+		<span class="code-javascript"> myElement<strong>.click (sayHello) </strong>  ; </span> 
+		</pre>
+		</div>
+		<h3> O método on () </h3>
+		<p>O método <strong> on () </strong> pode ser usado para anexar manipuladores para ambos os elementos já presentes na página HTML desde o início e em elementos adicionados dinamicamente (ao contrário de bind()). </font><font>Veja como ele é usado. </p>
+		<p> Usando a mesma  <em> função sayHello () </em>  , dentro do jQuery .ready ): </p>
+		<div class="codebox">
+		<pre>		
+		<span class="code-javascript"> myElement.<strong> on ('click', sayHello) </strong>  ; </span> 
+		</pre>
+		</div>
+		<p> Mais detalhes sobre o  <strong> método on () </strong>  pode ser encontrado em  <a href="http://api.jquery.com/on/"> http://api.jquery.com/on/ </a>  . </p>
+		<h3> Funções anônimas </h3>
+		<p> Amostras de código usando jQuery muitas vezes empregam  <strong> funções anônimas </strong>. Estas são funções sem um nome, e pode ser bastante útil, apesar de eu achar nomes mais útil em termos de legibilidade do código. Se substituirmos o <em> sayHello() </em> por uma função anônima, temos:</p>
+		<div class="codebox">
+		<pre>		
+		<span class="code-comments"> // Usando bind (): </span> 
+		<span class="code-javascript"> myElement.bind ('click',  <strong> function () </strong></span> 
+		<span class="code-javascript"> { </span> 
+		<span class="code-javascript"> 	alert ("Olá jQuery"); </span> 
+		<span class="code-javascript"> }); </span> 
+		<span class="code-comments"> / ******************************** / </span> 
+		<span class="code-comments"> // Usando click (), temos: </span> 
+		<span class="code-javascript"> myElement.  <strong> click (function () </strong></span> 
+		<span class="code-javascript"> { </span> 
+		<span class="code-javascript"> 	alert ("Olá jQuery"); </span> 
+		<span class="code-javascript"> }); </span> 
+		<span class="code-comments"> / ************************************** / </span> 
+		<span class="code-comments"> // Usando on (), temos: </span> 
+		<span class="code-javascript"> myElement.on ('click',  <strong> function () </strong></span> 
+		<span class="code-javascript"> { </span> 
+		<span class="code-javascript"> 	alert ("Olá jQuery"); </span> 
+		<span class="code-javascript"> }); </span> 
+		</pre>
+		</div>
+		<h2> Adicionar e remover elementos DOM </h2>
+		<h3> Adicione novos elementos DOM </h3>
+		<p> Você pode recuperar os elementos HTML e adicionar novos elementos html para a página usando jQuery  <strong> .html () </strong>  método. </font><font>Quando você não passar quaisquer argumentos, html () recupera um elemento DOM, se você passar um argumento de cadeia, html () acrescenta que seqüência de caracteres para a página. </p>
+		<p> Se você só precisa adicionar novo texto dentro de um elemento HTML, você pode usar do jQuery  <strong> .text () </strong>  método e passar um argumento string representando o texto que pretende adicionar. </font><font>Como .html (), você pode usar .text () sem passar quaisquer argumentos para recuperar o conteúdo do texto a partir da página HTML. </p>
+		<p> Para testar .html () preparar uma página HTML contendo uma tag &lt;div&gt; com um id  <em> myElement </em>  , a tag &lt;p&gt; e algum texto. </font><font>Primeiro vamos recuperar o elemento parágrafo existente, então vamos criar um novo parágrafo. </p>
+		<div class="codebox">
+		<pre>		
+		<span class="code-javascript"> $ (Document) .ready (function () </span> 
+		<span class="code-javascript"> { </span> 
+		<span class="code-comments"> 	// Use html () para recuperar o conteúdo: </span> 
+		<span class="code-javascript"> 	. var pageParagraph = $ ('p') html (); </span> 
+		<span class="code-comments"> 	// O alerta deve exibir &lt;p&gt; 's conteúdo </span> 
+		<span class="code-javascript"> 	alert (pageParagraph); </span> 
+		<span class="code-javascript"> }); </span> 
+		<span class="code-comments"> / ************************************************* * / </span> 
+		<span class="code-comments"> // Agora vamos mudar o conteúdo da div </span> 
+		<span class="code-comments"> // Adicionando um novo parágrafo. </span> 
+		<span class=""> 	. var newParagraph = $ ("# myElement ') html (' &lt;p&gt; Olá novo parágrafo &lt;/ p&gt;! '); </span> 
+		<span class=""> // Fechar todos os seus suportes: </span> 
+		<span class=""> }); </span> 
+		</pre>
+		</div>
+		<p>Salve todos os seus arquivos e visualize o resultado em um navegador.O alerta deve exibir o conteúdo do parágrafo original, e, posteriormente, a página deve exibir o conteúdo do novo parágrafo.</p>
+		<p>A maneira como você implementar .text() é o mesmo que .html(). Experimente! Mais detalhes sobre .html() podem ser encontrados no  <a href="http://api.jquery.com/html/"> http://api.jquery.com/html/ </a>  , e em .text () pode ser encontrado no  <a href="http://api.jquery.com/text/"> http://api.jquery.com/text/ </a>  . </p>
+		<h3>Remover elementos DOM</h3>
+		<p>Uma maneira simples de fazer isso é com o método <strong>remove ()</strong> do jQuery.</p>
+		<p>Para testar, use a mesma página HTML do exemplo anterior e adicione um elemento de botão com um id  <em> btnDelete </em>  . </p>
+		<p> Em um novo arquivo JavaScript, adicione o seguinte código: </p>
+		<div class="codebox">
+		<pre>		
+		<span class="code-javascript"> $(document).ready (function () </span> 
+		<span class="code-javascript"> { </span> 
+		<span class="code-comments"> 	// Usar um manipulador de clique e uma função anônima </span> 
+		<span class="code-comments"> 	// Para fazer o trabalho </span> 
+		<span class="code-javascript"> 	$ ("# BtnDelete ').Click(function () </span> 
+		<span class="code-javascript"> 	{ </span> 
+		<span class="code-comments"> 		// Apagar todos os elementos &lt;p&gt; </span> 
+		<span class="code-javascript"><strong> 		$ ('P') remove (). </strong>  ; </span> 
+		<span class="code-javascript"> 	}); </span> 
+		<span class="code-javascript"> }); </span> 
+		</pre>
+		</div>
+		<p>Salve todos os seus arquivos e visualize a página HTML em um navegador. </font><font>Clique no botão e ver os números na página de desaparecer. </p>
+		<p>Mais sobre <strong>.remove ()</strong>  pode ser encontrado em  <a href="http://api.jquery.com/remove/"> http://api.jquery.com/remove/ </a>  . </p>
+		<h2>Resumo</h2>
+		<p>JQuery é uma biblioteca tão rica que não pode ser coberta em algumas aulas. </p>
+		<p>Além disso, é fundamental que você explore o site do jQuery e experimente com os exemplos de código disponíveis em sua documentação e tutoriais. </p>
+		<p>Mais sobre jQuery chegando na próxima lição: prepare-se para alguns fabulosos <strong>efeitos JQuery</strong> em apenas algumas linhas de código!</p>
+	<hr>
+	</div>
+</body>
+</html>

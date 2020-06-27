@@ -1,0 +1,485 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 12: Sessões - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 12: Sessões - HTML.net" />
+	<meta name="description" content="Lição 12: Sessões - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 12: Sessões - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/php/lesson12.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='http://html.net/site/style/default.screen.css' type='text/css' media='screen' /><link rel='stylesheet' href='http://html.net/site/style/default.print.css' type='text/css' media='print' />
+	<script type="text/javascript">
+			
+		function toggleVisibility(objectID, imageID) {
+		vis = document.getElementById(objectID).style;
+		state = vis.display;
+		if (state == 'none') {
+			vis.display = 'block';	
+			document.getElementById(imageID).value = '▲ Contrair visualização';
+			}
+		else {		
+			if (state == 'block') {
+				vis.display = 'none';
+				document.getElementById(imageID).value = '▼ Expandir visualização';
+				}	
+			else {
+				vis.display = 'block'; 
+				document.getElementById(imageID).value = '▲ Contrair visualização';
+				}
+		}}
+
+		//-->
+	</script>
+
+	<script type="text/javascript">
+	// <![CDATA[
+		var jump_page = '{LA_JUMP_PAGE}:';
+		var on_page = '{ON_PAGE}';
+		var per_page = '{PER_PAGE}';
+		var base_url = '{A_BASE_URL}';
+		var style_cookie = 'phpBBstyle';
+		var style_cookie_settings = '{A_COOKIE_SETTINGS}';
+		var onload_functions = new Array();
+		var onunload_functions = new Array();
+
+		/**
+		* Find a member
+		*/
+		function find_username(url)
+		{
+			popup(url, 760, 570, '_usersearch');
+			return false;
+		}
+
+		/**
+		* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+		*/
+		window.onload = function()
+		{
+			for (var i = 0; i < onload_functions.length; i++)
+			{
+				eval(onload_functions[i]);
+			}
+		}
+
+		window.onunload = function()
+		{
+			for (var i = 0; i < onunload_functions.length; i++)
+			{
+				eval(onunload_functions[i]);
+			}
+		}
+
+	// ]]>
+	</script>
+
+	<script type="text/javascript" src="http://html.net/forums/styles/prosilver/template/forum_fn.js"></script>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-6716118-1']);
+	  _gaq.push(['_setDomainName', '.html.net']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+	
+</head>
+
+<body>	
+
+	<div id="login">
+		
+		<div><a href='../..\forums\ucp.html'>Entrar</a> | <a href='../..\forums\ucp.html'>Registrar</a> | <a href='../..\forums\faq.html'>FAQ</a></div><img src='../..\site\graphics\user.png' />		
+	</div>
+
+	<div id="header">
+			
+		<ul>
+			<li><a href='../..\index.html'>Início</a></li>
+			<li class='selected'><a href='..\index.html'>Tutorials</a></li>
+			<li><a href='../..\forums\index.html'>Fóruns</a></li>
+			<li><a href='../..\about\index.html'>Sobre</a></li>
+		</ul>
+		<form method="get" action="../..\search\index.html" id="cse-search-box">
+		<div id="searchbar">
+			<span>
+			
+				<input type="text" name="q" id="query" value="" /><input type="submit" id="submit" value="Busca" />
+				 <input type="hidden" name="cx" value="002160260272865772965:d4fb4jd-jh0" />
+				<input type="hidden" name="cof" value="FORID:11;NB:1" />
+				<input type="hidden" name="ie" value="UTF-8" />	
+				<input type="hidden" name="lr" value="lang_pt-br" />	
+				<input type="hidden" name="hl" value="pt-br" />	
+			
+			</span>
+		</div>
+		</form>
+		
+		<div id="ad_leaderboard">
+	<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_pt-br_tutorials_Leaderboard_728x90");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_pt-br_tutorials_Leaderboard_728x90 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_pt-br_tutorials_Leaderboard_728x90");
+	</script>
+</div>
+
+	</div>
+
+	
+		<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>PHP</a> &#187; Lição 12: Sessões</div>
+			<div id="socialBookmarks">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"></a>
+				<span id="FbCont"></span>
+				<g:plusone size="medium"></g:plusone>
+								
+			</div>
+			<!-- google_ad_section_start -->
+		
+		<div id='tutorials'>	<h1>Lição 12: Sessão</h1> 
+
+	<p>Quando você visita um site você realiza uma série de ações. Navega de uma página a outra. Talvez você preencha um formulário ou compre um produto.</p> 
+
+	<p>Como desenvolvedor essas informações são de grande valia para criação de um site de sucesso.</p> 
+
+	<p>Suponha que você necessita criar um site no qual algumas páginas serão de acesso restrito requerendo login e senha. Para que a proteção ao acesso seja efetiva as páginas restritas devem possuir mecanismos capazes de detectar se o usuário está logado. Em outras palavras, quando o usuário requisita uma nova página do site é preciso "lembrar" o que ele fez anteriormente.</p> 
+
+	<p>É exatamente para isto que as sessões se prestam - como usar a funcionalidade sessions do PHP para armazenar e recuperar informações sobre um usuário em visita ao site.</p> 
+
+	<h2>Session</h2> 
+
+	<p>As <a href="http://www.php.net/manual/en/book.session.php"><img src="http://www.html.dk/site/graphics/icons/icon.newwindow.png" alt="documentação" />session</a> do PHP permitem gerenciar informações colhidas durante uma sessão (estada no site) do usuário. Você pode escrever aplicações inteligentes com uso de armazenagem e recuperação de informações sobre o usuário.</p> 
+
+	<p>Uma sessão pode começar de diferentes maneiras. Não iremos nos ater a detalhes técnicos e focaremos no caso em que uma sessão começa com o armazenamento de um valor. Uma sessão ends/dies (termina/morre) se o usuário não requisitar nenhuma página após decorridos um determinado tempo (por padrão 20 minutos). Obviamente, no seu script, você pode terminar uma sessão a qualquer momento.</p> 
+
+	<p>Suponha que 50 pessoas estão visitando o site ao mesmo tempo, por exemplo, em um site de vendas. As informações sobre quais itens cada uma delas incluiu na sua cesta de compras são um bom exemplo de armazenamento com uso de session.  Para identificar cada um dos usuário o servidor usa um ID único armazenado em um cookie. Cookie é um pequeno arquivo de texto armazenado no computador do usuário (saiba mais sobre cookies na <a href="lesson13.html" title="Lição 13: Cookies">lição 13</a>). Assim, sessions requerem suporte a cookies no navegador do usuário.</p> 
+
+	<h2>Exemplo de uso de sessions</h2> 
+
+	<p>Quando você requisitou esta página eu armazenei a hora em uma session. Eu fiz isto para mostrar a você como  funciona uma sessão.</p> 
+
+	<p>Eu criei um item de nome "StartTime" e armazenei ele usando o seguinte trecho de script PHP:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-php">session_start();</span>
+	<span class="code-php">$_SESSION["StartTime"] = date("r");</span>
+
+	<span class="code-php">?&gt;</span>
+	
+	</pre> 
+	</div> 
+
+	<p>Desta forma uma sessão foi iniciada. Como foi dito anteriormente um ID é criado pelo servidor para cada sessão.</p> 
+
+	<p>A sua sessão tem o seguinte ID: <strong>58647631acc33da7c6c806376cce66d7</strong></p> 
+
+	<p>A qualquer momento eu posso chamar "StartTime" da sessão escrevendo o seguinte:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-php">session_start();</span>
+	<span class="code-php">echo $_SESSION["StartTime"];</span>
+
+	<span class="code-php">?&gt;</span>
+	
+	</pre> 
+	</div> 
+
+	<p>Isto vai me mostrar que a página foi por você requisitada em <strong>Tue, 16 Aug 2011 22:50:29 +0200 </strong>(de acordo com o relógio do meu servidor).</p> 
+
+	<p>O mais interessante é que esta informação permanece armazenada e disponível em session até mesmo depois que você sai desta página. A informação permanece até que a seesão termine.</p> 
+
+	<p>por pdrão, uma sessão permanece ativa até que o usuário feche o navegador. Nesta ocasião ela termina. Se você quiser terminar uma sessão antes disto a sintaxe é como mostrada a seguir:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-php">session_destroy();</span>
+
+	<span class="code-php">?&gt;</span>
+	
+	</pre> 
+	</div> 
+
+	<p>Vamos examinar outro exemplo de aplicação para sessão: uso de senha.</p> 
+	
+	<h2 id="password">Sistema de login com uso de sessão</h2> 
+
+	<p>No exemplo a seguir iremos criar um sistema simples de login. Usaremos muitos dos conceitos que aprendemos até aqui.</p> 
+
+	<p>Precisamos de um formulário para coletar login e senha do usuário. Observe a seguir:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Login&lt;/title&gt;
+
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;form method="post" action="login.php"&gt;
+
+	&lt;p&gt;Usuário: &lt;input type="text" name="username" /&gt;&lt;/p&gt;
+	&lt;p&gt;Senha: &lt;input type="text" name="password" /&gt;&lt;/p&gt;
+
+	&lt;p&gt;&lt;input type="submit" value="Login" /&gt;&lt;/p&gt;
+
+	&lt;/form&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
+
+	
+	</pre> 
+	</div> 
+
+	<p>A seguir criamos um arquivo denominado: login.php.</p> 
+
+	<p>Neste arquivo o script verifica se o login e senha fornecidos no formulário estão corretos. Se estiverem, iniciamos uma sessão informando que o usuário está logado com um login e senha correta.</p> 
+
+	<div class="codebox"> 
+	<pre>
+	&lt;html&gt;
+
+	&lt;head&gt;
+	&lt;title&gt;Login&lt;/title&gt;
+
+	&lt;/head&gt;
+	&lt;body&gt;
+	
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-comments">// Verifica se usuário e senha conferem</span>
+	<span class="code-php">if ($_POST["username"] == "php" &amp;&amp; $_POST["password"] == "php") {</span>
+	 
+	<span class="code-comments">// Se usuário e senha conferir definimos session para YES</span>
+	<span class="code-php">  session_start();</span>
+	<span class="code-php">  $_SESSION["Login"] = "YES";</span>
+	<span class="code-php">  echo "&lt;h1&gt;Você está logado&lt;/h1&gt;";</span>
+	<span class="code-php">  echo "&lt;p&gt;&lt;a href='document.php'&gt;Link para o arquivo restrito&lt;/a&gt;&lt;p/&gt;";</span>
+	 
+	<span class="code-php">}</span>
+	<span class="code-php">else {</span>
+	 
+	<span class="code-comments">// Se usuário e senha conferir definimos session para NO</span>
+	<span class="code-php">  session_start();</span>
+	<span class="code-php">  $_SESSION ["Login"] = "NO";</span>
+	<span class="code-php">  echo "&lt;h1&gt;Você NÃO está logdo&lt;/ h1&gt;";</span>
+	<span class="code-php">  echo "&lt;p&gt;&lt;a href='document.php'&gt;Link para o arquivo restrito&lt;/a&gt;&lt;p/&gt;";</span>
+	 
+	<span class="code-php">}</span>
+
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+
+	
+	</pre> 
+	</div> 
+
+	<p>Nas páginas de acesso restrito precisamos verificar se o usuário que as requisitou está logado corretamente. Se não estiver ele é enviado para a página de login. Observe como é feito o script de proteção das páginas:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-comments">// Iniciar Session PHP</span> 
+	<span class="code-php">session_start();</span>
+
+	<span class="code-comments">// Se o usuário não estiver logado manda ele para o formulário de login</span>
+	<span class="code-php">if ($_SESSION["Login"] != "YES") {</span>
+	<span class="code-php">  header("Location: form.php");</span>
+	<span class="code-php">}</span>
+
+	<span class="code-php">?&gt;</span>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Login&lt;/title&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+	&lt;h1&gt;Este é um documento de acesso restrito&lt;/h1&gt;
+
+	&lt;p&gt;Acesso permitido somente para usuários logados.&lt;/p&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink">  <a href="lesson12_ex1.html" title="View the above code as an example">Click aqui para testar o sistema de login</a></div> 
+
+	<p>Agora você já conhece o objeto Session do PHP. Na próxima lição nós continuaremos nesta área estudando os cookies.</p> 
+	<hr /><div id="ad_rectangle">
+	<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_pt-br_tutorials_LargeRectangle_336x280");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_pt-br_tutorials_LargeRectangle_336x280 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_pt-br_tutorials_LargeRectangle_336x280");
+	</script>
+</div><hr /><p class='previous'><a href='lesson11.html'>&lt;&lt; Lição 11: Passando variáveis de um formulário</a></p><p class='next'><a href='lesson13.html'>Lição 13: Cookies >></a></p></div>  		<!-- google_ad_section_end -->
+
+		</div>
+
+		<div id="ad_skyscraper">
+	<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_pt-br_tutorials_WideSkyscraper_160x600");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_pt-br_tutorials_WideSkyscraper_160x600 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_pt-br_tutorials_WideSkyscraper_160x600");
+	</script>
+
+</div>
+	</div>
+
+	<div id="sidebar">
+					<h1>Tutorials</h1>
+			<ul>
+			<li><a href='..\html\index.html'>HTML Tutorial</a></li><li><a href='..\css\index.html'>CSS Tutorial</a></li><li><strong><a href='index.html'>Tutorial PHP</a></strong><ul><li><a href='introduction.html'>Introdução</a></li><li><a href='lesson1.html'>O que é PHP</a></li><li><a href='lesson2.html'>Servidores</a></li><li><a href='lesson3.html'>Sua primeira página PHP</a></li><li><a href='lesson4.html'>Trabalhando com datas e horas</a></li><li><a href='lesson5.html'>Loops</a></li><li><a href='lesson6.html'>Condicionais</a></li><li><a href='lesson7.html'>Insira comentários nos seus scripts</a></li><li><a href='lesson8.html'>Arrays</a></li><li><a href='lesson9.html'>Funções</a></li><li><a href='lesson10.html'>Passando variáveis no URL</a></li><li><a href='lesson11.html'>Passando variáveis de um formulário</a></li><li class='selected'><a href='lesson12.html'>Sessões</a></li><li><a href='lesson13.html'>Cookies</a></li><li><a href='lesson14.html'>Sistema de arquivos</a></li><li><a href='lesson15.html'>Ler arquivos de texto</a></li><li><a href='lesson16.html'>Escrever em arquivos de texto</a></li><li><a href='lesson17.html'>Banco de Dados</a></li><li><a href='lesson18.html'>Criando Banco de Dados e suas Tabelas</a></li><li><a href='lesson19.html'>Inserindo dados em um Banco de Dados</a></li><li><a href='lesson20.html'>Extraindo dados de um Banco de Dados</a></li><li><a href='lesson21.html'>Apagando dados de um Banco de Dados</a></li><li><a href='lesson22.html'>Atualizando dados de um Banco de Dados</a></li></ul></li>			</ul>
+			
+		<!-- google_ad_section_start(weight=ignore) -->
+		<h2>Idioma</h2>
+		
+		<form method="post" action="../..\redirect.html">
+			<p>
+			<select name="location">
+				
+				<option value='http://ar.html.net/tutorials/php/lesson12.php'>العربية</option>
+				<option value='http://de.html.net/tutorials/php/lesson12.php'>Deutsch</option>
+				<option value='http://html.net/tutorials/php/lesson12.php'>English</option>
+				<option value='http://es.html.net/tutorials/php/lesson12.php'>Español</option>
+				<option value='http://fr.html.net/tutorials/php/lesson12.php'>Français</option>
+				<option value='http://he.html.net/tutorials/php/lesson12.php'>עברית</option>
+				<option value='http://it.html.net/tutorials/php/lesson12.php'>Italiano</option>
+				<option value='http://pl.html.net/tutorials/php/lesson12.php'>Polski</option>
+				<option selected='selected' value='http://pt-br.html.net/tutorials/php/lesson12.php'>Português (Brasil)</option>
+				<option value='http://ru.html.net/tutorials/php/lesson12.php'>Русский</option>
+				<option value='http://zh.html.net/tutorials/php/lesson12.php'>中文</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+		
+		
+		<h2>Layout</h2>
+		<form method='post' action='lesson12.html'>			<p>
+			<select name="strCSS">
+				
+				<option value='1'>Default</option>
+				<option value='2'>Default - Blue</option>
+				<option value='3'>No CSS</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+
+		<h2>Traduzido por:</h2> <p><a href='http://www.maujor.com/'>Maurício Samy Silva</a></p>
+		
+			
+
+		
+
+	</div>
+
+	<div id="footer">
+
+		<hr />
+
+		
+		<h1>Quem está online:</h1>
+		<p>No total, temos <strong>99</strong> usuários online :: 4 registrados, 0 ocultos e  95 visitantes</p> 
+		<p>O recorde de usuários online foi de <strong>338</strong> em Ter Set 28, 2010 9:13 am</p> 
+		<p id="userlist"><br />Usuários Registrados: <span style="color: #9E8DA7;" class="username-coloured">Google [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Google Adsense [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Majestic-12 [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Yahoo [Bot]</span></p>
+		
+		<h1>Estatísticas:</h1>
+		<p>Total de Mensagens <strong>3330</strong> - Tópicos no Total: <strong>1407</strong></p><p>Membros no Total: <strong>4345</strong> - O mais novo usuário registrado: <strong><a href='../..\forums\memberlist.html'>jerseys4o5</a></strong></p>
+		<p><br /><a href="../..\forums\memberlist.html">Ver lista completa de membros</a></p>
+		
+
+		<h1>Idioma:</h1>
+		<p><span>
+		<a href='http://ar.html.net/tutorials/php/lesson12.php'>العربية</a> | <a href='http://de.html.net/tutorials/php/lesson12.php'>Deutsch</a> | <a href='http://html.net/tutorials/php/lesson12.php'>English</a> | <a href='http://es.html.net/tutorials/php/lesson12.php'>Español</a> | <a href='http://fr.html.net/tutorials/php/lesson12.php'>Français</a> | <a href='http://he.html.net/tutorials/php/lesson12.php'>עברית</a> | <a href='http://it.html.net/tutorials/php/lesson12.php'>Italiano</a> | <a href='http://pl.html.net/tutorials/php/lesson12.php'>Polski</a> | Português (Brasil) | <a href='http://ru.html.net/tutorials/php/lesson12.php'>Русский</a> | <a href='http://zh.html.net/tutorials/php/lesson12.php'>中文</a> | 		</span></p>
+
+		
+	</div>
+
+	<!-- google_ad_section_end -->
+	
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var fb = document.createElement('fb:like'); 
+fb.setAttribute("href",""); 
+fb.setAttribute("layout","button_count");
+fb.setAttribute("show_faces","false");
+fb.setAttribute("width","");
+fb.setAttribute("style","position:relative; top:-3px;");
+document.getElementById("FbCont").appendChild(fb);
+//--><!]]>
+</script>
+</body>
+</html>

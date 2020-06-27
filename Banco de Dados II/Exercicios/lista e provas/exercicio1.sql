@@ -1,0 +1,6 @@
+Delimiter ||
+
+create procedure 
+
+
+|| delimiter ;

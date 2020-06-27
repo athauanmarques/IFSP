@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Aereas">
+</Property><Property Name="Solution File" Value="F:\LP2\Aula17\Aereas\Aereas.sln">
+</Property><Property Name="User Options File" Value="F:\LP2\Aula17\Aereas\Aereas.suo">
+</Property><Property Name="Date" Value="segunda-feira, 11 de junho de 2012">
+</Property><Property Name="Time" Value="18:10">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Aereas.sln" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Aereas.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Aereas.suo" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Aereas.suo">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Aereas.csproj" Description="Project file successfully backed up as F:\LP2\Aula17\Aereas\Backup\Aereas.csproj">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Aereas.csproj.user" Description="Project user file successfully backed up as F:\LP2\Aula17\Aereas\Backup\Aereas.csproj.user">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Economica.cs" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Economica.cs">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Executiva.cs" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Executiva.cs">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Form1.cs" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Form1.Designer.cs" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Passagem.cs" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Passagem.cs">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="PrimeiraClasse.cs" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\PrimeiraClasse.cs">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Program.cs" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="DiagramaAereas.cd" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\DiagramaAereas.cd">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Properties\Settings.settings" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Form1.resx" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Properties\Resources.resx" Description="File successfully backed up as F:\LP2\Aula17\Aereas\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Aereas.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Aereas" Source="Aereas.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Aereas.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Aereas.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Aereas" Source="Aereas.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

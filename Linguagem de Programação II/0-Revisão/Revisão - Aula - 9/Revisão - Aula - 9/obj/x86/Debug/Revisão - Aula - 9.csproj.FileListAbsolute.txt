@@ -1,0 +1,16 @@
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula - 9\bin\Debug\Revisão - Aula - 9.exe
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula - 9\bin\Debug\Revisão - Aula - 9.pdb
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula - 9\obj\x86\Debug\Revisão___Aula___9.Form1.resources
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula - 9\obj\x86\Debug\Revisão___Aula___9.Properties.Resources.resources
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula - 9\obj\x86\Debug\Revisão - Aula - 9.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula - 9\obj\x86\Debug\Revisão - Aula - 9.exe
+C:\Users\Athauan Marques\AppData\Local\Temporary Projects\Revisão - Aula - 9\obj\x86\Debug\Revisão - Aula - 9.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 9\Revisão - Aula - 9\obj\x86\Debug\Revisão - Aula - 9.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 9\Revisão - Aula - 9\obj\x86\Debug\Revisão - Aula - 9.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 9\Revisão - Aula - 9\bin\Debug\Revisão - Aula - 9.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 9\Revisão - Aula - 9\bin\Debug\Revisão - Aula - 9.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 9\Revisão - Aula - 9\obj\x86\Debug\Revisão___Aula___9.exer1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 9\Revisão - Aula - 9\obj\x86\Debug\Revisão___Aula___9.Form1.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 9\Revisão - Aula - 9\obj\x86\Debug\Revisão___Aula___9.Mensalidade.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 9\Revisão - Aula - 9\obj\x86\Debug\Revisão___Aula___9.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Revisão\Revisão - Aula - 9\Revisão - Aula - 9\obj\x86\Debug\Revisão - Aula - 9.csproj.GenerateResource.Cache

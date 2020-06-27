@@ -1,0 +1,2 @@
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\Diagrama\Diagrama\obj\x86\Debug\Diagrama.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 12 - KeyPress, Interface\Diagrama\Diagrama\obj\x86\Debug\Diagrama.csproj.GenerateResource.Cache

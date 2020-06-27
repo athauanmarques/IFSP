@@ -1,0 +1,4 @@
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\12-Loja-Vendas\Negocios\bin\Release\Negocios.dll
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\12-Loja-Vendas\Negocios\bin\Release\Negocios.pdb
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\12-Loja-Vendas\Negocios\obj\Release\Negocios.dll
+C:\Users\Informatica\Desktop\CursoCSharp-Wincomp\Exercicios\12-Loja-Vendas\Negocios\obj\Release\Negocios.pdb

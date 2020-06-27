@@ -1,0 +1,11 @@
+body {
+	background-color: #FFCC66;
+	background-image: url(butterfly.gif);
+	background-repeat: repeat-x;
+}
+
+/* h1 = heading = cabeçalho ou título */
+h1, h2, h3 {
+	color: blue;
+	background-color: #FC9804;
+}

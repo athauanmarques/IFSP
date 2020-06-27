@@ -1,0 +1,23 @@
+
+
+/*
+
+-	Colocar os campos (principalmente produtos) em máscara. Evitar problema da vírgula.
+- Tamanho GridView
+
+*/
+
+
+
+/*
+	- Cell enter
+	- Select Index
+
+não deixar editar no grid, clicar no grid = aparece nos campos e Não deixa Incluir (some botão) 
+
+
+	- não permitir duplicidade
+	- "Não deixar visível"
+
+	- Deixar sempre limpo os campos
+*/

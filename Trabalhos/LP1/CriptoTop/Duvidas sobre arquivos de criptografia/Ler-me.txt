@@ -1,0 +1,8 @@
+OBS: Rot13
+entradaRot.txt - é a entrada de mensagem que o usuário vai digitar.
+saidaRot.txt - ira criptografar e descriptografar (dependendo da opção do usuário) o resultado. 
+
+OBS: Fatias
+entradaFatias.txt - é a entrada de mensagem que o usuário vai digitar.
+lerFatias.txt - ira criptografar e descriptografar (dependendo da opção do usuário) o resultado. 
+

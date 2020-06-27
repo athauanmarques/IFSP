@@ -1,0 +1,9 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer2_nota\bin\Debug\Exer2_nota.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer2_nota\bin\Debug\Exer2_nota.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer2_nota\obj\x86\Debug\Exer2_nota.Form1.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer2_nota\obj\x86\Debug\Exer2_nota.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer2_nota\obj\x86\Debug\Exer2_nota.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer2_nota\obj\x86\Debug\Exer2_nota.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exer2_nota\obj\x86\Debug\Exer2_nota.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\Exer2_nota\Exer2_nota\obj\x86\Debug\Exer2_nota.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\Exer2_nota\Exer2_nota\obj\x86\Debug\Exer2_nota.pdb

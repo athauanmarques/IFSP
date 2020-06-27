@@ -1,0 +1,15 @@
+D:\LojaWin\Modelos\bin\Debug\Modelos.dll
+D:\LojaWin\Modelos\bin\Debug\Modelos.pdb
+D:\LojaWin\Modelos\obj\Debug\Modelos.dll
+D:\LojaWin\Modelos\obj\Debug\Modelos.pdb
+D:\LojaWin\Modelos\obj\Debug\Modelos.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Modelos\bin\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Modelos\bin\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Modelos\obj\Debug\Modelos.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Modelos\obj\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\Aula5\LojaWin\Modelos\obj\Debug\Modelos.pdb
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Modelos\bin\Debug\Modelos.dll
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Modelos\bin\Debug\Modelos.pdb
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Modelos\obj\Debug\Modelos.csprojResolveAssemblyReference.cache
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Modelos\obj\Debug\Modelos.dll
+C:\Users\Athauan\Documents\Sapiência\Estudar\ADS\Materias Atuais\Linguagem Progração III\LojaWin\Modelos\obj\Debug\Modelos.pdb

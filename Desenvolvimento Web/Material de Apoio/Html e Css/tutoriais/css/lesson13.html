@@ -1,0 +1,146 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 13: Flutuando elementos (floats) - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 13: Flutuando elementos (floats) - HTML.net" />
+	<meta name="description" content="Lição 13: Flutuando elementos (floats) - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 13: Flutuando elementos (floats) - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/css/lesson13.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+</head>
+<body>
+	<div id="main">
+	<div id="content">
+	<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>CSS</a> &#187; Lição 13: Flutuando elementos (floats)</div>
+	<div id='tutorials'>	<h1>Lição 13: Flutuando elementos (floats)</h1>
+	<p>Um elemento pode ser 'flutuado' à esquerda ou à direita com uso da propriedade <code>float</code>. Isto significa que o box e seu conteúdo são deslocados para a direita ou para a esquerda do documento (ou do bloco container) (ver <a href="lesson9.html">lição 9</a> para descrição do Box model). A figura a seguir ilustra o princípio de float:</p>
+	<p><img src="figure015.pt-br.gif" alt="Um box flutuado à esquerda" width="465" height="260" /></p>
+	<p>Se desejamos que um texto seja posicionado em volta de uma figura como mostrado abaixo, basta flutuarmos a imagem:</p>
+	<p><img src="figure016.pt-br.gif" alt="Um box flutuado, contendo uma imagem" width="467" height="258" /></p>
+	<h2>Como isto é feito ?</h2>
+	<p>O <abbr>HTML</abbr> para o exemplo acima é mostrado a seguir:</p>
+	<div class="codebox">
+	  <pre><code>
+	&lt;div id="picture">
+		&lt;img src="bill.jpg" alt="Bill Gates">
+	&lt;/div>
+
+	&lt;p>causas naturales et antecedentes, 
+	idciro etiam nostrarum voluntatum...&lt;/p>
+	</code>
+	</pre>
+	</div>
+	<p>Para conseguir o efeito mostrado, basta definir uma largura para o box que o contém e declarar para ele  <code>float: left;</code></p>
+	<div class="codebox">
+	  <pre><code>
+	#picture {
+		<strong>float:left;
+		width: 100px;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson13_ex1.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<h2>Outro exemplo : colunas</h2>
+	<p>Floats podem ser usados para construir colunas em um documento. Para criar as colunas estruturamos as colunas no código <abbr>HTML</abbr> usando <code>&lt;div></code> como mostrado a seguir:</p>
+	<div class="codebox">
+	  <pre><code>
+	&lt;div id="column1">
+		&lt;p>Haec disserens qua de re agatur
+		et in quo causa consistat non videt...&lt;/p>
+	&lt;/div>
+
+	&lt;div id="column2">
+		&lt;p>causas naturales et antecedentes, 
+		idciro etiam nostrarum voluntatum...&lt;/p>
+	&lt;/div>
+
+	&lt;div id="column3">
+		&lt;p>nam nihil esset in nostra 
+		potestate si res ita se haberet...&lt;/p>
+	&lt;/div>
+	</code>
+	</pre>
+	</div>
+	<p>A seguir definimos a largura de cada coluna, por exemplo 33%, e  declaramos <code>float: left;</code> para cada uma das colunas:</p>
+	<div class="codebox">
+	  <pre><code>
+	#column1 {
+		<strong>float:left;
+		width: 33%;</strong>
+	}
+
+	#column2 {
+		<strong>float:left;
+		width: 33%;</strong>
+	}
+
+	#column3 {
+		<strong>float:left;
+		width: 33%;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson13_ex2.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<p><code>float</code> pode ser declarado <strong>left</strong>, <strong>right</strong> ou <strong>none</strong>.</p>
+	<h2>A propriedade  clear</h2>
+	<p>A propriedade <code>clear</code> é usada para controlar o comportamento dos elementos que se seguem aos elementos floats no documento.</p>
+	<p>Por padrão, o elemento subsequente a um float, ocupa o espaço livre  ao lado do elemento flutuado. Veja no exemplo acima que o texto deslocou-se automaticamente para o lado da foto de  Bill Gates.</p>
+	<p>A propriedade <code>clear</code> pode assumir os valores <strong>left</strong>, <strong>right</strong>, <strong>both</strong> ou <strong>none</strong>. A regra geral é: se <code>clear</code>, for por exemplo definido  both para um box, a margem superior deste box será posicionada sempre abaixo da margem inferior dos boxes flutuados que estejam antes dele no código.</p>
+	<div class="codebox">
+	  <pre><code>
+	&lt;div id="picture">
+		&lt;img src="bill.jpg" alt="Bill Gates">
+	&lt;/div>
+
+	&lt;h1>Bill Gates&lt;/h1>
+
+	&lt;p <strong>class="floatstop"</strong>>causas naturales et antecedentes, 
+	idciro etiam nostrarum voluntatum...&lt;/p>
+	</code>
+	</pre>
+	</div>
+	<p>Para evitar que o texto se posicione no espaço livre deixado pela foto do Bill Gates basta adicionar a seguinte regra <abbr>CSS</abbr>:</p>
+	<div class="codebox">
+	  <pre><code>
+	#picture {
+		float:left;
+		width: 100px;
+	}
+
+	.floatstop {
+		<strong>clear:both;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+	<ul class="examplelinklist">
+	  <li><a href="lesson13_ex3.html" title="Mostra o codigo acima">Ver exemplo</a></li>
+	</ul>
+	<h2>Sumário</h2>
+	<p>Floats são muito úteis em várias situações e frequentemente usados em conjunto com posicionamento. Na <a href="lesson14.html">próxima lição</a> veremos como posicionar um box tanto de maneira relativa como absoluta.</p>	
+	<hr /><p class='previous'><a href='lesson12.html'>&lt;&lt; Lição 12: Altura e largura</a></p><p class='next'><a href='lesson14.html'>Lição 14: Posicionando  elementos >></a></p>
+	</div> 
+	</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+E:\3-Semestre\LP2\Aula17\Aereas\bin\Release\Aereas.exe
+E:\3-Semestre\LP2\Aula17\Aereas\bin\Release\Aereas.pdb
+E:\3-Semestre\LP2\Aula17\Aereas\obj\Release\ResolveAssemblyReference.cache
+E:\3-Semestre\LP2\Aula17\Aereas\obj\Release\Aereas.Form1.resources
+E:\3-Semestre\LP2\Aula17\Aereas\obj\Release\Aereas.Properties.Resources.resources
+E:\3-Semestre\LP2\Aula17\Aereas\obj\Release\Aereas.csproj.GenerateResource.Cache
+E:\3-Semestre\LP2\Aula17\Aereas\obj\Release\Aereas.exe
+E:\3-Semestre\LP2\Aula17\Aereas\obj\Release\Aereas.pdb

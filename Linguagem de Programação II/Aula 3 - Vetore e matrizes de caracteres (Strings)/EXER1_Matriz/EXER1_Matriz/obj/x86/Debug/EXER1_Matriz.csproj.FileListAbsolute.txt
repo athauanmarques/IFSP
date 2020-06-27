@@ -1,0 +1,40 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\EXER1_Matriz\bin\Debug\EXER1_Matriz.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\EXER1_Matriz\bin\Debug\EXER1_Matriz.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.frmMatriz.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.strings_exer.resources
+C:\Users\Aluno\Desktop\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.exe
+C:\Users\Aluno\Desktop\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.pdb
+C:\Users\Aluno\Desktop\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.frmMatriz.resources
+C:\Users\Aluno\Desktop\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.Form2.resources
+C:\Users\Aluno\Desktop\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.Properties.Resources.resources
+C:\Users\Aluno\Desktop\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.strings_exer.resources
+C:\Users\Aluno\Desktop\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\EXER1_Matriz\EXER1_Matriz\bin\Debug\EXER1_Matriz.exe
+C:\Users\Aluno\Desktop\EXER1_Matriz\EXER1_Matriz\bin\Debug\EXER1_Matriz.pdb
+C:\Users\Aluno\Desktop\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.Form3.resources
+C:\Users\Athauan Marques\Desktop\corrigir\Aula 2 - Matriz, Vetores e String\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.exe
+C:\Users\Athauan Marques\Desktop\corrigir\Aula 2 - Matriz, Vetores e String\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.pdb
+C:\Users\Athauan Marques\Desktop\corrigir\Aula 2 - Matriz, Vetores e String\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.frmMatriz.resources
+C:\Users\Athauan Marques\Desktop\corrigir\Aula 2 - Matriz, Vetores e String\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.Form2.resources
+C:\Users\Athauan Marques\Desktop\corrigir\Aula 2 - Matriz, Vetores e String\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.Form3.resources
+C:\Users\Athauan Marques\Desktop\corrigir\Aula 2 - Matriz, Vetores e String\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.Properties.Resources.resources
+C:\Users\Athauan Marques\Desktop\corrigir\Aula 2 - Matriz, Vetores e String\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.strings_exer.resources
+C:\Users\Athauan Marques\Desktop\corrigir\Aula 2 - Matriz, Vetores e String\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\Desktop\corrigir\Aula 2 - Matriz, Vetores e String\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Desktop\corrigir\Aula 2 - Matriz, Vetores e String\EXER1_Matriz\EXER1_Matriz\bin\Debug\EXER1_Matriz.exe
+C:\Users\Athauan Marques\Desktop\corrigir\Aula 2 - Matriz, Vetores e String\EXER1_Matriz\EXER1_Matriz\bin\Debug\EXER1_Matriz.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\EXER1_Matriz\EXER1_Matriz\bin\Debug\EXER1_Matriz.exe
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\EXER1_Matriz\EXER1_Matriz\bin\Debug\EXER1_Matriz.pdb
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.csprojResolveAssemblyReference.cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.Form2.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.Form3.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.Properties.Resources.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.strings_exer.resources
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.csproj.GenerateResource.Cache
+C:\Users\Athauan Marques\Documents\Estudos\ADS\Materias Atuais\Linguagem de Programação 2 (LP2)\Aula 3 - Vetore e matrizes de caracteres (Strings)\EXER1_Matriz\EXER1_Matriz\obj\x86\Debug\EXER1_Matriz.Form1.resources

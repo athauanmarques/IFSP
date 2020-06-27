@@ -1,0 +1,14 @@
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\bin\Release\Lanchonete.exe
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\bin\Release\Lanchonete.pdb
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\obj\x86\Release\Lanchonete.Form1.resources
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\obj\x86\Release\Lanchonete.Properties.Resources.resources
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\obj\x86\Release\Lanchonete.csproj.GenerateResource.Cache
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\obj\x86\Release\Lanchonete.exe
+D:\Documentos\_ADS\3º Módulo\LP2\Segunda Tentativa\Atividade 02\Lanchonete\Lanchonete\obj\x86\Release\Lanchonete.pdb
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\bin\Release\Lanchonete.exe
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\bin\Release\Lanchonete.pdb
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\obj\x86\Release\Lanchonete.Form1.resources
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\obj\x86\Release\Lanchonete.Properties.Resources.resources
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\obj\x86\Release\Lanchonete.csproj.GenerateResource.Cache
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\obj\x86\Release\Lanchonete.exe
+F:\Rafael\ADS\LP2\Lanchonete\Lanchonete\obj\x86\Release\Lanchonete.pdb

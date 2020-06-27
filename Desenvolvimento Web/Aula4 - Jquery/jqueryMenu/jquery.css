@@ -1,0 +1,112 @@
+#TOPO {
+text-align: center;
+margin: 10px 10px 10px 10px;
+padding:  10px;  
+border-width:10px;
+border-style: groove;
+font-family: arial;
+font-size:40px;
+background-color:  navy;
+color: white;
+}
+#BARRAnavegaCAO{
+position: absolute; 
+top: 20 px;
+left: -30px;
+width: 15%;
+height: 500px;
+margin: 10px;
+background-color: orange;
+line-height: 2;
+font-family: arial, helvetica, sans-serif;
+font-size: 0.9em;
+}
+
+#CONTEUDO {
+position: absolute;
+top: 170px;
+width: 100%;
+height: 300px;
+color: blue;
+background-color: #F0F0F0 ;
+font-family: arial, helvetica, sans-serif;
+}
+#menu{
+width:110px;
+_width:120px; /* hack para IE */
+background:#999999;;
+padding:5px;	
+border:3px inset #cccccc;
+margin-left: 10px;	
+}
+#menu ul{
+widht:110px;
+padding:6px;
+margin:0;
+background: #000;
+border:3px outset #ffffff;
+}
+#menu li {	
+list-style: none; 	
+padding:3px 5px; 
+background:#666666;
+margin-bottom:2px;
+font: 12px verdana, arial, helvetiva, sans-serif;	
+}
+#menu li a { 	
+ 
+display:block;
+color: #ffffff;	 
+text-decoration: none; 
+}
+#menu li a:visited {	
+color: #ffffcc;	
+}
+#menu li a:hover { 	
+color: #000; 	
+background-color:#fff;
+} 
+.barNav a {
+font: 12px  Arial, Verdana,Helvetica,sans-serif;
+color: #000;
+text-decoration: none;
+background:  #FFC50C;
+text-align: center;
+padding: 1px 5px;
+margin-right:1px;
+border: 1px solid #000;
+}
+
+.barNav a:hover {
+color: #666;
+background: #FCFCFC;
+border: 1px solid #666;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+	background:#666666;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#4CAF50;
+}

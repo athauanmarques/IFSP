@@ -1,0 +1,20 @@
+D:\LP3\LojaWin\BLL\bin\Debug\BLL.dll
+D:\LP3\LojaWin\BLL\bin\Debug\BLL.pdb
+D:\LP3\LojaWin\BLL\bin\Debug\DAL.dll
+D:\LP3\LojaWin\BLL\bin\Debug\Modelos.dll
+D:\LP3\LojaWin\BLL\bin\Debug\MySql.Data.dll
+D:\LP3\LojaWin\BLL\bin\Debug\DAL.pdb
+D:\LP3\LojaWin\BLL\bin\Debug\Modelos.pdb
+D:\LP3\LojaWin\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\LP3\LojaWin\BLL\obj\Debug\BLL.dll
+D:\LP3\LojaWin\BLL\obj\Debug\BLL.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\BLL\bin\Debug\BLL.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\BLL\bin\Debug\BLL.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\BLL\bin\Debug\DAL.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\BLL\bin\Debug\Modelos.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\BLL\bin\Debug\MySql.Data.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\BLL\bin\Debug\DAL.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\BLL\bin\Debug\Modelos.pdb
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\BLL\obj\Debug\BLL.dll
+C:\Users\Aluno\Desktop\LP3 - Athauan\LojaWin\BLL\obj\Debug\BLL.pdb

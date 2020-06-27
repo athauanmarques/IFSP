@@ -1,0 +1,4 @@
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\Modelos\bin\Debug\Modelos.dll
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\Modelos\bin\Debug\Modelos.pdb
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\Modelos\obj\Debug\Modelos.dll
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\Modelos\obj\Debug\Modelos.pdb

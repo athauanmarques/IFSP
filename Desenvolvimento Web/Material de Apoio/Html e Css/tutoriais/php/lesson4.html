@@ -1,0 +1,229 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 4: Trabalhando com datas e horas - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 4: Trabalhando com datas e horas - HTML.net" />
+	<meta name="description" content="Lição 4: Trabalhando com datas e horas - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 4: Trabalhando com datas e horas - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/php/lesson4.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='http://html.net/site/style/default.screen.css' type='text/css' media='screen' /><link rel='stylesheet' href='http://html.net/site/style/default.print.css' type='text/css' media='print' />
+</head>
+
+<body>	
+		<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>PHP</a> &#187; Lição 4: Trabalhando com datas e horas</div>
+		
+		<div id='tutorials'>	<h1>Lição 4: Trabalhando com datas e horas</h1> 
+
+	<p>Nesta lição você aprenderá as diferentes maneiras de trabalhar com datas e horas usando o PHP. Começaremos mostrando exemplos bem simples com a finalidade de mostrar o que PHP é capaz de fazer. Nesta lição estudaremos com detalhes a função  <a href="http://php.net/manual/en/function.date.php" title="data" hreflang="en"> date</a> do PHP.</p> 
+
+	<h2>Funções para data e hora</h2> 
+
+	<p>PHP nos fornece uma série de  <a href="http://php.net/manual/en/ref.datetime.php" hreflang="en">funções relacionadas a data e hora</a>. Nesta lição veremos a mais importante destas funções; a função  <a title="Data" href=""> date</a>.</p>
+	
+	<p>Usando-se os diferentes parâmetros previstos para a função <a title="data" href=""> date</a> ela retornará o grupo data/hora em diferentes formatos. Os parâmetros mais usuais são:</p> 
+	
+	<dl> 
+	<dt>date("y")</dt> 
+	<dd>Retorna o ano atual - para o dia de hoje o valor retornado é: <strong>11</strong></dd> 
+	<dt>date("m")</dt> 
+	<dd>Retorna o mês atual - para o dia de hoje o valor retornado é: <strong>08</strong></dd> 
+	<dt>date("F")</dt> 
+	<dd>Retorna o nome do mês atual - para o dia de hoje o valor retornado é: <strong>August</strong></dd> 
+	<dt>date("d")</dt> 
+	<dd>Retorna o dia do mês atual - para o dia de hoje o valor retornado é: <strong>16</strong></dd> 
+	<dt>date("l")</dt> 
+	<dd>Retorna o nome do dia da semana atual - para o dia de hoje o valor retornado é: <strong>Tuesday</strong></dd> 
+	<dt>date("w")</dt> 
+	<dd>Retorna o número correspondente ao dia da semana atual - para o dia de hoje o valor retornado é: <strong>2</strong></dd> 
+	<dt>date("H")</dt> 
+	<dd>Retorna a hora atual - para o dia de hoje o valor retornado é: <strong>22</strong></dd> 
+	<dt>date("i")</dt> 
+	<dd>Retorna o minuto atual - para o dia de hoje o valor retornado é: <strong>50</strong></dd> 
+	<dt>date("s")</dt> 
+	<dd>Retorna o segundo atual - para o dia de hoje o valor retornado é: <strong>38</strong></dd> </dl>  
+
+	<p>O exemplo a seguir ilustra o uso da função <a title="data" href=""> date</a></p>
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Grupo data/hora&lt;/title&gt;
+
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span> 
+	
+	<span class="code-php">echo "&lt;p&gt;Hoje é " . date("l") . "&lt;/p&gt;";</span>
+
+	<span class="code-php">?&gt;</span>
+	
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink"> <a href="lesson4_ex1.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div> 
+
+	<h2>A hora é: 1313527838</h2>
+
+	<p>Ops... aqui parece coisa para nerds.  A função <a href="http://www.php.net/manual/en/function.time.php" title="Data"> time()</a> retorna a hora atual em número de segundos contados desde 1 de janeiro de 1970 às 12:00 PM, GMT.</p>
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Grupo data/hora&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>   
+
+	<span class="code-php">echo "&lt;p&gt;São decorridos exatamente " . time() . " segundos desde 1 de janeiro de 1970, 12:00 PM, GMT &lt;/ p&gt; ";</span>
+
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink"> <a href="lesson4_ex2.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div>
+
+	<p>A representação da hora em segundos, contados desde  1 de janeiro de 1970 às 12:00 PM, GMT é chamada "timestamp" (UNIX timestamp) que é uma representação muito útil quando se trabalha com datas/horas passadas e futuras.</p> 
+
+	<p>Por padrão, a função <a href="http://www.php.net/manual/en/function.date.php" title="data"> date</a> usa o timestamp atual (isto é, o valor corrente de <a href="http://www.php.net/manual/en/function.time.php" title="hora"> time()</a>). Mas, usando um parâmetro você pode especificar o retorno da função em um diferente time stamp e assim trabalhar com datas passadas e futuras. No exemplo a seguir nós definimos o timestamp para 0 segundos a partir de 1 de janeiro de 1970 às 12:00 PM, GMT. Fazendo assim podemos verificar qual foi o dia da semana de 1 de janeiro de 1970.</p>
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Grupo data/hora&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span> 
+	
+	<span class="code-php">echo "&lt;p&gt;O dia da semana em 1 de janeiro de 1970 foi  " . date("l",0) . "&lt;/p&gt;";</span>
+
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink"> <a href="lesson4_ex3.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div>
+
+	<p>A menos que você seja um gênio da matemática é muito complicado calcular o número de segundos passados desde de 1 de janeiro de 1970 para uma determinada data. Felizmente existe uma função chamada <a href="http://www.php.net/manual/en/function.mktime.php" title="mktime"> mktime</a> que realiza o cálculo.</p> 
+	
+	<p>A sintaxe para a função <a href="http://www.php.net/manual/en/function.mktime.php" title="mktime"> mktime</a> é <em>(hora, minuto, segundo, mês, dia, ano).</em> O exemplo a seguir faz a conversão para a data da chegada do homem à lua (21 de julho de 1969 às 02:56):</p>
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Grupo data/hora&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>  
+	
+	<span class="code-php">echo mktime (2,56,0,7,21,1969);</span>
+
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink"> <a href="lesson4_ex4.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div>
+
+	<p>Notar que o retorno foi um número negativo. Isto indica que a data é anterior a 1 de janeiro de 1970.</p>
+	
+	<p>Agora já podemos no valer do que até aqui aprendemos e usar a função  <a href="http://www.php.net/manual/en/function.date.php" title="Date"> date</a> para saber qual foi o dia da semana em que ocorreu o evento histórico da chegada do homem à lua.</p>
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Grupo data/hora&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+	
+	<span class="code-php">echo date("l", mktime(2,56,0,7,21,1969));</span>
+	
+	<span class="code-php">?&gt;</span>
+	
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink"> <a href="lesson4_ex5.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div>
+
+	<h2>Mas afinal qual a utilidade prática?</h2> 
+
+	<p>Até agora tudo parece muito teórico. Afinal de que maneira posso usar uma do tipo  <a href="http://www.php.net/manual/en/function.time.php" title="time"> time()</a> de uma forma prática? Ao aprender algo novo é importante saber se você poderá usar o que aprendeu em uma página web.</p> 
+
+	<p>Considere que o que você aprende neste tutorial é a construção de blocos de códigos - o que você pode fazer com eles depende somente da sua criatividade e está limitado apenas pela sua imaginação! Eu ousaria afirmar que você já aprendeu muito mais do que está pensando. Por exemplo: você acha que é capaz de criar um background para uma página que mude a cada dia da semana e funcione em todos os navegadores?</p> 
+
+	<p>Claro que você é capaz! Observe o exemplo a seguir:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Grupo data/hora&lt;/title&gt;
+	&lt;/head&gt;
+
+	&lt;body background="background_<span class="code-php">&lt;?php echo date("w"); ?&gt;</span>.png"&gt;
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink"> <a href="lesson4_ex6.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div>
+
+	<p>O exemplo mostrado, que usa uma imagem de fundo dinâmica, requer que você construa apenas sete imagens e as nomeie como background_1.png, background_2.png, background_3.png, etc.</p> 
+
+	<p>Se o usuário entra no seu site na terça feira a imagem de fundo será background_2.png e no dia seguinte será background_3.png. Fácil e simples!</p> 
+
+	<p>Na próxima lição estudaremos os blocos de código destinados a construção de loops e aqueles destinados a repetição de código.</p> 
+
+	<p>PHP é legal. Você não acha?</p> 
+	<hr />
+	</div>
+
+</body>
+</html>

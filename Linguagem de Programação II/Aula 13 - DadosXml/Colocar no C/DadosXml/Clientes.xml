@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <clientes>
+    <Codigo>156489</Codigo>
+    <Nome>4864489</Nome>
+    <Endereco>56489486</Endereco>
+    <Cidade>456464</Cidade>
+    <Cep>468468489</Cep>
+    <Teledone>546</Teledone>
+    <Email>46488486</Email>
+  </clientes>
+  <clientes>
+    <Codigo>5646564156</Codigo>
+    <Nome>5648646</Nome>
+    <Endereco>84668</Endereco>
+    <Cidade>456</Cidade>
+    <Cep>4544</Cep>
+    <Teledone>564564</Teledone>
+    <Email>615456</Email>
+  </clientes>
+</NewDataSet>

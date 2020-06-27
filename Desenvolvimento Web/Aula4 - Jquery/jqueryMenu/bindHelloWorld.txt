@@ -1,0 +1,10 @@
+ $(document).ready (function ()  
+{  
+	// Cria a função sayHello  
+	function sayHello()  
+	{  
+		alert ("Olá jQuery");  
+	}  
+	// Anexar o manipulador usando .bind ():  
+	myElement.bind ('click', sayHello)   ;  
+});  

@@ -1,0 +1,253 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 5: Loops - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 5: Loops - HTML.net" />
+	<meta name="description" content="Lição 5: Loops - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 5: Loops - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/php/lesson5.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+	
+</head>
+
+<body>	
+		<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>PHP</a> &#187; Lição 5: Loops</div>
+			<div id="socialBookmarks">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"></a>
+				<span id="FbCont"></span>
+				<g:plusone size="medium"></g:plusone>
+								
+			</div>
+			<!-- google_ad_section_start -->
+		
+		<div id='tutorials'>	<h1>Lição 5: Loops</h1> 
+
+	<p>Na linguagem PHP existem diferentes estruturas de controle destinadas a gerenciar a execução de scripts. Nesta lição nós estudaremos os loops. Loops são usados para executar repetidamente uma parte de um script em um determinado número de vezes ou até que seja encontrada uma determinada condição.</p> 
+
+	<h2>Loop "while"</h2> 
+
+	<p>A sintaxe para um loop <a href="http://www.php.net/manual/en/control-structures.while.php">while</a> é conforme mostrada a seguir:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	while <em>(condição)</em> {
+		Comandos PHP de execução
+	} 
+	
+	</pre> 
+	</div> 
+
+	<p>Esta sintaxe pode ser traduzida para linguagem corrente como: <em>execute comandos PHP <strong>enquanto (while)</strong> a condição for satisfeita</em>.</p> 
+	
+	<p>Vejamos um exemplo bem simples:</p>
+	
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Loops&lt;/title&gt;
+
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-php">$x = 1;</span>
+	 
+	<span class="code-php">while ($x &lt;= 50) {</span>
+	<span class="code-php">   echo "&lt;p&gt;Este texto se repete 50 vezes&lt;/p&gt;";</span>
+	<span class="code-php">   $x = $x + 1;</span>
+	<span class="code-php">}</span>
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink">  <a href="lesson5_ex1.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div> 
+
+	<p>No exemplo mostrado usamos uma <em>variável</em> denominada "$x". Como você pode notar, nomes de variáveis em PHP sempre começam com o caractere "$". No início é fácil esquecer esta sintaxe, contudo é absolutamente necessário o símbolo "$" para iniciar o nome de variáveis, pois do contrário o script não funciona.</p>
+	
+	<p>Além disto o restante do script é auto-explicável. No começo a variável $x recebe o valor 1. A seguir o loop pede para o servidor executar o comando de escrever um texto enquanto a variável for menor do que 50. A cada execução a variável é incrementada de 1 unidade.</p>
+
+	<h2>Loop "for"</h2> 
+
+	<p>Outra maneira de executar um loop é com uso de <a href="http://php.net/manual/en/control-structures.for.php"> for</a> conforme mostrado a seguir:</p> 
+	
+	<div class="codebox"> 
+	<pre>
+	
+	for (<em>Inicialização</em>; <em>Condição</em>; <em>passo</em>) {
+		 Comandos PHP de execução
+	}
+	
+	</pre> 
+	</div> 
+
+	<p>Os comandos PHP de execução se repetem com a 'Inicialização' + 'passo' enquanto a 'Condição é satisfeita'. Se isso não faz sentido para você o exemplo a seguir esclarece melhor:</p> 
+	
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+
+	&lt;title&gt;Loops&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-php">for ($x=0; $x&lt;=50; $x=$x+5) {</span>
+	<span class="code-php">   echo "&lt;p&gt;A variável $x agora tem o valor igual a " . $x . "&lt;/p&gt;";</span>
+	<span class="code-php">}</span>
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink">  <a href="lesson5_ex2.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div>
+
+	<p>No exemplo mostrado $x é incrementado de 5 unidades em cada loop. O loop continua sua execução enquanto $x for menor ou igual a 50. Notar que o valor de $x é usado como parte do texto a ser escrito pelo script.</p> 
+
+	<p>Observe outro exemplo:</p>
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+
+	&lt;title&gt;Loops&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-php">for ($x=1; $x&lt;=6; $x=$x+1) {</span>
+	<span class="code-php">   echo "&lt;h" . $x . "&gt; Cabeçalho nível&lt;/h" . $x . "&gt;";</span>
+	<span class="code-php">}</span>
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink"> <a href="lesson5_ex3.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div> 
+
+	<p>Você entendeu? começamos definindo o valor de $x igual a 1. A seguir em cada loop escrevemos um cabeçalho nível $x (h1, h2, h3, etc.) até $x alcançar o valor seis.</p> 
+
+	<h2>Loops dentro de loops</h2> 
+
+	<p>A princípio não existe limite para a quantidade de loops a usar. Você pode facilmente aninhar loops e criar  <strong>muitas</strong> repetições.</p> 
+
+	<p>Mas, cuidado! A execução de PHP torna-se lenta quando desenvolvemos scripts extensos e complicados. Por exemplo: observe a seguir o script com três loops capaz de escrever 16 milhões de cores!</p> 
+
+	<p>Com a finalidade de não tornar a página de carregamento muito lento nós reduzimos drasticamente o número de repetições para passos de 30 limitando o número de cores escritas para 512.</p> 
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+
+	&lt;head&gt;
+	&lt;title&gt;Loops &lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+ 
+	<span class="code-php">for ($intRed=0; $intRed&lt;=255; $intRed=$intRed+30) {</span>
+
+	<span class="code-php">   for ($intGreen=0; $intGreen&lt;=255; $intGreen=$intGreen+30) {</span>
+
+	<span class="code-php">      for ($intBlue=0; $intBlue&lt;=255; $intBlue=$intBlue+30) {</span>
+	 
+	<span class="code-php">	  $StrColor = "rgb(" . $intRed . "," . $intGreen . "," . $intBlue . ")";</span>
+		  
+	<span class="code-php">	  echo "&lt;span style='color:" . $StrColor . "'&gt;" . $StrColor . "&lt;/span&gt;";</span>
+	 
+	<span class="code-php">      }</span>
+	<span class="code-php">   }</span>
+	<span class="code-php">}</span>
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+	
+	<div class="examplelink">  <a href="lesson5_ex4.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div> 
+
+	<p>No exemplo mostrado cada uma das três cores primárias (red, green e blue) pode ter um valor entre 0 e 255. Qualquer combinação de três valores resulta em uma cor do tipo rgb(255,255,255). O código da cor é escrito em um elemento &lt;span&gt; que por sua vez é estilizado com a respectiva cor.</p> 
+
+	<p>Loops tornam-se mais interessantes é práticos depois que você aprende mais algumas funcionalidades do PHP. Assim que você entender o princípio de funcionamento do loop passe para a lição seguinte na qual estudaremos as condicionais.  </p> 
+	<hr />
+	<hr /><p class='previous'><a href='lesson4.html'>&lt;&lt; Lição 4: Trabalhando com datas e horas</a></p><p class='next'><a href='lesson6.html'>Lição 6: Condicionais >></a></p></div>  		<!-- google_ad_section_end -->
+
+		</div>
+
+		
+	</div>
+
+	<div id="sidebar">
+			<h1>Tutorials</h1>
+			<ul>
+				<li><a href='..\html\index.html'>HTML Tutorial</a></li><li><a href='..\css\index.html'>CSS Tutorial</a></li>
+				<li><strong><a href='index.html'>Tutorial PHP</a></strong><ul>
+				<li><a href='introduction.html'>Introdução</a></li>
+				<li><a href='lesson1.html'>O que é PHP</a></li>
+				<li><a href='lesson2.html'>Servidores</a></li>
+				<li><a href='lesson3.html'>Sua primeira página PHP</a></li>
+				<li><a href='lesson4.html'>Trabalhando com datas e horas</a></li>
+				<li class='selected'><a href='lesson5.html'>Loops</a></li>
+				<li><a href='lesson6.html'>Condicionais</a></li>
+				<li><a href='lesson7.html'>Insira comentários nos seus scripts</a></li>
+				<li><a href='lesson8.html'>Arrays</a></li>
+				<li><a href='lesson9.html'>Funções</a></li>
+				<li><a href='lesson10.html'>Passando variáveis no URL</a></li>
+				<li><a href='lesson11.html'>Passando variáveis de um formulário</a></li>
+				<li><a href='lesson12.html'>Sessões</a></li>
+				<li><a href='lesson13.html'>Cookies</a></li>
+				<li><a href='lesson14.html'>Sistema de arquivos</a></li>
+				<li><a href='lesson15.html'>Ler arquivos de texto</a></li>
+				<li><a href='lesson16.html'>Escrever em arquivos de texto</a></li>
+				<li><a href='lesson17.html'>Banco de Dados</a></li>
+				<li><a href='lesson18.html'>Criando Banco de Dados e suas Tabelas</a></li>
+				<li><a href='lesson19.html'>Inserindo dados em um Banco de Dados</a></li>
+				<li><a href='lesson20.html'>Extraindo dados de um Banco de Dados</a></li>
+				<li><a href='lesson21.html'>Apagando dados de um Banco de Dados</a></li>
+				<li><a href='lesson22.html'>Atualizando dados de um Banco de Dados</a></li>
+				</ul></li>			
+			</ul>
+	
+	</div>
+
+	
+
+</body>
+</html>

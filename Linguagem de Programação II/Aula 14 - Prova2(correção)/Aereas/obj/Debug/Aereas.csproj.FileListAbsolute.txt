@@ -1,0 +1,29 @@
+E:\3-Semestre\LP2\Aula17\Aereas\obj\Debug\ResolveAssemblyReference.cache
+E:\3-Semestre\LP2\Aula17\Aereas\obj\Debug\Aereas.Form1.resources
+E:\3-Semestre\LP2\Aula17\Aereas\obj\Debug\Aereas.Properties.Resources.resources
+E:\3-Semestre\LP2\Aula17\Aereas\obj\Debug\Aereas.csproj.GenerateResource.Cache
+E:\3-Semestre\LP2\Aula17\Aereas\bin\Debug\Aereas.exe
+E:\3-Semestre\LP2\Aula17\Aereas\bin\Debug\Aereas.pdb
+E:\3-Semestre\LP2\Aula17\Aereas\obj\Debug\Aereas.exe
+E:\3-Semestre\LP2\Aula17\Aereas\obj\Debug\Aereas.pdb
+F:\LP2\Aula17\Aereas\obj\Debug\Aereas.exe
+F:\LP2\Aula17\Aereas\obj\Debug\Aereas.pdb
+F:\LP2\Aula17\Aereas\bin\Debug\Aereas.exe
+F:\LP2\Aula17\Aereas\bin\Debug\Aereas.pdb
+F:\LP2\Aula17\Aereas\obj\Debug\ResolveAssemblyReference.cache
+F:\LP2\Aula17\Aereas\obj\Debug\Aereas.Form1.resources
+F:\LP2\Aula17\Aereas\obj\Debug\Aereas.Properties.Resources.resources
+F:\LP2\Aula17\Aereas\obj\Debug\GenerateResource.read.1.tlog
+F:\LP2\Aula17\Aereas\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Valle\Documents\IFSP\IFSP1sem2012\AULAS\LP2\Apoio\LP2-alunaTalita\Aula17\Aereas\obj\Debug\Aereas.exe
+C:\Users\Valle\Documents\IFSP\IFSP1sem2012\AULAS\LP2\Apoio\LP2-alunaTalita\Aula17\Aereas\obj\Debug\Aereas.pdb
+C:\Users\Informatica\Documents\IFSP\IFSP2013-1sem\Aulas\LP2\Apoio\LP2-alunaTalita\Aula17\Aereas\obj\Debug\Aereas.exe
+C:\Users\Informatica\Documents\IFSP\IFSP2013-1sem\Aulas\LP2\Apoio\LP2-alunaTalita\Aula17\Aereas\obj\Debug\Aereas.pdb
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\Aereas\obj\Debug\Aereas.exe
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\Aereas\obj\Debug\Aereas.pdb
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\Aereas\bin\Debug\Aereas.exe
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\Aereas\bin\Debug\Aereas.pdb
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\Aereas\obj\Debug\Aereas.csprojResolveAssemblyReference.cache
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\Aereas\obj\Debug\Aereas.Form1.resources
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\Aereas\obj\Debug\Aereas.Properties.Resources.resources
+C:\Users\Informatica\Documents\IFSP\IFSP2014-1sem\Aula\LP2 A2\Prova2\Aereas\obj\Debug\Aereas.csproj.GenerateResource.Cache

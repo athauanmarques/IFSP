@@ -1,0 +1,14 @@
+DEITEL, P. & DEITEL, H, Java Como Programar, 8ª Edição, Pearson Education. 2010. 
+básica
+
+HORSTMANN, C. S. & CORNELL, G. Core Java, Volume 1, 8ª Edição, Pearson Education, 2010.  - Aluga Livro 
+HORSTMANN, C. S. Conceitos de Computação com Java – 5ª Edição, Bookman, 2009. 
+
+
+Complementar
+
+ARNOLD, K. & GOSLING, J. A linguagem de programação Java, 4ª Edição, Bookman, 2007.  
+ASCENCIO, A. F. G. & CAMPOS, E. A. V. - Fundamentos da Programação de Computadores Algoritmos, Pascal, C/C++ e Java – 2ª Edição – Pearson Education, 2008.  
+DEITEL, P. & DEITEL, H, Java Como Programar, 6ª Edição, Pearson Education. 2008.  
+LOPES, ANITA E GARCIA, GUTO. Introdução à Programação: 500 algoritmos resolvidos. Editora Campos.  
+SOUZA, MARCO ANTONIO FURLAN. ET AL. Algoritmos e Lógica de programação. Editora Pioneira Thonsom Learning, 2005.

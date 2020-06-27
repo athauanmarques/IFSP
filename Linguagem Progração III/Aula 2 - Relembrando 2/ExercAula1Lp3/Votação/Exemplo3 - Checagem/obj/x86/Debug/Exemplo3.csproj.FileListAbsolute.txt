@@ -1,0 +1,7 @@
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo3\bin\Debug\Exemplo3.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo3\bin\Debug\Exemplo3.pdb
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo3\obj\x86\Debug\Exemplo3.Form1.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo3\obj\x86\Debug\Exemplo3.Properties.Resources.resources
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo3\obj\x86\Debug\Exemplo3.csproj.GenerateResource.Cache
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo3\obj\x86\Debug\Exemplo3.exe
+C:\Users\Aluno\AppData\Local\Temporary Projects\Exemplo3\obj\x86\Debug\Exemplo3.pdb

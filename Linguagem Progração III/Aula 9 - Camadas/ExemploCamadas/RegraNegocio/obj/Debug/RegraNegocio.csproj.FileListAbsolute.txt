@@ -1,0 +1,10 @@
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\RegraNegocio\bin\Debug\RegraNegocio.dll
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\RegraNegocio\bin\Debug\RegraNegocio.pdb
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\RegraNegocio\bin\Debug\AcessaDados.dll
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\RegraNegocio\bin\Debug\Modelos.dll
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\RegraNegocio\bin\Debug\MySql.Data.dll
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\RegraNegocio\bin\Debug\AcessaDados.pdb
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\RegraNegocio\bin\Debug\Modelos.pdb
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\RegraNegocio\obj\Debug\RegraNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\RegraNegocio\obj\Debug\RegraNegocio.dll
+C:\Users\Informatica\Documents\IFSP\IFSP2014-2s\Aulas\LP3\ExercAula7\ExemploCamadas\RegraNegocio\obj\Debug\RegraNegocio.pdb

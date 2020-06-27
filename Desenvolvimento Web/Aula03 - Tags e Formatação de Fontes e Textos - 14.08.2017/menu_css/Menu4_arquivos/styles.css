@@ -1,0 +1,24 @@
+body {
+	font: 11px/normal verdana; font-size-adjust: none; font-stretch: normal;
+}
+ul {
+	list-style: none; margin: 0px; padding: 0px; width: 150px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+ul li {
+	position: relative;
+}
+li ul {
+	left: 149px; top: 0px; display: none; position: absolute;
+}
+ul li a {
+	background: rgb(255, 255, 255); border-width: 1px 1px 0px; border-style: solid solid none; border-color: rgb(204, 204, 204) rgb(204, 204, 204) currentColor; padding: 5px; border-image: none; color: rgb(119, 119, 119); text-decoration: none; display: block;
+}
+* html ul li {
+	height: 1%; float: left;
+}
+* html ul li a {
+	height: 1%;
+}
+li:hover ul {
+	display: block;
+}

@@ -1,0 +1,11 @@
+D:\LP3\LojaWin\LojaWin\bin\Release\LojaWin.exe
+D:\LP3\LojaWin\LojaWin\bin\Release\LojaWin.pdb
+D:\LP3\LojaWin\LojaWin\bin\Release\mysql.data.dll
+D:\LP3\LojaWin\LojaWin\obj\x86\Release\LojaWin.Form1.resources
+D:\LP3\LojaWin\LojaWin\obj\x86\Release\LojaWin.frmCalendario.resources
+D:\LP3\LojaWin\LojaWin\obj\x86\Release\LojaWin.frmLogin.resources
+D:\LP3\LojaWin\LojaWin\obj\x86\Release\LojaWin.Properties.Resources.resources
+D:\LP3\LojaWin\LojaWin\obj\x86\Release\LojaWin.csproj.GenerateResource.Cache
+D:\LP3\LojaWin\LojaWin\obj\x86\Release\LojaWin.exe
+D:\LP3\LojaWin\LojaWin\obj\x86\Release\LojaWin.pdb
+D:\LP3\LojaWin\LojaWin\obj\x86\Release\LojaWin.csprojResolveAssemblyReference.cache

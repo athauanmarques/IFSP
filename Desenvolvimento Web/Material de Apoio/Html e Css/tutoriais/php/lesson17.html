@@ -1,0 +1,130 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 17: Banco de Dados - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 17: Banco de Dados - HTML.net" />
+	<meta name="description" content="Lição 17: Banco de Dados - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 17: Banco de Dados - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/php/lesson17.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='http://html.net/site/style/default.screen.css' type='text/css' media='screen' /><link rel='stylesheet' href='http://html.net/site/style/default.print.css' type='text/css' media='print' />
+	
+</head>
+
+<body>	
+	<div id="header">
+		<ul>
+			<li><a href='../..\index.html'>Início</a></li>
+			<li class='selected'><a href='..\index.html'>Tutorials</a></li>
+			<li><a href='../..\forums\index.html'>Fóruns</a></li>
+			<li><a href='../..\about\index.html'>Sobre</a></li>
+		</ul>
+	</div>
+	<div id="main">
+		<div id="content">
+		<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>PHP</a> &#187; Lição 17: Banco de Dados</div>
+		<div id='tutorials'>	<h1>Lição 17: Banco de Dados</h1> 
+
+	<p>Um Banco de Dados é um conjunto de informações / dados organizados de uma maneira a facilitar as tarefas de extração, manutenção e atualização dos dados. Banco de Dados possibilitam a criação de sites dinâmicos com grande quantidade de informações. Por exemplo:os dados sobre todos os membros do site HTML.net bem como todos os posts dos forums do site estão guardados em um Banco de Dados.</p>
+	
+	<p>Um Banco de dados, em geral é constituído de uma ou mais tabelas. Se você já trabalhou com planilhas ou mesmo com banco de dados, você deve estar familiarizado com tabelas, suas colunas e linhas:</p> 
+	
+	<p><img src="lesson17_img02.png" alt="Tabela"></p> 
+
+	<p>Existem vários tipos de Banco de Dados: MySQL, MS Access, MS SQL Server, Oracle SQL Server e muitos outros. No nosso tutorial usaremos o Banco de Dados MySQL. MySQL é o tipo de Banco de Dados mais indicado e natural para se usar com PHP.</p> 
+
+	<p>Para acompanhar esta e as próximas lições você precisa ter acesso a um Banco de Dados:</p>
+	<ul>
+		<li>Se você tem um site PHP hospedado remotamente é quase certo que MySQL esteja disponível no servidor. Informe-se com o suporte do seu servidor de hospedagem.</li>
+		<li>Se você instalou PHP no seu computador e quiser instalar MySQL faça o download de um a versão gratuita (MySQL Community Edition) no <a href="http://www.mysql.com/downloads/mysql/">site do MySQL</a>.</li>
+		<li>Se você está usando XAMPP (ver <a href="lesson2.html">liçaõ 2</a>) MySQL já foi instalado e está pronto para ser usado. Certifique-se, no Painel de Controle, que MySQL está sendo executado:<br /><br /><img src="lesson17_img05.png" alt="XAMPP"></li>
+	</ul>
+
+	<p>A seguir, nesta lição, veremos como conectar a um Banco de Dados e nas lições seguintes aprenderemos a criar um Banco de Dados e dele extrair e atualizar dados.</p> 
+
+	<h2>Conexão com o Banco de Dados</h2> 
+
+	<p>Primeiro você precisa ter acesso ao servidor no qual está instalado o Banco de Dados. O acesso é feito com uso da função <a href="http://php.net/manual/en/function.mysql-connect.php"> mysql_connect</a> que admite a seguinte sintaxe:</p> 
+	
+	<div class="codebox"> 
+	<pre>
+	mysql_connect<em>(servidor, usuário, senha)</em> 
+	</pre> 
+	</div> 
+
+	<p>Simples e direto: O parâmetro <em>(servidor)</em> indica o local onde se encontra o Banco de Dados, <em>usuário</em> e <em>senha</em> indicam o nome do usuário e a senha de acesso ao Banco de Dados.</p> 
+	
+	<p>Se você possui um site, leia a documentação de suporte do seu servidor para saber o local do servidor MySQL. Nome de usuário e senha em geral é o mesmo que você usa para acessr o site via FTP. Se não for contacte o suporte para seu servidor.</p> 
+
+	<p>Exemplo de conexão MySQL para um site em servidor remoto:</p> 
+	
+	<div class="codebox"> 
+	<pre>
+	mysql_connect("mysql.myhost.com", "user001", "sesame") or die(mysql_error()); 
+	</pre> 
+	</div> 
+
+	<p>Exemplo de conexão MySQL com servidor local XAMPP (configuração padrão):</p> 
+	
+	<div class="codebox"> 
+	<pre>
+	mysql_connect("localhost", "root", "") or die (mysql_error());
+	</pre> 
+	</div> 
+
+	<p>Notar nos exemplos a inclusão de <code>or die(mysql_error())</code> que, resumo, destina-se a interromper o script e retornar uma mensagem de erro caso não seja possível estabelecer a conexão.</p> 
+
+	<p>É assim que se faz a conexão com o servidor MySQL. Agora você já está em condições de criar Banco de Dados, extrair e inserir dados. É exatamente isso que aprenderemos nas próximas lições.</p> 
+
+	<p>Ah sim! não se esqueça que é de boa prática encerrar a conexão tão logo você tenha terminado de usar o Banco de Dados. Para isso use a função <a href="http://php.net/manual/en/function.mysql-close.php"> mysql_close</a>.</p> 
+
+
+	<hr />
+	<hr />
+	<p class='previous'><a href='lesson16.html'>&lt;&lt; Lição 16: Escrever em arquivos de texto</a></p>
+	<p class='next'><a href='lesson18.html'>Lição 18: Criando Banco de Dados e suas Tabelas >></a></p>
+	</div>  		
+	</div>	
+	</div>
+	<div id="sidebar">
+		<h1>Tutorials</h1>
+			<ul>
+			<li><a href='..\html\index.html'>HTML Tutorial</a></li>
+			<li><a href='..\css\index.html'>CSS Tutorial</a></li>
+			<li><strong><a href='index.html'>Tutorial PHP</a></strong><ul><li><a href='introduction.html'>Introdução</a></li>
+			<li><a href='lesson1.html'>O que é PHP</a></li>
+			<li><a href='lesson2.html'>Servidores</a></li>
+			<li><a href='lesson3.html'>Sua primeira página PHP</a></li>
+			<li><a href='lesson4.html'>Trabalhando com datas e horas</a></li>
+			<li><a href='lesson5.html'>Loops</a></li>
+			<li><a href='lesson6.html'>Condicionais</a></li>
+			<li><a href='lesson7.html'>Insira comentários nos seus scripts</a></li>
+			<li><a href='lesson8.html'>Arrays</a></li><li><a href='lesson9.html'>Funções</a></li>
+			<li><a href='lesson10.html'>Passando variáveis no URL</a></li>
+			<li><a href='lesson11.html'>Passando variáveis de um formulário</a></li>
+			<li><a href='lesson12.html'>Sessões</a></li>
+			<li><a href='lesson13.html'>Cookies</a></li>
+			<li><a href='lesson14.html'>Sistema de arquivos</a></li>
+			<li><a href='lesson15.html'>Ler arquivos de texto</a></li>
+			<li><a href='lesson16.html'>Escrever em arquivos de texto</a></li>
+			<li class='selected'><a href='lesson17.html'>Banco de Dados</a></li>
+			<li><a href='lesson18.html'>Criando Banco de Dados e suas Tabelas</a></li>
+			<li><a href='lesson19.html'>Inserindo dados em um Banco de Dados</a></li>
+			<li><a href='lesson20.html'>Extraindo dados de um Banco de Dados</a></li>
+			<li><a href='lesson21.html'>Apagando dados de um Banco de Dados</a></li>
+			<li><a href='lesson22.html'>Atualizando dados de um Banco de Dados</a></li>
+			</ul></li></ul>
+	</div>
+</body>
+</html>

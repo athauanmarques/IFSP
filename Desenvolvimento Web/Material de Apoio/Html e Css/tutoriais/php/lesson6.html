@@ -1,0 +1,329 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+
+	<title>Lição 6: Condicionais - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Lição 6: Condicionais - HTML.net" />
+	<meta name="description" content="Lição 6: Condicionais - Tutoriais HTML e CSS - Construa seu website" />
+	<meta name="keywords" content="HTML, CSS, XHTML, HTML Tutorial, CSS Tutorial, Fóruns, , " />
+	<meta name="language" content="pt-br" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Lição 6: Condicionais - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pt-br.html.net/tutorials/php/lesson6.php" />
+	<meta property="og:image" content="http://html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='default.screen.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='default.print.css' type='text/css' media='print' />
+</head>
+
+<body>	
+	<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href='../..\index.html'>Início</a> &#187; <a href='..\index.html'>Tutorials</a> &#187; <a href='index.html'>PHP</a> &#187; Lição 6: Condicionais</div>
+		<div id='tutorials'>	<h1>Lição 6: Condicionais</h1> 
+
+	<p>Condicionais são usadas para executar um bloco de script sempre que determinada condição seja satisfeita. Por exemplo: uma condição pode estabelecer que uma data seja posterior a 1 de janeiro de 2012 ou que uma variável seja maior do que 7.</p> 
+
+	<h2>If...</h2> 
+
+	<p>A primeira condicional que estudaremos é o <a href="http://php.net/manual/en/control-structures.if.php"> if</a> cuja sintaxe é mostrada a seguir:</p> 
+	<div class="codebox"> 
+	<pre>
+
+	if (<em>condition</em>) {
+	   Comandos PHP
+	}
+	
+	</pre> 
+	</div> 
+
+	<p>Mais uma vez a sintaxe se parece com a linguagem corrente: <em><strong>If (Se)</strong> se a condição é satisfeita, execute alguma coisa</em>. Vejamos um exemplo simples:</p>
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+
+	&lt;head&gt;
+	&lt;title&gt;Loops &lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-php">$x = 2;</span>
+
+	<span class="code-php">if ($x &gt; 1) {</span>
+	<span class="code-php">   echo "&lt;p&gt;A variável $x é maior que 1 &lt;/p&gt;";</span>
+	<span class="code-php">}</span>
+	 
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+
+	<h2>if ... else ...</h2> 
+	<p>Vejamos agora a condicional <a href="http://php.net/manual/en/control-structures.else.php"> else</a> cuja sintaxe é mostrada a seguir:</p> 
+	
+	<div class="codebox"> 
+	<pre>
+	
+	if <em>(condição)</em> {
+	   comandos PHP
+	}
+	else {
+	   Comandos PHP
+	}
+
+	</pre>
+	</div>
+	
+	<p>Mais uma vez a sintaxe se parece com a linguagem corrente: <em><strong>if (se)</strong> a condição é satisfeita, execute alguma coisa <strong>else (se não)</strong> execute outra coisa.</em></p> 
+
+	<p>Na <a href="lesson4.html" title="Lição 4: Trabalhando com datas e horas">Lição 4</a> mostramos como encontrar o número representativo do mês. No exemplo a seguir usaremos este número em uma condicional <a href="http://php.net/manual/en/control-structures.if.php"> if</a> <a href="http://php.net/manual/en/control-structures.else.php"> else</a> para encontrar em qual das estações do ano estamos:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Condicionais&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+
+	<span class="code-php">if (date ("m") == 3) {</span>
+	<span class="code-php">   echo "&lt;p&gt;Estamos no outono!&lt;/p&gt; ";</span>
+	<span class="code-php">}</span>
+	<span class="code-php">else {</span>
+	<span class="code-php">   echo "&lt;p&gt;Eu não sei em que estação estamos!&lt;/p&gt; ";</span>	
+	<span class="code-php">}</span>
+
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+
+	<div class="examplelink">  <a href="lesson6_ex1.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div>
+
+	<p>Notar que se trata de uma condicional não muito inteligente - ela só funciona para o Mês de Março!</p> 
+
+	<p>Contudo, existem várias maneiras de aperfeiçoar a condicional tornando-a mais precisa. Observe a seguir alguns operadores de comparação que podemos usar na condicional mostrada:</p> 
+
+	<p><strong>==</strong> Igual<br />
+	<strong>&lt;</strong> Menor que<br />
+	<strong>&gt;</strong> Maior que<br />
+	<strong>&lt;=</strong> Menor ou igual a<br />
+	<strong>&gt;=</strong> Maior ou igual a<br />
+	<strong>!=</strong> Diferente</p> 
+
+	<p>Existem também operadores lógicos:</p> 
+
+	<p><strong>&amp;&amp;</strong> e<br />
+	<strong>||</strong> ou<br />
+	<strong>!</strong> não</p> 
+
+	<p>Operadores se destinam a criar condicionais mais precisas e com seu uso podemos melhorar o exemplo mostrado anteriormente fazendo com que o retorno do script seja a estação primavera em todos os meses que ela ocorre e não somente em março:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Condicionais&lt;/title&gt;
+
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+ 
+	<span class="code-php">if (date("m") &gt;= 3 &amp;&amp; date("m") &lt;= 5) {</span>
+	<span class="code-php">   echo "&lt;p&gt; Estamos no outono!&lt;/p&gt; ";</span>
+	<span class="code-php">}</span>
+	<span class="code-php">else {</span>
+	<span class="code-php">   echo "&lt;p&gt; A estação atual é primavera, verão ou inverno!&lt;/p&gt; ";</span>
+	<span class="code-php">}</span>
+	 
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+
+	
+	</pre> 
+	</div> 
+
+	<p>Vamos examinar estas novas condicionais:</p> 
+
+	<div class="codebox"> 
+	<pre>
+	date("m") &gt;= 3 &amp;&amp; date("m") &lt;= 5 
+	</pre> 
+	</div> 
+
+	<p>Pode ser traduzida como:</p> 
+
+	<div class="codebox">
+	<pre>
+
+	Se o número que representa o mês for maior ou igual a 3  e menor ou igual a 5
+	
+	</pre>
+	</div> 
+
+	<p>Legal não é? Operadores são largamente usados em diferentes blocos de script do PHP.</p> 
+
+	<p>Contudo nosso exemplo só funciona para os meses de março, abril e maio, Os demais meses não são contemplados pela condicional. Assim, vamos aperfeiçoá-lo mais:</p> 
+
+	<h2>if ... elseIf ... else...</h2> 
+
+	<p></p> 
+
+	<p>Usando <a href="http://php.net/manual/en/control-structures.elseif.php"> elseif</a> podemos expandir a condicional e fazer com que nosso script funcione para todos os meses do ano:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Condicionais&lt;/title&gt;
+
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+ 
+	<span class="code-php">if (date("m") &gt;= 3 &amp;&amp; date("m") &lt;= 5) {</span>
+	<span class="code-php">   echo "&lt;p&gt;Estamos no outono!&lt;/p&gt";</span>
+	<span class="code-php">}</span>
+
+	<span class="code-php">elseif (date("m") &gt;= 6 &amp;&amp; date("m") &lt;= 8) {</span>
+	<span class="code-php">   echo "&lt;p&gt;Estamos no inverno!&lt;/p&gt;";</span>
+	<span class="code-php">}</span>
+
+	<span class="code-php">elseif (date("m") &gt;= 9 &amp;&amp; date("m") &lt;= 11) {</span>
+	<span class="code-php">   echo "&lt;p&gt;Estamos na primavera!&lt;/p&gt;";</span>
+	<span class="code-php">}</span>
+
+	<span class="code-php">else {</span>
+	<span class="code-php">   echo "&lt;p&gt;Estamos no verão!&lt;/p&gt;";</span>
+	<span class="code-php">}</span>
+	 
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+
+	
+	</pre> 
+	</div> 
+
+	<div class="examplelink">  <a href="lesson6_ex2.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div>
+
+	<p>Escrever condicionais é uma questão de lógica e método. O exemplo mostrado é bem esclarecedor, porém o uso de condicionais pode tornar-se bem mais complexo.</p> 
+
+	<h2>switch ... case</h2> 
+
+	<p>Outra maneira de se escrever condicionais é com uso do método <a href="http://php.net/manual/en/control-structures.switch.php" title="PHP documentation"> switch</a>:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	switch <em>(expressão)</em> {
+ 
+	case 1: 
+	   <em>comandos PHP</em>
+	   break;	
+	case 2: 
+	   <em>comandos PHP</em>
+	   break; 
+	default:
+	   <em>comandos PHP</em>
+	   break;
+	}
+	
+	</pre> 
+	</div> 
+
+	<p>Este método toma por base uma <strong>expressão</strong> e a seguir relaciona uma série de "respostas" ou "valores" e respectivos <strong>comandos PHP</strong>. A maneira mais fácil de entender esta condicional é observando um exemplo.</p> 
+
+	<p>Na lição 4 nós vimos que a função <a href="http://php.net/manual/en/function.date.php"> date("w")</a> retorna um número representando dia da semana. Vamos mostrar um exemplo para escrever o nome do dia da semana em lugar do número que o representa:</p> 
+
+	<div class="codebox"> 
+	<pre>
+
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Condicionais&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	<span class="code-php">&lt;?php</span>
+ 
+	<span class="code-php">switch(date("w")) {</span>
+	 
+	<span class="code-php">case 1:</span>
+	<span class="code-php">   echo "Hoje é segunda-feira";</span>
+	<span class="code-php">   break;</span>
+	<span class="code-php">case 2:</span>
+	<span class="code-php">   echo "Hoje é terça-feira";</span>
+	<span class="code-php">   break;</span>
+	<span class="code-php">case 3:</span>
+	<span class="code-php">   echo "Hoje é quarta-feira";</span>
+	<span class="code-php">   break;</span>
+	<span class="code-php">case 4:</span>
+	<span class="code-php">   echo "Hoje é quinta-feira";</span>
+	<span class="code-php">   break;</span>
+	<span class="code-php">case 5:</span>
+	<span class="code-php">   echo "Hoje é sexta-feira";</span>
+	<span class="code-php">   break;</span>
+	<span class="code-php">case 6:</span>
+	<span class="code-php">   echo "Hoje é sábado";</span>
+	<span class="code-php">   break;</span>
+	<span class="code-php">default:</span>
+	<span class="code-php">   echo "Hoje é domingo";</span>
+	<span class="code-php">   break;</span>
+	 
+	<span class="code-php">}</span>
+	 
+	<span class="code-php">?&gt;</span>
+
+	&lt;/body&gt;
+	&lt;/html&gt;
+	
+	</pre> 
+	</div> 
+
+	<div class="examplelink">  <a href="lesson6_ex3.html" title="Ver a renderização do exemplo mostrado">Ver o resultado do exemplo</a></div>
+
+	<p>Em geral <a href="http://php.net/manual/en/control-structures.switch.php" title="PHP documentation"> switch</a> é uma boa alternativa para a condicional <a href="http://php.net/manual/en/control-structures.if.php"> if</a> <a href="http://php.net/manual/en/control-structures.else.php"> else</a>. Qual delas usar em uma determinada situação depende somente de você. Use aquela que você considera mais fácil e lhe pareça mais lógica. Criar scripts lógicos e claros pode se constituir em um grande desafio para o desenvolvedor.</p> 
+
+	<p>Na próxima lição mostraremos como inserir comentários em seus scripts com a finalidade de facilitar o entendimento de como eles funcionam. Um script bem comentado oferece a você ou a outra pessoa dicas que serão valiosas por ocasião de mudanças ou manutenção futura.</p> 
+	<hr /><hr /><p class='previous'><a href='lesson5.html'>&lt;&lt; Lição 5: Loops</a></p><p class='next'><a href='lesson7.html'>Lição 7: Insira comentários nos seus scripts >></a></p></div>  		<!-- google_ad_section_end -->
+
+		</div>
+
+		
+	</div>
+
+	<div id="sidebar">
+					<h1>Tutorials</h1>
+			<ul>
+			<li><a href='..\html\index.html'>HTML Tutorial</a></li><li><a href='..\css\index.html'>CSS Tutorial</a></li><li><strong><a href='index.html'>Tutorial PHP</a></strong><ul><li><a href='introduction.html'>Introdução</a></li><li><a href='lesson1.html'>O que é PHP</a></li><li><a href='lesson2.html'>Servidores</a></li><li><a href='lesson3.html'>Sua primeira página PHP</a></li><li><a href='lesson4.html'>Trabalhando com datas e horas</a></li><li><a href='lesson5.html'>Loops</a></li><li class='selected'><a href='lesson6.html'>Condicionais</a></li><li><a href='lesson7.html'>Insira comentários nos seus scripts</a></li><li><a href='lesson8.html'>Arrays</a></li><li><a href='lesson9.html'>Funções</a></li><li><a href='lesson10.html'>Passando variáveis no URL</a></li><li><a href='lesson11.html'>Passando variáveis de um formulário</a></li><li><a href='lesson12.html'>Sessões</a></li><li><a href='lesson13.html'>Cookies</a></li><li><a href='lesson14.html'>Sistema de arquivos</a></li><li><a href='lesson15.html'>Ler arquivos de texto</a></li><li><a href='lesson16.html'>Escrever em arquivos de texto</a></li><li><a href='lesson17.html'>Banco de Dados</a></li><li><a href='lesson18.html'>Criando Banco de Dados e suas Tabelas</a></li><li><a href='lesson19.html'>Inserindo dados em um Banco de Dados</a></li><li><a href='lesson20.html'>Extraindo dados de um Banco de Dados</a></li><li><a href='lesson21.html'>Apagando dados de um Banco de Dados</a></li><li><a href='lesson22.html'>Atualizando dados de um Banco de Dados</a></li></ul></li>			</ul>
+		
+	</div>
+</body>
+</html>
